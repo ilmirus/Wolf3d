@@ -1,34 +1,35 @@
-plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.7.21'
-    id 'application'
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20-RC"
+    }
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+apply plugin: "kotlin"
+
+group 'org.example'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
-    testImplementation 'org.jetbrains.kotlin:kotlin-test'
-//    // https://mvnrepository.com/artifact/org.jetbrains.skija/skija-shared
-//    implementation 'org.jetbrains.skija:skija-shared:0.93.6'
-
+    mavenLocal()
 }
 
 test {
     useJUnitPlatform()
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.20-RC"
 }
 
-compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
-}
-
-application {
-    mainClassName = 'MainKt'
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        languageVersion = "1.9"
+        kotlinOptions.freeCompilerArgs += ["-Xvalue-classes"]
+        jvmTarget = "11"
+    }
 }
