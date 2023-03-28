@@ -1,4 +1,4 @@
-package value
+package value_inline
 
 import java.awt.Color
 import java.awt.Graphics
@@ -64,59 +64,59 @@ val worldMap = arrayOf(
     intArrayOf(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 )
 
-operator fun Array<IntArray>.get(location: Location): Int = this[location.x][location.y]
+inline operator fun Array<IntArray>.get(location: Location): Int = this[location.x][location.y]
 
-fun canMove(point: Point2d): Boolean = worldMap[point.x.toInt()][point.y.toInt()] == 0
+inline fun canMove(point: Point2d): Boolean = worldMap[point.x.toInt()][point.y.toInt()] == 0
 
 @JvmInline
 value class Point2d(val x: Double, val y: Double) {
-    operator fun plus(vector: Vector2d): Point2d =
+    inline operator fun plus(vector: Vector2d): Point2d =
         Point2d(x + vector.x, y + vector.y)
 
-    operator fun minus(vector: Vector2d): Point2d =
+    inline operator fun minus(vector: Vector2d): Point2d =
         Point2d(x - vector.x, y - vector.y)
 
-    fun toLocation(): Location =
+    inline fun toLocation(): Location =
         Location(x.toInt(), y.toInt())
 
-    fun toVector(): Vector2d =
+    inline fun toVector(): Vector2d =
         Vector2d(x, y)
 }
 
 @JvmInline
 value class Vector2d(val x: Double, val y: Double) {
-    fun rotate(angle: Double): Vector2d =
+    inline fun rotate(angle: Double): Vector2d =
         Vector2d(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
 
-    operator fun times(factor: Double): Vector2d =
+    inline operator fun times(factor: Double): Vector2d =
         Vector2d(x * factor, y * factor)
 
-    operator fun plus(vector: Vector2d): Vector2d =
+    inline operator fun plus(vector: Vector2d): Vector2d =
         Vector2d(x + vector.x, y + vector.y)
 
-    operator fun minus(vector: Vector2d): Vector2d =
+    inline operator fun minus(vector: Vector2d): Vector2d =
         Vector2d(x - vector.x, y - vector.y)
 
-    fun abs(): Vector2d =
+    inline fun abs(): Vector2d =
         Vector2d(Math.abs(x), Math.abs(y))
 
-    fun xProjection(): Vector2d =
+    inline fun xProjection(): Vector2d =
         Vector2d(x, 0.0)
 
-    fun yProjection(): Vector2d =
+    inline fun yProjection(): Vector2d =
         Vector2d(0.0, y)
 }
 
 @JvmInline
 value class Location(val x: Int, val y: Int) {
-    fun toVector(): Vector2d =
+    inline fun toVector(): Vector2d =
         Vector2d(x.toDouble(), y.toDouble())
 
-    fun step(vector: Vector2d): Location =
+    inline fun step(vector: Vector2d): Location =
         Location((toVector() + vector).x.toInt(), (toVector() + vector).y.toInt())
 }
 
-operator fun Double.div(vector: Vector2d): Vector2d =
+inline operator fun Double.div(vector: Vector2d): Vector2d =
     Vector2d(this / vector.x, this / vector.y)
 
 class MyPanel : JPanel(), KeyListener, MouseListener {
