@@ -1,5 +1,6 @@
 package value_inline
 
+import OffsetInSeconds
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.Graphics2D
@@ -142,7 +143,7 @@ class MyPanel : JPanel(), KeyListener, MouseListener {
             val currentTime = System.nanoTime()
             val elapsedTime = (currentTime - startTime) / 1e9
             fps = frameCount / elapsedTime
-            if ((currentTime - veryStartTime) / 1e9 > 5) {
+            if ((currentTime - veryStartTime) / 1e9 > OffsetInSeconds) {
                 minFps = minFps.coerceAtMost(fps)
             }
             startTime = currentTime

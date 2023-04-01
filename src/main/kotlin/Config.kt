@@ -1,0 +1,1 @@
+const val OffsetInSeconds = 10
