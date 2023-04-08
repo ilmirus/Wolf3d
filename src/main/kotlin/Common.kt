@@ -1,3 +1,6 @@
+import java.awt.Color
+import java.awt.Graphics2D
+
 const val screenWidth = 1920
 const val screenHeight = 1024
 
@@ -50,3 +53,17 @@ val worldMap = arrayOf(
     intArrayOf(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
 )
 
+interface AbstractGraphics {
+    var color: Color
+    fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int)
+}
+
+fun Graphics2D.asAbstract(): AbstractGraphics = object : AbstractGraphics {
+    override var color: Color by this@asAbstract::color
+
+    override fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int) = this@asAbstract.drawLine(x1, y1, x2, y2)
+}
+
+interface Benchmarkable {
+    fun heavyAction(graphics: AbstractGraphics)
+}
