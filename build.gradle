@@ -9,8 +9,12 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20-RC"
     }
 }
+plugins {
+    id "me.champeau.jmh" version "0.7.0"
+}
 
 apply plugin: "kotlin"
+
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -26,6 +30,7 @@ test {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.20-RC"
+    jmh 'commons-io:commons-io:2.7'
 }
 
 tasks.withType(KotlinCompile).configureEach {
