@@ -16,122 +16,108 @@ import javax.swing.Timer
 import kotlin.math.cos
 import kotlin.math.sin
 
-context (MutableMfvcWrapper)
-inline fun returnPoint2f() = Point2f(decodeFloat0(), decodeFloat1())
-context (MutableMfvcWrapper)
-inline fun returnVector2f() = Vector2f(decodeFloat0(), decodeFloat1())
-context (MutableMfvcWrapper)
-inline fun returnLocationF() = LocationF(decodeInt0(), decodeInt1())
-
 inline operator fun Array<IntArray>.get(location: LocationF): Int = this[location.x][location.y]
 
 inline fun canMove(point: Point2f): Boolean = worldMap[point.x.toInt()][point.y.toInt()] == 0
 
 @JvmInline
 value class Point2f(val x: Float, val y: Float) {
-    context(MutableMfvcWrapper)
-    inline operator fun plus(vector: Vector2f): Point2f {
-        encodeLong0(x + vector.x)
-        encodeLong1(y + vector.y)
-        return returnPoint2f()
+    fun plus(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+        val result = Point2f(x + vector.x, y + vector.y)
+        wrapper.encodeLong0(result.x)
+        wrapper.encodeLong1(result.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline operator fun minus(vector: Vector2f): Point2f {
-        encodeLong0(x - vector.x)
-        encodeLong1(y - vector.y)
-        return returnPoint2f()
+    fun minus(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+        val result = Point2f(x - vector.x, y - vector.y)
+        wrapper.encodeLong0(result.x)
+        wrapper.encodeLong1(result.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun toLocation(): LocationF {
-        encodeLong0(x.toInt())
-        encodeLong1(y.toInt())
-        return returnLocationF()
+    fun toLocation(wrapper: MutableMfvcWrapper) {
+        val result = LocationF(x.toInt(), y.toInt())
+        wrapper.encodeLong0(result.x)
+        wrapper.encodeLong1(result.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun toVector(): Vector2f {
-        encodeLong0(x)
-        encodeLong1(y)
-        return returnVector2f()
+    fun toVector(wrapper: MutableMfvcWrapper) {
+        val result = Vector2f(x, y)
+        wrapper.encodeLong0(result.x)
+        wrapper.encodeLong1(result.y)
     }
 }
 
+inline fun Unit.decodePoint2f(wrapper: MutableMfvcWrapper) = Point2f(wrapper.decodeFloat0(), wrapper.decodeFloat1())
+inline fun Unit.decodeVector2f(wrapper: MutableMfvcWrapper) = Vector2f(wrapper.decodeFloat0(), wrapper.decodeFloat1())
+inline fun Unit.decodeLocationF(wrapper: MutableMfvcWrapper) = LocationF(wrapper.decodeInt0(), wrapper.decodeInt1())
+
 @JvmInline
 value class Vector2f(val x: Float, val y: Float) {
-    context(MutableMfvcWrapper)
-    inline fun rotate(angle: Float): Vector2f  {
-        encodeLong0(x * cos(angle) - y * sin(angle))
-        encodeLong1(x * sin(angle) + y * cos(angle))
-        return returnVector2f()
+    fun rotate(angle: Float, wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline operator fun times(factor: Float): Vector2f  {
-        encodeLong0(x * factor)
-        encodeLong1(y * factor)
-        return returnVector2f()
+    fun times(factor: Float, wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x * factor, y * factor)
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline operator fun plus(vector: Vector2f): Vector2f  {
-        encodeLong0(x + vector.x)
-        encodeLong1(y + vector.y)
-        return returnVector2f()
+    fun plus(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x + vector.x, y + vector.y)
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline operator fun minus(vector: Vector2f): Vector2f  {
-        encodeLong0(x - vector.x)
-        encodeLong1(y - vector.y)
-        return returnVector2f()
+    fun minus(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x - vector.x, y - vector.y)
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun abs(): Vector2f  {
-        encodeLong0(Math.abs(x))
-        encodeLong1(Math.abs(y))
-        return returnVector2f()
+    fun abs(wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(Math.abs(x), Math.abs(y))
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun xProjection(): Vector2f  {
-        encodeLong0(x)
-        encodeLong1(0.0f)
-        return returnVector2f()
+    fun xProjection(wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x, 0.0f)
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun yProjection(): Vector2f  {
-        encodeLong0(0.0f)
-        encodeLong1(y)
-        return returnVector2f()
+    fun yProjection(wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(0.0f, y)
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 }
 
 @JvmInline
 value class LocationF(val x: Int, val y: Int) {
-    context(MutableMfvcWrapper)
-    inline fun toVector(): Vector2f  {
-        encodeLong0(x.toFloat())
-        encodeLong1(y.toFloat())
-        return returnVector2f()
+    fun toVector(wrapper: MutableMfvcWrapper) {
+        val res = Vector2f(x.toFloat(), y.toFloat())
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 
-    context(MutableMfvcWrapper)
-    inline fun step(vector: Vector2f): LocationF  {
-        encodeLong0((toVector() + vector).x.toInt())
-        encodeLong1((toVector() + vector).y.toInt())
-        return returnLocationF()
+    fun step(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+        val res = LocationF(
+            (toVector(wrapper).decodeVector2f(wrapper).plus(vector, wrapper).decodeVector2f(wrapper)).x.toInt(),
+            (toVector(wrapper).decodeVector2f(wrapper).plus(vector, wrapper).decodeVector2f(wrapper)).y.toInt()
+        )
+        wrapper.encodeLong0(res.x)
+        wrapper.encodeLong1(res.y)
     }
 }
 
-context(MutableMfvcWrapper)
-inline operator fun Float.div(vector: Vector2f): Vector2f  {
-    encodeLong0(this / vector.x)
-    encodeLong1(this / vector.y)
-    return returnVector2f()
+fun Float.div(vector: Vector2f, wrapper: MutableMfvcWrapper) {
+    val res = Vector2f(this / vector.x, this / vector.y)
+    wrapper.encodeLong0(res.x)
+    wrapper.encodeLong1(res.y)
 }
 
 class MyPanelF : JPanel(), KeyListener, MouseListener {
@@ -181,134 +167,150 @@ class MyPanelF : JPanel(), KeyListener, MouseListener {
 
     private fun mainLoop(g: Graphics2D) {
         repeat(100) {
-            with(MutableMfvcWrapper()) {
-                for (x in 0 until screenWidth) {
-                    //calculate ray position and direction
-                    val cameraX = 2 * x / screenHeight.toFloat() - 1 //x-coordinate in camera space
-                    val rayDir = dir + plane * cameraX
-                    //which box of the map we're in
-                    var mapLocation = pos.toLocation()
+            val wrapper = MutableMfvcWrapper()
+            for (x in 0 until screenWidth) {
+                //calculate ray position and direction
+                val cameraX = 2 * x / screenHeight.toFloat() - 1 //x-coordinate in camera space
+                val rayDir = dir.plus(plane.times(cameraX, wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)
+                //which box of the map we're in
+                var mapLocation = pos.toLocation(wrapper).decodeLocationF(wrapper)
 
-                    //length of ray from current position to next x or y-side
-                    var sideDist: Vector2f
+                //length of ray from current position to next x or y-side
+                var sideDist: Vector2f
 
-                    //length of ray from one x or y-side to next x or y-side
-                    //these are derived as:
-                    //deltaDistX = sqrt(1 + (rayDirY * rayDirY) / (rayDirX * rayDirX))
-                    //deltaDistY = sqrt(1 + (rayDirX * rayDirX) / (rayDirY * rayDirY))
-                    //which can be simplified to abs(|rayDir| / rayDirX) and abs(|rayDir| / rayDirY)
-                    //where |rayDir| is the length of the vector (rayDirX, rayDirY). Its length,
-                    //unlike (dirX, dirY) is not 1, however this does not matter, only the
-                    //ratio between deltaDistX and deltaDistY matters, due to the way the DDA
-                    //stepping further below works. So the values can be computed as below.
-                    // Division through zero is prevented, even though technically that's not
-                    // needed in C++ with IEEE 754 floating point values.
-                    val deltaDist = 1.0f / rayDir.abs()
+                //length of ray from one x or y-side to next x or y-side
+                //these are derived as:
+                //deltaDistX = sqrt(1 + (rayDirY * rayDirY) / (rayDirX * rayDirX))
+                //deltaDistY = sqrt(1 + (rayDirX * rayDirX) / (rayDirY * rayDirY))
+                //which can be simplified to abs(|rayDir| / rayDirX) and abs(|rayDir| / rayDirY)
+                //where |rayDir| is the length of the vector (rayDirX, rayDirY). Its length,
+                //unlike (dirX, dirY) is not 1, however this does not matter, only the
+                //ratio between deltaDistX and deltaDistY matters, due to the way the DDA
+                //stepping further below works. So the values can be computed as below.
+                // Division through zero is prevented, even though technically that's not
+                // needed in C++ with IEEE 754 floating point values.
+                val deltaDist = 1.0f.div(rayDir.abs(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)
 
-                    var perpWallDist: Float
+                var perpWallDist: Float
 
-                    //what direction to step in x or y-direction (either +1 or -1)
-                    var step: Vector2f
+                //what direction to step in x or y-direction (either +1 or -1)
+                var step: Vector2f
 
-                    var hit = 0 //was there a wall hit?
-                    var side = 0 //was a NS or a EW wall hit?
-                    //calculate step and initial sideDist
-                    if (rayDir.x < 0) {
-                        step = Vector2f((-1).toFloat(), 0.0f)
-                        sideDist = (pos.toVector() - mapLocation.toVector()).xProjection() * deltaDist.x
-                    } else {
-                        step = Vector2f(1.toFloat(), 0.0f)
-                        sideDist =
-                            (mapLocation.toVector() + Vector2f(1.0f, 0.0f) - pos.toVector()).xProjection() * deltaDist.x
-                    }
-                    if (rayDir.y < 0) {
-                        step += Vector2f(0.0f, (-1).toFloat())
-                        sideDist += (pos.toVector() - mapLocation.toVector()).yProjection() * deltaDist.y
-                    } else {
-                        step += Vector2f(0.0f, 1.toFloat())
-                        sideDist += (mapLocation.toVector() + Vector2f(
-                            0.0f,
-                            1.0f
-                        ) - pos.toVector()).yProjection() * deltaDist.y
-                    }
-                    //perform DDA
-                    while (hit == 0) {
-                        //jump to next map square, either in x-direction, or in y-direction
-                        if (sideDist.x < sideDist.y) {
-                            sideDist += deltaDist.xProjection()
-                            mapLocation = mapLocation.step(step.xProjection())
-                            side = 0
-                        } else {
-                            sideDist += deltaDist.yProjection()
-                            mapLocation = mapLocation.step(step.yProjection())
-                            side = 1
-                        }
-                        //Check if ray has hit a wall
-                        if (worldMap[mapLocation] > 0) hit = 1
-                    }
-                    //Calculate distance projected on camera direction. This is the shortest distance from the point where the wall is
-                    //hit to the camera plane. Euclidean to center camera point would give fisheye effect!
-                    //This can be computed as (mapX - posX + (1 - stepX) / 2) / rayDirX for side == 0, or same formula with Y
-                    //for size == 1, but can be simplified to the code below thanks to how sideDist and deltaDist are computed:
-                    //because they were left scaled to |rayDir|. sideDist is the entire length of the ray above after the multiple
-                    //steps, but we subtract deltaDist once because one step more into the wall was taken above.
-                    perpWallDist = if (side == 0) (sideDist - deltaDist).x else (sideDist - deltaDist).y
-
-                    //Calculate height of line to draw on screen
-                    val lineHeight = (screenHeight / perpWallDist).toInt()
-
-                    //calculate lowest and highest pixel to fill in current stripe
-                    val drawStart = (-lineHeight / 2 + screenHeight / 2).coerceAtLeast(0)
-                    val drawEnd = (lineHeight / 2 + screenHeight / 2).coerceAtMost(screenHeight - 1)
-
-                    //choose wall color
-                    var color =
-                        when (worldMap[mapLocation]) {
-                            1 -> 0xFF0000 //red
-                            2 -> 0x00FF00 //green
-                            3 -> 0x00FF00 //blue
-                            4 -> 0x0000FF //white
-                            else -> 0xFFFF00 //yellow
-                        }
-
-                    //give x and y sides different brightness
-                    if (side == 1) {
-                        color /= 2
-                    }
-
-                    //draw the pixels of the stripe as a vertical line
-                    g.color = Color(color)
-                    g.drawLine(x, drawStart, x, drawEnd)
+                var hit = 0 //was there a wall hit?
+                var side = 0 //was a NS or a EW wall hit?
+                //calculate step and initial sideDist
+                if (rayDir.x < 0) {
+                    step = Vector2f((-1).toFloat(), 0.0f)
+                    sideDist = (pos.toVector(wrapper).decodeVector2f(wrapper).minus(mapLocation.toVector(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)).xProjection(wrapper).decodeVector2f(wrapper)
+                        .times(deltaDist.x, wrapper).decodeVector2f(wrapper)
+                } else {
+                    step = Vector2f(1.toFloat(), 0.0f)
+                    sideDist = (mapLocation.toVector(wrapper).decodeVector2f(wrapper).plus(Vector2f(1.0f, 0.0f), wrapper).decodeVector2f(wrapper)
+                        .minus(pos.toVector(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)).xProjection(wrapper).decodeVector2f(wrapper)
+                        .times(deltaDist.x, wrapper).decodeVector2f(wrapper)
                 }
+                if (rayDir.y < 0) {
+                    step = step.plus(Vector2f(0.0f, (-1).toFloat()), wrapper).decodeVector2f(wrapper)
+                    sideDist = sideDist.plus(
+                        (pos.toVector(wrapper).decodeVector2f(wrapper).minus(mapLocation.toVector(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper)
+                            .times(deltaDist.y, wrapper).decodeVector2f(wrapper), wrapper
+                    ).decodeVector2f(wrapper)
+                } else {
+                    step = step.plus(Vector2f(0.0f, 1.toFloat()), wrapper).decodeVector2f(wrapper)
+                    sideDist = sideDist.plus(
+                        (mapLocation.toVector(wrapper).decodeVector2f(wrapper).plus(Vector2f(0.0f, 1.0f), wrapper).decodeVector2f(wrapper)
+                            .minus(pos.toVector(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper)
+                            .times(deltaDist.y, wrapper).decodeVector2f(wrapper), wrapper
+                    ).decodeVector2f(wrapper)
+                }
+                //perform DDA
+                while (hit == 0) {
+                    //jump to next map square, either in x-direction, or in y-direction
+                    if (sideDist.x < sideDist.y) {
+                        sideDist = sideDist.plus(deltaDist.xProjection(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)
+                        mapLocation = mapLocation.step(step.xProjection(wrapper).decodeVector2f(wrapper), wrapper).decodeLocationF(wrapper)
+                        side = 0
+                    } else {
+                        sideDist = sideDist.plus(deltaDist.yProjection(wrapper).decodeVector2f(wrapper), wrapper).decodeVector2f(wrapper)
+                        mapLocation = mapLocation.step(step.yProjection(wrapper).decodeVector2f(wrapper), wrapper).decodeLocationF(wrapper)
+                        side = 1
+                    }
+                    //Check if ray has hit a wall
+                    if (worldMap[mapLocation] > 0) hit = 1
+                }
+                //Calculate distance projected on camera direction. This is the shortest distance from the point where the wall is
+                //hit to the camera plane. Euclidean to center camera point would give fisheye effect!
+                //This can be computed as (mapX - posX + (1 - stepX) / 2) / rayDirX for side == 0, or same formula with Y
+                //for size == 1, but can be simplified to the code below thanks to how sideDist and deltaDist are computed:
+                //because they were left scaled to |rayDir|. sideDist is the entire length of the ray above after the multiple
+                //steps, but we subtract deltaDist once because one step more into the wall was taken above.
+                perpWallDist =
+                    if (side == 0) (sideDist.minus(deltaDist, wrapper).decodeVector2f(wrapper)).x
+                    else (sideDist.minus(deltaDist, wrapper).decodeVector2f(wrapper)).y
+
+                //Calculate height of line to draw on screen
+                val lineHeight = (screenHeight / perpWallDist).toInt()
+
+                //calculate lowest and highest pixel to fill in current stripe
+                val drawStart = (-lineHeight / 2 + screenHeight / 2).coerceAtLeast(0)
+                val drawEnd = (lineHeight / 2 + screenHeight / 2).coerceAtMost(screenHeight - 1)
+
+                //choose wall color
+                var color =
+                    when (worldMap[mapLocation]) {
+                        1 -> 0xFF0000 //red
+                        2 -> 0x00FF00 //green
+                        3 -> 0x00FF00 //blue
+                        4 -> 0x0000FF //white
+                        else -> 0xFFFF00 //yellow
+                    }
+
+                //give x and y sides different brightness
+                if (side == 1) {
+                    color /= 2
+                }
+
+                //draw the pixels of the stripe as a vertical line
+                g.color = Color(color)
+                g.drawLine(x, drawStart, x, drawEnd)
             }
         }
     }
 
-    override fun keyPressed(e: KeyEvent) = with(MutableMfvcWrapper()) {
+    override fun keyPressed(e: KeyEvent) {
         val frameTime = 1 / fps.toFloat()
         //speed modifiers
 
         //speed modifiers
         val moveSpeed = frameTime * .5f //the constant value is in squares/second
         val rotSpeed = frameTime * .3f //the constant value is in radians/second
+        val wrapper = MutableMfvcWrapper()
         when (e.keyCode) {
             KeyEvent.VK_UP -> {
-                if(canMove(pos + (dir * moveSpeed).xProjection())) pos += (dir * moveSpeed).xProjection()
-                if(canMove(pos + (dir * moveSpeed).yProjection())) pos += (dir * moveSpeed).yProjection()
+                if(canMove((pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)), wrapper)).decodePoint2f(wrapper))) {
+                    pos = (pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).xProjection(wrapper).decodeVector2f(wrapper), wrapper)).decodePoint2f(wrapper)
+                }
+                if(canMove((pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper), wrapper)).decodePoint2f(wrapper))) {
+                    pos = pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper), wrapper).decodePoint2f(wrapper)
+                }
             }
             KeyEvent.VK_DOWN -> {
-                if(canMove(pos - (dir * moveSpeed).xProjection())) pos -= (dir * moveSpeed).xProjection()
-                if(canMove(pos - (dir * moveSpeed).yProjection())) pos -= (dir * moveSpeed).yProjection()
+                if(canMove(pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).xProjection(wrapper).decodeVector2f(wrapper), wrapper).decodePoint2f(wrapper))) {
+                    pos = pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).xProjection(wrapper).decodeVector2f(wrapper), wrapper).decodePoint2f(wrapper)
+                }
+                if(canMove(pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper), wrapper).decodePoint2f(wrapper))) {
+                    pos = pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f(wrapper)).yProjection(wrapper).decodeVector2f(wrapper), wrapper).decodePoint2f(wrapper)
+                }
             }
             KeyEvent.VK_LEFT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(rotSpeed)
-                plane = plane.rotate(rotSpeed)
+                dir = dir.rotate(rotSpeed, wrapper).decodeVector2f(wrapper)
+                plane = plane.rotate(rotSpeed, wrapper).decodeVector2f(wrapper)
             }
             KeyEvent.VK_RIGHT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(-rotSpeed)
-                plane = plane.rotate(-rotSpeed)
+                dir = dir.rotate(-rotSpeed, wrapper).decodeVector2f(wrapper)
+                plane = plane.rotate(-rotSpeed, wrapper).decodeVector2f(wrapper)
             }
         }
         repaint()
