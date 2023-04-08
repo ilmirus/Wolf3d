@@ -25,7 +25,7 @@ fun canMove(point: Point2f): Boolean = worldMap[point.x.toInt()][point.y.toInt()
 
 @JvmInline
 value class Point2f private constructor(private val data: Long) {
-    val x get() = Float.fromBits(data.ushr(32).toInt())
+    val x get() = Float.fromBits(data.shr(32).toInt())
     val y get() = Float.fromBits(data.toInt())
     constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong())
     operator fun plus(vector: Vector2f): Point2f =
@@ -43,7 +43,7 @@ value class Point2f private constructor(private val data: Long) {
 
 @JvmInline
 value class Vector2f private constructor(private val data: Long) {
-    val x get() = Float.fromBits(data.ushr(32).toInt())
+    val x get() = Float.fromBits(data.shr(32).toInt())
     val y get() = Float.fromBits(data.toInt())
     constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF))
     
@@ -71,7 +71,7 @@ value class Vector2f private constructor(private val data: Long) {
 
 @JvmInline
 value class LocationF private constructor(private val data: Long) {
-    val x get() = data.ushr(32).toInt()
+    val x get() = data.shr(32).toInt()
     val y get() = data.toInt()
     constructor(x: Int, y: Int) : this(x.toLong().shl(32) or y.toLong().and(0xFFFFFFFF))
     fun toVector(): Vector2f =

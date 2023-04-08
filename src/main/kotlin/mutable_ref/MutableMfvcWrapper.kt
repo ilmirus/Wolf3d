@@ -22,6 +22,14 @@ class MutableMfvcWrapper {
         long1 = value.toRawBits().toLong()
     }
     
+    inline fun encodeLong0(value0: Float, value1: Float) {
+        long0 = value0.toRawBits().toLong().shl(32) or value1.toRawBits().toLong().and(0xFFFFFFFF)
+    }
+    
+    inline fun encodeLong0(value0: Int, value1: Int) {
+        long0 = value0.toLong().shl(32) or value1.toLong().and(0xFFFFFFFF)
+    }
+    
     inline fun encodeLong0(value: Int) {
         long0 = value.toLong()
     }
@@ -39,4 +47,10 @@ class MutableMfvcWrapper {
     
     inline fun decodeInt0() = long0.toInt()
     inline fun decodeInt1() = long1.toInt()
+    
+    inline fun decodeFloat00() = Float.fromBits(long0.shr(32).toInt())
+    inline fun decodeFloat01() = Float.fromBits(long0.toInt())
+    
+    inline fun decodeInt00() = long0.shr(32).toInt()
+    inline fun decodeInt01() = long0.toInt()
 }

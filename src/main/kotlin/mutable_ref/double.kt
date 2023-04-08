@@ -141,7 +141,7 @@ class MyPanelD : JPanel(), KeyListener, MouseListener, Benchmarkable {
         isFocusable = true
 
         // Set up the timer to update the FPS every second
-        Timer(1000, ActionListener {
+        Timer(1000) {
             // Calculate the FPS and update the label text
             val currentTime = System.nanoTime()
             val elapsedTime = (currentTime - startTime) / 1e9
@@ -151,7 +151,7 @@ class MyPanelD : JPanel(), KeyListener, MouseListener, Benchmarkable {
             }
             startTime = currentTime
             frameCount = 0
-        }).start()
+        }.start()
         startTime = System.nanoTime()
     }
 
