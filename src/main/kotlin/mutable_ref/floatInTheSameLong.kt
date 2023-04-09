@@ -28,67 +28,60 @@ inline fun canMove(point: Point2f2): Boolean = worldMap[point.x.toInt()][point.y
 value class Point2f2(val x: Float, val y: Float) {
     fun plus(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
         val result = Point2f2(x + vector.x, y + vector.y)
-        wrapper.encodeLong0(result.x, result.y)
+        wrapper.long0 = result.x.toRawBits().toLong().shl(32) or result.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun minus(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
         val result = Point2f2(x - vector.x, y - vector.y)
-        wrapper.encodeLong0(result.x, result.y)
+        wrapper.long0 = result.x.toRawBits().toLong().shl(32) or result.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun toLocation(wrapper: MutableMfvcWrapper) {
         val result = LocationF2(x.toInt(), y.toInt())
-        wrapper.encodeLong0(result.x, result.y)
+        wrapper.long0 = result.x.toLong().shl(32) or result.y.toLong().and(0xFFFFFFFF)
     }
 
     fun toVector(wrapper: MutableMfvcWrapper) {
         val result = Vector2f2(x, y)
-        wrapper.encodeLong0(result.x, result.y)
+        wrapper.long0 = result.x.toRawBits().toLong().shl(32) or result.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 }
-
-@Suppress("UnusedReceiverParameter")
-inline fun Unit.decodePoint2f2(wrapper: MutableMfvcWrapper) = Point2f2(wrapper.decodeFloat00(), wrapper.decodeFloat01())
-@Suppress("UnusedReceiverParameter")
-inline fun Unit.decodeVector2f2(wrapper: MutableMfvcWrapper) = Vector2f2(wrapper.decodeFloat00(), wrapper.decodeFloat01())
-@Suppress("UnusedReceiverParameter")
-inline fun Unit.decodeLocationF2(wrapper: MutableMfvcWrapper) = LocationF2(wrapper.decodeInt00(), wrapper.decodeInt01())
 
 @JvmInline
 value class Vector2f2(val x: Float, val y: Float) {
     fun rotate(angle: Float, wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun times(factor: Float, wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x * factor, y * factor)
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun plus(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x + vector.x, y + vector.y)
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun minus(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x - vector.x, y - vector.y)
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun abs(wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(Math.abs(x), Math.abs(y))
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun xProjection(wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x, 0.0f)
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun yProjection(wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(0.0f, y)
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 }
 
@@ -96,21 +89,31 @@ value class Vector2f2(val x: Float, val y: Float) {
 value class LocationF2(val x: Int, val y: Int) {
     fun toVector(wrapper: MutableMfvcWrapper) {
         val res = Vector2f2(x.toFloat(), y.toFloat())
-        wrapper.encodeLong0(res.x, res.y)
+        wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
     }
 
     fun step(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
-        val res = LocationF2(
-            (toVector(wrapper).decodeVector2f2(wrapper).plus(vector, wrapper).decodeVector2f2(wrapper)).x.toInt(),
-            (toVector(wrapper).decodeVector2f2(wrapper).plus(vector, wrapper).decodeVector2f2(wrapper)).y.toInt()
+        toVector(wrapper)
+        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())).plus(
+            vector,
+            wrapper
         )
-        wrapper.encodeLong0(res.x, res.y)
+        toVector(wrapper)
+        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())).plus(
+            vector,
+            wrapper
+        )
+        val res = LocationF2(
+     (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).x.toInt(),
+     (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).y.toInt()
+        )
+        wrapper.long0 = res.x.toLong().shl(32) or res.y.toLong().and(0xFFFFFFFF)
     }
 }
 
 fun Float.div(vector: Vector2f2, wrapper: MutableMfvcWrapper) {
     val res = Vector2f2(this / vector.x, this / vector.y)
-    wrapper.encodeLong0(res.x, res.y)
+    wrapper.long0 = res.x.toRawBits().toLong().shl(32) or res.y.toRawBits().toLong().and(0xFFFFFFFF)
 }
 
 class MyPanelF2 : JPanel(), KeyListener, MouseListener {
@@ -125,6 +128,7 @@ class MyPanelF2 : JPanel(), KeyListener, MouseListener {
     var dir = Vector2f2(-1.0f, 0.0f) // direction vector
 
     var plane = Vector2f2(0.0f, 0.66f) //the 2d raycaster version of camera plane
+
     init {
         addKeyListener(this)
         addMouseListener(this)
@@ -153,7 +157,11 @@ class MyPanelF2 : JPanel(), KeyListener, MouseListener {
         mainLoop(g.asAbstract())
 
         g.color = Color.BLACK
-        g.drawString("Current FPS: ${DecimalFormat("#.#").format(fps)}, Min FPS: ${DecimalFormat("#.#").format(minFps)}", 10, 20)
+        g.drawString(
+            "Current FPS: ${DecimalFormat("#.#").format(fps)}, Min FPS: ${DecimalFormat("#.#").format(minFps)}",
+            10,
+            20
+        )
 
         frameCount++
     }
@@ -174,30 +182,119 @@ class MyPanelF2 : JPanel(), KeyListener, MouseListener {
         val wrapper = MutableMfvcWrapper()
         when (e.keyCode) {
             KeyEvent.VK_UP -> {
-                if(canMove((pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)), wrapper)).decodePoint2f2(wrapper))) {
-                    pos = (pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).xProjection(wrapper).decodeVector2f2(wrapper), wrapper)).decodePoint2f2(wrapper)
+                dir.times(moveSpeed, wrapper)
+                (pos.plus(
+     (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))),
+     wrapper
+ ))
+                if (canMove(
+         Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+     )
+                ) {
+                    pos = run {
+                        dir.times(moveSpeed, wrapper)
+                        (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).xProjection(
+                            wrapper
+                        )
+                        (pos.plus(
+                            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ ))
+                        Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    }
                 }
-                if(canMove((pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper), wrapper)).decodePoint2f2(wrapper))) {
-                    pos = pos.plus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper), wrapper).decodePoint2f2(wrapper)
+                dir.times(moveSpeed, wrapper)
+                (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).yProjection(
+                    wrapper
+                )
+                (pos.plus(
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ ))
+                if (canMove(
+         Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+     )
+                ) {
+                    pos = run {
+                        dir.times(moveSpeed, wrapper)
+                        (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).yProjection(
+                            wrapper
+                        )
+                        pos.plus(
+                            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ )
+                        Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    }
                 }
             }
+
             KeyEvent.VK_DOWN -> {
-                if(canMove(pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).xProjection(wrapper).decodeVector2f2(wrapper), wrapper).decodePoint2f2(wrapper))) {
-                    pos = pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).xProjection(wrapper).decodeVector2f2(wrapper), wrapper).decodePoint2f2(wrapper)
+                dir.times(moveSpeed, wrapper)
+                (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).xProjection(
+                    wrapper
+                )
+                pos.minus(
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ )
+                if (canMove(
+         Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+     )
+                ) {
+                    pos = run {
+                        dir.times(moveSpeed, wrapper)
+                        (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).xProjection(
+                            wrapper
+                        )
+                        pos.minus(
+                            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ )
+                        Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    }
                 }
-                if(canMove(pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper), wrapper).decodePoint2f2(wrapper))) {
-                    pos = pos.minus((dir.times(moveSpeed, wrapper).decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper), wrapper).decodePoint2f2(wrapper)
+                dir.times(moveSpeed, wrapper)
+                (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).yProjection(
+                    wrapper
+                )
+                pos.minus(
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ )
+                if (canMove(
+         Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+     )
+                ) {
+                    pos = run {
+                        dir.times(moveSpeed, wrapper)
+                        (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).yProjection(
+                            wrapper
+                        )
+                        pos.minus(
+                            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())), wrapper
+ )
+                        Point2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    }
                 }
             }
+
             KeyEvent.VK_LEFT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(rotSpeed, wrapper).decodeVector2f2(wrapper)
-                plane = plane.rotate(rotSpeed, wrapper).decodeVector2f2(wrapper)
+                dir = run {
+                    dir.rotate(rotSpeed, wrapper)
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
+                plane = run {
+                    plane.rotate(rotSpeed, wrapper)
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
             }
+
             KeyEvent.VK_RIGHT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(-rotSpeed, wrapper).decodeVector2f2(wrapper)
-                plane = plane.rotate(-rotSpeed, wrapper).decodeVector2f2(wrapper)
+                dir = run {
+                    dir.rotate(-rotSpeed, wrapper)
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
+                plane = run {
+                    plane.rotate(-rotSpeed, wrapper)
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
             }
         }
         repaint()
@@ -212,7 +309,7 @@ class MyPanelF2 : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionF2(graphics: AbstractGraphics) = 
+fun heavyActionF2(graphics: AbstractGraphics) =
     drawScene(Point2f2(22.0f, 12.0f), Vector2f2(-1.0f, 0.0f), Vector2f2(0.0f, 0.66f), graphics)
 
 
@@ -221,10 +318,16 @@ private fun drawScene(pos: Point2f2, dir: Vector2f2, plane: Vector2f2, g: Abstra
     for (x in 0 until screenWidth) {
         //calculate ray position and direction
         val cameraX = 2 * x / screenHeight.toFloat() - 1 //x-coordinate in camera space
+        plane.times(cameraX, wrapper)
+        dir.plus(
+            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+            wrapper
+        )
         val rayDir =
-            dir.plus(plane.times(cameraX, wrapper).decodeVector2f2(wrapper), wrapper).decodeVector2f2(wrapper)
+            Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
         //which box of the map we're in
-        var mapLocation = pos.toLocation(wrapper).decodeLocationF2(wrapper)
+        pos.toLocation(wrapper)
+        var mapLocation = LocationF2(wrapper.long0.shr(32).toInt(), wrapper.long0.toInt())
 
         //length of ray from current position to next x or y-side
         var sideDist: Vector2f2
@@ -240,7 +343,14 @@ private fun drawScene(pos: Point2f2, dir: Vector2f2, plane: Vector2f2, g: Abstra
         //stepping further below works. So the values can be computed as below.
         // Division through zero is prevented, even though technically that's not
         // needed in C++ with IEEE 754 floating point values.
-        val deltaDist = 1.0f.div(rayDir.abs(wrapper).decodeVector2f2(wrapper), wrapper).decodeVector2f2(wrapper)
+        rayDir.abs(wrapper)
+        1.0f.div(
+            Vector2f2(
+                Float.fromBits(wrapper.long0.shr(32).toInt()),
+                Float.fromBits(wrapper.long0.toInt())
+            ), wrapper
+        )
+        val deltaDist = Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
 
         var perpWallDist: Float
 
@@ -252,51 +362,156 @@ private fun drawScene(pos: Point2f2, dir: Vector2f2, plane: Vector2f2, g: Abstra
         //calculate step and initial sideDist
         if (rayDir.x < 0) {
             step = Vector2f2((-1).toFloat(), 0.0f)
-            sideDist = (pos.toVector(wrapper).decodeVector2f2(wrapper)
-                .minus(mapLocation.toVector(wrapper).decodeVector2f2(wrapper), wrapper)
-                .decodeVector2f2(wrapper)).xProjection(wrapper).decodeVector2f2(wrapper)
-                .times(deltaDist.x, wrapper).decodeVector2f2(wrapper)
+            sideDist = run {
+                pos.toVector(wrapper)
+                mapLocation.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .minus(
+                        Vector2f2(
+                            Float.fromBits(wrapper.long0.shr(32).toInt()),
+                            Float.fromBits(wrapper.long0.toInt())
+                        ), wrapper
+                    )
+                (Vector2f2(
+                    Float.fromBits(wrapper.long0.shr(32).toInt()),
+                    Float.fromBits(wrapper.long0.toInt())
+                )).xProjection(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .times(deltaDist.x, wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
         } else {
             step = Vector2f2(1.toFloat(), 0.0f)
-            sideDist = (mapLocation.toVector(wrapper).decodeVector2f2(wrapper).plus(Vector2f2(1.0f, 0.0f), wrapper)
-                .decodeVector2f2(wrapper)
-                .minus(pos.toVector(wrapper).decodeVector2f2(wrapper), wrapper).decodeVector2f2(wrapper)).xProjection(
+            sideDist = run {
+                mapLocation.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())).plus(
+                    Vector2f2(
+                        1.0f,
+                        0.0f
+                    ), wrapper
+                )
+                pos.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .minus(
+                        Vector2f2(
+                            Float.fromBits(wrapper.long0.shr(32).toInt()),
+                            Float.fromBits(wrapper.long0.toInt())
+                        ), wrapper
+                    )
+                (Vector2f2(
+                    Float.fromBits(wrapper.long0.shr(32).toInt()),
+                    Float.fromBits(wrapper.long0.toInt())
+                )).xProjection(
                     wrapper
-                ).decodeVector2f2(wrapper)
-                .times(deltaDist.x, wrapper).decodeVector2f2(wrapper)
+                )
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .times(deltaDist.x, wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
         }
         if (rayDir.y < 0) {
-            step = step.plus(Vector2f2(0.0f, (-1).toFloat()), wrapper).decodeVector2f2(wrapper)
-            sideDist = sideDist.plus(
-                (pos.toVector(wrapper).decodeVector2f2(wrapper)
-                    .minus(mapLocation.toVector(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper)
-                    .times(deltaDist.y, wrapper).decodeVector2f2(wrapper), wrapper
-            ).decodeVector2f2(wrapper)
+            step = run {
+                step.plus(Vector2f2(0.0f, (-1).toFloat()), wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
+            sideDist = run {
+                pos.toVector(wrapper)
+                mapLocation.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .minus(
+                        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                        wrapper
+                    )
+                (Vector2f2(
+                    Float.fromBits(wrapper.long0.shr(32).toInt()),
+                    Float.fromBits(wrapper.long0.toInt())
+                )).yProjection(
+                    wrapper
+                )
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .times(deltaDist.y, wrapper)
+                sideDist.plus(
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                    wrapper
+                )
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
         } else {
-            step = step.plus(Vector2f2(0.0f, 1.toFloat()), wrapper).decodeVector2f2(wrapper)
-            sideDist = sideDist.plus(
-                (mapLocation.toVector(wrapper).decodeVector2f2(wrapper).plus(Vector2f2(0.0f, 1.0f), wrapper)
-                    .decodeVector2f2(wrapper)
-                    .minus(pos.toVector(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeVector2f2(wrapper)).yProjection(wrapper).decodeVector2f2(wrapper)
-                    .times(deltaDist.y, wrapper).decodeVector2f2(wrapper), wrapper
-            ).decodeVector2f2(wrapper)
+            step = run {
+                step.plus(Vector2f2(0.0f, 1.toFloat()), wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
+            sideDist = run {
+                mapLocation.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())).plus(
+                    Vector2f2(
+                        0.0f,
+                        1.0f
+                    ), wrapper
+                )
+                pos.toVector(wrapper)
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .minus(
+                        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                        wrapper
+                    )
+                (Vector2f2(
+                    Float.fromBits(wrapper.long0.shr(32).toInt()),
+                    Float.fromBits(wrapper.long0.toInt())
+                )).yProjection(
+                    wrapper
+                )
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                    .times(deltaDist.y, wrapper)
+                sideDist.plus(
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                    wrapper
+                )
+                Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+            }
         }
         //perform DDA
         while (hit == 0) {
             //jump to next map square, either in x-direction, or in y-direction
             if (sideDist.x < sideDist.y) {
-                sideDist = sideDist.plus(deltaDist.xProjection(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeVector2f2(wrapper)
-                mapLocation = mapLocation.step(step.xProjection(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeLocationF2(wrapper)
+                sideDist = run {
+                    deltaDist.xProjection(wrapper)
+                    sideDist.plus(
+                        Vector2f2(
+                            Float.fromBits(wrapper.long0.shr(32).toInt()),
+                            Float.fromBits(wrapper.long0.toInt())
+                        ), wrapper
+                    )
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
+                mapLocation = run {
+                    step.xProjection(wrapper)
+                    mapLocation.step(
+                        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                        wrapper
+                    )
+                    LocationF2(wrapper.long0.shr(32).toInt(), wrapper.long0.toInt())
+                }
                 side = 0
             } else {
-                sideDist = sideDist.plus(deltaDist.yProjection(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeVector2f2(wrapper)
-                mapLocation = mapLocation.step(step.yProjection(wrapper).decodeVector2f2(wrapper), wrapper)
-                    .decodeLocationF2(wrapper)
+                sideDist = run {
+                    deltaDist.yProjection(wrapper)
+                    sideDist.plus(
+                        Vector2f2(
+                            Float.fromBits(wrapper.long0.shr(32).toInt()),
+                            Float.fromBits(wrapper.long0.toInt())
+                        ), wrapper
+                    )
+                    Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))
+                }
+                mapLocation = run {
+                    step.yProjection(wrapper)
+                    mapLocation.step(
+                        Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt())),
+                        wrapper
+                    )
+                    LocationF2(wrapper.long0.shr(32).toInt(), wrapper.long0.toInt())
+                }
                 side = 1
             }
             //Check if ray has hit a wall
@@ -309,8 +524,13 @@ private fun drawScene(pos: Point2f2, dir: Vector2f2, plane: Vector2f2, g: Abstra
         //because they were left scaled to |rayDir|. sideDist is the entire length of the ray above after the multiple
         //steps, but we subtract deltaDist once because one step more into the wall was taken above.
         perpWallDist =
-            if (side == 0) (sideDist.minus(deltaDist, wrapper).decodeVector2f2(wrapper)).x
-            else (sideDist.minus(deltaDist, wrapper).decodeVector2f2(wrapper)).y
+            if (side == 0) {
+                sideDist.minus(deltaDist, wrapper)
+                (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).x
+            } else {
+                sideDist.minus(deltaDist, wrapper)
+                (Vector2f2(Float.fromBits(wrapper.long0.shr(32).toInt()), Float.fromBits(wrapper.long0.toInt()))).y
+            }
 
         //Calculate height of line to draw on screen
         val lineHeight = (screenHeight / perpWallDist).toInt()
