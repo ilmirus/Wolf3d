@@ -54,12 +54,18 @@ val worldMap = arrayOf(
 )
 
 interface AbstractGraphics {
-    var color: Color
+    var color: Any
     fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int)
+    
+    fun makeColor(value: Int): Any
 }
 
 fun Graphics2D.asAbstract(): AbstractGraphics = object : AbstractGraphics {
-    override var color: Color by this@asAbstract::color
+    override var color: Any 
+        get() = this@asAbstract::color
+        set(value) { this@asAbstract.color = value as Color }
 
     override fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int) = this@asAbstract.drawLine(x1, y1, x2, y2)
+
+    override fun makeColor(value: Int): Any = Color(value)
 }

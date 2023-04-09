@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 @State(Scope.Thread)
 open class JmhBenchmark {
     private fun makeGraphics(bh: Blackhole) = object : AbstractGraphics {
-        override var color: Color
+        override var color: Any
             get() = error("Stub color")
             set(value) {
                 bh.consume(value)
@@ -25,6 +25,8 @@ open class JmhBenchmark {
             bh.consume(x2)
             bh.consume(y2)
         }
+
+        override fun makeColor(value: Int): Any = Color(value)
     }
     
     
