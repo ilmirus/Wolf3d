@@ -18,7 +18,7 @@ import org.junit.runner.RunWith
 class AndroidBenchmark {
     
     private object Graphics : AbstractGraphics {
-        override var color: Any = Any()
+        private var color: Int=  0
         private var x1: Int = 0
         private var y1: Int = 0
         private var x2: Int = 0
@@ -31,7 +31,9 @@ class AndroidBenchmark {
             this.y2 = y2
         }
 
-        override fun makeColor(value: Int): Any = value
+        override fun setIntColor(value: Int) {
+            color = value
+        }
     }
 
     @get:Rule

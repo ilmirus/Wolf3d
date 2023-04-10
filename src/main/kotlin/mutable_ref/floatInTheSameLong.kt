@@ -555,7 +555,7 @@ private fun drawScene(pos: Point2f2, dir: Vector2f2, plane: Vector2f2, g: Abstra
         }
 
         //draw the pixels of the stripe as a vertical line
-        g.color = g.makeColor(color)
+        g.setIntColor(color)
         g.drawLine(x, drawStart, x, drawEnd)
     }
 }
