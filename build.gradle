@@ -24,13 +24,18 @@ test {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.20"
-    jmh 'commons-io:commons-io:2.7'
+    jmh 'commons-io:commons-io:2.11.0'
 }
 
 tasks.withType(KotlinCompile).configureEach {
     kotlinOptions {
         languageVersion = "2.0"
         kotlinOptions.freeCompilerArgs += ["-Xvalue-classes"]
-        jvmTarget = "11"
+    }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
