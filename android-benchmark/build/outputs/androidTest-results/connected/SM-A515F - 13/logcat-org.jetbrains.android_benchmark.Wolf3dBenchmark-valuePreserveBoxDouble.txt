@@ -1,0 +1,239 @@
+04-16 04:36:23.167 20153 20177 I TestRunner: started: valuePreserveBoxDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-16 04:36:23.171 20153 20153 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-16 04:36:23.171 20153 20153 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
+04-16 04:36:23.176 20153 20177 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-16 04:36:23.177 20153 20177 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-16 04:36:23.177 20153 20177 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valuePreserveBoxDouble --
+04-16 04:36:23.177 20153 20177 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-16 04:36:23.177 20153 20177 D PerfettoCapture: Recording perfetto trace
+04-16 04:36:23.208  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-16 04:36:23.226 20153 20177 I PerfettoCapture: Cleanup perfetto before starting.
+04-16 04:36:23.228 23292 22456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45628 [CONTEXT service_id=218 ]
+04-16 04:36:23.232 23292 22456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 49 uptime_millis: 48 exec_start_elapsed_seconds: 45628 [CONTEXT service_id=218 ]
+04-16 04:36:23.402 20153 20177 I PerfettoCapture: Perfetto output file cleanup -
+04-16 04:36:23.403 20153 20177 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-16 04:36:23.597 23018 23018 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-16 04:36:23.599  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 61, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-16 04:36:23.600  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=121)
+04-16 04:36:23.614  5628  8409 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-16 04:36:23.615  5628  8409 I ChimeraAggressivePolicyHandler: available memory: 1060704, free memory target: 870400, quit chimera
+04-16 04:36:23.642 20153 20177 I PerfettoCapture: Perfetto output - 23018
+04-16 04:36:23.642 20153 20177 I PerfettoCapture: EXITCODE=0
+04-16 04:36:23.664  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:36:23.692  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-16 04:36:23.762 20153 20177 I PerfettoCapture: Perfetto tracing started successfully with pid 23018.
+04-16 04:36:23.843 20153 20177 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-16 04:36:23.845 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -20. Was -8, now -20
+04-16 04:36:23.845 20153 20177 D Benchmark: Set 20162 (Jit) to priority -15. Was 9, now -15
+04-16 04:36:23.885 20153 20177 I _benchmark.test: Explicit concurrent copying GC freed 877709(13MB) AllocSpace objects, 1(20KB) LOS objects, 68% free, 2887KB/9031KB, paused 447us,111us total 39.860ms
+04-16 04:36:24.501  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4898, isSameBssidAndFreq true
+04-16 04:36:24.506  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.137 ms / 58.500 Mbps (117 / 0.000 / 2.000)
+04-16 04:36:24.508  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:36:24.512  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:36:26.849 23292 22277 I PhenotypeProcessReaper: Memory state is: 125
+04-16 04:36:27.164  5224  5224 E audit   : type=1400 audit(1681612587.159:17708): avc:  denied  { getattr } for  pid=5628 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5628" dev="debugfs" ino=25430 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-16 04:36:27.165  5224  5224 E audit   : type=1300 audit(1681612587.159:17708): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=7d1507aac0 a2=7cffeb1680 a3=0 items=0 ppid=5250 pid=5628 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-16 04:36:27.165  5224  5224 E audit   : type=1327 audit(1681612587.159:17708): proctitle="system_server"
+04-16 04:36:27.527  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4899, isSameBssidAndFreq true
+04-16 04:36:27.530  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (117 / 0.000 / 1.000)
+04-16 04:36:27.530  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:36:27.532  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:36:30.563  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4900, isSameBssidAndFreq true
+04-16 04:36:30.574  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:36:30.575  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (117 / 0.000 / 1.000)
+04-16 04:36:30.579  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:36:32.899   853  1152 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [androidx.work.impl.utils.o.a(PG:1)] [androidx.work.impl.a.b.l.d(PG:2)] [androidx.work.impl.a.e.a(PG:17)] [androidx.work.impl.background.a.c.c(PG:38)] [androidx.work.impl.background.a.a.run(PG:2)]
+04-16 04:36:32.902  5628 11213 D ConnectivityService: requestNetwork for uid/pid:10233/853 activeRequest: null callbackRequest: 3923 [NetworkRequest [ REQUEST id=3924, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10233 RequestorUid: 10233 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+04-16 04:36:32.903  5628  8367 D ConnectivityService:    accepting network in place of null
+04-16 04:36:32.909  5628  8356 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=3924, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10233 RequestorUid: 10233 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
+04-16 04:36:32.911  5628  8356 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3924, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10233 RequestorUid: 10233 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
+04-16 04:36:32.912  5628  8356 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3924, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10233 RequestorUid: 10233 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
+04-16 04:36:32.913  5628  8356 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=3924, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10233 RequestorUid: 10233 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]
+04-16 04:36:32.923  5628  8367 D ConnectivityService: Rematched networks [computed 1ms] [applied 2ms] [issued 18]
+04-16 04:36:32.923  5628  8367 D ConnectivityService: NetworkReassignment :
+04-16 04:36:32.923  5628  8367 D ConnectivityService:   3924 : null → 106
+04-16 04:36:33.185   853   853 I A       : binding FedoraSynclet
+04-16 04:36:33.309   853   853 I SavesShareReceiver: (REDACTED) #device eligible for sharesheet: %s
+04-16 04:36:33.311   853   853 I SavesShareReceiver: (REDACTED) #sharesheet enabled: %s
+04-16 04:36:33.312   853   853 I SavesShareReceiver: (REDACTED) AvailabilityUtils.updateAvailability() componentEnabled: %s
+04-16 04:36:33.314  5628  9148 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = com.google.android.apps.search.googleapp.saves.savefeature.sharereceiver.SavesShareReceiver newState = 1 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:33.316  5628  9148 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:33.318  5628  9148 D ApplicationPolicy: getApplicationComponentState : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:33.322   853   853 I SavesShareReceiver: (REDACTED) Update complete. %s enabled: %s
+04-16 04:36:33.323   853   853 I SavesShareReceiver: #synclet interval set for every : 12 hours
+04-16 04:36:33.367   853   853 I A       : WeatherWidgetSynclet is disabled, at least Android S and any Pixel is required.
+04-16 04:36:33.390  5628  9148 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = com.google.android.apps.search.assistant.verticals.familyshare.FamilyShareActivity newState = 2 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:33.592  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4901, isSameBssidAndFreq true
+04-16 04:36:33.595  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (117 / 0.000 / 1.000)
+04-16 04:36:33.869   853  1014 I A       : (REDACTED) Attempting to cache the data for enabled corpora %s.
+04-16 04:36:33.883   853  1010 I A       : (REDACTED) Starting batch sync for corpora: %s
+04-16 04:36:33.970   853 23061 I A       : (REDACTED) The syncToken for corpus %s is %s.
+04-16 04:36:33.978   853 23061 I A       : (REDACTED) The syncToken for corpus %s is %s.
+04-16 04:36:34.027  5628  8457 D NetdEventListenerService: DNS Requested by : 106, 10233
+04-16 04:36:34.046   853 23061 D TrafficStats: tagSocket(126) with statsTag=0x0, statsUid=-1
+04-16 04:36:34.492   853 23061 I A       : (REDACTED) Writing data for these Geller corpora: %s
+04-16 04:36:34.523   853 23061 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+04-16 04:36:34.537   853 23061 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+04-16 04:36:34.579   853 23061 I A       : (REDACTED) Writing data for these Geller corpora: %s
+04-16 04:36:34.582   853 23061 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+04-16 04:36:34.588   853 23061 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+04-16 04:36:34.592   853 23061 I A       : (REDACTED) Writing metadata key: %s, corpus: %s
+04-16 04:36:34.657   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.658   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.660   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.690   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.690   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.691   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.700   853  1015 I SettingsDataLayer.PR: PR status onSyncCompleted called in TNG
+04-16 04:36:34.734   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.735   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.735   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.743   853  1010 I A       : Geller-AiAi egress is not enabled
+04-16 04:36:34.753   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.757   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.757   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.759 10932 12245 I SettingsDataLayer.CN: (REDACTED) OnChange called on field %s
+04-16 04:36:34.763   853  1014 I SettingsDataLayer.PR: (REDACTED) PR status onSyncCompleted updated in TNG to %s
+04-16 04:36:34.771   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.771   853  1015 I A       : Proto config empty. Exit merge.
+04-16 04:36:34.782   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.783   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.784   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.797   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.798   853  1015 I A       : Proto config empty. Exit merge.
+04-16 04:36:34.810   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.810   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.811   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.813   853  1015 I A       : getLocaleToModelSpecsMap
+04-16 04:36:34.813   853  1015 I A       : Proto config empty. Exit merge.
+04-16 04:36:34.821   853  1015 I A       : PR status onSyncCompleted called
+04-16 04:36:34.839   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.851   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.851   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.852   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.852   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.852   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.853   853   977 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.853   853   977 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.853   853   977 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.872   853 23075 I A       : (REDACTED) PR status onSyncCompleted updated to %s
+04-16 04:36:34.875   853  1010 E A       : (REDACTED) Failed to share %s data to AiAi.
+04-16 04:36:34.875   853  1010 E A       : com.google.android.libraries.geller.d.f: Geller AiAi data share is not enabled
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.apps.search.assistant.libraries.d.b.g.c(PG:2)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.apps.search.assistant.libraries.d.b.g.b(PG:1)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.apps.search.assistant.libraries.d.b.a.d.a(PG:4)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.apps.tiktok.tracing.eu.a(PG:3)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.common.util.concurrent.bc.a(PG:1)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.common.util.concurrent.cw.run(PG:4)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.libraries.i.y.run(PG:1)
+04-16 04:36:34.875   853  1010 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+04-16 04:36:34.875   853  1010 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.libraries.i.g.run(PG:2)
+04-16 04:36:34.875   853  1010 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+04-16 04:36:34.875   853  1010 E A       : 	at com.google.android.libraries.i.ah.run(PG:5)
+04-16 04:36:34.903   853   977 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=4d9159f8-ee61-4458-8519-6bdd69551044, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.apps.tiktok.sync.impl.workmanager.SyncWorker } ]
+04-16 04:36:34.946 23292 23292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+04-16 04:36:34.948   853   853 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.unregisterNetworkCallback(ConnectivityManager.java:4863)] [androidx.work.impl.utils.m.b(PG:1)] [androidx.work.impl.a.b.l.e(PG:2)] [androidx.work.impl.a.b.i.f(PG:2)] [androidx.work.impl.a.e.a(PG:13)] [androidx.work.impl.background.a.c.a(PG:7)] [androidx.work.impl.s.a(PG:8)] [androidx.work.impl.r.run(PG:2)]
+04-16 04:36:34.951  5628  8367 D ConnectivityService:  Removing from current network [106 WIFI], leaving 148 requests.
+04-16 04:36:34.955   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.956   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.956   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.957   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.957   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.957   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.958   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:34.958   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:34.963   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:34.964 23292 23292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.udc.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-16 04:36:35.022   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.023   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.023   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.024 23292 23292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+04-16 04:36:35.024 23292 23292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+04-16 04:36:35.025   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.025   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.026   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.027   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.028   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.028   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.032   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.033   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.033   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.035   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.035   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.035   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.036  5628 11213 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:35.038   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.038   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.039   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.040  5628 11213 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.041   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.041  5628 11213 D ApplicationPolicy: getApplicationComponentState : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.041   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.042   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.043   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.043   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.043   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.044   853   975 I A       : Flag is_largescreen_foldable_phone is false
+04-16 04:36:35.044   853   975 I A       : (REDACTED) Flag is_whitelisted_as_tablet is %b
+04-16 04:36:35.045   853   975 I A       : (REDACTED) R.bool.is_tablet is %b
+04-16 04:36:35.055   853   975 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+04-16 04:36:35.173  5628 11213 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:35.174  5628 11213 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.175  5628 11213 D ApplicationPolicy: getApplicationComponentState : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.290  5628  9148 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:35.291  5628  9148 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.292  5628  9148 D ApplicationPolicy: getApplicationComponentState : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.375  5628 11213 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.googlequicksearchbox cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10233/com.google.android.googlequicksearchbox
+04-16 04:36:35.376  5628 11213 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.377  5628 11213 D ApplicationPolicy: getApplicationComponentState : pkg = com.google.android.googlequicksearchbox userId : 0
+04-16 04:36:35.961 23292 22456 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD flg=0x4 cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction NO_RECEIVER_ACTION
+04-16 04:36:36.056 23292 22456 I GCoreUlr: WorldUpdater:NO_RECEIVER_ACTION: Ensuring that reporting is active for [account#-1#]
+04-16 04:36:36.420 20153 20177 D Benchmark: timeNs[ 0:10]: 11714937 12238062 12740567 11410129 11381985 11838673 10787552 11111197 10877668 11192235
+04-16 04:36:36.420 20153 20177 D Benchmark: timeNs[10:20]: 11040682 10967740 10416346 11087759 10690581 10392947 11347860 10651475 10568514 10365966
+04-16 04:36:36.420 20153 20177 D Benchmark: timeNs[20:30]: 10892004 10929403 11058274 10499711 12007081 12533245 11218846 12478552 11261600 11094682
+04-16 04:36:36.420 20153 20177 D Benchmark: timeNs[30:40]: 10559802 11148370 10970153 11223221 10737307 11533413 11326721 11257841 11414187 11860673
+04-16 04:36:36.420 20153 20177 D Benchmark: timeNs[40:50]: 11523225 11836754 11764552 11644706 11967567 10995581 11221990 11633399 12056591 11554620
+04-16 04:36:36.540  5628  5628 D SemWifiP2pGoPowerSave: GopsReceiver : received : com.samsung.intent.action.CHECK_SIOP_LEVEL
+04-16 04:36:36.540  5628  5628 I SemWifiP2pGoPowerSave: siop_level = 1
+04-16 04:36:36.543 11099 11129 I SystemBroadcastReceiver: [#CMH#] onReceive completed :  0
+04-16 04:36:36.544 11099 11099 I PolicyManager: [#CMH#] onReceive action = EVENT_SIOP
+04-16 04:36:36.618  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4902, isSameBssidAndFreq true
+04-16 04:36:36.621  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.162 ms / 49.500 Mbps (117 / 0.000 / 2.364)
+04-16 04:36:36.622  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:36:36.623  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:36:37.285 20153 20177 D Benchmark: allocationCount[ 0:10]: 242272 242272 242271 242271 242272
+04-16 04:36:37.285 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -8. Was -20, now -8
+04-16 04:36:37.285 20153 20177 D Benchmark: Set 20162 (Jit) to priority 9. Was -15, now 9
+04-16 04:36:37.285 20153 20177 D Benchmark: Warmup: t=8.006, iter=683, fastAvg=11532314, slowAvg=14734153
+04-16 04:36:37.286 20153 20177 I PerfettoCapture: Stopping perfetto.
+04-16 04:36:37.334 23018 23018 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-16 04:36:37.352 20153 20177 D Benchmark: kill -TERM command output -
+04-16 04:36:37.354  9877 23090 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+04-16 04:36:37.356  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=241)
+04-16 04:36:37.358  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-16 04:36:37.422  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:36:37.429  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=242)
+04-16 04:36:37.429  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=243)
+04-16 04:36:37.819 23018 23018 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-16 04:36:37.840  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 61 ended, total sessions:0
+04-16 04:36:37.981 20153 20177 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=23018)] to die
+04-16 04:36:38.076  5628  8445 D WifiConnectivityMonitor: start WCM Poll.
+04-16 04:36:38.097  5331  5331 I SurfaceFlinger: SFWD update time=27996438492513
+04-16 04:36:38.112 20153 20177 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valuePreserveBoxDouble_2023-04-16-02-36-37.perfetto-trace.
+04-16 04:36:38.286 23292 23292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-16 04:36:38.330 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valuePreserveBoxDouble_2023-04-16-02-36-37.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valuePreserveBoxDouble_2023-04-16-02-36-37.perfetto-trace
+04-16 04:36:38.364 10919 22987 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:36:38.402  5628  9148 D SyncManager: userId - 0 auto - true
+04-16 04:36:38.552 11099 11136 I PolicyManager: [#CMH#] Is foreground game app: false
+04-16 04:36:38.616 20153 20177 I Benchmark: Wolf3dBenchmark.valuePreserveBoxDouble[Metric (timeNs) results: median 1.12226058125E7, min 1.0365966375E7, max 1.2740567375E7, standardDeviation: 567258.6931291434, Metric (allocationCount) results: median 242272.0, min 242271.5, max 242272.625, standardDeviation: 0.4592793267718459]count=8
+04-16 04:36:38.624 20153 20177 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:36:38.632 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:36:38.662  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-16 04:36:38.675 23292 22776 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45644 [CONTEXT service_id=218 ]
+04-16 04:36:38.686 23292 22456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 33 uptime_millis: 34 exec_start_elapsed_seconds: 45644 [CONTEXT service_id=218 ]
+04-16 04:36:38.774  5628 11262 D SyncManager: userId - 0 auto - true
+04-16 04:36:38.799 10919 23108 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-16 04:36:38.815 10919 22556 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:36:38.867  5628 11464 D SyncManager: userId - 0 auto - true
+04-16 04:36:38.872 20153 20177 I TestRunner: finished: valuePreserveBoxDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)

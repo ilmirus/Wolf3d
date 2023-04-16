@@ -1,0 +1,60 @@
+04-16 04:35:50.484 20153 20177 I TestRunner: started: longPackInt(org.jetbrains.android_benchmark.FibonacciBenchmark)
+04-16 04:35:50.488 20153 20153 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-16 04:35:50.489 20153 20153 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
+04-16 04:35:50.496 20153 20177 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-16 04:35:50.496 20153 20177 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-16 04:35:50.496 20153 20177 D Benchmark: -- Running org.jetbrains.android_benchmark.FibonacciBenchmark#longPackInt --
+04-16 04:35:50.496 20153 20177 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-16 04:35:50.497 20153 20177 D PerfettoCapture: Recording perfetto trace
+04-16 04:35:50.531 20153 20177 I PerfettoCapture: Cleanup perfetto before starting.
+04-16 04:35:50.735 20153 20177 I PerfettoCapture: Perfetto output file cleanup -
+04-16 04:35:50.735 20153 20177 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-16 04:35:50.907 22748 22748 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-16 04:35:50.910  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 58, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-16 04:35:50.912  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=115)
+04-16 04:35:50.956 20153 20177 I PerfettoCapture: Perfetto output - 22748
+04-16 04:35:50.956 20153 20177 I PerfettoCapture: EXITCODE=0
+04-16 04:35:50.978  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:35:51.000  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-16 04:35:51.068 20153 20177 I PerfettoCapture: Perfetto tracing started successfully with pid 22748.
+04-16 04:35:51.116  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4887, isSameBssidAndFreq true
+04-16 04:35:51.124  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:35:51.127  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:35:51.129  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.091 ms / 87.500 Mbps (175 / 0.000 / 2.000)
+04-16 04:35:51.184 20153 20177 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-16 04:35:51.185 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -20. Was -8, now -20
+04-16 04:35:51.186 20153 20177 D Benchmark: Set 20162 (Jit) to priority -15. Was 9, now -15
+04-16 04:35:51.225 20153 20177 I _benchmark.test: Explicit concurrent copying GC freed 12452(877KB) AllocSpace objects, 1(20KB) LOS objects, 68% free, 2873KB/9017KB, paused 343us,118us total 38.585ms
+04-16 04:35:52.055 20153 20177 D Benchmark: timeNs[ 0:10]: 207 206 194 174 174 175 174 174 174 174
+04-16 04:35:52.055 20153 20177 D Benchmark: timeNs[10:20]: 175 175 175 175 175 174 174 175 175 175
+04-16 04:35:52.055 20153 20177 D Benchmark: timeNs[20:30]: 175 174 174 174 174 174 174 175 175 175
+04-16 04:35:52.055 20153 20177 D Benchmark: timeNs[30:40]: 175 175 174 175 174 174 174 174 175 174
+04-16 04:35:52.055 20153 20177 D Benchmark: timeNs[40:50]: 174 174 175 175 175 175 174 174 175 175
+04-16 04:35:52.094 20153 20177 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
+04-16 04:35:52.094 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -8. Was -20, now -8
+04-16 04:35:52.094 20153 20177 D Benchmark: Set 20162 (Jit) to priority 9. Was -15, now 9
+04-16 04:35:52.094 20153 20177 D Benchmark: Warmup: t=0.251, iter=83049, fastAvg=2343, slowAvg=2338
+04-16 04:35:52.095 20153 20177 I PerfettoCapture: Stopping perfetto.
+04-16 04:35:52.141 22748 22748 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-16 04:35:52.144 20153 20177 D Benchmark: kill -TERM command output -
+04-16 04:35:52.152  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=229)
+04-16 04:35:52.156  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-16 04:35:52.210  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:35:52.218  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=230)
+04-16 04:35:52.220  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=231)
+04-16 04:35:52.236 22748 22748 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-16 04:35:52.237  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 58 ended, total sessions:0
+04-16 04:35:52.273 20153 20177 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/FibonacciBenchmark_longPackInt_2023-04-16-02-35-52.perfetto-trace.
+04-16 04:35:52.327 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/FibonacciBenchmark_longPackInt_2023-04-16-02-35-52.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/FibonacciBenchmark_longPackInt_2023-04-16-02-35-52.perfetto-trace
+04-16 04:35:52.363 10919 22663 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:35:52.392  5628 11104 D SyncManager: userId - 0 auto - true
+04-16 04:35:52.436 20153 20177 I Benchmark: FibonacciBenchmark.longPackInt[Metric (timeNs) results: median 175.09018928035982, min 174.32477511244377, max 207.1587331334333, standardDeviation: 6.819331178688192, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=42688
+04-16 04:35:52.450 20153 20177 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:35:52.461 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:35:52.486  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-16 04:35:52.489 10919 22662 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-16 04:35:52.500  5628 11104 D SyncManager: userId - 0 auto - true
+04-16 04:35:52.503 10919 22663 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:35:52.505 23292 22278 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45598 [CONTEXT service_id=218 ]
+04-16 04:35:52.516  5628 11104 D SyncManager: userId - 0 auto - true
+04-16 04:35:52.518 20153 20177 I TestRunner: finished: longPackInt(org.jetbrains.android_benchmark.FibonacciBenchmark)

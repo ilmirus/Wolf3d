@@ -1,0 +1,172 @@
+04-16 04:36:55.091 20153 20177 I TestRunner: started: baselineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-16 04:36:55.096 20153 20153 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-16 04:36:55.097 20153 20153 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
+04-16 04:36:55.103 20153 20177 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-16 04:36:55.104 20153 20177 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-16 04:36:55.104 20153 20177 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#baselineDouble --
+04-16 04:36:55.104 20153 20177 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-16 04:36:55.104 20153 20177 D PerfettoCapture: Recording perfetto trace
+04-16 04:36:55.136 20153 20177 I PerfettoCapture: Cleanup perfetto before starting.
+04-16 04:36:55.185  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-16 04:36:55.258 23292 22776 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45660 [CONTEXT service_id=218 ]
+04-16 04:36:55.274 23292 22882 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 116 uptime_millis: 116 exec_start_elapsed_seconds: 45660 [CONTEXT service_id=218 ]
+04-16 04:36:55.287  5628  5647 I system_server: Background young concurrent copying GC freed 504218(22MB) AllocSpace objects, 23(1232KB) LOS objects, 19% free, 95MB/119MB, paused 1.631ms,592us total 131.919ms
+04-16 04:36:55.288 20153 20177 I PerfettoCapture: Perfetto output file cleanup -
+04-16 04:36:55.288 20153 20177 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-16 04:36:55.311  5628  5649 W System  : A resource failed to call close.
+04-16 04:36:55.312  5628  5649 W System  : A resource failed to call close.
+04-16 04:36:55.468 23247 23247 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-16 04:36:55.469  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 63, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-16 04:36:55.471  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=125)
+04-16 04:36:55.527 20153 20177 I PerfettoCapture: Perfetto output - 23247
+04-16 04:36:55.527 20153 20177 I PerfettoCapture: EXITCODE=0
+04-16 04:36:55.537  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:36:55.581  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-16 04:36:55.649 20153 20177 I PerfettoCapture: Perfetto tracing started successfully with pid 23247.
+04-16 04:36:55.737 20153 20177 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-16 04:36:55.739 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -20. Was -8, now -20
+04-16 04:36:55.740 20153 20177 D Benchmark: Set 20162 (Jit) to priority -15. Was 9, now -15
+04-16 04:36:55.780 20153 20177 I _benchmark.test: Explicit concurrent copying GC freed 668644(10MB) AllocSpace objects, 1(20KB) LOS objects, 68% free, 2890KB/9034KB, paused 483us,105us total 39.396ms
+04-16 04:36:57.249  5224  5224 E audit   : type=1400 audit(1681612617.243:17709): avc:  denied  { getattr } for  pid=5628 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5628" dev="debugfs" ino=25430 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-16 04:36:57.250  5224  5224 E audit   : type=1300 audit(1681612617.243:17709): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=7d1fde3670 a2=7cffeb1680 a3=0 items=0 ppid=5250 pid=5628 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-16 04:36:57.250  5224  5224 E audit   : type=1327 audit(1681612617.243:17709): proctitle="system_server"
+04-16 04:36:57.835  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4909, isSameBssidAndFreq true
+04-16 04:36:57.844  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (117 / 0.000 / 1.000)
+04-16 04:36:57.845  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:36:57.849  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:37:00.007  8513  8513 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+04-16 04:37:00.008  8513  8513 D KeyguardUpdateMonitor: handleTimeUpdate
+04-16 04:37:00.012  8513  8513 D FaceWidgetPagesController: onTimeChanged()
+04-16 04:37:00.016  8513  9203 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:null
+04-16 04:37:00.026  8513  8513 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:04:37, TimeContentDescription:04:37, DateText:Sun, 16 April, ShortDateText:Sun, 16 Apr, Demo:false, QuickStar-Second(false|12:34:56))))
+04-16 04:37:00.028  8513  8513 D QSClockIndicatorView: Home Indicator status_bar_clock 04:37 notifyTimeChanged(QSClockBellSound - TimeText:04:37, TimeContentDescription:04:37, DateText:Sun, 16 April, ShortDateText:Sun, 16 Apr, Demo:false, QuickStar-Second(false|12:34:56)) ClockVisibleByPolicy:true, ClockVisibleByUser:true, visible?false, parent:android.widget.LinearLayout{883fb58 V.E...... ......I. 0,0-0,55 #7f0b04f0 app:id/left_clock_container}
+04-16 04:37:00.029  8513  8513 D QSClockBellTower: Everyone heard the bell. run(currentTime:1681612620023,   getTime():Sun Apr 16 04:37:00 GMT+02:00 2023,   getTimeZone():libcore.util.ZoneInfo[mDstSavings=3600000,mUseDst=true,mDelegate=[id="Europe/Belgrade",mRawOffset=3600000,mEarliestRawOffset=4920000,transitions=119]])
+04-16 04:37:00.056  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 813
+04-16 04:37:00.057  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 813
+04-16 04:37:00.057  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-16 04:37:00.057  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-16 04:37:00.060  8513  8513 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-16 04:37:00.073  8513  8513 V QsExpandAnimator: updateAnimators
+04-16 04:37:00.073  8513  8513 V QsExpandAnimator: clearAnimationState
+04-16 04:37:00.073  8513  8513 V QsExpandAnimator: updateViews
+04-16 04:37:00.078  8513  8513 V QsExpandAnimator: updateTileAnimator
+04-16 04:37:00.080  8513  8513 V QsExpandAnimator: updateHeaderAnimator
+04-16 04:37:00.082  8513  8513 V QsExpandAnimator: updateBarAnimator
+04-16 04:37:00.082  8513  8513 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-16 04:37:00.082  8513  8513 V QsExpandAnimator: onAnimationAtStart
+04-16 04:37:00.884  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4910, isSameBssidAndFreq true
+04-16 04:37:00.888  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.068 ms / 117.000 Mbps (117 / 0.000 / 1.000)
+04-16 04:37:00.889  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:37:00.891  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:37:01.744  8513  8599 D MobileStatusTracker(1/2): onSignalStrengthsChanged level=2, vendorLevel=2
+04-16 04:37:01.753  8513  8599 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=false, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-16 04:37:01.753  8513  8599 D NetworkController: SignalStrength from intent slotId=1
+04-16 04:37:01.934  5628  8409 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-16 04:37:01.937  5628  8409 I ChimeraAggressivePolicyHandler: available memory: 1070216, free memory target: 870400, quit chimera
+04-16 04:37:03.235  5628 23289 D TrafficStats: tagSocket(892) with statsTag=0xffffffff, statsUid=-1
+04-16 04:37:03.444  5628 23289 D WifiConnectivityMonitor.DnsThread:  [|211]
+04-16 04:37:03.445  5628  8444 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 211
+04-16 04:37:03.446  5628  8438 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-16 04:37:03.446  5628  8438 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-16 04:37:03.446  5628  8438 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-16 04:37:03.447  5628  8438 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 30
+04-16 04:37:03.448  5628  8438 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-16 04:37:03.449  5628  9412 V WifiProfileShare.Caster: update wips network, size: 0
+04-16 04:37:03.449  5628  9412 D WifiProfileShare: nearby scanning settings run
+04-16 04:37:03.450  5628  9412 D WifiProfileShare: network score provider settings enabled
+04-16 04:37:03.452  5628  9412 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 26 30
+04-16 04:37:03.452  5628  9412 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-16 04:37:03.453  5628  9412 I WifiProfileShare.Caster: current network type: 0, score: [26, 26, 30]
+04-16 04:37:03.456  5628  9412 V WifiProfileShare.Cache: update network score 00:e4:06:**:**:90
+04-16 04:37:03.456  5628  9412 D WifiProfileShare.ScanMatcher: getMcfDataList size:2
+04-16 04:37:03.457  5628  9412 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:51:2e:90, qosData:7c after:type:QOS, pBssid:51:2e:90, qosData:7c
+04-16 04:37:03.461  5628  9412 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-16 04:37:03.461  5628  9412 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-16 04:37:03.461  5628  9412 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-16 04:37:03.461  5628  9412 D WifiProfileShare.MCF: success update QosData !
+04-16 04:37:03.465  5628  9412 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-16 04:37:03.465  5628  9412 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-16 04:37:03.465  5628  9412 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:2
+04-16 04:37:03.922  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4911, isSameBssidAndFreq true
+04-16 04:37:03.931  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:37:03.932  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.137 ms / 58.500 Mbps (117 / 0.000 / 2.000)
+04-16 04:37:03.934  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:37:05.102  8513  8599 D MobileStatusTracker(0/1): onSignalStrengthsChanged level=2, vendorLevel=2
+04-16 04:37:05.104  8513  8599 D MobileSignalController(0/1): notifyListener: enabled=true, connected=true, dataConnected=false, networkType=LTE (4G), emergencyOnly=false, roaming=true, isDefault=false, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-16 04:37:05.104  8513  8599 D NetworkController: SignalStrength from intent slotId=0
+04-16 04:37:06.980  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4912, isSameBssidAndFreq true
+04-16 04:37:06.986  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:37:06.988  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.137 ms / 58.500 Mbps (117 / 0.000 / 2.000)
+04-16 04:37:06.989  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:37:08.098  5331  5331 I SurfaceFlinger: SFWD update time=28026439356414
+04-16 04:37:08.374 20153 20177 D Benchmark: timeNs[ 0:10]: 11201952 11940355 11766365 11356134 11856927 11735538 10886490 11149254 10407591 10862182
+04-16 04:37:08.374 20153 20177 D Benchmark: timeNs[10:20]: 11126750 11571591 10866524 10635750 11406726 12884476 11241533 11625158 11342336 11835009
+04-16 04:37:08.375 20153 20177 D Benchmark: timeNs[20:30]: 11379995 10389052 10792355 11492490 12773317 11215418 12404783 11782932 10966081 11310600
+04-16 04:37:08.375 20153 20177 D Benchmark: timeNs[30:40]: 11276413 10963745 10400346 11541394 12176129 10950913 11288942 11655942 10980495 10839456
+04-16 04:37:08.375 20153 20177 D Benchmark: timeNs[40:50]: 11194456 12121668 11608216 11871870 11329374 11258870 12459336 12119129 11802153 11665336
+04-16 04:37:08.559 20153 20177 W _benchmark.test: Suspending all threads took: 8.451ms
+04-16 04:37:08.727  9877 23321 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+04-16 04:37:08.755 20153 20177 W _benchmark.test: Suspending all threads took: 21.039ms
+04-16 04:37:08.762 20153 20177 W _benchmark.test: Suspending all threads took: 6.046ms
+04-16 04:37:09.244  5628  8409 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-16 04:37:09.247  4376  4376 I lmkd    : cached 1, sandbox(not0) 0
+04-16 04:37:09.251  4376  4376 I lmkd    : Reclaim 'android:drmService' (1717), uid 1000, oom_score_adj 999, state 10 to free 23536kB rss, 41100kb swap
+04-16 04:37:09.252  4376  4376 I lmkd    : Reclaimed 64636kB at oom_score_adj 850
+04-16 04:37:09.253  5628  8409 I ChimeraAggressivePolicyHandler: available memory: 1046252, free memory target: 870400, quit chimera
+04-16 04:37:09.283  5250  5250 I Zygote  : Process 1717 exited due to signal 9 (Killed)
+04-16 04:37:09.284  5628  5712 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 1717 in 0ms
+04-16 04:37:09.293  5477 16935 I ResourceManagerService: ResourceManagerService::Client::DeathNotifier::binderDied called
+04-16 04:37:09.301 20153 20177 D Benchmark: allocationCount[ 0:10]: 247522 247522 247522 247521 247523
+04-16 04:37:09.301 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -8. Was -20, now -8
+04-16 04:37:09.301 20153 20177 D Benchmark: Set 20162 (Jit) to priority 9. Was -15, now 9
+04-16 04:37:09.302 20153 20177 D Benchmark: Warmup: t=8.008, iter=691, fastAvg=11360550, slowAvg=14360566
+04-16 04:37:09.302 20153 20177 I PerfettoCapture: Stopping perfetto.
+04-16 04:37:09.305  5477 16935 E mediaserver: unlinkToDeath: removed reference to death recipient but unlink failed.
+04-16 04:37:09.314  5477 16935 I ResourceManagerService: Client(0xf568e2d0) destructor - (PID : 1717)
+04-16 04:37:09.315  5477 16935 E IPCThreadState: attemptIncStrongHandle(4): Not supported
+04-16 04:37:09.329  5250  5250 D Zygote  : Forked child process 23329
+04-16 04:37:09.332 23247 23247 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-16 04:37:09.334 20153 20177 D Benchmark: kill -TERM command output -
+04-16 04:37:09.347  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=249)
+04-16 04:37:09.350  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-16 04:37:09.372 23329 23329 I android:drmServ: Using CollectorTypeCC GC.
+04-16 04:37:09.381 23329 23329 E android:drmServ: Not starting debugger since process cannot load the jdwp agent.
+04-16 04:37:09.387 23329 23329 W libc    : Access denied finding property "sys.perf.boostopt"
+04-16 04:37:09.388  5224  5224 E audit   : type=1400 audit(1681612629.383:17710): avc:  denied  { read } for  pid=23329 comm="android:drmServ" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-16 04:37:09.388  5224  5224 E audit   : type=1300 audit(1681612629.383:17710): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7ffbc769b8 a2=88000 a3=0 items=0 ppid=5250 pid=23329 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="android:drmServ" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
+04-16 04:37:09.388  5224  5224 E audit   : type=1327 audit(1681612629.383:17710): proctitle="zygote64"
+04-16 04:37:09.388 23329 23347 W libc    : Access denied finding property "sys.perf.boostopt"
+04-16 04:37:09.389  5224  5224 E audit   : type=1400 audit(1681612629.383:17711): avc:  denied  { read } for  pid=23329 comm="binder:23329_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-16 04:37:09.389  5224  5224 E audit   : type=1300 audit(1681612629.383:17711): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7d7857b2f8 a2=88000 a3=0 items=0 ppid=5250 pid=23329 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="binder:23329_1" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
+04-16 04:37:09.391 23329 23329 D ActivityThread: setConscryptValidator
+04-16 04:37:09.391 23329 23329 D ActivityThread: setConscryptValidator - put
+04-16 04:37:09.403  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-16 04:37:09.409  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=250)
+04-16 04:37:09.410  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=251)
+04-16 04:37:09.416 23329 23348 W libc    : Access denied finding property "sys.perf.boostopt"
+04-16 04:37:09.426 23329 23329 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
+04-16 04:37:09.819 23247 23247 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-16 04:37:09.835  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 63 ended, total sessions:0
+04-16 04:37:09.929 20153 20177 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=23247)] to die
+04-16 04:37:10.012  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4913, isSameBssidAndFreq true
+04-16 04:37:10.016  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.137 ms / 58.500 Mbps (117 / 0.000 / 2.000)
+04-16 04:37:10.016  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-16 04:37:10.018  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-16 04:37:10.060 20153 20177 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_baselineDouble_2023-04-16-02-37-09.perfetto-trace.
+04-16 04:37:10.275 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_baselineDouble_2023-04-16-02-37-09.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_baselineDouble_2023-04-16-02-37-09.perfetto-trace
+04-16 04:37:10.303 10919 23219 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:37:10.325 23292 23292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-16 04:37:10.328  5628  9148 D SyncManager: userId - 0 auto - true
+04-16 04:37:10.513 20153 20177 I Benchmark: Wolf3dBenchmark.baselineDouble[Metric (timeNs) results: median 1.13492355625E7, min 1.0389052875E7, max 1.2884476E7, standardDeviation: 567324.6828501407, Metric (allocationCount) results: median 247522.375, min 247521.75, max 247523.0, standardDeviation: 0.4419417382415922]count=8
+04-16 04:37:10.516 20153 20177 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:37:10.553  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-16 04:37:10.557 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-16 04:37:10.578 23292 23234 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45676 [CONTEXT service_id=218 ]
+04-16 04:37:10.596 23292 22776 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 60 uptime_millis: 61 exec_start_elapsed_seconds: 45676 [CONTEXT service_id=218 ]
+04-16 04:37:10.604 23292 23292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-16 04:37:10.604 23292 23292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-16 04:37:10.649  5628 11446 D SyncManager: userId - 0 auto - true
+04-16 04:37:10.679 10919 22877 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-16 04:37:10.695 10919 23360 W MediaProvider: isAppCloneUserPair for user 0: false
+04-16 04:37:10.731  5628 11262 D SyncManager: userId - 0 auto - true
+04-16 04:37:10.736 20153 20177 I TestRunner: finished: baselineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
