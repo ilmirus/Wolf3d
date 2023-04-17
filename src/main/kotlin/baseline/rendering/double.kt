@@ -2,6 +2,7 @@ package baseline.rendering
 
 import AbstractGraphics
 import OffsetInSeconds
+import MicrobenchmarkRotations
 import asAbstract
 import screenHeight
 import screenWidth
@@ -24,7 +25,7 @@ operator fun Array<IntArray>.get(location: LocationD): Int = this[location.x][lo
 
 fun canMove(point: Point2d): Boolean = worldMap[point.x.toInt()][point.y.toInt()] == 0
 
-class Point2d(val x: Double, val y: Double) {
+data class Point2d(val x: Double, val y: Double) {
     operator fun plus(vector: Vector2d): Point2d =
         Point2d(x + vector.x, y + vector.y)
 
@@ -38,7 +39,7 @@ class Point2d(val x: Double, val y: Double) {
         Vector2d(x, y)
 }
 
-class Vector2d(val x: Double, val y: Double) {
+data class Vector2d(val x: Double, val y: Double) {
     fun rotate(angle: Double): Vector2d =
         Vector2d(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
 
@@ -61,7 +62,7 @@ class Vector2d(val x: Double, val y: Double) {
         Vector2d(0.0, y)
 }
 
-class LocationD(val x: Int, val y: Int) {
+data class LocationD(val x: Int, val y: Int) {
     fun toVector(): Vector2d =
         Vector2d(x.toDouble(), y.toDouble())
 
@@ -162,8 +163,30 @@ class MyPanelD : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionD(graphics: AbstractGraphics) =
-    drawScene(Point2d(22.0, 12.0), Vector2d(-1.0, 0.0), Vector2d(0.0, 0.66), graphics)
+fun heavyActionD(graphics: AbstractGraphics) {
+    var pos = Point2d(22.0, 12.0)
+    var dir = Vector2d(-1.0, 0.0)
+    var plane = Vector2d(0.0, 0.66)
+    val fps = 10.0
+    val frameTime = 1 / fps
+    //speed modifiers
+
+    //speed modifiers
+    val moveSpeed = frameTime * .5 //the constant value is in squares/second
+    val rotSpeed = frameTime * .3 //the constant value is in radians/second
+    repeat(MicrobenchmarkRotations) {
+        drawScene(pos, dir, plane, graphics)
+        if(canMove(pos + (dir * moveSpeed).xProjection())) pos += (dir * moveSpeed).xProjection()
+        if(canMove(pos + (dir * moveSpeed).yProjection())) pos += (dir * moveSpeed).yProjection()
+        drawScene(pos, dir, plane, graphics)
+        if(canMove(pos - (dir * moveSpeed).xProjection())) pos -= (dir * moveSpeed).xProjection()
+        if(canMove(pos - (dir * moveSpeed).yProjection())) pos -= (dir * moveSpeed).yProjection()
+        drawScene(pos, dir, plane, graphics)
+        dir = dir.rotate(rotSpeed)
+        plane = plane.rotate(rotSpeed)
+        drawScene(pos, dir, plane, graphics)
+    }
+}
 
 private fun drawScene(pos: Point2d, dir: Vector2d, plane: Vector2d, g: AbstractGraphics) {
     for (x in 0 until screenWidth) {

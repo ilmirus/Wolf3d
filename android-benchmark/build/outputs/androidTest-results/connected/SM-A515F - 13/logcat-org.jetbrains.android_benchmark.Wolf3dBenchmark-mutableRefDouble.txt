@@ -1,235 +1,148 @@
-04-16 04:37:33.750 20153 20177 I TestRunner: started: mutableRefDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
-04-16 04:37:33.752 23292 23504 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService started execution. cause:5 exec_start_elapsed_seconds: 45699 [CONTEXT service_id=218 ]
-04-16 04:37:33.753 20153 20153 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-16 04:37:33.753 20153 20153 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
-04-16 04:37:33.761 23292 23292 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-16 04:37:33.761 23292 23292 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-16 04:37:33.762 20153 20177 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-16 04:37:33.762 20153 20177 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-16 04:37:33.762 20153 20177 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#mutableRefDouble --
-04-16 04:37:33.763 20153 20177 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-16 04:37:33.763 20153 20177 D PerfettoCapture: Recording perfetto trace
-04-16 04:37:33.806 20153 20177 I PerfettoCapture: Cleanup perfetto before starting.
-04-16 04:37:33.958 20153 20177 I PerfettoCapture: Perfetto output file cleanup -
-04-16 04:37:33.958 20153 20177 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-16 04:37:34.116 23292 22776 W .gms.persistent: Long monitor contention with owner lowpool[154] (23505) at boolean com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.g(java.lang.String)(:com.google.android.gms@231312044@23.13.12 (190400-519946965):194) waiters=0 in boolean com.google.android.gms.clearcut.uploader.QosUploaderChimeraService.g(java.lang.String) for 362ms
-04-16 04:37:34.120 23292 23505 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService finished executing. cause:5 result: 1 elapsed_millis: 381 uptime_millis: 382 exec_start_elapsed_seconds: 45699 [CONTEXT service_id=218 ]
-04-16 04:37:34.126 23633 23633 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-16 04:37:34.128  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 66, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-16 04:37:34.130  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=131)
-04-16 04:37:34.181 20153 20177 I PerfettoCapture: Perfetto output - 23633
-04-16 04:37:34.181 20153 20177 I PerfettoCapture: EXITCODE=0
-04-16 04:37:34.197 23292 23504 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 45699 [CONTEXT service_id=218 ]
-04-16 04:37:34.214  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-16 04:37:34.218 23292 23505 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 47 uptime_millis: 46 exec_start_elapsed_seconds: 45699 [CONTEXT service_id=218 ]
-04-16 04:37:34.225  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4921, isSameBssidAndFreq true
-04-16 04:37:34.231  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.157 ms / 50.927 Mbps (87 / 0.000 / 1.708)
-04-16 04:37:34.245  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-16 04:37:34.277 20153 20177 I PerfettoCapture: Perfetto tracing started successfully with pid 23633.
-04-16 04:37:34.361 10932 11686 I BluetoothAdapter: STATE_ON
-04-16 04:37:34.363 20153 20177 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-16 04:37:34.365 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -20. Was -8, now -20
-04-16 04:37:34.366 20153 20177 D Benchmark: Set 20162 (Jit) to priority -15. Was 9, now -15
-04-16 04:37:34.387 10932 11686 D BluetoothGatt: connect() - device: 645DF4_1, auto: false
-04-16 04:37:34.390 10932 11686 D BluetoothGatt: registerApp()
-04-16 04:37:34.391 10932 11686 D BluetoothGatt: registerApp() - UUID=f9b5143c-b5cb-4a6e-8042-8b3e70dccdab
-04-16 04:37:34.401 20153 20177 I _benchmark.test: Explicit concurrent copying GC freed 628918(14MB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2895KB/9039KB, paused 326us,77us total 35.114ms
-04-16 04:37:34.404  8900 30614 D BtGatt.GattService: registerClient(com.google.android.googlequicksearchbox) - UUID=f9b5143c-b5cb-4a6e-8042-8b3e70dccdab
-04-16 04:37:34.407  8900 30614 D BtGatt.ContextMap: add() - appUid: 10233, appPid: 10932, appName: com.google.android.googlequicksearchbox
-04-16 04:37:34.416 10932 11686 I GattConnObserver: GATT connect started, beginning countdown timer
-04-16 04:37:34.419  8900  9513 W bt_bta_gattc: bta_gattc_register :: state: 2, uuid=f9b5143c-b5cb-4a6e-8042-8b3e70dccdab
-04-16 04:37:34.421  8900  9513 W bt_bta_gattc: Registered GATT client interface 6 with uuid=f9b5143c-b5cb-4a6e-8042-8b3e70dccdab, starting it on main thread
-04-16 04:37:34.422  8900  9513 W bt_bta_gattc: client_if=6
-04-16 04:37:34.423  8900  9052 D BtGatt.GattService: onClientRegistered() - UUID=f9b5143c-b5cb-4a6e-8042-8b3e70dccdab, clientIf=6
-04-16 04:37:34.425 10932 23048 D BluetoothGatt: onClientRegistered() - status=0 clientIf=6
-04-16 04:37:34.439  8900 30614 D BtGatt.GattService: clientConnect(com.google.android.googlequicksearchbox) - address = 645DF4_1, isDirect=true transport =2 set own addr = false own addr type:0, clientIf: 6, opportunistic=false, phy: 1
-04-16 04:37:34.448  8900  9513 W bt_btm_ble: BTM_SecAddBleDevice :: dev_type=0x3
-04-16 04:37:34.452  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open
-04-16 04:37:34.457  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x00, Event 0x1f00
-04-16 04:37:34.458  8900  9513 W bt_bta_gattc: bta_gattc_open
-04-16 04:37:34.459  8900  9513 W bt_stack: [WARNING:gatt_api.cc(1238)] GATT_Connect
-04-16 04:37:34.459  8900  9513 W bt_stack: Starting direct connect gatt_if=6 address=645df4
-04-16 04:37:34.460  8900  9513 W bt_stack: gatt_act_connect
-04-16 04:37:34.467  8900  9513 I bt_stack: [INFO:gatt_attr.cc(886)] gatt_sr_init_cl_status: bda=645df4, cl_supp_feat=0000, aware=1
-04-16 04:37:34.467  8900  9513 W bt_stack: gatt_connect
-04-16 04:37:34.467  8900  9513 W bt_stack: gatt_connect :: call acl_create_le_connection_with_id
-04-16 04:37:34.468  8900  9513 W btm_acl : Creating le direct connection to:xx:xx:xx:xx:b3:b1[public]
-04-16 04:37:34.469  8900  9513 W bt_stack: AcceptLeConnectionFrom xx:xx:xx:xx:b3:b1
-04-16 04:37:34.470  8900  9466 W bt_stack: Allow Le connection from remote:xx:xx:xx:xx:b3:b1[PUBLIC_DEVICE_ADDRESS]
-04-16 04:37:34.472  8900  9466 W bt_stack: create_le_connection :: address : 64:5d:f4, add_to_connect_list : 1, is_direct : 1
-04-16 04:37:34.472  8900  9466 W bt_stack: add_device_to_connect_list 64:5d:f4 :: Send command after register
-04-16 04:37:34.472  8900  9466 W bt_stack: add_device_to_connect_list :: Device is found in security db(64:5d:f4 -> 645df4)
-04-16 04:37:34.473  8900  9466 W bt_stack: add_device_to_connect_list :: set address_with_type as identity_addr
-04-16 04:37:34.473  8900  9466 W bt_stack: Fast Connection Mode is already Set!!!
-04-16 04:37:34.475  8900  9466 W bt_stack: Deferred until filter accept list has completed
-04-16 04:37:34.475  8900  9466 W bt_stack: pause_registered_clients()
-04-16 04:37:34.475  8900  9466 W bt_stack: le_scanning_manager :: OnPause()
-04-16 04:37:34.475  8900  9466 W bt_stack: Stop LeSetScanEnable
-04-16 04:37:34.475  8900  9466 W bt_stack: le_scanning_manager :: OnPause() - call AckPause
-04-16 04:37:34.476  8900  9466 W bt_stack: le_impl :: OnPause()
-04-16 04:37:34.476  8900  9466 W bt_stack: le_impl :: ConnectabilityState is DISARMED. Call AckPause()
-04-16 04:37:34.476  8900  9466 W bt_stack: pause_registered_clients()
-04-16 04:37:34.477  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-16 04:37:34.477  8900  9466 W bt_stack: le_address_manager :: ack_pause() - make sure all client paused. Return
-04-16 04:37:34.478  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-16 04:37:34.478  8900  9466 W bt_stack: le_address_manager :: ack_pause() - handle_next_command
-04-16 04:37:34.478  8900  9466 W bt_stack: handle_next_command()
-04-16 04:37:34.487  8900  9466 W bt_stack: Received command complete with op_code LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST
-04-16 04:37:34.489  8900  9466 W bt_stack: handle_next_command()
-04-16 04:37:34.491  8900  9466 W bt_stack: Received command complete with op_code LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST
-04-16 04:37:34.492  8900  9466 W bt_stack: le_scanning_manager :: OnResume()
-04-16 04:37:34.492  8900  9466 W bt_stack: Start LeSetScan
-04-16 04:37:34.492  8900  9466 W bt_stack: le_scanning_manager :: OnResume() - call AckResume
-04-16 04:37:34.492  8900  9466 W bt_stack: le_impl :: OnResume()
-04-16 04:37:34.492  8900  9466 W bt_stack: le_impl :: OnResume - Try arm connectability
-04-16 04:37:34.492  8900  9466 W bt_stack: arm_connectability()
-04-16 04:37:34.492  8900  9466 W bt_stack: le_impl :: check_for_unregister()
-04-16 04:37:34.492  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-16 04:37:34.493  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-16 04:37:34.498  8900  9466 E bt_stack: on_create_connection :: Command status is success. Set ConnectabilityState to ARMED
-04-16 04:37:34.961 23292 23292 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
-04-16 04:37:35.038  5628  8457 D NetdEventListenerService: DNS Requested by : 106, 10226
-04-16 04:37:35.040 23292 29892 D TrafficStats: tagSocket(90) with statsTag=0x1065fff, statsUid=-1
-04-16 04:37:35.289  9877  9877 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
-04-16 04:37:35.386 23292 29892 D TrafficStats: tagSocket(149) with statsTag=0x1065fff, statsUid=10233
-04-16 04:37:35.885 23292 29892 D TrafficStats: tagSocket(88) with statsTag=0x1065fff, statsUid=10252
-04-16 04:37:36.104  9877  9877 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.mdisync.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
-04-16 04:37:36.217  9877  9877 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mobstore.service.START pkg=com.google.android.gms }
-04-16 04:37:36.536  5628  5628 D SemWifiP2pGoPowerSave: GopsReceiver : received : com.samsung.intent.action.CHECK_SIOP_LEVEL
-04-16 04:37:36.536  5628  5628 I SemWifiP2pGoPowerSave: siop_level = 1
-04-16 04:37:36.540 11099 11129 I SystemBroadcastReceiver: [#CMH#] onReceive completed :  0
-04-16 04:37:36.543 11099 11099 I PolicyManager: [#CMH#] onReceive action = EVENT_SIOP
-04-16 04:37:36.709 23292 22776 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService finished executing. cause:5 result: 1 elapsed_millis: 3000 uptime_millis: 3000 exec_start_elapsed_seconds: 45699 [CONTEXT service_id=218 ]
-04-16 04:37:37.247  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4922, isSameBssidAndFreq true
-04-16 04:37:37.251  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.125 ms / 63.968 Mbps (97 / 0.000 / 1.516)
-04-16 04:37:37.252  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-16 04:37:37.254  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-16 04:37:38.193  5628  8445 D WifiConnectivityMonitor: called startWcmPoll but already Ongoing
-04-16 04:37:38.193  5628  8445 D SemWifiRssiBasePoller: RSSI_BASE_STOP
-04-16 04:37:38.549 11099 11136 I PolicyManager: [#CMH#] Is foreground game app: false
-04-16 04:37:39.421 10932 10932 W GattConnObserver: GATT connect timeout!
-04-16 04:37:39.422 10932 10932 D BluetoothGatt: cancelOpen() - device: 645DF4_1
-04-16 04:37:39.431  8900 30614 D BtGatt.GattService: clientDisconnect(com.google.android.googlequicksearchbox) - address=645DF4_1, connId=null, clientIf: 6
-04-16 04:37:39.437  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open_cancel
-04-16 04:37:39.437  8900  9513 W bt_bta_gattc: Cancel GATT client direct connection
-04-16 04:37:39.438  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x01, Event 0x1f02
-04-16 04:37:39.438  8900  9513 W bt_bta_gattc: bta_gattc_cancel_open
-04-16 04:37:39.438  8900  9513 W bt_stack: [WARNING:gatt_api.cc(1322)] GATT_CancelConnect: gatt_if:6, address: 645df4, direct:1
-04-16 04:37:39.440  8900  9513 W bt_stack: gatt_disconnect
-04-16 04:37:39.440  8900  9513 W bt_stack: Unable to find background connection to remove
-04-16 04:37:39.441  8900  9513 W bt_stack: BTM_AcceptlistRemove
-04-16 04:37:39.442  8900  9513 W bt_stack: IgnoreLeConnectionFrom xx:xx:xx:xx:b3:b1
-04-16 04:37:39.442  8900  9513 W gatt_utils: gatt_cleanup_upon_disc
-04-16 04:37:39.442  8900  9513 W gatt_utils: gatt_cleanup_upon_disc :: GATT_CH_CLOSE
-04-16 04:37:39.442  8900  9466 W bt_stack: Ignore Le connection from remote:xx:xx:xx:xx:b3:b1[PUBLIC_DEVICE_ADDRESS]
-04-16 04:37:39.442  8900  9466 W bt_stack: cancel_connection_and_remove_device_from_background_connection_list 64:5d:f4
-04-16 04:37:39.443  8900  9466 W bt_stack: remove_device_from_background_connection_list 64:5d:f4
-04-16 04:37:39.443  8900  9466 W bt_stack: cancel_connect 64:5d:f4
-04-16 04:37:39.443  8900  9466 W bt_stack: remove_device_from_connect_list 64:5d:f4 :: Send command after register
-04-16 04:37:39.443  8900  9513 W bt_stack: Unable to find background connection to remove
-04-16 04:37:39.443  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x01, Event 0x1f03
-04-16 04:37:39.443  8900  9513 W bt_bta_gattc: bta_gattc_cancel_open_ok
-04-16 04:37:39.444  8900  9466 W bt_stack: remove_device_from_connect_list :: Device is found in security db(64:5d:f4 -> 645df4)
-04-16 04:37:39.444  8900  9466 W bt_stack: remove_device_from_connect_list :: set address_with_type as identity_addr
-04-16 04:37:39.444  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open_cancel
-04-16 04:37:39.444  8900  9513 W bt_bta_gattc: Cancel GATT client background connection
-04-16 04:37:39.444  8900  9513 W bt_bta_gattc: bta_gattc_cancel_bk_conn
-04-16 04:37:39.444  8900  9513 E bt_stack: [ERROR:bta_gattc_utils.cc(447)] bta_gattc_mark_bg_conn unable to find the bg connection mask for bd_addr=645df4
-04-16 04:37:39.444  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 3
-04-16 04:37:39.444  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 4
-04-16 04:37:39.444  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 5
-04-16 04:37:39.444  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 6
-04-16 04:37:39.444  8900  9466 W bt_stack: pause_registered_clients()
-04-16 04:37:39.444  8900  9466 W bt_stack: le_scanning_manager :: OnPause()
-04-16 04:37:39.445  8900  9466 W bt_stack: Stop LeSetScanEnable
-04-16 04:37:39.445  8900  9466 W bt_stack: le_scanning_manager :: OnPause() - call AckPause
-04-16 04:37:39.445  8900  9466 W bt_stack: le_impl :: OnPause()
-04-16 04:37:39.445  8900  9466 W bt_stack: le_impl :: Try to disarm connectability
-04-16 04:37:39.445  8900  9466 W bt_stack: disarm_connectability()
-04-16 04:37:39.445  8900  9466 W bt_stack: Pause Background Connection
-04-16 04:37:39.445  8900  9466 W bt_stack: pause_registered_clients()
-04-16 04:37:39.445 10932 12641 I BistoGattHelper: (REDACTED) [%s] GATT disconnected
-04-16 04:37:39.447  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-16 04:37:39.447  8900  9466 W bt_stack: le_address_manager :: ack_pause() - make sure all client paused. Return
-04-16 04:37:39.449 10932 12641 I RemotePeerStateCommunicator: (REDACTED) RemotePeerStateCommunicator scheduling message : %d, action: %s, device id : %s
-04-16 04:37:39.458 10932 12641 I BistoGattHelper: (REDACTED) [%s] close
-04-16 04:37:39.464 10932 12641 I BistoGattHelper: (REDACTED) [%s] executeNextShutdownOperation
-04-16 04:37:39.464 10932 12641 D BluetoothGatt: close()
-04-16 04:37:39.465  8900  9466 W bt_stack: on_le_enhanced_connection_complete()
-04-16 04:37:39.465  8900  9466 W bt_stack: on_le_enhanced_connection_complete :: Role is central. Set connectability to DISARMED
-04-16 04:37:39.465  8900  9466 W bt_stack: on_le_enhanced_connection_complete :: pause_connection : 1
-04-16 04:37:39.465  8900  9466 W bt_stack: on_le_connection_canceled_on_pause(). Set connectability to DISARMED
-04-16 04:37:39.465  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-16 04:37:39.465  8900  9466 W bt_stack: le_address_manager :: ack_pause() - handle_next_command
-04-16 04:37:39.465  8900  9466 W bt_stack: handle_next_command()
-04-16 04:37:39.468 10932 12641 D BluetoothGatt: unregisterApp() - mClientIf=6
-04-16 04:37:39.471  8900  9466 W bt_stack: Received command complete with op_code LE_REMOVE_DEVICE_FROM_FILTER_ACCEPT_LIST
-04-16 04:37:39.471  8900  9466 W bt_stack: handle_next_command()
-04-16 04:37:39.472  8900 30614 D BtGatt.GattService: unregisterClient(com.google.android.googlequicksearchbox) - clientIf=6
-04-16 04:37:39.473  8900 30614 D BtGatt.ContextMap: remove() - id: 6
-04-16 04:37:39.473  8900  9466 W bt_stack: Received command complete with op_code LE_REMOVE_DEVICE_FROM_FILTER_ACCEPT_LIST
-04-16 04:37:39.473  8900  9466 W bt_stack: le_scanning_manager :: OnResume()
-04-16 04:37:39.473  8900  9466 W bt_stack: Start LeSetScan
-04-16 04:37:39.473  8900  9466 W bt_stack: le_scanning_manager :: OnResume() - call AckResume
-04-16 04:37:39.473  8900 30614 E BtGatt.ContextMap: remove() - removed: 6
-04-16 04:37:39.474  8900  9466 W bt_stack: le_impl :: OnResume()
-04-16 04:37:39.474  8900  9466 W bt_stack: le_impl :: OnResume - Try arm connectability
-04-16 04:37:39.474  8900  9466 W bt_stack: arm_connectability()
-04-16 04:37:39.474  8900  9466 W bt_stack: le_impl :: check_for_unregister()
-04-16 04:37:39.474  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-16 04:37:39.475  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-16 04:37:39.475  8900  9513 W bt_bta_gattc: bta_gattc_deregister
-04-16 04:37:39.475  8900  9513 I bt_stack: [INFO:gatt_api.cc(1111)] GATT_Deregister gatt_if=6
-04-16 04:37:39.475  8900  9513 W bt_stack: on_app_deregistered :: app_id=6
-04-16 04:37:39.475  8900  9513 I bt_stack: [INFO:gatt_api.cc(1164)] Initialize tGATT_REG
-04-16 04:37:39.482 10932 12641 I BistoGattHelper: (REDACTED) [%s] GATT released
-04-16 04:37:39.482 10932 12641 I BistoGattHelper: (REDACTED) [%s] close
-04-16 04:37:39.482 10932 12641 I BistoGattHelper: (REDACTED) [%s] executeNextShutdownOperation
-04-16 04:37:39.488 10932 12641 E GmuTls  : You must initialize the system with proper values before handshake
-04-16 04:37:40.268  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4923, isSameBssidAndFreq true
-04-16 04:37:40.272  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.125 ms / 63.968 Mbps (97 / 0.000 / 1.516)
-04-16 04:37:40.272  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-16 04:37:40.274  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-16 04:37:40.627  9877 23673 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
-04-16 04:37:43.295  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 4924, isSameBssidAndFreq true
-04-16 04:37:43.301  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.125 ms / 63.968 Mbps (97 / 0.000 / 1.516)
-04-16 04:37:43.301  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-16 04:37:43.303  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-16 04:37:43.368 11012 11277 I SemDvfsHyPerManager: acquire hyper - SIOP_GPU_FREQ_MAX/11012@4, type = 536875010
-04-16 04:37:43.369  5276  5311 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 60681640  [11012 / 4]    HINT :      list : [GPUMaxFreq / 764000]
-04-16 04:37:43.370 11012 11277 I SemDvfsHyPerManager: acquire hyper - SIOP_ARM_MAX/11012@2, type = 301993986
-04-16 04:37:43.371  5276  5311 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 60659607  [11012 / 2]    HINT :      list : [CPUMaxFreq / 1768000]
-04-16 04:37:43.905 20153 20177 D Benchmark: timeNs[ 0:10]: 3496175 3494442 3500111 3508278 3495939 3496798 3491924 3498609 3497061 3495766
-04-16 04:37:43.905 20153 20177 D Benchmark: timeNs[10:20]: 3493629 3495486 3496234 3489031 3493357 3495660 3486152 3495809 3496215 3495747
-04-16 04:37:43.905 20153 20177 D Benchmark: timeNs[20:30]: 3493792 3491923 3496079 3487847 3504263 3510461 3498226 3492649 3487920 3495899
-04-16 04:37:43.905 20153 20177 D Benchmark: timeNs[30:40]: 3496832 3490993 3493939 3489627 3489906 3493598 3493847 3490736 3496336 3494277
-04-16 04:37:43.905 20153 20177 D Benchmark: timeNs[40:50]: 3496711 3498281 3495232 3492809 3503646 3745527 3750211 3754824 3757256 3745763
-04-16 04:37:44.431 20153 20177 D Benchmark: allocationCount[ 0:10]: 1 1 1 1 1
-04-16 04:37:44.431 20153 20177 D Benchmark: Set 20177 (Bench thread) to priority -8. Was -20, now -8
-04-16 04:37:44.432 20153 20177 D Benchmark: Set 20162 (Jit) to priority 9. Was -15, now 9
-04-16 04:37:44.432 20153 20177 D Benchmark: Warmup: t=4.567, iter=1268, fastAvg=3500309, slowAvg=3624909
-04-16 04:37:44.432 20153 20177 I PerfettoCapture: Stopping perfetto.
-04-16 04:37:44.475 23633 23633 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-16 04:37:44.477 20153 20177 D Benchmark: kill -TERM command output -
-04-16 04:37:44.484 10932 12642 W BistoGattHelper: (REDACTED) [%s] GATT already released after un-subscribing, doing nothing.
-04-16 04:37:44.495  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=261)
-04-16 04:37:44.499  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-16 04:37:44.560  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-16 04:37:44.572  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=262)
-04-16 04:37:44.574  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=263)
-04-16 04:37:44.588 23633 23633 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-16 04:37:44.591  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 66 ended, total sessions:0
-04-16 04:37:44.620 20153 20177 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_mutableRefDouble_2023-04-16-02-37-44.perfetto-trace.
-04-16 04:37:44.692 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_mutableRefDouble_2023-04-16-02-37-44.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_mutableRefDouble_2023-04-16-02-37-44.perfetto-trace
-04-16 04:37:44.731 10919 23601 W MediaProvider: isAppCloneUserPair for user 0: false
-04-16 04:37:44.812  5628 11104 D SyncManager: userId - 0 auto - true
-04-16 04:37:44.894 20153 20177 I Benchmark: Wolf3dBenchmark.mutableRefDouble[Metric (timeNs) results: median 3495787.7857142854, min 3486152.5, max 3757256.8928571427, standardDeviation: 77551.18177884219, Metric (allocationCount) results: median 1.0, min 1.0, max 1.0, standardDeviation: 0.0]count=28
-04-16 04:37:44.903 20153 20177 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-16 04:37:44.916 20153 20177 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-16 04:37:44.930 10919 23605 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-16 04:37:44.932  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-16 04:37:44.934  5628 11213 D SyncManager: userId - 0 auto - true
-04-16 04:37:44.940 10919 23704 W MediaProvider: isAppCloneUserPair for user 0: false
-04-16 04:37:44.947 23292 23505 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 45710 [CONTEXT service_id=218 ]
-04-16 04:37:44.949  5628 11104 D SyncManager: userId - 0 auto - true
-04-16 04:37:44.953 20153 20177 I TestRunner: finished: mutableRefDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-18 00:49:16.093  2747  2799 I TestRunner: started: mutableRefDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-18 00:49:16.097  2747  2747 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-18 00:49:16.097  2747  2747 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
+04-18 00:49:16.104  2747  2799 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-18 00:49:16.105  2747  2799 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-18 00:49:16.105  2747  2799 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#mutableRefDouble --
+04-18 00:49:16.106  2747  2799 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-18 00:49:16.106  2747  2799 D PerfettoCapture: Recording perfetto trace
+04-18 00:49:16.118  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-18 00:49:16.150  2747  2799 I PerfettoCapture: Cleanup perfetto before starting.
+04-18 00:49:16.153 18943 11069 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 204801 [CONTEXT service_id=218 ]
+04-18 00:49:16.167 18943 10657 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 83 uptime_millis: 83 exec_start_elapsed_seconds: 204801 [CONTEXT service_id=218 ]
+04-18 00:49:16.357  2747  2799 I PerfettoCapture: Perfetto output file cleanup -
+04-18 00:49:16.357  2747  2799 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-18 00:49:16.558 11109 11109 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-18 00:49:16.560  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 121, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-18 00:49:16.562  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=241)
+04-18 00:49:16.605  2747  2799 I PerfettoCapture: Perfetto output - 11109
+04-18 00:49:16.605  2747  2799 I PerfettoCapture: EXITCODE=0
+04-18 00:49:16.627  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-18 00:49:16.656  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-18 00:49:16.724  2747  2799 I PerfettoCapture: Perfetto tracing started successfully with pid 11109.
+04-18 00:49:16.834  2747  2799 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-18 00:49:16.836  2747  2799 D Benchmark: Set 2799 (Bench thread) to priority -20. Was -8, now -20
+04-18 00:49:16.836  2747  2799 D Benchmark: Set 2781 (Jit) to priority -15. Was 9, now -15
+04-18 00:49:16.881  2747  2799 I _benchmark.test: Explicit concurrent copying GC freed 906499(20MB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2898KB/9042KB, paused 298us,129us total 44.064ms
+04-18 00:49:18.171  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 23732, isSameBssidAndFreq true
+04-18 00:49:18.176  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.021 ms / 378.875 Mbps (433 / 0.000 / 1.143)
+04-18 00:49:19.828 10744 11140 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+04-18 00:49:20.097 18943 18943 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-18 00:49:20.097 18943 18943 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-18 00:49:20.119 10744 10841 I Icing   : Storage manager: low false usage 7.35MB avail 4.41GB capacity 51.70GB
+04-18 00:49:20.318 10744 10841 E native  : E0000 00:00:1681771760.317460   10841 model-utils.cc:39] Not a valid Model flatbuffer
+04-18 00:49:20.318 10744 10841 E native  : E0000 00:00:1681771760.318157   10841 model-provider-from-fb.cc:104] Unable to initialize ModelProviderFromFlatbuffer
+04-18 00:49:20.318 10744 10841 I native  : I0000 00:00:1681771760.318521   10841 model-api.cc:46] Registered model under key tmp-segmentation-model
+04-18 00:49:20.375 10744 10841 I native  : I0000 00:00:1681771760.375671   10841 permission-checker.cc:81] Creating PermissionChecker based on ACL with config_version 1 having 10 permissions defined.
+04-18 00:49:20.377 10744 10841 W native  : W0000 00:00:1681771760.377620   10841 words-map.cc:36] INVALID_ARGUMENT: Empty URI
+04-18 00:49:20.377 10744 10841 W native  : W0000 00:00:1681771760.377793   10841 words-map.cc:40] WordsMap was not properly initialized
+04-18 00:49:20.440  5224  5224 E audit   : type=1400 audit(1681771760.434:60066): avc:  denied  { read } for  pid=10784 comm="binder:10784_2" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-18 00:49:20.441  5224  5224 E audit   : type=1300 audit(1681771760.434:60066): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7dc8eb82f8 a2=88000 a3=0 items=0 ppid=5250 pid=10784 auid=4294967295 uid=10226 gid=10226 euid=10226 suid=10226 fsuid=10226 egid=10226 sgid=10226 fsgid=10226 tty=(none) ses=4294967295 comm="binder:10784_2" exe="/system/bin/app_process64" subj=u:r:priv_app:s0:c512,c768 key=(null)
+04-18 00:49:20.441 10784 10809 W libc    : Access denied finding property "sys.perf.boostopt"
+04-18 00:49:20.441  5224  5224 E audit   : type=1327 audit(1681771760.434:60066): proctitle="<pre-initialized>"
+04-18 00:49:20.463 18943 18943 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-18 00:49:20.463 18943 18943 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+04-18 00:49:20.477  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-18 00:49:20.479  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-18 00:49:20.484 10744 10744 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+04-18 00:49:20.484 10744 10744 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+04-18 00:49:20.526 10744 10841 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+04-18 00:49:20.526 10744 10841 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+04-18 00:49:20.540 10744 10856 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+04-18 00:49:20.558 10744 10855 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=ContactsIndexer serviceId=33
+04-18 00:49:20.572 10744 10841 W Icing   : Package com.google.android.googlequicksearchbox targets Android P and isn't allowed to use AppDataSearch indexing API
+04-18 00:49:20.592 10744 10841 W Icing   : Package com.google.android.gm targets Android P and isn't allowed to use AppDataSearch indexing API
+04-18 00:49:20.617 10744 10841 I Icing   : updateResources: need to parse aqif{com.google.android.gms}
+04-18 00:49:20.676 10744 10841 W Icing   : Package com.android.chrome targets Android P and isn't allowed to use AppDataSearch indexing API
+04-18 00:49:20.731 10744 10841 I Icing   : Internal init done: storage state 0
+04-18 00:49:20.737 10744 10971 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+04-18 00:49:20.741 10744 10877 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=32
+04-18 00:49:20.789 10744 10877 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=36
+04-18 00:49:20.796 10744 10841 I Icing   : Post-init done
+04-18 00:49:20.823 10744 10841 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=12803 trafficStatsUid=-1
+04-18 00:49:20.825  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-18 00:49:20.865 10710 10724 W libc    : Access denied finding property "sys.perf.boostopt"
+04-18 00:49:20.866  5224  5224 E audit   : type=1400 audit(1681771760.858:60067): avc:  denied  { read } for  pid=10710 comm="binder:10710_2" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:untrusted_app_30:s0:c12,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-18 00:49:20.926 10744 10841 I Icing   : Using regular flags by method 2
+04-18 00:49:21.036 10744 10841 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0
+04-18 00:49:21.073 10744 10841 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=12803 trafficStatsUid=-1
+04-18 00:49:21.098 10744 10841 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+04-18 00:49:21.106 10744 10841 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=12803 trafficStatsUid=-1
+04-18 00:49:21.132 10744 10841 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+04-18 00:49:21.140 10744 10841 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=12803 trafficStatsUid=-1
+04-18 00:49:21.167 10744 10841 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+04-18 00:49:21.174 10744 10841 I GmsCoreXrpcWrapper: Returning a channel provider with trafficStatsTag=12803 trafficStatsUid=-1
+04-18 00:49:21.200 10744 10841 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+04-18 00:49:21.208  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 23733, isSameBssidAndFreq true
+04-18 00:49:21.210  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.021 ms / 378.875 Mbps (433 / 0.000 / 1.143)
+04-18 00:49:21.370  5628  8367 D ConnectivityService: reportNetworkActive, notify 0 listeners
+04-18 00:49:23.274  5288  5288 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-18 00:49:24.237  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 23734, isSameBssidAndFreq true
+04-18 00:49:24.241  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.037 ms / 216.500 Mbps (433 / 0.000 / 2.000)
+04-18 00:49:24.242  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-18 00:49:24.246  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-18 00:49:26.893  7170  7170 I ContactsProvider: onTrimMemory-success
+04-18 00:49:27.271  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 23735, isSameBssidAndFreq true
+04-18 00:49:27.276  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.018 ms / 433.000 Mbps (433 / 0.000 / 1.000)
+04-18 00:49:27.383  5628 11178 D TrafficStats: tagSocket(900) with statsTag=0xffffffff, statsUid=-1
+04-18 00:49:27.587  5628 11178 D WifiConnectivityMonitor.DnsThread:  [|206]
+04-18 00:49:27.588  5628  8444 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 206
+04-18 00:49:27.589  5628  8438 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-18 00:49:27.589  5628  8438 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-18 00:49:27.589  5628  8438 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-18 00:49:27.589  5628  8438 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 26 30
+04-18 00:49:27.589  5628  8438 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-18 00:49:27.590  5628  9412 V WifiProfileShare.Caster: update wips network, size: 0
+04-18 00:49:27.590  5628  9412 D WifiProfileShare: nearby scanning settings run
+04-18 00:49:27.591  5628  9412 D WifiProfileShare: network score provider settings enabled
+04-18 00:49:27.591  5628  9412 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 26 30
+04-18 00:49:27.591  5628  9412 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-18 00:49:27.591  5628  9412 I WifiProfileShare.Caster: current network type: 0, score: [30, 26, 30]
+04-18 00:49:27.592  5628  9412 V WifiProfileShare.Cache: update network score 00:e4:06:**:**:90
+04-18 00:49:27.592  5628  9412 D WifiProfileShare.ScanMatcher: getMcfDataList size:2
+04-18 00:49:27.593  5628  9412 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:51:2e:90, qosData:7c after:type:QOS, pBssid:51:2e:90, qosData:7c
+04-18 00:49:27.598  5628  9412 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-18 00:49:27.598  5628  9412 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-18 00:49:27.598  5628  9412 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-18 00:49:27.598  5628  9412 D WifiProfileShare.MCF: success update QosData !
+04-18 00:49:27.600  5628  9412 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-18 00:49:27.600  5628  9412 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-18 00:49:27.600  5628  9412 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:2
+04-18 00:49:28.250  4066  4066 I LiveIconUpdateEventHandler: onReceive: Intent { act=com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE flg=0x10 }
+04-18 00:49:28.251  4066  4066 I LiveIconUpdateEventHandler: onReceive: com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE
+04-18 00:49:28.251  4066  4128 I LiveIconUpdateEventHandler: LiveIcon DateChanged
+04-18 00:49:28.252  4066  4128 I LiveIconUpdateEventHandler: updateLiveIcon type:0
+04-18 00:49:28.253  4066  4128 I LiveIconUpdateEventHandler: cancelMinuteChangeAlarm
+04-18 00:49:28.261  4066  4128 I LiveIconUpdateEventHandler: setMinuteChangeAlarm Tue Apr 18 00:50:00 GMT+02:00 2023
+04-18 00:49:30.264  2747  2799 D Benchmark: timeNs[ 0:10]: 106465808 106549231 106599269 106658308 106658538 106716192 106636654 106644693 111572500 111440730
+04-18 00:49:30.264  2747  2799 D Benchmark: timeNs[10:20]: 106501115 106712961 106687269 106595884 106722270 106574231 106773154 106653615 106563923 106561384
+04-18 00:49:30.265  2747  2799 D Benchmark: timeNs[20:30]: 106452423 106634154 106586500 106607538 106676423 106528769 106480538 106479154 111919576 111908885
+04-18 00:49:30.265  2747  2799 D Benchmark: timeNs[30:40]: 106425077 106605539 106549038 106662846 106773346 106592693 106689693 106674000 106696961 106647192
+04-18 00:49:30.265  2747  2799 D Benchmark: timeNs[40:50]: 106511923 106644730 106752500 106638307 106659346 106751539 106692231 106567962 111470192 111033269
+04-18 00:49:30.320  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 23736, isSameBssidAndFreq true
+04-18 00:49:30.324  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.018 ms / 433.000 Mbps (433 / 0.000 / 1.000)
+04-18 00:49:30.800  2747  2799 D Benchmark: allocationCount[ 0:10]: 41 41 41 41 41
+04-18 00:49:30.800  2747  2799 D Benchmark: Set 2799 (Bench thread) to priority -8. Was -20, now -8
+04-18 00:49:30.800  2747  2799 D Benchmark: Set 2781 (Jit) to priority 9. Was -15, now 9
+04-18 00:49:30.800  2747  2799 D Benchmark: Warmup: t=8.020, iter=73, fastAvg=107140304, slowAvg=242072416
+04-18 00:49:30.800  2747  2799 I PerfettoCapture: Stopping perfetto.
+04-18 00:49:30.841 11109 11109 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-18 00:49:30.847  2747  2799 D Benchmark: kill -TERM command output -
+04-18 00:49:30.855  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=481)
+04-18 00:49:30.858  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-18 00:49:30.919  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-18 00:49:30.927  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=482)
+04-18 00:49:30.930  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=483)
+04-18 00:49:30.950 11109 11109 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-18 00:49:30.957  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 121 ended, total sessions:0
+04-18 00:49:30.966  2747  2799 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_mutableRefDouble_2023-04-17-22-49-30.perfetto-trace.
+04-18 00:49:31.060  2747  2799 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_mutableRefDouble_2023-04-17-22-49-30.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_mutableRefDouble_2023-04-17-22-49-30.perfetto-trace
+04-18 00:49:31.107 10919 11067 W MediaProvider: isAppCloneUserPair for user 0: false
+04-18 00:49:31.189  5628 11213 D SyncManager: userId - 0 auto - true
+04-18 00:49:31.306  2747  2799 I Benchmark: Wolf3dBenchmark.mutableRefDouble[Metric (timeNs) results: median 1.06645961E8, min 1.06425077E8, max 1.11919576E8, standardDeviation: 1626549.6038457053, Metric (allocationCount) results: median 41.0, min 41.0, max 41.0, standardDeviation: 0.0]count=1
+04-18 00:49:31.317  2747  2799 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-18 00:49:31.333  2747  2799 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-18 00:49:31.374 10919 11067 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-18 00:49:31.376  5628 12118 D SyncManager: userId - 0 auto - true
+04-18 00:49:31.381 10919 11208 W MediaProvider: isAppCloneUserPair for user 0: false
+04-18 00:49:31.397  2747  2799 I TestRunner: finished: mutableRefDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
