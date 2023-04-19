@@ -26,50 +26,50 @@ open class Wolf3dBenchmark {
     
     
     @Benchmark
-    fun baselineFloat(bh: Blackhole) = baseline.rendering.heavyActionF(makeGraphics(bh))
+    fun baselineFloat(bh: Blackhole) = baseline.rendering.heavyActionFloat(makeGraphics(bh))
 
     @Benchmark
-    fun baselineDouble(bh: Blackhole) = baseline.rendering.heavyActionD(makeGraphics(bh))
+    fun baselineDouble(bh: Blackhole) = baseline.rendering.heavyActionDouble(makeGraphics(bh))
 
     
     @Benchmark
-    fun inlineFloat(bh: Blackhole) = inline.rendering.heavyActionF(makeGraphics(bh))
+    fun inlineFloat(bh: Blackhole) = inline.rendering.heavyActionFloat(makeGraphics(bh))
 
     @Benchmark
-    fun inlineDouble(bh: Blackhole) = inline.rendering.heavyActionD(makeGraphics(bh))
+    fun inlineDouble(bh: Blackhole) = inline.rendering.heavyActionDouble(makeGraphics(bh))
 
 
     @Benchmark
-    fun longPackFloat(bh: Blackhole) = long_pack.rendering.heavyActionF(makeGraphics(bh))
+    fun longPackFloat(bh: Blackhole) = long_pack.rendering.heavyActionFloat(makeGraphics(bh))
 
     
     @Benchmark
-    fun mutableRefFloatIn2Longs(bh: Blackhole) = mutable_ref.rendering.heavyActionFSeparate(makeGraphics(bh))
+    fun mutableRefFloatIn2Longs(bh: Blackhole) = mutable_ref.rendering.heavyActionFloatSeparate(makeGraphics(bh))
 
     @Benchmark
-    fun mutableRefFloatIn1Long(bh: Blackhole) = mutable_ref.rendering.heavyActionFSame(makeGraphics(bh))
+    fun mutableRefFloatIn1Long(bh: Blackhole) = mutable_ref.rendering.heavyActionFloatSame(makeGraphics(bh))
 
     @Benchmark
-    fun mutableRefDouble(bh: Blackhole) = mutable_ref.rendering.heavyActionD(makeGraphics(bh))
-
-    
-    @Benchmark
-    fun valueFloat(bh: Blackhole) = value.rendering.heavyActionF(makeGraphics(bh))
-
-    @Benchmark
-    fun valueDouble(bh: Blackhole) = value.rendering.heavyActionD(makeGraphics(bh))
+    fun mutableRefDouble(bh: Blackhole) = mutable_ref.rendering.heavyActionDouble(makeGraphics(bh))
 
     
     @Benchmark
-    fun valueInlineFloat(bh: Blackhole) = value_inline.rendering.heavyActionF(makeGraphics(bh))
+    fun valueFloat(bh: Blackhole) = value.rendering.heavyActionFloat(makeGraphics(bh))
 
     @Benchmark
-    fun valueInlineDouble(bh: Blackhole) = value_inline.rendering.heavyActionD(makeGraphics(bh))
+    fun valueDouble(bh: Blackhole) = value.rendering.heavyActionDouble(makeGraphics(bh))
 
     
     @Benchmark
-    fun valuePreserveBoxFloat(bh: Blackhole) = value_preserve_box.rendering.heavyActionF(makeGraphics(bh))
+    fun valueInlineFloat(bh: Blackhole) = value_inline.rendering.heavyActionFloat(makeGraphics(bh))
 
     @Benchmark
-    fun valuePreserveBoxDouble(bh: Blackhole) = value_preserve_box.rendering.heavyActionD(makeGraphics(bh))
+    fun valueInlineDouble(bh: Blackhole) = value_inline.rendering.heavyActionDouble(makeGraphics(bh))
+
+    
+    @Benchmark
+    fun valuePreserveBoxFloat(bh: Blackhole) = value_preserve_box.rendering.heavyActionFloat(makeGraphics(bh))
+
+    @Benchmark
+    fun valuePreserveBoxDouble(bh: Blackhole) = value_preserve_box.rendering.heavyActionDouble(makeGraphics(bh))
 }

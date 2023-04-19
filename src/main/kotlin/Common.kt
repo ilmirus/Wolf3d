@@ -1,9 +1,6 @@
 import java.awt.Color
 import java.awt.Graphics2D
 
-const val fibonacciInputInt = 45
-const val fibonacciInputLong = 45L
-
 const val screenWidth = 1920
 const val screenHeight = 1024
 
@@ -67,4 +64,18 @@ fun Graphics2D.asAbstract(): AbstractGraphics = object : AbstractGraphics {
     }
 
     override fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int) = this@asAbstract.drawLine(x1, y1, x2, y2)
+}
+
+interface ComplexNumberConsumer {
+    fun consume(real: Int, imaginary: Int)
+    fun consume(real: Long, imaginary: Long)
+}
+
+object ComplexNumberPrinter : ComplexNumberConsumer {
+    override fun consume(real: Int, imaginary: Int) {
+        println(baseline.ackermann.ComplexInt(real, imaginary))
+    }
+    override fun consume(real: Long, imaginary: Long) {
+        println(baseline.ackermann.ComplexLong(real, imaginary))
+    }
 }

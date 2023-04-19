@@ -218,7 +218,7 @@ class MyPanelFSame : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionFSame(graphics: AbstractGraphics) {
+fun heavyActionFloatSame(graphics: AbstractGraphics) {
     var pos = Point2fSame(22.0f, 12.0f)
     var dir = Vector2fSame(-1.0f, 0.0f)
     var plane = Vector2fSame(0.0f, 0.66f)

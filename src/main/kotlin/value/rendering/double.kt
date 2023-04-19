@@ -166,7 +166,7 @@ class MyPanelD : JPanel(), KeyListener, MouseListener {
 }
 
 
-fun heavyActionD(graphics: AbstractGraphics) {
+fun heavyActionDouble(graphics: AbstractGraphics) {
     var pos = Point2d(22.0, 12.0)
     var dir = Vector2d(-1.0, 0.0)
     var plane = Vector2d(0.0, 0.66)

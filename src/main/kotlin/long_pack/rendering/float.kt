@@ -27,7 +27,7 @@ fun canMove(point: Point2f): Boolean =
 
 @JvmInline
 value class Point2f private constructor(@PublishedApi internal val data: Long) {
-    constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong())
+    constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF))
     operator fun plus(vector: Vector2f): Point2f =
         Point2f(
             Float.fromBits(data.shr(32).toInt()) + Float.fromBits(vector.data.shr(32).toInt()),
@@ -188,7 +188,7 @@ class MyPanelF : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionF(graphics: AbstractGraphics) {
+fun heavyActionFloat(graphics: AbstractGraphics) {
     var pos = Point2f(22.0f, 12.0f)
     var dir = Vector2f(-1.0f, 0.0f)
     var plane = Vector2f(0.0f, 0.66f)

@@ -26,7 +26,7 @@ inline operator fun Array<IntArray>.get(location: LocationD): Int = this[locatio
 
 fun canMove(point: Point2d): Boolean = worldMap[point.x.toInt()][point.y.toInt()] == 0
 
-class Point2d(val x: Double, val y: Double) {
+data class Point2d(val x: Double, val y: Double) {
     inline operator fun plus(vector: Vector2d): Point2d =
         Point2d(x + vector.x, y + vector.y)
 
@@ -40,7 +40,7 @@ class Point2d(val x: Double, val y: Double) {
         Vector2d(x, y)
 }
 
-class Vector2d(val x: Double, val y: Double) {
+data class Vector2d(val x: Double, val y: Double) {
     inline fun rotate(angle: Double): Vector2d =
         Vector2d(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
 
@@ -63,7 +63,7 @@ class Vector2d(val x: Double, val y: Double) {
         Vector2d(0.0, y)
 }
 
-class LocationD(val x: Int, val y: Int) {
+data class LocationD(val x: Int, val y: Int) {
     inline fun toVector(): Vector2d =
         Vector2d(x.toDouble(), y.toDouble())
 
@@ -165,7 +165,7 @@ class MyPanelD : JPanel(), KeyListener, MouseListener {
 }
 
 
-fun heavyActionD(graphics: AbstractGraphics) {
+fun heavyActionDouble(graphics: AbstractGraphics) {
     var pos = Point2d(22.0, 12.0)
     var dir = Vector2d(-1.0, 0.0)
     var plane = Vector2d(0.0, 0.66)

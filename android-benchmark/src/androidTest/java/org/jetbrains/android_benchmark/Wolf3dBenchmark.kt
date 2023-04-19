@@ -41,76 +41,77 @@ class Wolf3dBenchmark {
 
     @Test
     fun baselineFloat() = benchmarkRule.measureRepeated {
-        baseline.rendering.heavyActionF(Graphics)
+        baseline.rendering.heavyActionFloat(Graphics)
     }
 
     @Test
     fun baselineDouble() = benchmarkRule.measureRepeated {
-        baseline.rendering.heavyActionD(Graphics)
+        baseline.rendering.heavyActionDouble(Graphics)
     }
 
 
     @Test
     fun inlineFloat() = benchmarkRule.measureRepeated {
-        inline.rendering.heavyActionF(Graphics)
+        inline.rendering.heavyActionFloat(Graphics)
     }
 
     @Test
     fun inlineDouble() = benchmarkRule.measureRepeated {
-        inline.rendering.heavyActionD(Graphics)
+        inline.rendering.heavyActionDouble(Graphics)
     }
 
 
     @Test
     fun longPackFloat() = benchmarkRule.measureRepeated {
-        long_pack.rendering.heavyActionF(Graphics)
+        long_pack.rendering.heavyActionFloat(Graphics)
     }
 
 
     @Test
     fun mutableRefFloatIn2Longs() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionFSeparate(Graphics)
+        mutable_ref.rendering.heavyActionFloatSeparate(Graphics)
     }
 
     @Test
     fun mutableRefFloatIn1Long() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionFSame(Graphics)
+        mutable_ref.rendering.heavyActionFloatSame(Graphics)
     }
 
     @Test
     fun mutableRefDouble() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionD(Graphics)
+        mutable_ref.rendering.heavyActionDouble(Graphics)
     }
 
 
     @Test
     fun valueFloat() = benchmarkRule.measureRepeated {
-        value.rendering.heavyActionF(Graphics)
+        value.rendering.heavyActionFloat(Graphics)
     }
 
     @Test
     fun valueDouble() = benchmarkRule.measureRepeated {
-        value.rendering.heavyActionD(Graphics)
+        value.rendering.heavyActionDouble(Graphics)
     }
 
 
     @Test
     fun valueInlineFloat() = benchmarkRule.measureRepeated {
-        value_inline.rendering.heavyActionF(Graphics)
+        value_inline.rendering.heavyActionFloat(Graphics)
     }
 
     @Test
     fun valueInlineDouble() = benchmarkRule.measureRepeated {
-        value_inline.rendering.heavyActionD(Graphics)
+        value_inline.rendering.heavyActionDouble(Graphics)
     }
+
 
     @Test
     fun valuePreserveBoxFloat() = benchmarkRule.measureRepeated {
-        value_preserve_box.rendering.heavyActionF(Graphics)
+        value_preserve_box.rendering.heavyActionFloat(Graphics)
     }
 
     @Test
     fun valuePreserveBoxDouble() = benchmarkRule.measureRepeated {
-        value_preserve_box.rendering.heavyActionD(Graphics)
+        value_preserve_box.rendering.heavyActionDouble(Graphics)
     }
 }

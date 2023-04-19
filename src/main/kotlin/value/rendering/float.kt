@@ -165,7 +165,7 @@ class MyPanelF : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionF(graphics: AbstractGraphics) {
+fun heavyActionFloat(graphics: AbstractGraphics) {
     var pos = Point2f(22.0f, 12.0f)
     var dir = Vector2f(-1.0f, 0.0f)
     var plane = Vector2f(0.0f, 0.66f)

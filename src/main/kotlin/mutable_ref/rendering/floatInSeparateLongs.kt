@@ -232,7 +232,7 @@ class MyPanelFSeparate : JPanel(), KeyListener, MouseListener {
     override fun keyReleased(e: KeyEvent) {}
 }
 
-fun heavyActionFSeparate(graphics: AbstractGraphics) {
+fun heavyActionFloatSeparate(graphics: AbstractGraphics) {
     var pos = Point2fSeparate(22.0f, 12.0f)
     var dir = Vector2fSeparate(-1.0f, 0.0f)
     var plane = Vector2fSeparate(0.0f, 0.66f)

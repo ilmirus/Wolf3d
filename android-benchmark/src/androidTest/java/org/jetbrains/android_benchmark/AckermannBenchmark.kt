@@ -1,13 +1,12 @@
 package org.jetbrains.android_benchmark
 
+import ComplexNumberConsumer
 import androidx.benchmark.junit4.BenchmarkRule
 import androidx.benchmark.junit4.measureRepeated
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import fibonacciInputInt
-import fibonacciInputLong
 
 /**
  * Benchmark, which will execute on an Android device.
@@ -16,61 +15,78 @@ import fibonacciInputLong
  * output the result. Modify your code to see how it affects performance.
  */
 @RunWith(AndroidJUnit4::class)
-class FibonacciBenchmark {
+class AckermannBenchmark {
 
     @get:Rule
     val benchmarkRule = BenchmarkRule()
+    
+    private object SimpleComplexNumberConsumer : ComplexNumberConsumer {
+        var int1: Int = 0
+        var int2: Int = 0
+        var long1: Long = 0
+        var long2: Long = 0
+        override fun consume(real: Int, imaginary: Int) {
+            int1 = real
+            int2 = imaginary
+        }
+
+        override fun consume(real: Long, imaginary: Long) {
+            long1 = real
+            long2 = imaginary
+        }
+    }
 
     @Test
     fun baselineInt() = benchmarkRule.measureRepeated {
-        baseline.fibonacci.fibonacci(fibonacciInputInt)
+        baseline.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
     }
 
     @Test
     fun baselineLong() = benchmarkRule.measureRepeated {
-        baseline.fibonacci.fibonacci(fibonacciInputLong)
+        baseline.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
     }
 
 
     @Test
     fun longPackInt() = benchmarkRule.measureRepeated {
-        long_pack.fibonacci.fibonacci(fibonacciInputInt)
+        long_pack.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
     }
 
 
     @Test
     fun mutableRefIntIn2Longs() = benchmarkRule.measureRepeated {
-        mutable_ref.fibonacci.fibonacciSeparate(fibonacciInputInt)
+        mutable_ref.ackermann.heavyActionIntSeparate(SimpleComplexNumberConsumer)
     }
 
     @Test
     fun mutableRefIntIn1Long() = benchmarkRule.measureRepeated {
-        mutable_ref.fibonacci.fibonacciSame(fibonacciInputInt)
+        mutable_ref.ackermann.heavyActionIntSame(SimpleComplexNumberConsumer)
     }
 
     @Test
     fun mutableRefLong() = benchmarkRule.measureRepeated {
-        mutable_ref.fibonacci.fibonacci(fibonacciInputLong)
+        mutable_ref.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
     }
 
 
     @Test
     fun valueInt() = benchmarkRule.measureRepeated {
-        value.fibonacci.fibonacci(fibonacciInputInt)
+        value.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
     }
 
     @Test
     fun valueLong() = benchmarkRule.measureRepeated {
-        value.fibonacci.fibonacci(fibonacciInputLong)
+        value.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
     }
+
 
     @Test
     fun valuePreserveBoxInt() = benchmarkRule.measureRepeated {
-        value_preserve_box.fibonacci.fibonacci(fibonacciInputInt)
+        value_preserve_box.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
     }
 
     @Test
     fun valuePreserveBoxLong() = benchmarkRule.measureRepeated {
-        value_preserve_box.fibonacci.fibonacci(fibonacciInputLong)
+        value_preserve_box.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
     }
 }
