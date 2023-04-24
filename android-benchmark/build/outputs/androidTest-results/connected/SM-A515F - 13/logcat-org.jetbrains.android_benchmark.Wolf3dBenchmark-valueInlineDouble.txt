@@ -1,527 +1,338 @@
-04-19 16:01:12.180 17564 17585 I TestRunner: started: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
-04-19 16:01:12.184 17564 17564 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-19 16:01:12.184 17564 17564 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@f5684be
-04-19 16:01:12.193 17564 17585 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-19 16:01:12.193 17564 17585 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-19 16:01:12.194 17564 17585 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueInlineDouble --
-04-19 16:01:12.194 17564 17585 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-19 16:01:12.194 17564 17585 D PerfettoCapture: Recording perfetto trace
-04-19 16:01:12.209  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-19 16:01:12.227 23109 21572 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 345917 [CONTEXT service_id=218 ]
-04-19 16:01:12.242 23109 20594 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 63 uptime_millis: 64 exec_start_elapsed_seconds: 345917 [CONTEXT service_id=218 ]
-04-19 16:01:12.243 17564 17585 I PerfettoCapture: Cleanup perfetto before starting.
-04-19 16:01:12.461 17564 17585 I PerfettoCapture: Perfetto output file cleanup -
-04-19 16:01:12.461 17564 17585 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-19 16:01:12.630 21597 21597 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-19 16:01:12.632  5406  5406 I perfetto: ing_service_impl.cc:953 Configured tracing session 191, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-19 16:01:12.634  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=381)
-04-19 16:01:12.679 17564 17585 I PerfettoCapture: Perfetto output - 21597
-04-19 16:01:12.679 17564 17585 I PerfettoCapture: EXITCODE=0
-04-19 16:01:12.690  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-19 16:01:12.707  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-19 16:01:12.726  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-19 16:01:12.742 13194 13194 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-19 16:01:12.743 13194 13194 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-19 16:01:12.746 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-19 16:01:12.776  5628  9148 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-19 16:01:12.777  5628  9148 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-19 16:01:12.779  5628  9148 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-19 16:01:12.819 17564 17585 I PerfettoCapture: Perfetto tracing started successfully with pid 21597.
-04-19 16:01:12.835 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000007868 indexCount: 1709 sourceCount: 1709
-04-19 16:01:12.915 13194 15497 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-19 16:01:12.925 17564 17585 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-19 16:01:12.925 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  122 ms
-04-19 16:01:12.925 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-19 16:01:12.926 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-19 16:01:12.928 17564 17585 D Benchmark: Set 17585 (Bench thread) to priority -20. Was -8, now -20
-04-19 16:01:12.929 17564 17585 D Benchmark: Set 17572 (Jit) to priority -15. Was 9, now -15
-04-19 16:01:12.930 13194 13250 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=eb477095-a2a2-4a26-a68c-fa183f0856da, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-19 16:01:12.930 13194 15497 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-19 16:01:12.965 17564 17585 I _benchmark.test: Explicit concurrent copying GC freed 162538(4029KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2898KB/9042KB, paused 311us,123us total 35.607ms
-04-19 16:01:13.020  5628  9148 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-19 16:01:13.021  5628  9148 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-19 16:01:13.022  5628  9148 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-19 16:01:13.158 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:13.160 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:14.162 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:14.164 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:14.703  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 36127, isSameBssidAndFreq true
-04-19 16:01:14.707  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.018 ms / 433.000 Mbps (433 / 0.000 / 1.000)
-04-19 16:01:14.708  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-19 16:01:14.710  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-19 16:01:15.166 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:15.167 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:15.742  5628  8457 D NetdEventListenerService: DNS Requested by : 128, 10226
-04-19 16:01:16.169 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:16.171 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:17.174 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:17.176 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:17.744  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 36128, isSameBssidAndFreq true
-04-19 16:01:17.749  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.021 ms / 378.875 Mbps (433 / 0.000 / 1.143)
-04-19 16:01:17.750  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-19 16:01:17.752  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-19 16:01:18.179 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:18.180 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:19.183 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:19.184 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:19.424 31103 31413 I BluetoothAdapter: STATE_ON
-04-19 16:01:19.433 31103 31413 D BluetoothGatt: connect() - device: 645DF4_1, auto: false
-04-19 16:01:19.433 31103 31413 D BluetoothGatt: registerApp()
-04-19 16:01:19.434 31103 31413 D BluetoothGatt: registerApp() - UUID=24dbbedb-248f-4411-b783-1208c25c26d0
-04-19 16:01:19.450  8900 12244 D BtGatt.GattService: registerClient(com.google.android.googlequicksearchbox) - UUID=24dbbedb-248f-4411-b783-1208c25c26d0
-04-19 16:01:19.454  8900 12244 D BtGatt.ContextMap: add() - appUid: 10233, appPid: 31103, appName: com.google.android.googlequicksearchbox
-04-19 16:01:19.463  8900  9513 W bt_bta_gattc: bta_gattc_register :: state: 2, uuid=24dbbedb-248f-4411-b783-1208c25c26d0
-04-19 16:01:19.465  8900  9513 W bt_bta_gattc: Registered GATT client interface 6 with uuid=24dbbedb-248f-4411-b783-1208c25c26d0, starting it on main thread
-04-19 16:01:19.465 31103 31413 I GattConnObserver: GATT connect started, beginning countdown timer
-04-19 16:01:19.466  8900  9513 W bt_bta_gattc: client_if=6
-04-19 16:01:19.466  8900  9052 D BtGatt.GattService: onClientRegistered() - UUID=24dbbedb-248f-4411-b783-1208c25c26d0, clientIf=6
-04-19 16:01:19.474 31103 31150 D BluetoothGatt: onClientRegistered() - status=0 clientIf=6
-04-19 16:01:19.490  8900 12244 D BtGatt.GattService: clientConnect(com.google.android.googlequicksearchbox) - address = 645DF4_1, isDirect=true transport =2 set own addr = false own addr type:0, clientIf: 6, opportunistic=false, phy: 1
-04-19 16:01:19.500  8900  9513 W bt_btm_ble: BTM_SecAddBleDevice :: dev_type=0x3
-04-19 16:01:19.503  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open
-04-19 16:01:19.509  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x00, Event 0x1f00
-04-19 16:01:19.510  8900  9513 W bt_bta_gattc: bta_gattc_open
-04-19 16:01:19.512  8900  9513 W bt_stack: [WARNING:gatt_api.cc(1238)] GATT_Connect
-04-19 16:01:19.514  8900  9513 W bt_stack: Starting direct connect gatt_if=6 address=645df4
-04-19 16:01:19.516  8900  9513 W bt_stack: gatt_act_connect
-04-19 16:01:19.522  8900  9513 I bt_stack: [INFO:gatt_attr.cc(886)] gatt_sr_init_cl_status: bda=645df4, cl_supp_feat=0000, aware=1
-04-19 16:01:19.523  8900  9513 W bt_stack: gatt_connect
-04-19 16:01:19.523  8900  9513 W bt_stack: gatt_connect :: call acl_create_le_connection_with_id
-04-19 16:01:19.524  8900  9513 W btm_acl : Creating le direct connection to:xx:xx:xx:xx:b3:b1[public]
-04-19 16:01:19.525  8900  9513 W bt_stack: AcceptLeConnectionFrom xx:xx:xx:xx:b3:b1
-04-19 16:01:19.525  8900  9466 W bt_stack: Allow Le connection from remote:xx:xx:xx:xx:b3:b1[PUBLIC_DEVICE_ADDRESS]
-04-19 16:01:19.528  8900  9466 W bt_stack: create_le_connection :: address : 64:5d:f4, add_to_connect_list : 1, is_direct : 1
-04-19 16:01:19.528  8900  9466 W bt_stack: add_device_to_connect_list 64:5d:f4 :: Send command after register
-04-19 16:01:19.529  8900  9466 W bt_stack: add_device_to_connect_list :: Device is found in security db(64:5d:f4 -> 645df4)
-04-19 16:01:19.529  8900  9466 W bt_stack: add_device_to_connect_list :: set address_with_type as identity_addr
-04-19 16:01:19.530  8900  9466 W bt_stack: Fast Connection Mode is already Set!!!
-04-19 16:01:19.532  8900  9466 W bt_stack: Deferred until filter accept list has completed
-04-19 16:01:19.532  8900  9466 W bt_stack: pause_registered_clients()
-04-19 16:01:19.532  8900  9466 W bt_stack: le_scanning_manager :: OnPause()
-04-19 16:01:19.532  8900  9466 W bt_stack: Stop LeSetScanEnable
-04-19 16:01:19.532  8900  9466 W bt_stack: le_scanning_manager :: OnPause() - call AckPause
-04-19 16:01:19.532  8900  9466 W bt_stack: le_impl :: OnPause()
-04-19 16:01:19.532  8900  9466 W bt_stack: le_impl :: ConnectabilityState is DISARMED. Call AckPause()
-04-19 16:01:19.532  8900  9466 W bt_stack: pause_registered_clients()
-04-19 16:01:19.535  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-19 16:01:19.535  8900  9466 W bt_stack: le_address_manager :: ack_pause() - make sure all client paused. Return
-04-19 16:01:19.535  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-19 16:01:19.535  8900  9466 W bt_stack: le_address_manager :: ack_pause() - handle_next_command
-04-19 16:01:19.536  8900  9466 W bt_stack: handle_next_command()
-04-19 16:01:19.546  8900  9466 W bt_stack: Received command complete with op_code LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST
-04-19 16:01:19.548  8900  9466 W bt_stack: handle_next_command()
-04-19 16:01:19.554  8900  9466 W bt_stack: Received command complete with op_code LE_ADD_DEVICE_TO_FILTER_ACCEPT_LIST
-04-19 16:01:19.554  8900  9466 W bt_stack: le_scanning_manager :: OnResume()
-04-19 16:01:19.554  8900  9466 W bt_stack: Start LeSetScan
-04-19 16:01:19.554  8900  9466 W bt_stack: le_scanning_manager :: OnResume() - call AckResume
-04-19 16:01:19.554  8900  9466 W bt_stack: le_impl :: OnResume()
-04-19 16:01:19.554  8900  9466 W bt_stack: le_impl :: OnResume - Try arm connectability
-04-19 16:01:19.554  8900  9466 W bt_stack: arm_connectability()
-04-19 16:01:19.554  8900  9466 W bt_stack: le_impl :: check_for_unregister()
-04-19 16:01:19.555  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-19 16:01:19.555  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-19 16:01:19.561  8900  9466 E bt_stack: on_create_connection :: Command status is success. Set ConnectabilityState to ARMED
-04-19 16:01:19.676  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-19 16:01:19.729 19368 19368 I DWBUsageDataManager: retrieveDataOnSpecificDay date : 1681912879715
-04-19 16:01:19.732 19368 19368 I DWBUsageDataManager: Retrieve RETRIEVE_DAILY_DATA
-04-19 16:01:19.903 19163 19163 I MemoryLowReceiver: Received : com.samsung.KPM_CRITICAL_MEMORY_STATUS
-04-19 16:01:19.992 19163 21640 I MemoryLowService: Received action com.samsung.android.sm.ACTION_SVC_HANDLE_SYSTEM_MEM_LOW_BR
-04-19 16:01:20.034  5628  5647 I system_server: Background young concurrent copying GC freed 265774(12MB) AllocSpace objects, 38(760KB) LOS objects, 7% free, 123MB/134MB, paused 345us,421us total 128.162ms
-04-19 16:01:20.041 21461 21475 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:20.041  5224  5224 E audit   : type=1400 audit(1681912880.033:103156): avc:  denied  { read } for  pid=21461 comm="binder:21461_2" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:20.041  5224  5224 E audit   : type=1300 audit(1681912880.033:103156): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7d7647d2f8 a2=88000 a3=0 items=0 ppid=5250 pid=21461 auid=4294967295 uid=10102 gid=10102 euid=10102 suid=10102 fsuid=10102 egid=10102 sgid=10102 fsgid=10102 tty=(none) ses=4294967295 comm="binder:21461_2" exe="/system/bin/app_process64" subj=u:r:priv_app:s0:c512,c768 key=(null)
-04-19 16:01:20.041  5224  5224 E audit   : type=1327 audit(1681912880.033:103156): proctitle="<pre-initialized>"
-04-19 16:01:20.044  5250  5250 D Zygote  : Forked child process 21645
-04-19 16:01:20.056  5628  5649 W System  : A resource failed to call close.
-04-19 16:01:20.063  5628  5649 W System  : A resource failed to call close.
-04-19 16:01:20.089 21645 21645 I oid.sm.provider: Using CollectorTypeCC GC.
-04-19 16:01:20.097 21645 21645 E oid.sm.provider: Not starting debugger since process cannot load the jdwp agent.
-04-19 16:01:20.113 21645 21645 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:20.113  5224  5224 E audit   : type=1400 audit(1681912880.109:103157): avc:  denied  { read } for  pid=21645 comm="oid.sm.provider" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:20.113  5224  5224 E audit   : type=1300 audit(1681912880.109:103157): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7ffbc769b8 a2=88000 a3=0 items=0 ppid=5250 pid=21645 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="oid.sm.provider" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
-04-19 16:01:20.115 21645 21645 D ActivityThread: setConscryptValidator
-04-19 16:01:20.115 21645 21645 D ActivityThread: setConscryptValidator - put
-04-19 16:01:20.118 21645 21663 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:20.151 21645 21645 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
-04-19 16:01:20.186 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:20.187 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:20.577 21645 21664 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:20.590 19368 21637 I DWBUsageDataManager: updateDailyData of 1681912879738
-04-19 16:01:20.622 21645 21645 I DMT-StubUpdateUtils: current : 1360104000, market : 0
-04-19 16:01:20.624 21645 21645 I DMT-StubUpdateUtils: current : 730800110, market : 0
-04-19 16:01:20.642 21645 21645 I DIAGMON_SDK[605054]: DiagMonAgent type: 2
-04-19 16:01:20.642 21645 21645 I DIAGMON_SDK[605054][dc60qlc6ri] : generated SR object
-04-19 16:01:20.670 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Received msg based on provider : request_deviceid / request_deviceid
-04-19 16:01:20.677 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Signature Check Success
-04-19 16:01:20.678 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Action : Request deviceID
-04-19 16:01:20.683 11006 11152 W DMASA[D][dc60qlc6ri]: [DiagmonProvider]DeviceId failed : user binary or info null
-04-19 16:01:20.686 21645 21675 I DIAGMON_SDK[605054][dc60qlc6ri] : Agreement value: D
-04-19 16:01:20.686 21645 21675 I DIAGMON_SDK[605054][dc60qlc6ri] : Request Service Registration
-04-19 16:01:20.689 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Received msg based on provider : registration / register_service
-04-19 16:01:20.691 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Signature Check Success
-04-19 16:01:20.691 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]Action : Register service
-04-19 16:01:20.696 11006 11152 I DMASA[D][dc60qlc6ri]: [b]Service Agree: true
-04-19 16:01:20.697 11006 11152 I DMASA[D][dc60qlc6ri]: [b]Device ID is null or empty
-04-19 16:01:20.698 11006 11152 I DMASA[D][dc60qlc6ri]: [b]Tracking ID is null or empty
-04-19 16:01:20.700 11006 11152 I DMASA[D][dc60qlc6ri]: [DiagmonProvider]SERVICE INFO already registered to server [dc60qlc6ri]
-04-19 16:01:20.712 21645 21675 I DIAGMON_SDK[605054][dc60qlc6ri] : Results : Success
-04-19 16:01:20.748  4066  4501 I LauncherProvider: External provider call by package : android.uid.system:1000  for method : get_full_sync_state
-04-19 16:01:20.751  4066  4501 I ExternalMethodFactory: get_full_sync_state
-04-19 16:01:20.774  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 36129, isSameBssidAndFreq true
-04-19 16:01:20.773  4066  4501 I LauncherProvider: External provider call by package : android.uid.system:1000  for method : get_full_sync_state
-04-19 16:01:20.776  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-19 16:01:20.777  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.021 ms / 378.875 Mbps (433 / 0.000 / 1.143)
-04-19 16:01:20.778  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-19 16:01:20.781  4066  4501 I ExternalMethodFactory: get_full_sync_state
-04-19 16:01:20.782 19368 21637 I AppWidgetManager: updateAppWidget() appWidgetIds = [25]
-04-19 16:01:20.791 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.035 19368 21637 I DWBUsageDataManager: updateDailyData of 1681826479738
-04-19 16:01:21.036 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.188 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:21.189 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:21.213 19368 21637 I DWBUsageDataManager: updateDailyData of 1681740079738
-04-19 16:01:21.213 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.217 23109 20594 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.reportNetworkConnectivity(ConnectivityManager.java:3390)] [anzl.i(:com.google.android.gms@231312044@23.13.12 (190400-519946965):0)] [anyz.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):57)] [anzz.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)] [dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)] [abix.c(:com.google.android.gms@231312044@23.13.12 (190400-519946965):6)] [abix.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [abod.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):0)] [java.lang.Thread.run(Thread.java:1012)]
-04-19 16:01:21.224 23109 20594 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 347177012]
-04-19 16:01:21.288  4557  4557 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [com.google.android.c2dm.intent.RECEIVE] package [com.google.android.googlequicksearchbox].
-04-19 16:01:21.288  4557  4557 I GnpSdk  : [ChimeBroadcastReceiver] Phenotype initialized.
-04-19 16:01:21.343  4557  4557 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [com.google.android.c2dm.intent.RECEIVE].
-04-19 16:01:21.354  4557  4557 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Submitting Broadcast execution [33134966] to tiktok executor.
-04-19 16:01:21.364  4557 21679 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [com.google.android.c2dm.intent.RECEIVE].
-04-19 16:01:21.413 19368 21637 I DWBUsageDataManager: updateDailyData of 1681653679738
-04-19 16:01:21.413 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.643 19368 21637 I DWBUsageDataManager: updateDailyData of 1681567279738
-04-19 16:01:21.643 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.840 23109 23109 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-19 16:01:21.840 23109 23109 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-19 16:01:21.877 19368 21637 I DWBUsageDataManager: updateDailyData of 1681480879738
-04-19 16:01:21.878 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:21.914  5628  5647 I system_server: Background young concurrent copying GC freed 125640(10132KB) AllocSpace objects, 14(1520KB) LOS objects, 8% free, 123MB/134MB, paused 327us,534us total 113.980ms
-04-19 16:01:21.915  5224  5224 E audit   : type=1400 audit(1681912881.909:103161): avc:  denied  { read } for  pid=21645 comm="binder:21645_3" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:21.915 21645 21669 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:21.915  5224  5224 E audit   : type=1300 audit(1681912881.909:103161): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7dd05f32f8 a2=88000 a3=0 items=0 ppid=5250 pid=21645 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="binder:21645_3" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
-04-19 16:01:21.915  5224  5224 E audit   : type=1327 audit(1681912881.909:103161): proctitle="com.samsung.android.sm.provider"
-04-19 16:01:21.937  4557 21681 I A       : Chime Filter is invoked.
-04-19 16:01:22.093 19368 21637 I DWBUsageDataManager: updateDailyData of 1681394479738
-04-19 16:01:22.093 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:22.146  4557  4727 I A       : (REDACTED) GMSCore Auth returned %d accounts.
-04-19 16:01:22.146  4557  4727 I A       : (REDACTED) GoogleOwnersProvider returned %d accounts.
-04-19 16:01:22.173  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-19 16:01:22.191 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:22.192 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:22.198  4557 21681 I A       : Notification was not filtered.
-04-19 16:01:22.310 19368 21637 I DWBUsageDataManager: updateDailyData of 1681308079738
-04-19 16:01:22.310 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:22.365  5628  5952 I HqmInfo::HqmManagerService: MSG_TYPE:MSG_TYPE_PROCESS_LOG_BY_HQM
-04-19 16:01:22.548  4557 21681 I GnpSdk  : [NotificationChannelHelperImpl] Setting channel Id: '21'
-04-19 16:01:22.572 19368 21637 I DWBUsageDataManager: updateDailyData of 1681221679738
-04-19 16:01:22.572 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:22.765  4557 21681 I GnpSdk  : [NotificationChannelHelperImpl] Setting channel Id: '21'
-04-19 16:01:22.787  5628 11453 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.google.android.googlequicksearchbox,userId = 0
-04-19 16:01:22.788  5628 11453 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.google.android.googlequicksearchbox,userId = 0
-04-19 16:01:22.796  5628 11453 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.google.android.googlequicksearchbox,userId = 0
-04-19 16:01:22.800  5628 11453 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.google.android.googlequicksearchbox,userId = 0
-04-19 16:01:22.908  4557  4668 I ChimeNotiEventHandler: (REDACTED) Successfully recorded chime actions: %s
-04-19 16:01:23.016 19368 21637 I DWBUsageDataManager: updateDailyData of 1681135279738
-04-19 16:01:23.016 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:23.035  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.036  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.036  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.037  4066  4066 I Launcher.NotificationListener: onNotificationPosted : com.google.android.googlequicksearchbox number : 0
-04-19 16:01:23.041  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.041  4066  4066 I Launcher.NotificationListener: onNotificationPosted : com.google.android.googlequicksearchbox number : 0
-04-19 16:01:23.042  8492  8492 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.google.android.googlequicksearchbox user=UserHandle{0} id=0 tag=-1997195081::SUMMARY::wx key=0|com.google.android.googlequicksearchbox|0|-1997195081::SUMMARY::wx|10233: Notification(channel=21 shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x200 color=0x00000000 groupKey=-1997195081::SUMMARY::wx vis=PRIVATE publicVersion=Notification(channel=null shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x0 color=0x00000000 vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0) semFlags=0x0 semPriority=0 semMissedCount=0))
-04-19 16:01:23.042  8492  8492 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.google.android.googlequicksearchbox is not enabled
-04-19 16:01:23.043  8492  8492 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.google.android.googlequicksearchbox user=UserHandle{0} id=0 tag=-1997195081::a:snotification:[0x394,wx.f,NOTIFICATION] key=0|com.google.android.googlequicksearchbox|0|-1997195081::a:snotification:[0x394,wx.f,NOTIFICATION]|10233: Notification(channel=21 shortcut=null contentView=null vibrate=null sound=null tick defaults=0x0 flags=0x8 color=0x00000000 groupKey=-1997195081::SUMMARY::wx vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0))
-04-19 16:01:23.043  8492  8492 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.google.android.googlequicksearchbox is not enabled
-04-19 16:01:23.044  6057  6576 I NotificationPipeline: Processing new notification: 0|com.google.android.googlequicksearchbox|0|-1997195081::SUMMARY::wx|10233
-04-19 16:01:23.041  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.044  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.045  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.045  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.048  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.049  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.049  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.049  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.049  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.050  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.050  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.051  6057  6576 W Notification4Heart_NB: Watch.isEnabled-main switch - off : [0] com.google.android.googlequicksearchbox
-04-19 16:01:23.052  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.052  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.053  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.053  6057  6576 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-block : [0] com.google.android.googlequicksearchbox
-04-19 16:01:23.053  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.053  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.053  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.054  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.054  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.054  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.054  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.055  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.055  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.055  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.055  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.055  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.065  6057  6576 I NotificationPipeline: Processing new notification: 0|com.google.android.googlequicksearchbox|0|-1997195081::a:snotification:[0x394,wx.f,NOTIFICATION]|10233
-04-19 16:01:23.065  6057  6576 W Notification4Heart_NB: Watch.isEnabled-main switch - off : [0] com.google.android.googlequicksearchbox
-04-19 16:01:23.065  6057  6576 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-block : [0] com.google.android.googlequicksearchbox
-04-19 16:01:23.066  8513  8513 D PluginAODManager: onNotificationInfoUpdated() 0
-04-19 16:01:23.067  8513  8513 I AODNotificationManager: updateVisibleNotifications: 0
-04-19 16:01:23.067  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.067  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.074  6057 28800 W Notification4Heart_NB: NotificationHistoryInterface.flushHistoryMap-Flush. map size : 6
-04-19 16:01:23.113  4557 21679 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Finished Broadcast execution [33134966].
-04-19 16:01:23.157  5900  7194 I Notification4Heart_AM: NotificationHistoryModel.updateHistories-last: {userId: 0, packageName: com.google.android.googlequicksearchbox, timestamp: 1681912883055, pendingReason: , receivedWatchNodeId: , count: 2}
-04-19 16:01:23.169  4557  4557 I NotificationFullFlow: Step 1: GcmBroadcastReceiver:onReceive
-04-19 16:01:23.169  4557  4557 I GcmBroadcastReceiver: #processIntentDefault
-04-19 16:01:23.191 23109 23109 W GCM     : broadcast intent callback: result=CANCELLED forIntent { act=com.google.android.c2dm.intent.RECEIVE pkg=com.google.android.googlequicksearchbox (has extras) }
-04-19 16:01:23.193 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:23.195 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:23.212  5250  5250 D Zygote  : Forked child process 21696
-04-19 16:01:23.252 21696 21696 I android.dqagent: Using CollectorTypeCC GC.
-04-19 16:01:23.260 21696 21696 E android.dqagent: Not starting debugger since process cannot load the jdwp agent.
-04-19 16:01:23.262  8513  8513 D InterruptionStateProvider: Group alert behavior is suppressed but we want to alert bubble
-04-19 16:01:23.263  8513  8513 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=0|com.google.android.googlequicksearchbox|0|-1997195081::SUMMARY::wx|10233
-04-19 16:01:23.268  4557 11154 V ClearcutMetricXmitter: Transmission is done.
-04-19 16:01:23.271  8513  8513 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=0|com.google.android.googlequicksearchbox|0|-1997195081::a:snotification:[0x394,wx.f,NOTIFICATION]|10233
-04-19 16:01:23.272 21696 21696 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:23.272  5224  5224 E audit   : type=1400 audit(1681912883.265:103162): avc:  denied  { read } for  pid=21696 comm="android.dqagent" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:23.272  5224  5224 E audit   : type=1300 audit(1681912883.265:103162): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7ffbc769b8 a2=88000 a3=0 items=0 ppid=5250 pid=21696 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="android.dqagent" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
-04-19 16:01:23.272  5224  5224 E audit   : type=1327 audit(1681912883.265:103162): proctitle="zygote64"
-04-19 16:01:23.274 21696 21708 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:23.274  5224  5224 E audit   : type=1400 audit(1681912883.269:103163): avc:  denied  { read } for  pid=21696 comm="binder:21696_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:system_app:s0 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:23.274  5224  5224 E audit   : type=1300 audit(1681912883.269:103163): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7d7757b2f8 a2=88000 a3=0 items=0 ppid=5250 pid=21696 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="binder:21696_1" exe="/system/bin/app_process64" subj=u:r:system_app:s0 key=(null)
-04-19 16:01:23.275 21696 21696 D ActivityThread: setConscryptValidator
-04-19 16:01:23.275 21696 21696 D ActivityThread: setConscryptValidator - put
-04-19 16:01:23.299 21696 21696 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 1000; state: ENABLED
-04-19 16:01:23.303  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
-04-19 16:01:23.303  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
-04-19 16:01:23.304  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
-04-19 16:01:23.304  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
-04-19 16:01:23.310  8513  8513 D PluginAODManager: onNotificationInfoUpdated() 0
-04-19 16:01:23.311  8513  8513 I AODNotificationManager: updateVisibleNotifications: 0
-04-19 16:01:23.311  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.311  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.392  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
-04-19 16:01:23.392  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
-04-19 16:01:23.392  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
-04-19 16:01:23.392  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
-04-19 16:01:23.425  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
-04-19 16:01:23.425  8513  8513 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
-04-19 16:01:23.425  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
-04-19 16:01:23.425  8513  8513 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
-04-19 16:01:23.428 19368 21637 I DWBUsageDataManager: updateDailyData of 1681048879738
-04-19 16:01:23.429 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:23.432  8513  8513 D PluginAODManager: onNotificationInfoUpdated() 0
-04-19 16:01:23.432  8513  8513 I AODNotificationManager: updateVisibleNotifications: 0
-04-19 16:01:23.432  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.432  8513  8513 I a       : updateStatusBarNotifications: open
-04-19 16:01:23.528 21696 21696 I DIAGMON_SDK[605054]: DiagMonAgent type: 2
-04-19 16:01:23.528 21696 21696 I DIAGMON_SDK[605054][999-399-549750] : generated SR object
-04-19 16:01:23.563 11006 11152 I DMASA[D][999-399-549750]: [DiagmonProvider]Received msg based on provider : true / anr_logging
-04-19 16:01:23.565 11006 11152 I DMASA[D][999-399-549750]: [DiagmonProvider]Signature Check Success
-04-19 16:01:23.566 21696 21709 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:23.575 21696 21714 I DIAGMON_SDK[605054][999-399-549750] : Results : Success
-04-19 16:01:23.595  4613  4613 W keymaster_tee: [WRN]begin req PARAMS: A32 B2 P64
-04-19 16:01:23.725 21696 21715 I DQA     : [DQADatabaseOpenHelper]db open success
-04-19 16:01:23.736 21696 21696 W android.dqagent: Long monitor contention with owner Thread-4 (21715) at k.a k.a.e(android.content.Context)(DBManager.java:6) waiters=0 in k.a k.a.e(android.content.Context) for 158ms
-04-19 16:01:23.792  5331  5331 I SurfaceFlinger: SFWD update time=252473896153762
-04-19 16:01:23.795  5628  9811 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 36130, isSameBssidAndFreq true
-04-19 16:01:23.798  5628  8422 I SemWifiLinkQualityMonitor: Link Qos Query: 0.021 ms / 376.522 Mbps (433 / 0.000 / 1.150)
-04-19 16:01:23.798  8513  8513 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-19 16:01:23.799  8513  8599 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-19 16:01:23.811 19368 21637 I DWBUsageDataManager: updateDailyData of 1680962479738
-04-19 16:01:23.811 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:23.825  5628  5712 I libprocessgroup: Successfully killed process cgroup uid 5278 pid 19943 in 0ms
-04-19 16:01:23.862  5250  5250 I Zygote  : Process 19943 exited due to signal 9 (Killed)
-04-19 16:01:23.865 14911 14911 I [AUTHFW][PSDK]PassServiceConnection: onServiceDisconnected
-04-19 16:01:23.868 14911 14911 I [PASS][SPASS]SPassApplication: pass disconnected
-04-19 16:01:23.868  4377  4625 I servicemanager: 'com.samsung.android.pass.IPassService' died
-04-19 16:01:24.175  5900  8559 I Notification4Heart_AM: BroadcastUtils.sendBroadcast-nodeId: all, action: HISTORY_UPDATED
-04-19 16:01:24.184 19368 21637 I DWBUsageDataManager: updateDailyData of 1680876079738
-04-19 16:01:24.184 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:24.203 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:24.204 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:24.475 31103 31103 W GattConnObserver: GATT connect timeout!
-04-19 16:01:24.476 31103 31103 D BluetoothGatt: cancelOpen() - device: 645DF4_1
-04-19 16:01:24.484  8900  8917 D BtGatt.GattService: clientDisconnect(com.google.android.googlequicksearchbox) - address=645DF4_1, connId=null, clientIf: 6
-04-19 16:01:24.490  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open_cancel
-04-19 16:01:24.490  8900  9513 W bt_bta_gattc: Cancel GATT client direct connection
-04-19 16:01:24.491  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x01, Event 0x1f02
-04-19 16:01:24.491  8900  9513 W bt_bta_gattc: bta_gattc_cancel_open
-04-19 16:01:24.491  8900  9513 W bt_stack: [WARNING:gatt_api.cc(1322)] GATT_CancelConnect: gatt_if:6, address: 645df4, direct:1
-04-19 16:01:24.492  8900  9513 W bt_stack: gatt_disconnect
-04-19 16:01:24.492  8900  9513 W bt_stack: Unable to find background connection to remove
-04-19 16:01:24.494  8900  9513 W bt_stack: BTM_AcceptlistRemove
-04-19 16:01:24.494  8900  9513 W bt_stack: IgnoreLeConnectionFrom xx:xx:xx:xx:b3:b1
-04-19 16:01:24.494  8900  9513 W gatt_utils: gatt_cleanup_upon_disc
-04-19 16:01:24.494  8900  9513 W gatt_utils: gatt_cleanup_upon_disc :: GATT_CH_CLOSE
-04-19 16:01:24.494  8900  9466 W bt_stack: Ignore Le connection from remote:xx:xx:xx:xx:b3:b1[PUBLIC_DEVICE_ADDRESS]
-04-19 16:01:24.494  8900  9466 W bt_stack: cancel_connection_and_remove_device_from_background_connection_list 64:5d:f4
-04-19 16:01:24.494  8900  9466 W bt_stack: remove_device_from_background_connection_list 64:5d:f4
-04-19 16:01:24.494  8900  9466 W bt_stack: cancel_connect 64:5d:f4
-04-19 16:01:24.494  8900  9466 W bt_stack: remove_device_from_connect_list 64:5d:f4 :: Send command after register
-04-19 16:01:24.494  8900  9466 W bt_stack: remove_device_from_connect_list :: Device is found in security db(64:5d:f4 -> 645df4)
-04-19 16:01:24.494  8900  9466 W bt_stack: remove_device_from_connect_list :: set address_with_type as identity_addr
-04-19 16:01:24.494  8900  9466 W bt_stack: pause_registered_clients()
-04-19 16:01:24.495  8900  9466 W bt_stack: le_scanning_manager :: OnPause()
-04-19 16:01:24.495  8900  9466 W bt_stack: Stop LeSetScanEnable
-04-19 16:01:24.495  8900  9466 W bt_stack: le_scanning_manager :: OnPause() - call AckPause
-04-19 16:01:24.495  8900  9466 W bt_stack: le_impl :: OnPause()
-04-19 16:01:24.495  8900  9466 W bt_stack: le_impl :: Try to disarm connectability
-04-19 16:01:24.495  8900  9466 W bt_stack: disarm_connectability()
-04-19 16:01:24.495  8900  9466 W bt_stack: Pause Background Connection
-04-19 16:01:24.495  8900  9466 W bt_stack: pause_registered_clients()
-04-19 16:01:24.495  8900  9513 W bt_stack: Unable to find background connection to remove
-04-19 16:01:24.495  8900  9513 I bt_stack: [INFO:bta_gattc_main.cc(314)] bta_gattc_sm_execute: State 0x01, Event 0x1f03
-04-19 16:01:24.496  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-19 16:01:24.496  8900  9513 W bt_bta_gattc: bta_gattc_cancel_open_ok
-04-19 16:01:24.496  8900  9466 W bt_stack: le_address_manager :: ack_pause() - make sure all client paused. Return
-04-19 16:01:24.496  8900  9513 W bt_bta_gattc: bta_gattc_process_api_open_cancel
-04-19 16:01:24.496  8900  9513 W bt_bta_gattc: Cancel GATT client background connection
-04-19 16:01:24.496  8900  9513 W bt_bta_gattc: bta_gattc_cancel_bk_conn
-04-19 16:01:24.496  8900  9513 E bt_stack: [ERROR:bta_gattc_utils.cc(447)] bta_gattc_mark_bg_conn unable to find the bg connection mask for bd_addr=645df4
-04-19 16:01:24.497  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 3
-04-19 16:01:24.497  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 4
-04-19 16:01:24.497  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 5
-04-19 16:01:24.497  8900  9513 E bta_gattc_main: Ignore unknown conn ID: 6
-04-19 16:01:24.515  8900  9466 W bt_stack: on_le_enhanced_connection_complete()
-04-19 16:01:24.515  8900  9466 W bt_stack: on_le_enhanced_connection_complete :: Role is central. Set connectability to DISARMED
-04-19 16:01:24.515  8900  9466 W bt_stack: on_le_enhanced_connection_complete :: pause_connection : 1
-04-19 16:01:24.515  8900  9466 W bt_stack: on_le_connection_canceled_on_pause(). Set connectability to DISARMED
-04-19 16:01:24.516  8900  9466 W bt_stack: le_address_manager :: ack_pause()
-04-19 16:01:24.516  8900  9466 W bt_stack: le_address_manager :: ack_pause() - handle_next_command
-04-19 16:01:24.516  8900  9466 W bt_stack: handle_next_command()
-04-19 16:01:24.517  8900  9466 W bt_stack: Received command complete with op_code LE_REMOVE_DEVICE_FROM_FILTER_ACCEPT_LIST
-04-19 16:01:24.517  8900  9466 W bt_stack: handle_next_command()
-04-19 16:01:24.519  8900  9466 W bt_stack: Received command complete with op_code LE_REMOVE_DEVICE_FROM_FILTER_ACCEPT_LIST
-04-19 16:01:24.519  8900  9466 W bt_stack: le_scanning_manager :: OnResume()
-04-19 16:01:24.519  8900  9466 W bt_stack: Start LeSetScan
-04-19 16:01:24.519  8900  9466 W bt_stack: le_scanning_manager :: OnResume() - call AckResume
-04-19 16:01:24.519  8900  9466 W bt_stack: le_impl :: OnResume()
-04-19 16:01:24.519  8900  9466 W bt_stack: le_impl :: OnResume - Try arm connectability
-04-19 16:01:24.519  8900  9466 W bt_stack: arm_connectability()
-04-19 16:01:24.519  8900  9466 W bt_stack: le_impl :: check_for_unregister()
-04-19 16:01:24.519  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-19 16:01:24.520  8900  9466 W bt_stack: le_address_manager :: ack_resume()
-04-19 16:01:24.520 31103 31464 I BistoGattHelper: (REDACTED) [%s] GATT disconnected
-04-19 16:01:24.529 31103 31464 I RemotePeerStateCommunicator: (REDACTED) RemotePeerStateCommunicator scheduling message : %d, action: %s, device id : %s
-04-19 16:01:24.539 31103 31464 I BistoGattHelper: (REDACTED) [%s] close
-04-19 16:01:24.543 31103 31464 I BistoGattHelper: (REDACTED) [%s] executeNextShutdownOperation
-04-19 16:01:24.543 31103 31464 D BluetoothGatt: close()
-04-19 16:01:24.544 19368 21637 I DWBUsageDataManager: updateDailyData of 1680789679738
-04-19 16:01:24.544 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:24.551 31103 31464 D BluetoothGatt: unregisterApp() - mClientIf=6
-04-19 16:01:24.554  8900  8917 D BtGatt.GattService: unregisterClient(com.google.android.googlequicksearchbox) - clientIf=6
-04-19 16:01:24.556  8900  8917 D BtGatt.ContextMap: remove() - id: 6
-04-19 16:01:24.556  8900  8917 E BtGatt.ContextMap: remove() - removed: 6
-04-19 16:01:24.560  8900  9513 W bt_bta_gattc: bta_gattc_deregister
-04-19 16:01:24.560  8900  9513 I bt_stack: [INFO:gatt_api.cc(1111)] GATT_Deregister gatt_if=6
-04-19 16:01:24.560  8900  9513 W bt_stack: on_app_deregistered :: app_id=6
-04-19 16:01:24.560  8900  9513 I bt_stack: [INFO:gatt_api.cc(1164)] Initialize tGATT_REG
-04-19 16:01:24.569 31103 31464 I BistoGattHelper: (REDACTED) [%s] GATT released
-04-19 16:01:24.572 31103 31464 I BistoGattHelper: (REDACTED) [%s] close
-04-19 16:01:24.574 31103 31464 I BistoGattHelper: (REDACTED) [%s] executeNextShutdownOperation
-04-19 16:01:24.595 31103 31464 E GmuTls  : You must initialize the system with proper values before handshake
-04-19 16:01:24.896  5250  5250 D Zygote  : Forked child process 21732
-04-19 16:01:24.897 19368 21637 I DWBUsageDataManager: updateDailyData of 1680703279738
-04-19 16:01:24.897 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:24.937 21732 21732 I .android.authfw: Using CollectorTypeCC GC.
-04-19 16:01:24.945 21732 21732 E .android.authfw: Not starting debugger since process cannot load the jdwp agent.
-04-19 16:01:24.952 21732 21732 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:24.952  5224  5224 E audit   : type=1400 audit(1681912884.945:103165): avc:  denied  { read } for  pid=21732 comm=".android.authfw" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:24.952  5224  5224 E audit   : type=1300 audit(1681912884.945:103165): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7ffbc769b8 a2=88000 a3=0 items=0 ppid=5250 pid=21732 auid=4294967295 uid=5278 gid=5278 euid=5278 suid=5278 fsuid=5278 egid=5278 sgid=5278 fsgid=5278 tty=(none) ses=4294967295 comm=".android.authfw" exe="/system/bin/app_process64" subj=u:r:platform_app:s0:c512,c768 key=(null)
-04-19 16:01:24.952  5224  5224 E audit   : type=1327 audit(1681912884.945:103165): proctitle="zygote64"
-04-19 16:01:24.953 21732 21744 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:24.954  5224  5224 E audit   : type=1400 audit(1681912884.949:103166): avc:  denied  { read } for  pid=21732 comm="binder:21732_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=16829 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-19 16:01:24.955 21732 21732 D ActivityThread: setConscryptValidator
-04-19 16:01:24.955 21732 21732 D ActivityThread: setConscryptValidator - put
-04-19 16:01:24.977 21732 21745 W libc    : Access denied finding property "sys.perf.boostopt"
-04-19 16:01:24.978 21732 21732 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 5278; state: ENABLED
-04-19 16:01:25.164 21732 21732 I [AUTHFW][PASS]AuthFwApp:  onCreate
-04-19 16:01:25.206 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:25.207 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:25.219 21732 21732 I [AUTHFW][TZ]TzAppAsset: AFD
-04-19 16:01:25.219 21732 21732 W [AUTHFW][TZ]TzAppAsset: getAssetFileDescriptor fails to openFd()
-04-19 16:01:25.219 21732 21732 I [AUTHFW][TZ]TzAppAsset: Not found
-04-19 16:01:25.219 21732 21732 I [AUTHFW][TZ]TzApp: APEX - apex
-04-19 16:01:25.220 21732 21732 I [AUTHFW][TZ]TzApp: Start using TzAppApex as TzApp
-04-19 16:01:25.225 21732 21732 I [PASS][SDK]SamsungPassService: initialize()
-04-19 16:01:25.229 21732 21732 I [PASS][SDK]h: bind
-04-19 16:01:25.230 21732 21756 I [AUTHFW][TZ]TzUtil: idt start
-04-19 16:01:25.237 21732 21756 I [AUTHFW][TZ]TzAppApex: FFD
-04-19 16:01:25.251 21732 21732 I [AUTHFW][PASS]PassService: personaId : 0
-04-19 16:01:25.253  4377  4625 I servicemanager: Adding 'u:r:platform_app:s0:c512,c768' service (com.samsung.android.pass.IPassService:21732)
-04-19 16:01:25.256 21732 21732 I [AUTHFW][PASS]PassService: onBind:PassOperation
-04-19 16:01:25.264 14911 14911 I [PASS][PASS]PassService: onBind:SamsungPassService
-04-19 16:01:25.265 19368 21637 I DWBUsageDataManager: updateDailyData of 1680616879738
-04-19 16:01:25.265 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:25.266 21732 21732 I [PASS][SDK]h: onServiceConnected
-04-19 16:01:25.266 21732 21732 I [AUTHFW][PASS]AuthFwApp: Samsung Pass Service is connected
-04-19 16:01:25.274  5628  5712 I libprocessgroup: Successfully killed process cgroup uid 10226 pid 19881 in 0ms
-04-19 16:01:25.278 14911 14911 I [AUTHFW][PSDK]PassServiceConnection: onServiceConnected
-04-19 16:01:25.281 14911 14911 I [PASS][SPASS]SPassApplication: pass connected
-04-19 16:01:25.290 21732 21756 I SAMgr_AM: ta is null
-04-19 16:01:25.311 21732 21756 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.samsung.hardware.authfw@1.0::ISehAuthenticationFramework/default
-04-19 16:01:25.323  5250  5250 I Zygote  : Process 19881 exited due to signal 9 (Killed)
-04-19 16:01:25.450 13965 13965 I vendor.samsung.hardware.authfw@1.0-TlcProxyAuthnr: init
-04-19 16:01:25.458  5628  8445 D WifiConnectivityMonitor: start WCM Poll.
-04-19 16:01:25.475 13965 13965 I vendor.samsung.hardware.authfw@1.0-TlcProxyAuthnr: process
-04-19 16:01:25.475 13965 13965 I tlcFidoAuthnr: process start.
-04-19 16:01:25.475 13965 13965 I tlcFidoAuthnr: process start. state:1
-04-19 16:01:25.475 13965 13965 I tlcFidoAuthnr: processPass start. state:2
-04-19 16:01:25.479 21732 21756 I SAMgr_HS: ret: true, 10
-04-19 16:01:25.479 13965 13965 I vendor.samsung.hardware.authfw@1.0-TlcProxyAuthnr: terminate
-04-19 16:01:25.479 13965 13965 I tlcFidoAuthnr: terminateFido start.
-04-19 16:01:25.479 13965 13965 I tlcFidoAuthnr: terminateFido start. state:1
-04-19 16:01:25.482 21732 21756 I [AUTHFW][TZ]TzUtil: nic is not supported on Q
-04-19 16:01:25.637 19368 21637 I DWBUsageDataManager: updateDailyData of 1680530479738
-04-19 16:01:25.637 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:25.719 17564 17585 D Benchmark: timeNs[ 0:10]: 19056930 18938069 19116377 19330915 20137176 20033723 19974792 18813477 20280215 19854107
-04-19 16:01:25.719 17564 17585 D Benchmark: timeNs[10:20]: 19433238 19139730 18639007 19851161 19216961 19312007 18619823 18604784 18617215 18615161
-04-19 16:01:25.719 17564 17585 D Benchmark: timeNs[20:30]: 18634115 18659992 18619715 19368661 19798261 18704153 18619884 18633138 18636369 18636492
-04-19 16:01:25.719 17564 17585 D Benchmark: timeNs[30:40]: 18610584 18586153 18584369 18591746 18576969 18643823 19096415 20283384 18749815 18581200
-04-19 16:01:25.719 17564 17585 D Benchmark: timeNs[40:50]: 18585892 18640753 18907853 18619207 18625692 18648915 18620738 18871353 18593138 18583146
-04-19 16:01:25.807  7170  7440 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1077) acc({sim(3)=15, sec(6)=1, sim2(4)=1, google(2)=81, com.whatsapp(14)=39, org.telegram.messenger(232)=99}) calls([logtype:100 cnt:867, logtype:200 cnt:5, logtype:300 cnt:495, logtype:1000 cnt:604, logtype:1150 cnt:161]) Iso(RS) uId(0) ]
-04-19 16:01:25.807  7170  7440 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,14 ,232]=32, [3]=15, [14]=1, [4]=1, [2 ,14]=4, [2 ,2]=2, [2 ,2 ,14 ,232]=1, [2]=33, [6 ,14]=1, [2 ,232]=6, [232]=60}) ]
-04-19 16:01:25.807  7170  7440 I ContactsProvider_EventLog: cp_s: [ cnt({calendar(21461)=2, acore(7170)=1}) ]
-04-19 16:01:25.807  7170  7440 I ContactsProvider_EventLog: cp_s: [PROFILE con(1) dat(1) acc({vnd.sec.contact.phone=1}) ] [SAPROFILE ]
-04-19 16:01:25.807  7170  7440 I ContactsProvider_EventLog: cp_s: [STATE R(T) ]
-04-19 16:01:25.986 19368 21637 I DWBUsageDataManager: updateDailyData of 1680444079738
-04-19 16:01:25.987 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:26.186 17564 17585 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
-04-19 16:01:26.186 17564 17585 D Benchmark: Set 17585 (Bench thread) to priority -8. Was -20, now -8
-04-19 16:01:26.186 17564 17585 D Benchmark: Set 17572 (Jit) to priority 9. Was -15, now 9
-04-19 16:01:26.186 17564 17585 D Benchmark: Warmup: t=8.005, iter=421, fastAvg=18865182, slowAvg=32705594
-04-19 16:01:26.186 17564 17585 I PerfettoCapture: Stopping perfetto.
-04-19 16:01:26.208 30407 30407 I ResourceOverlayService_0: waitAndQuit called
-04-19 16:01:26.210 30407 30407 I ResourceOverlayService_0: activity user id 0 process id 0
-04-19 16:01:26.227 21597 21597 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-19 16:01:26.230 17564 17585 D Benchmark: kill -TERM command output -
-04-19 16:01:26.234  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=761)
-04-19 16:01:26.236  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-19 16:01:26.307  4378  4378 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-19 16:01:26.316  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=762)
-04-19 16:01:26.316  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=763)
-04-19 16:01:26.318 19368 21637 I DWBUsageDataManager: updateDailyData of 1680357679738
-04-19 16:01:26.318 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:26.328 21597 21597 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-19 16:01:26.332  5406  5406 I perfetto: ng_service_impl.cc:2426 Tracing session 191 ended, total sessions:0
-04-19 16:01:26.357 17564 17585 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-19-14-01-26.perfetto-trace.
-04-19 16:01:26.450 17564 17585 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-19-14-01-26.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueInlineDouble_2023-04-19-14-01-26.perfetto-trace
-04-19 16:01:26.480 10919 21329 W MediaProvider: isAppCloneUserPair for user 0: false
-04-19 16:01:26.556  5628 11456 D SyncManager: userId - 0 auto - true
-04-19 16:01:26.634  5628  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-19 16:01:26.646 23109 18819 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 345932 [CONTEXT service_id=218 ]
-04-19 16:01:26.649 19368 21637 I DWBUsageDataManager: updateDailyData of 1680271279738
-04-19 16:01:26.650 19368 21637 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-19 16:01:26.655 17564 17585 I Benchmark: Wolf3dBenchmark.valueInlineDouble[Metric (timeNs) results: median 1.86463692E7, min 1.85769692E7, max 2.02833846E7, standardDeviation: 524902.0075929541, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=5
-04-19 16:01:26.658 17564 17585 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-19 16:01:26.662 23109 20594 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 39 uptime_millis: 39 exec_start_elapsed_seconds: 345932 [CONTEXT service_id=218 ]
-04-19 16:01:26.662 17564 17585 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-19 16:01:26.705  5628  9148 D SyncManager: userId - 0 auto - true
-04-19 16:01:26.707 10919 21775 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-19 16:01:26.719 10919 21324 W MediaProvider: isAppCloneUserPair for user 0: false
-04-19 16:01:26.743  5628  9148 D SyncManager: userId - 0 auto - true
-04-19 16:01:26.748 17564 17585 I TestRunner: finished: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-24 04:49:18.179 21331 21358 I TestRunner: started: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-24 04:49:18.183 21331 21331 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-24 04:49:18.183 21331 21331 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c388c9b
+04-24 04:49:18.185  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-24 04:49:18.196 21331 21358 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-24 04:49:18.197 21331 21358 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-24 04:49:18.197 21331 21358 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueInlineDouble --
+04-24 04:49:18.197 21331 21358 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-24 04:49:18.197 21331 21358 D PerfettoCapture: Recording perfetto trace
+04-24 04:49:18.212 21600 31774 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 156540 [CONTEXT service_id=218 ]
+04-24 04:49:18.216  5635  5660 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-24 04:49:18.218  5635  5660 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-24 04:49:18.219  5635  5660 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-24 04:49:18.226 21600 31592 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 66 uptime_millis: 66 exec_start_elapsed_seconds: 156540 [CONTEXT service_id=218 ]
+04-24 04:49:18.260 21331 21358 I PerfettoCapture: Cleanup perfetto before starting.
+04-24 04:49:18.442 21331 21358 I PerfettoCapture: Perfetto output file cleanup -
+04-24 04:49:18.442 21331 21358 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-24 04:49:18.632 32218 32218 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-24 04:49:18.634  5413  5413 I perfetto: ing_service_impl.cc:953 Configured tracing session 86, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-24 04:49:18.636  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=171)
+04-24 04:49:18.683 21331 21358 I PerfettoCapture: Perfetto output - 32218
+04-24 04:49:18.683 21331 21358 I PerfettoCapture: EXITCODE=0
+04-24 04:49:18.721  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-24 04:49:18.751  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-24 04:49:18.811 21331 21358 I PerfettoCapture: Perfetto tracing started successfully with pid 32218.
+04-24 04:49:18.898 21331 21358 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-24 04:49:18.899 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -20. Was -8, now -20
+04-24 04:49:18.899 21331 21358 D Benchmark: Set 21342 (Jit) to priority -15. Was 9, now -15
+04-24 04:49:18.941 21331 21358 I _benchmark.test: Explicit concurrent copying GC freed 32663(1214KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2960KB/9104KB, paused 289us,132us total 40.364ms
+04-24 04:49:20.325  5272  5272 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-24 04:49:21.296  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
+04-24 04:49:21.304  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = on deviceID = 3 slot = 1 device_ext = 0
+04-24 04:49:21.306  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :on
+04-24 04:49:21.306  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enableSensor
+04-24 04:49:21.308  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
+04-24 04:49:21.311  5635  5845 D SensorService: GripSensor: MCC Path does not exist
+04-24 04:49:21.311  5635  6162 D ConnectivityService: reportNetworkActive, notify 0 listeners
+04-24 04:49:21.313  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 1
+04-24 04:49:21.317  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch data = RELEASE
+04-24 04:49:21.317  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch unknown NORMAL MODE
+04-24 04:49:21.318  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 1, first_grip_event : 1
+04-24 04:49:21.319  5635  5845 D SensorManager: registerListener :: 33554443, A96T3X6 Grip sensor, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
+04-24 04:49:21.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enable channel 0 : 2 , channel 1 : 0
+04-24 04:49:21.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enableSensor
+04-24 04:49:21.322  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
+04-24 04:49:21.322  5635  5845 D SensorService: GripSensor: MCC Path does not exist
+04-24 04:49:21.323  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 1
+04-24 04:49:21.327  5262  5391 I SensorsGrip: [grip_sensor_sub] readEvents: GripSensor: grip 1ch data = RELEASE
+04-24 04:49:21.328  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 1, first_grip_event : 1
+04-24 04:49:21.329  5635  5845 D SensorManager: registerListener :: 33554450, A96T3X6_SUB Grip sensor for sub, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
+04-24 04:49:21.329  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enable channel 0 : 2 , channel 1 : 0
+04-24 04:49:21.329  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :on
+04-24 04:49:21.330  6298  7000 I System.out: Broadcast completed: result=0
+04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor onSensorChanged : 5.0 , 0.0 , 0.0 , 1.0 , 0.0
+04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor clearBackOff channel: 0 , index: 0
+04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
+04-24 04:49:21.345  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
+04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
+04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub onSensorChanged : 5.0 , 0.0 , 0.0 , 0.0 , 0.0
+04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub clearBackOff channel: 0 , index: 1
+04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
+04-24 04:49:21.366  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
+04-24 04:49:21.366  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
+04-24 04:49:22.162  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
+04-24 04:49:22.165  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-24 04:49:23.200  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
+04-24 04:49:23.213  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
+04-24 04:49:23.438  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.439  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.440  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.440 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.440 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 340
+04-24 04:49:23.441 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 340
+04-24 04:49:23.442  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.443 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.444 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.444 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.444 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.444  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.448  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.449  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.461 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.462 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.462 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
+04-24 04:49:23.462 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
+04-24 04:49:23.467 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.467 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.468 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.468 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.468  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.471 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.471 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.472 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 340
+04-24 04:49:23.472 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 340
+04-24 04:49:23.474 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.474 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.474 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.474 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.474  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.478 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.478 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.478 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 263
+04-24 04:49:23.478 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 263
+04-24 04:49:23.480 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.480 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.480 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.480  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.480 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.482  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.483 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.483 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.484 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 263
+04-24 04:49:23.485 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 263
+04-24 04:49:23.486 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.486 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.486 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.486 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.487  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.489 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.622 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20954,/w_media_control/request_data, size=158]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":["mediametadata","playbackstate","volume"],"timeOut":"60000","watchState":"on"}}
+04-24 04:49:23.624 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(on): saved[0]
+04-24 04:49:23.640 21125 32247 I smedia  : SMediaController.onRequestDataChanged(7d27f402)
+04-24 04:49:23.644 21125 32247 I smedia  : SMediaSessionHelper.releaseActiveController(true): ''
+04-24 04:49:23.644 21125 32247 I smedia  : SMediaSessionHelper.setActiveController(true): '' -> '' [empty]
+04-24 04:49:23.644 21125 32247 I smedia  : SMediaController.onActiveControllerInfoNeeded()
+04-24 04:49:23.644 21125 32247 I smedia  : SMediaController.sendEmptyMediaInfo(1, )
+04-24 04:49:23.660 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/mediametadata): {"msgId":"mediametadata","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","mediaId":"","title":"","artist":"","album":"","duration":"0","albumArt":""}}
+04-24 04:49:23.672 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/playbackstate): {"msgId":"playbackstate","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueItemId":"-1","state":"0","position":"0","actions":"0","speed":"0.0","reserveSlotPrev":"0","reserveSlotNext":"0","customActions":[]}}
+04-24 04:49:23.673 21125 32247 I smedia  : SMediaStateValidator.updateMessageData()
+04-24 04:49:23.676 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/queue): {"msgId":"queue","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueTitle":"","queueCount":"0","queue":[]}}
+04-24 04:49:23.677 21125 32247 I smedia  : SMediaMessageManager.requestedMessage(7d27f402): false
+04-24 04:49:23.684 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.684 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.684 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
+04-24 04:49:23.684  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.684 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
+04-24 04:49:23.686 21125 32247 W Settings: Setting all_sound_off has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-24 04:49:23.686  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.687 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/volume): {"msgId":"volume","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","playbackType":"1","volume":"5","headsetConnected":"0","btOutput":"0","maxVolume":"15","warningVolume":"10","dndModeOn":"0","muteAllSoundsOn":"0"}}
+04-24 04:49:23.688 21125 32247 I smedia  : SMediaSessionHelper.findActiveAndSendInfo(): [false]
+04-24 04:49:23.688 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20955,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
+04-24 04:49:23.691 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[2]
+04-24 04:49:23.692 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20956,/w_media_control/request_data, size=158]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":["mediametadata","playbackstate","volume"],"timeOut":"60000","watchState":"on"}}
+04-24 04:49:23.692 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(on): saved[0]
+04-24 04:49:23.692 21125 32247 I smedia  : SMediaController.onRequestDataChanged(7d27f402)
+04-24 04:49:23.692 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/playbackstate): S(23774)
+04-24 04:49:23.693 21125 32247 I smedia  : SMediaSessionHelper.releaseActiveController(true): ''
+04-24 04:49:23.693 21125 32247 I smedia  : SMediaSessionHelper.setActiveController(true): '' -> '' [empty]
+04-24 04:49:23.693 21125 32247 I smedia  : SMediaController.onActiveControllerInfoNeeded()
+04-24 04:49:23.693 21125 32247 I smedia  : SMediaController.sendEmptyMediaInfo(1, )
+04-24 04:49:23.694 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/mediametadata): {"msgId":"mediametadata","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","mediaId":"","title":"","artist":"","album":"","duration":"0","albumArt":""}}
+04-24 04:49:23.694 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.694 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.694 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
+04-24 04:49:23.694 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
+04-24 04:49:23.695  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.695 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/playbackstate): {"msgId":"playbackstate","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueItemId":"-1","state":"0","position":"0","actions":"0","speed":"0.0","reserveSlotPrev":"0","reserveSlotNext":"0","customActions":[]}}
+04-24 04:49:23.695 21125 32247 I smedia  : SMediaStateValidator.updateMessageData()
+04-24 04:49:23.700 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/queue): {"msgId":"queue","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueTitle":"","queueCount":"0","queue":[]}}
+04-24 04:49:23.700 21125 32247 I smedia  : SMediaMessageManager.requestedMessage(7d27f402): false
+04-24 04:49:23.702 21125 32247 W Settings: Setting all_sound_off has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-24 04:49:23.702 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/volume): {"msgId":"volume","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","playbackType":"1","volume":"5","headsetConnected":"0","btOutput":"0","maxVolume":"15","warningVolume":"10","dndModeOn":"0","muteAllSoundsOn":"0"}}
+04-24 04:49:23.702 21125 32247 I smedia  : SMediaSessionHelper.findActiveAndSendInfo(): [false]
+04-24 04:49:23.706 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20957,/w_media_control/oneui_version, size=81]): {"msgId":"oneui_version","msgType":"0","deviceId":"7d27f402","data":{"appId":""}}
+04-24 04:49:23.709 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(7d27f402, /w_media_control/oneui_version): {"msgId":"oneui_version","msgOriginType":"0","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"oneUIVersion":""}}
+04-24 04:49:23.709 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20958,/w_media_control/oneui_version, size=81]): {"msgId":"oneui_version","msgType":"0","deviceId":"7d27f402","data":{"appId":""}}
+04-24 04:49:23.709 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/mediametadata): S(23775)
+04-24 04:49:23.710 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(7d27f402, /w_media_control/oneui_version): {"msgId":"oneui_version","msgOriginType":"0","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"oneUIVersion":""}}
+04-24 04:49:23.711 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.712 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.712 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
+04-24 04:49:23.712  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.712 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
+04-24 04:49:23.714 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.714 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.714 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
+04-24 04:49:23.714 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
+04-24 04:49:23.715  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.712 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/volume): S(23776)
+04-24 04:49:23.716 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/mediametadata): S(23777)
+04-24 04:49:23.717 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.717 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.717 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
+04-24 04:49:23.717  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.717 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
+04-24 04:49:23.717 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/playbackstate): S(23778)
+04-24 04:49:23.719  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.720 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.720 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.721 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
+04-24 04:49:23.721  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.721 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
+04-24 04:49:23.721 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/volume): S(23779)
+04-24 04:49:23.722  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.722 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.722  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.722 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.722 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.723 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.724 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.724 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.725 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 296
+04-24 04:49:23.725  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.725 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 296
+04-24 04:49:23.725 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/oneui_version): S(23780)
+04-24 04:49:23.728 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.728 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.729 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 297
+04-24 04:49:23.729 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 297
+04-24 04:49:23.729  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.729 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/oneui_version): S(23781)
+04-24 04:49:23.730  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.758  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.759 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.759 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.760 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.760 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.770  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.770 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.770 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.770 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.771 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.796  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.797 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.797 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
+04-24 04:49:23.797 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
+04-24 04:49:23.798  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.798 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.798 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.798 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.798 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.799  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.799 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.799 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.800 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.800 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.800 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.802  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.807  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.808 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.808 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.808 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.809 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.817 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20959,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
+04-24 04:49:23.817 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[2]
+04-24 04:49:23.832  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.833 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.833 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
+04-24 04:49:23.833 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
+04-24 04:49:23.833  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.834 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.835 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
+04-24 04:49:23.835 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.835 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
+04-24 04:49:23.835  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
+04-24 04:49:23.838 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.838 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.838 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.838 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.839 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.842  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.843 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.843 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.843 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.843 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.848  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
+04-24 04:49:23.849 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
+04-24 04:49:23.849 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
+04-24 04:49:23.849 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
+04-24 04:49:23.850 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
+04-24 04:49:23.856 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20960,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
+04-24 04:49:23.856 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[0]
+04-24 04:49:28.190  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[ 0:10]: 25916833 25915756 25888730 25917051 25876000 25908269 25893256 25900859 25915743 25858910
+04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[10:20]: 25849666 25855820 25851500 25872679 25883423 25868974 25842474 25868115 25848487 25884859
+04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[20:30]: 25946512 25886653 25886948 25895602 26087820 25919910 25915397 25922230 25906333 25897320
+04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[30:40]: 25899346 26038397 25905448 25904128 25907679 25888833 25914743 25911961 25902833 25891602
+04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[40:50]: 25865923 25857602 25851012 25848743 25868461 25891269 25915102 25845653 25837115 25852256
+04-24 04:49:31.242 21331 21358 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
+04-24 04:49:31.243 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -8. Was -20, now -8
+04-24 04:49:31.243 21331 21358 D Benchmark: Set 21342 (Jit) to priority 9. Was -15, now 9
+04-24 04:49:31.243 21331 21358 D Benchmark: Warmup: t=8.022, iter=305, fastAvg=25899350, slowAvg=51293416
+04-24 04:49:31.243 21331 21358 I PerfettoCapture: Stopping perfetto.
+04-24 04:49:31.287 32218 32218 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-24 04:49:31.290 21331 21358 D Benchmark: kill -TERM command output -
+04-24 04:49:31.296  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=341)
+04-24 04:49:31.302  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-24 04:49:31.308  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
+04-24 04:49:31.318  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = off deviceID = 3 slot = 1 device_ext = 0
+04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :off
+04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disableSensor : true
+04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
+04-24 04:49:31.331  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
+04-24 04:49:31.331  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
+04-24 04:49:31.331  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 17179869184 , state: false
+04-24 04:49:31.342  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
+04-24 04:49:31.342  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
+04-24 04:49:31.342  5635  5845 D SensorService: Calling activate off 33554443
+04-24 04:49:31.343  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 0
+04-24 04:49:31.344  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 0, first_grip_event : 1
+04-24 04:49:31.346  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
+04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disable channel 0 : 0 , channel 1 : 0
+04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disableSensor : true
+04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
+04-24 04:49:31.356  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
+04-24 04:49:31.356  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
+04-24 04:49:31.356  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 17179869184 , state: false
+04-24 04:49:31.366  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
+04-24 04:49:31.366  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
+04-24 04:49:31.367  5635  5845 D SensorService: Calling activate off 33554450
+04-24 04:49:31.369  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 0
+04-24 04:49:31.370  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 0, first_grip_event : 1
+04-24 04:49:31.370  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
+04-24 04:49:31.371  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disable channel 0 : 0 , channel 1 : 0
+04-24 04:49:31.371  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :off
+04-24 04:49:31.372  6298  7000 I System.out: Broadcast completed: result=0
+04-24 04:49:31.386  5635  8927 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156553940 mSleepTimeMs=29790536 mIdleTimeMs=8355181 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[38825, 33682, 22215, 348, 136354],mRxTimeMs=84334787}]}
+04-24 04:49:31.421  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-24 04:49:31.428  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=342)
+04-24 04:49:31.428  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=343)
+04-24 04:49:31.462 32218 32218 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-24 04:49:31.466  5413  5413 I perfetto: ng_service_impl.cc:2426 Tracing session 86 ended, total sessions:0
+04-24 04:49:31.954 21331 21358 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=32218)] to die
+04-24 04:49:32.095 21331 21358 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace.
+04-24 04:49:32.197 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace
+04-24 04:49:32.250  8333 31988 W MediaProvider: isAppCloneUserPair for user 0: false
+04-24 04:49:32.285  5635  7327 D SyncManager: userId - 0 auto - true
+04-24 04:49:32.412 21331 21358 I Benchmark: Wolf3dBenchmark.valueInlineDouble[Metric (timeNs) results: median 2.5891435833333336E7, min 2.5837115333333332E7, max 2.6087820666666668E7, standardDeviation: 43994.457027732926, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=3
+04-24 04:49:32.421 21331 21358 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-24 04:49:32.444 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-24 04:49:32.469  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-24 04:49:32.487 21600 31774 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 156554 [CONTEXT service_id=218 ]
+04-24 04:49:32.504 21600 31592 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 50 uptime_millis: 50 exec_start_elapsed_seconds: 156554 [CONTEXT service_id=218 ]
+04-24 04:49:32.545  5635  8927 D SyncManager: userId - 0 auto - true
+04-24 04:49:32.546  8333 32289 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-24 04:49:32.563  8333 32184 W MediaProvider: isAppCloneUserPair for user 0: false
+04-24 04:49:32.602  5635  8927 D SyncManager: userId - 0 auto - true
+04-24 04:49:32.610 21331 21358 I TestRunner: finished: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)

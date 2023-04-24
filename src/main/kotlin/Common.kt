@@ -68,7 +68,9 @@ fun Graphics2D.asAbstract(): AbstractGraphics = object : AbstractGraphics {
 
 interface ComplexNumberConsumer {
     fun consume(real: Int, imaginary: Int)
+    fun consume(real: Float, imaginary: Float)
     fun consume(real: Long, imaginary: Long)
+    fun consume(real: Double, imaginary: Double)
 }
 
 object ComplexNumberPrinter : ComplexNumberConsumer {
@@ -78,4 +80,14 @@ object ComplexNumberPrinter : ComplexNumberConsumer {
     override fun consume(real: Long, imaginary: Long) {
         println(baseline.ackermann.ComplexLong(real, imaginary))
     }
+    override fun consume(real: Float, imaginary: Float) {
+        println(baseline.ackermann.ComplexFloat(real, imaginary))
+    }
+    override fun consume(real: Double, imaginary: Double) {
+        println(baseline.ackermann.ComplexDouble(real, imaginary))
+    }
+}
+
+fun interface ObjectConsumer {
+    fun consume(o: Any?)
 }

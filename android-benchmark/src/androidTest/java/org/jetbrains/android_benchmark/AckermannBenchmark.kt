@@ -25,6 +25,11 @@ class AckermannBenchmark {
         var int2: Int = 0
         var long1: Long = 0
         var long2: Long = 0
+        var float1: Float = 0.0f
+        var float2: Float = 0.0f
+        var double1: Double = 0.0
+        var double2: Double = 0.0
+        
         override fun consume(real: Int, imaginary: Int) {
             int1 = real
             int2 = imaginary
@@ -34,6 +39,16 @@ class AckermannBenchmark {
             long1 = real
             long2 = imaginary
         }
+
+        override fun consume(real: Float, imaginary: Float) {
+            float1 = real
+            float2 = imaginary
+        }
+
+        override fun consume(real: Double, imaginary: Double) {
+            double1 = real
+            double2 = imaginary
+        }
     }
 
     @Test
@@ -42,14 +57,29 @@ class AckermannBenchmark {
     }
 
     @Test
+    fun baselineFloat() = benchmarkRule.measureRepeated {
+        baseline.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
+    }
+
+    @Test
     fun baselineLong() = benchmarkRule.measureRepeated {
         baseline.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun baselineDouble() = benchmarkRule.measureRepeated {
+        baseline.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
     }
 
 
     @Test
     fun longPackInt() = benchmarkRule.measureRepeated {
         long_pack.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun longPackFloat() = benchmarkRule.measureRepeated {
+        long_pack.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
     }
 
 
@@ -59,13 +89,28 @@ class AckermannBenchmark {
     }
 
     @Test
+    fun mutableRefFloatIn2Longs() = benchmarkRule.measureRepeated {
+        mutable_ref.ackermann.heavyActionFloatSeparate(SimpleComplexNumberConsumer)
+    }
+
+    @Test
     fun mutableRefIntIn1Long() = benchmarkRule.measureRepeated {
         mutable_ref.ackermann.heavyActionIntSame(SimpleComplexNumberConsumer)
     }
 
     @Test
+    fun mutableRefFloatIn1Long() = benchmarkRule.measureRepeated {
+        mutable_ref.ackermann.heavyActionFloatSame(SimpleComplexNumberConsumer)
+    }
+
+    @Test
     fun mutableRefLong() = benchmarkRule.measureRepeated {
         mutable_ref.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun mutableRefDouble() = benchmarkRule.measureRepeated {
+        mutable_ref.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
     }
 
 
@@ -75,8 +120,18 @@ class AckermannBenchmark {
     }
 
     @Test
+    fun valueFloat() = benchmarkRule.measureRepeated {
+        value.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
+    }
+
+    @Test
     fun valueLong() = benchmarkRule.measureRepeated {
         value.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun valueDouble() = benchmarkRule.measureRepeated {
+        value.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
     }
 
 
@@ -86,7 +141,17 @@ class AckermannBenchmark {
     }
 
     @Test
+    fun valuePreserveBoxFloat() = benchmarkRule.measureRepeated {
+        value_preserve_box.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
+    }
+
+    @Test
     fun valuePreserveBoxLong() = benchmarkRule.measureRepeated {
         value_preserve_box.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun valuePreserveBoxDouble() = benchmarkRule.measureRepeated {
+        value_preserve_box.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
     }
 }
