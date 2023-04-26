@@ -1,101 +1,246 @@
-04-24 04:38:01.918 21331 21358 I TestRunner: started: longPackFloat(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
-04-24 04:38:01.922 21331 21331 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-24 04:38:01.922 21331 21331 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c388c9b
-04-24 04:38:01.929 26600 26612 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:38:01.930  5216  5216 E audit   : type=1400 audit(1682303881.927:57595): avc:  denied  { read } for  pid=26600 comm="binder:26600_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app:s0:c6,c256,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:38:01.930  5216  5216 E audit   : type=1300 audit(1682303881.927:57595): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=26600 auid=4294967295 uid=10006 gid=10006 euid=10006 suid=10006 fsuid=10006 egid=10006 sgid=10006 fsgid=10006 tty=(none) ses=4294967295 comm="binder:26600_1" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c6,c256,c512,c768 key=(null)
-04-24 04:38:01.930  5216  5216 E audit   : type=1327 audit(1682303881.927:57595): proctitle="zygote64"
-04-24 04:38:01.931 21331 21358 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-24 04:38:01.931 21331 21358 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-24 04:38:01.931 21331 21358 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#longPackFloat --
-04-24 04:38:01.931 21331 21358 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-24 04:38:01.932 21331 21358 D PerfettoCapture: Recording perfetto trace
-04-24 04:38:01.967 21331 21358 I PerfettoCapture: Cleanup perfetto before starting.
-04-24 04:38:02.134 21331 21358 I PerfettoCapture: Perfetto output file cleanup -
-04-24 04:38:02.134 21331 21358 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-24 04:38:02.315 27411 27411 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-24 04:38:02.317  5413  5413 I perfetto: ing_service_impl.cc:953 Configured tracing session 76, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-24 04:38:02.320  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=151)
-04-24 04:38:02.370 21331 21358 I PerfettoCapture: Perfetto output - 27411
-04-24 04:38:02.370 21331 21358 I PerfettoCapture: EXITCODE=0
-04-24 04:38:02.394  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:38:02.421  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:38:02.440  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-24 04:38:02.462 13505 13505 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-24 04:38:02.462 13505 13505 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-24 04:38:02.463 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-24 04:38:02.480  5635  5987 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:38:02.484  5635  5987 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:38:02.484 21331 21358 I PerfettoCapture: Perfetto tracing started successfully with pid 27411.
-04-24 04:38:02.485  5635  5987 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:38:02.587 21331 21358 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-24 04:38:02.589 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -20. Was -8, now -20
-04-24 04:38:02.589 21331 21358 D Benchmark: Set 21342 (Jit) to priority -15. Was 9, now -15
-04-24 04:38:02.618 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000007967 indexCount: 1702 sourceCount: 1702
-04-24 04:38:02.624 21331 21358 I _benchmark.test: Explicit concurrent copying GC freed 393253(6685KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2936KB/9080KB, paused 442us,109us total 34.527ms
-04-24 04:38:02.718 13505 13578 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-24 04:38:02.724 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  193 ms
-04-24 04:38:02.724 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-24 04:38:02.725 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-24 04:38:02.727 13505 13536 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=fae54af6-39ba-4f4d-b6aa-72b339b0082a, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-24 04:38:02.733 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-24 04:38:02.789  5635  5987 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:38:02.790  5635  5987 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:38:02.792  5635  5987 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:38:06.696  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
-04-24 04:38:06.698  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=1, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:38:07.756  5635  6660 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
-04-24 04:38:07.759  5635  6660 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
-04-24 04:38:07.762  5635  6660 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
-04-24 04:38:07.799  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:38:08.676 28208 27441 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
-04-24 04:38:08.766  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
-04-24 04:38:08.772  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=1, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:38:11.428  5216  5216 E audit   : type=1400 audit(1682303891.427:57596): avc:  denied  { getattr } for  pid=5635 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5635" dev="debugfs" ino=26363 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:38:11.428  5216  5216 E audit   : type=1300 audit(1682303891.427:57596): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=6ff1ef4520 a2=6f854f1680 a3=0 items=0 ppid=5241 pid=5635 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
-04-24 04:38:11.428  5216  5216 E audit   : type=1327 audit(1682303891.427:57596): proctitle="system_server"
-04-24 04:38:11.920  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:38:14.593 21600 21600 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.account.workaccount.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-24 04:38:15.271 21331 21358 D Benchmark: timeNs[ 0:10]: 3069 2792 2829 3107 2974 2789 2909 3082 3157 3367
-04-24 04:38:15.271 21331 21358 D Benchmark: timeNs[10:20]: 2636 2842 3179 3208 2728 3164 2788 2841 2648 2701
-04-24 04:38:15.271 21331 21358 D Benchmark: timeNs[20:30]: 2953 2831 2857 3118 2776 2978 2702 2751 3457 2973
-04-24 04:38:15.272 21331 21358 D Benchmark: timeNs[30:40]: 3050 3019 2753 2810 3806 2699 2697 3064 2943 3300
-04-24 04:38:15.272 21331 21358 D Benchmark: timeNs[40:50]: 3462 2663 2752 2768 2853 2883 3088 2764 2776 2714
-04-24 04:38:15.538 21331 21358 W _benchmark.test: Suspending all threads took: 9.314ms
-04-24 04:38:15.601 21331 21358 D Benchmark: allocationCount[ 0:10]: 99 100 100 100 99
-04-24 04:38:15.602 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -8. Was -20, now -8
-04-24 04:38:15.602 21331 21358 D Benchmark: Set 21342 (Jit) to priority 9. Was -15, now 9
-04-24 04:38:15.602 21331 21358 D Benchmark: Warmup: t=8.000, iter=1483672, fastAvg=11861, slowAvg=9135
-04-24 04:38:15.602 21331 21358 I PerfettoCapture: Stopping perfetto.
-04-24 04:38:15.658 27411 27411 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-24 04:38:15.661 21331 21358 D Benchmark: kill -TERM command output -
-04-24 04:38:15.667  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=301)
-04-24 04:38:15.670  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-24 04:38:15.728  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:38:15.734  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=302)
-04-24 04:38:15.735  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=303)
-04-24 04:38:15.773 27411 27411 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-24 04:38:15.780 21331 21358 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_longPackFloat_2023-04-24-02-38-15.perfetto-trace.
-04-24 04:38:15.784  5413  5413 I perfetto: ng_service_impl.cc:2426 Tracing session 76 ended, total sessions:0
-04-24 04:38:15.933 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_longPackFloat_2023-04-24-02-38-15.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_longPackFloat_2023-04-24-02-38-15.perfetto-trace
-04-24 04:38:15.972  8333 27312 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:38:16.031 13505 13518 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:38:16.032  5216  5216 E audit   : type=1400 audit(1682303896.027:57597): avc:  denied  { read } for  pid=13505 comm="binder:13505_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:38:16.032  5216  5216 E audit   : type=1300 audit(1682303896.027:57597): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=13505 auid=4294967295 uid=10380 gid=10380 euid=10380 suid=10380 fsuid=10380 egid=10380 sgid=10380 fsgid=10380 tty=(none) ses=4294967295 comm="binder:13505_1" exe="/system/bin/app_process64" subj=u:r:platform_app:s0:c512,c768 key=(null)
-04-24 04:38:16.032  5216  5216 E audit   : type=1327 audit(1682303896.027:57597): proctitle="zygote64"
-04-24 04:38:16.035  5635  7327 D SyncManager: userId - 0 auto - true
-04-24 04:38:16.047 13505 13518 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:38:16.047  5216  5216 E audit   : type=1400 audit(1682303896.043:57598): avc:  denied  { read } for  pid=13505 comm="binder:13505_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:38:16.047  5216  5216 E audit   : type=1300 audit(1682303896.043:57598): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=13505 auid=4294967295 uid=10380 gid=10380 euid=10380 suid=10380 fsuid=10380 egid=10380 sgid=10380 fsgid=10380 tty=(none) ses=4294967295 comm="binder:13505_1" exe="/system/bin/app_process64" subj=u:r:platform_app:s0:c512,c768 key=(null)
-04-24 04:38:16.047  5216  5216 E audit   : type=1327 audit(1682303896.043:57598): proctitle="zygote64"
-04-24 04:38:16.097  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:38:16.113 21600 27321 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 155878 [CONTEXT service_id=218 ]
-04-24 04:38:16.129 21600 25891 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 49 uptime_millis: 49 exec_start_elapsed_seconds: 155878 [CONTEXT service_id=218 ]
-04-24 04:38:16.176 21331 21358 I Benchmark: BoxRecreationBenchmark.longPackFloat[Metric (timeNs) results: median 2855.5456109134047, min 2636.4996441281137, max 3806.830011862396, standardDeviation: 244.6525324749004, Metric (allocationCount) results: median 100.0, min 99.99976275207592, max 100.00011862396204, standardDeviation: 1.5466672372669012E-4]count=8430
-04-24 04:38:16.180 21331 21358 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:38:16.189 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:38:16.227  5635  5793 D SyncManager: userId - 0 auto - true
-04-24 04:38:16.228  8333 27137 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-24 04:38:16.235  8333 27479 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:38:16.269  5635  8460 D SyncManager: userId - 0 auto - true
-04-24 04:38:16.273 21331 21358 I TestRunner: finished: longPackFloat(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+04-27 20:14:47.270 26164 26187 I TestRunner: started: longPackFloat(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+04-27 20:14:47.273 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 20:14:47.274 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 20:14:47.281 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 20:14:47.281 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 20:14:47.281 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#longPackFloat --
+04-27 20:14:47.282 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 20:14:47.282 26164 26187 D PerfettoCapture: Recording perfetto trace
+04-27 20:14:47.326 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 20:14:47.344  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:14:47.346  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:14:47.360  6734 28907 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28827 [CONTEXT service_id=218 ]
+04-27 20:14:47.373  6734 29396 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 54 uptime_millis: 53 exec_start_elapsed_seconds: 28827 [CONTEXT service_id=218 ]
+04-27 20:14:47.490 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
+04-27 20:14:47.490 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 20:14:47.671 29788 29788 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 20:14:47.673  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 30, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 20:14:47.674  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=59)
+04-27 20:14:47.708 26164 26187 I PerfettoCapture: Perfetto output - 29788
+04-27 20:14:47.708 26164 26187 I PerfettoCapture: EXITCODE=0
+04-27 20:14:47.744  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:14:47.776  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 20:14:47.778  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:14:47.803 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 20:14:47.804 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 20:14:47.805 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 20:14:47.817  5429  8532 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:14:47.818  5429  8532 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:14:47.820  5429  8532 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:14:47.843 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 29788.
+04-27 20:14:47.922 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
+04-27 20:14:47.930 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 20:14:47.932 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
+04-27 20:14:47.933 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
+04-27 20:14:47.970 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 679745(10MB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2934KB/9078KB, paused 271us,117us total 36.614ms
+04-27 20:14:48.004 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 20:14:48.010 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  142 ms
+04-27 20:14:48.010 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 20:14:48.012 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 20:14:48.015 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 20:14:48.015 26084 26138 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=5dc2136f-1633-43d8-901e-638668251a4f, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 20:14:48.056  5429  8531 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:14:48.059  5429  8531 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:14:48.060  5429  8531 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:14:50.070  4899  4899 E audit   : type=1400 audit(1682619290.063:17832): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 20:14:50.071  4899  4899 E audit   : type=1300 audit(1682619290.063:17832): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=77702a6120 a2=768437b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-27 20:14:50.071  4899  4899 E audit   : type=1327 audit(1682619290.063:17832): proctitle="system_server"
+04-27 20:14:50.093  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3771, isSameBssidAndFreq true
+04-27 20:14:50.095  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:14:50.128  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:14:50.130  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:14:50.132  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:14:50.134  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:14:50.138  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:14:50.138  5878  5878 W PowerUI : Plug reason
+04-27 20:14:50.138  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:14:50.138  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:14:50.138  5878  5878 W PowerUI : Plug reason
+04-27 20:14:50.138  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:14:50.139  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:14:50.139  5878  7399 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:14:50.140  5878  7399 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:14:50.140  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2740000 / mChargingTime : 2740000
+04-27 20:14:50.140  5878  7399 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2740000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:14:50.141  5878  7399 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:14:50.141  5878  7399 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:14:50.143  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:14:50.143  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:14:50.143  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:14:50.143  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:14:50.143  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:14:50.144  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:14:50.144  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:14:50.144  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:14:50.144  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:14:50.145  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2740000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:14:50.145  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:14:50.147  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:14:50.148  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:14:51.017  5429  8532 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=28830987 mSleepTimeMs=16167903 mIdleTimeMs=819745 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[69, 42, 54, 34, 72],mRxTimeMs=9522630}]}
+04-27 20:14:51.191  4621  5693 W android.system.suspend@1.0-service: getWakeLockStats +
+04-27 20:14:51.192  4621  5693 W android.system.suspend@1.0-service: getWakeLockStats -
+04-27 20:14:53.126  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3772, isSameBssidAndFreq true
+04-27 20:14:53.130  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:14:53.132  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:14:53.132  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:14:55.154  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2740000 / mChargingTime : 2740000
+04-27 20:14:55.154  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:14:56.161  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3773, isSameBssidAndFreq true
+04-27 20:14:56.167  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:14:57.267  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:14:59.204  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3774, isSameBssidAndFreq true
+04-27 20:14:59.210  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:14:59.547  4387  4387 I lmkd    : cached 0, sandbox(not0) 0
+04-27 20:14:59.548  5429  5705 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-27 20:14:59.549  4387  4387 I lmkd    : Reclaim 'com.samsung.android.game.gos' (25508), uid 10217, oom_score_adj 999, state 19 to free 48716kB rss, 28640kb swap
+04-27 20:14:59.550  5429  5705 I ChimeraAggressivePolicyHandler: available memory: 884216, free memory target: 870400, quit chimera
+04-27 20:14:59.550  4387  4387 I lmkd    : Reclaimed 77356kB at oom_score_adj 850
+04-27 20:14:59.565  4924  4924 I Zygote  : Process 25508 exited due to signal 9 (Killed)
+04-27 20:14:59.566  5429  5486 I libprocessgroup: Successfully killed process cgroup uid 10217 pid 25508 in 0ms
+04-27 20:14:59.572  4387  4387 I lmkd    : 3(delay), 0(swap), 0(freelimit), 0(reentrymode) memory pressure events were skipped after a kill!
+04-27 20:15:00.009  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+04-27 20:15:00.010  5878  5878 D KeyguardUpdateMonitor: handleTimeUpdate
+04-27 20:15:00.012  5878  5878 D FaceWidgetPagesController: onTimeChanged()
+04-27 20:15:00.019  5878  6453 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:null
+04-27 20:15:00.028  5878  5878 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:20:15, TimeContentDescription:20:15, DateText:Thu, 27 April, ShortDateText:Thu, 27 Apr, Demo:false, QuickStar-Second(false|12:34:56))))
+04-27 20:15:00.029  5878  5878 D QSClockIndicatorView: Home Indicator status_bar_clock 20:15 notifyTimeChanged(QSClockBellSound - TimeText:20:15, TimeContentDescription:20:15, DateText:Thu, 27 April, ShortDateText:Thu, 27 Apr, Demo:false, QuickStar-Second(false|12:34:56)) ClockVisibleByPolicy:true, ClockVisibleByUser:true, visible?false, parent:android.widget.LinearLayout{fc169f7 V.E...... ........ 0,0-0,55 #7f0b04f0 app:id/left_clock_container}
+04-27 20:15:00.030  5878  5878 D QSClockBellTower: Everyone heard the bell. run(currentTime:1682619300026,   getTime():Thu Apr 27 20:15:00 GMT+02:00 2023,   getTimeZone():libcore.util.ZoneInfo[mDstSavings=3600000,mUseDst=true,mDelegate=[id="Europe/Belgrade",mRawOffset=3600000,mEarliestRawOffset=4920000,transitions=119]])
+04-27 20:15:00.048  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:15:00.049  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:15:00.049  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:15:00.049  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:15:00.053  5878  5878 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-27 20:15:00.061  5878  5878 V QsExpandAnimator: updateAnimators
+04-27 20:15:00.061  5878  5878 V QsExpandAnimator: clearAnimationState
+04-27 20:15:00.062  5878  5878 V QsExpandAnimator: updateViews
+04-27 20:15:00.065  5878  5878 V QsExpandAnimator: updateTileAnimator
+04-27 20:15:00.068  5878  5878 V QsExpandAnimator: updateHeaderAnimator
+04-27 20:15:00.069  5878  5878 V QsExpandAnimator: updateBarAnimator
+04-27 20:15:00.069  5878  5878 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-27 20:15:00.069  5878  5878 V QsExpandAnimator: onAnimationAtStart
+04-27 20:15:00.160  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:15:00.167  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:15:00.167  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:15:00.167  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:15:00.168  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:15:00.173  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:15:00.173  5878  5878 W PowerUI : Plug reason
+04-27 20:15:00.173  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:15:00.173  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:15:00.173  5878  5878 W PowerUI : Plug reason
+04-27 20:15:00.173  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:15:00.173  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:15:00.175  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2740000 / mChargingTime : 2736000
+04-27 20:15:00.175  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:15:00.175  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2736000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:15:00.175  5878  7746 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:15:00.175  5878  7746 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:15:00.175  5878  7746 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2736000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:15:00.177  5878  7746 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:15:00.177  5878  7746 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:15:00.179  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:15:00.183  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:15:00.183  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:15:00.183  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:15:00.186  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:15:00.186  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:15:00.187  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:15:00.188  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:15:00.189  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:15:00.189  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:15:00.190  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:15:00.191  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:15:00.195  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2736000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:15:00.195  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:15:00.197  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:15:00.203  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:15:00.203  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:15:00.204  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:15:00.204  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=71,plugged=2,health=2,maxChargingWattage=-1,remaining=2736000ultraFastCharger=1}
+04-27 20:15:00.204  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:15:00.204  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:15:00.204  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:15:00.204  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:15:00.276  4387  4387 I lmkd    : cached 0, sandbox(not0) 0
+04-27 20:15:00.287  4387  4387 I lmkd    : Reclaim 'com.samsung.android.rubin.app' (24781), uid 5010, oom_score_adj 999, state 19 to free 29760kB rss, 49820kb swap
+04-27 20:15:00.288  4387  4387 I lmkd    : Reclaimed 79580kB at oom_score_adj 850
+04-27 20:15:00.301  4924  4924 I Zygote  : Process 24781 exited due to signal 9 (Killed)
+04-27 20:15:00.304  5429  5486 I libprocessgroup: Successfully killed process cgroup uid 5010 pid 24781 in 0ms
+04-27 20:15:00.412  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:15:00.412  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:15:00.414  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:15:00.414  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:15:00.415  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:15:00.428  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:15:00.428  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:15:00.429  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:00.429  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:00.621  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:15:00.665  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:15:00.666  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:15:00.666  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:15:00.666  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:15:00.680  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:15:00.681  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:15:00.681  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:00.681  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:00.719  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:15:00.720  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:15:00.720  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:15:00.720  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:15:00.778  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:15:00.778  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:15:00.779  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:15:00.779  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:15:00.785  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:15:00.785  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:15:00.785  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:00.786  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:15:01.056  4387  4387 I lmkd    : 1(delay), 0(swap), 0(freelimit), 0(reentrymode) memory pressure events were skipped after a kill!
+04-27 20:15:01.127  4387  4387 I lmkd    : cached 0, sandbox(not0) 0
+04-27 20:15:01.133  4387  4387 I lmkd    : Reclaim 'com.sec.android.daemonapp' (26383), uid 10180, oom_score_adj 999, state 19 to free 60276kB rss, 25944kb swap
+04-27 20:15:01.133  4387  4387 I lmkd    : Reclaimed 86220kB at oom_score_adj 850
+04-27 20:15:01.164  4924  4924 I Zygote  : Process 26383 exited due to signal 9 (Killed)
+04-27 20:15:01.165  5429  5486 I libprocessgroup: Successfully killed process cgroup uid 10180 pid 26383 in 0ms
+04-27 20:15:01.660 26164 26187 D Benchmark: timeNs[ 0:10]: 3168 2678 3067 2813 2814 3028 3004 2979 3009 2931
+04-27 20:15:01.660 26164 26187 D Benchmark: timeNs[10:20]: 2977 3152 3074 2675 2918 2715 2747 2910 3304 2792
+04-27 20:15:01.660 26164 26187 D Benchmark: timeNs[20:30]: 2834 2957 2994 3172 3295 2994 2752 2831 2709 3070
+04-27 20:15:01.660 26164 26187 D Benchmark: timeNs[30:40]: 2959 2843 2745 3129 3002 2698 3032 3124 2913 2809
+04-27 20:15:01.660 26164 26187 D Benchmark: timeNs[40:50]: 2754 2788 2836 2812 3037 2774 2889 2856 3312 2989
+04-27 20:15:01.777 26164 26187 W _benchmark.test: Suspending all threads took: 8.761ms
+04-27 20:15:02.216 26164 26187 D Benchmark: allocationCount[ 0:10]: 99 99 100 99 99
+04-27 20:15:02.216 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
+04-27 20:15:02.217 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
+04-27 20:15:02.217 26164 26187 D Benchmark: Warmup: t=8.000, iter=1469354, fastAvg=6698, slowAvg=6028
+04-27 20:15:02.217 26164 26187 I PerfettoCapture: Stopping perfetto.
+04-27 20:15:02.242  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3775, isSameBssidAndFreq true
+04-27 20:15:02.247  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:15:02.247  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:15:02.248  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:15:02.260 29788 29788 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 20:15:02.265 26164 26187 D Benchmark: kill -TERM command output -
+04-27 20:15:02.275  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=117)
+04-27 20:15:02.277  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 20:15:02.344  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:15:02.350  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=118)
+04-27 20:15:02.351  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=119)
+04-27 20:15:02.654 29788 29788 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 20:15:02.671  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 30 ended, total sessions:0
+04-27 20:15:02.888 26164 26187 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=29788)] to die
+04-27 20:15:03.038 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_longPackFloat_2023-04-27-18-15-02.perfetto-trace.
+04-27 20:15:03.216 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_longPackFloat_2023-04-27-18-15-02.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_longPackFloat_2023-04-27-18-15-02.perfetto-trace
+04-27 20:15:03.255  8350 29588 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:15:03.335  5429  8528 D SyncManager: userId - 0 auto - true
+04-27 20:15:03.446  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:03.447  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:03.481  6734 28907 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28843 [CONTEXT service_id=218 ]
+04-27 20:15:03.497  6734 29396 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 83 uptime_millis: 82 exec_start_elapsed_seconds: 28843 [CONTEXT service_id=218 ]
+04-27 20:15:03.537 26164 26187 I Benchmark: BoxRecreationBenchmark.longPackFloat[Metric (timeNs) results: median 2925.2475884244373, min 2675.511655948553, max 3312.700964630225, standardDeviation: 166.4113024066185, Metric (allocationCount) results: median 99.99986602357986, min 99.9997320471597, max 100.00006698821008, standardDeviation: 1.2885439484155357E-4]count=14928
+04-27 20:15:03.544 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:15:03.560 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:15:03.596  5429  8518 D SyncManager: userId - 0 auto - true
+04-27 20:15:03.598  8350 29883 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 20:15:03.609  8350 29387 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:15:03.640  5429  8526 D SyncManager: userId - 0 auto - true
+04-27 20:15:03.644 26164 26187 I TestRunner: finished: longPackFloat(org.jetbrains.android_benchmark.BoxRecreationBenchmark)

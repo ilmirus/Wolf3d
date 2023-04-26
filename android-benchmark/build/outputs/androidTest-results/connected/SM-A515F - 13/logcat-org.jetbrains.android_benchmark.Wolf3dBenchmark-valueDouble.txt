@@ -1,719 +1,435 @@
-04-24 04:45:14.709 21331 21358 I TestRunner: started: valueDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
-04-24 04:45:14.713 21331 21331 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-24 04:45:14.713 21331 21331 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c388c9b
-04-24 04:45:14.719 21600 29380 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 55 uptime_millis: 55 exec_start_elapsed_seconds: 156297 [CONTEXT service_id=218 ]
-04-24 04:45:14.732 21331 21358 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-24 04:45:14.732 21331 21358 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-24 04:45:14.732 21331 21358 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueDouble --
-04-24 04:45:14.737 21331 21358 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-24 04:45:14.738 21331 21358 D PerfettoCapture: Recording perfetto trace
-04-24 04:45:14.794 21331 21358 I PerfettoCapture: Cleanup perfetto before starting.
-04-24 04:45:14.810  5635  5793 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:45:14.811  5635  5793 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:45:14.812  5635  5793 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:45:14.889  5241  5241 D Zygote  : Forked child process 30797
-04-24 04:45:14.996 21331 21358 I PerfettoCapture: Perfetto output file cleanup -
-04-24 04:45:14.997 21331 21358 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-24 04:45:15.002 30797 30797 I ru.yandex.disk: Using CollectorTypeCC GC.
-04-24 04:45:15.013 30797 30797 E ru.yandex.disk: Not starting debugger since process cannot load the jdwp agent.
-04-24 04:45:15.020 30797 30797 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:15.020  5216  5216 E audit   : type=1400 audit(1682304315.019:57718): avc:  denied  { read } for  pid=30797 comm="ru.yandex.disk" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:15.021  5216  5216 E audit   : type=1300 audit(1682304315.019:57718): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7fd2cd8f88 a2=88000 a3=0 items=0 ppid=5241 pid=30797 auid=4294967295 uid=10309 gid=10309 euid=10309 suid=10309 fsuid=10309 egid=10309 sgid=10309 fsgid=10309 tty=(none) ses=4294967295 comm="ru.yandex.disk" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c53,c257,c512,c768 key=(null)
-04-24 04:45:15.021  5216  5216 E audit   : type=1327 audit(1682304315.019:57718): proctitle="zygote64"
-04-24 04:45:15.021 30797 30815 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:15.021  5216  5216 E audit   : type=1400 audit(1682304315.019:57719): avc:  denied  { read } for  pid=30797 comm="binder:30797_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:15.021  5216  5216 E audit   : type=1300 audit(1682304315.019:57719): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=30797 auid=4294967295 uid=10309 gid=10309 euid=10309 suid=10309 fsuid=10309 egid=10309 sgid=10309 fsgid=10309 tty=(none) ses=4294967295 comm="binder:30797_1" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c53,c257,c512,c768 key=(null)
-04-24 04:45:15.021  5216  5216 E audit   : type=1327 audit(1682304315.019:57719): proctitle="zygote64"
-04-24 04:45:15.023 30797 30797 D ActivityThread: setConscryptValidator
-04-24 04:45:15.023 30797 30797 D ActivityThread: setConscryptValidator - put
-04-24 04:45:15.050 30797 30816 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:15.056 30797 30797 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10309; state: ENABLED
-04-24 04:45:15.115 30797 30797 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:15.115 30797 30797 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:15.117 30797 30797 W ru.yandex.disk: Entry not found
-04-24 04:45:15.119 30797 30797 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:15.119 30797 30797 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:15.121 30797 30797 W ru.yandex.disk: Entry not found
-04-24 04:45:15.124 30797 30797 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk. target_sdk_version=31, uses_libraries=, library_path=/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/lib/arm64:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/ru.yandex.disk
-04-24 04:45:15.152 30797 30797 W ru.yandex.disk: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:15.152 30797 30797 W ru.yandex.disk: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:15.186 30827 30827 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-24 04:45:15.187  5413  5413 I perfetto: ing_service_impl.cc:953 Configured tracing session 81, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-24 04:45:15.189  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=161)
-04-24 04:45:15.192 30797 30797 V GraphicsEnvironment: ANGLE Developer option for 'ru.yandex.disk' set to: 'default'
-04-24 04:45:15.192 30797 30797 V GraphicsEnvironment: ANGLE GameManagerService for ru.yandex.disk: false
-04-24 04:45:15.193 30797 30797 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-04-24 04:45:15.198 30797 30797 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:15.206 30797 30797 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:15.225 21331 21358 I PerfettoCapture: Perfetto output - 30827
-04-24 04:45:15.225 21331 21358 I PerfettoCapture: EXITCODE=0
-04-24 04:45:15.252  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:45:15.269  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-24 04:45:15.331 21331 21358 I PerfettoCapture: Perfetto tracing started successfully with pid 30827.
-04-24 04:45:15.428 21331 21358 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-24 04:45:15.429 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -20. Was -8, now -20
-04-24 04:45:15.429 21331 21358 D Benchmark: Set 21342 (Jit) to priority -15. Was 9, now -15
-04-24 04:45:15.462 21331 21358 I _benchmark.test: Explicit concurrent copying GC freed 179201(3373KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2944KB/9088KB, paused 302us,111us total 32.574ms
-04-24 04:45:15.487 30797 30797 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10309; state: DISABLED
-04-24 04:45:15.489 30797 30797 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
-04-24 04:45:15.527 30797 30797 I FirebaseInitProvider: FirebaseApp initialization successful
-04-24 04:45:15.539 30797 30797 I AdobeImageCdsProvider: onCreate
-04-24 04:45:15.544 30797 30797 I AdobeImageCdsProvider: onCreate
-04-24 04:45:15.684 30797 30797 I YandexAdsIntegrityCheck: Yandex Mobile Ads 5.3.2 integrated successfully
-04-24 04:45:15.720 30797 30797 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
-04-24 04:45:15.735  5635  8494 D PackageManager: setEnabledSetting : userId = 0 packageName = ru.yandex.disk cmp = androidx.work.impl.background.systemjob.SystemJobService newState = 1 callingPackage = 10309/ru.yandex.disk
-04-24 04:45:15.737  5635  8494 D ApplicationPolicy: getApplicationStateEnabled : pkg = ru.yandex.disk userId : 0
-04-24 04:45:15.738  5635  8494 D ApplicationPolicy: getApplicationComponentState : pkg = ru.yandex.disk userId : 0
-04-24 04:45:15.768 30797 30859 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10309; state: ENABLED
-04-24 04:45:15.840 30797 30861 I AppMetrica: Initializing of Metrica, Release type, Version 5.2.0, API Level 105, Dated 15.09.2022.
-04-24 04:45:15.878 30797 30797 I DiskApplication: [main] run in process 'ru.yandex.disk'
-04-24 04:45:15.878 30797 30797 I ru.yandex.disk: run in process 'ru.yandex.disk'
-04-24 04:45:15.893 21331 21343 I _benchmark.test: Background young concurrent copying GC freed 574208(12MB) AllocSpace objects, 0(0B) LOS objects, 57% free, 6628KB/15MB, paused 6.687ms,63us total 17.696ms
-04-24 04:45:15.919 30797 30863 W ru.yandex.disk: Method void com.yandex.metrica.impl.ob.xi.a(android.os.Bundle) failed lock verification and will run slower.
-04-24 04:45:15.919 30797 30863 W ru.yandex.disk: Common causes for lock verification issues are non-optimized dex code
-04-24 04:45:15.919 30797 30863 W ru.yandex.disk: and incorrect proguard optimizations.
-04-24 04:45:15.941 30797 30861 I AppMetrica: Activate reporter with APIKey 478cb909-xxxx-xxxx-xxxx-xxxxxxxx9f93
-04-24 04:45:15.950 30797 30867 D TrafficStats: tagSocket(84) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:15.951 30797 30797 D GetStringResourceAspect: [main] Got string = AIzaSyArik12G-rXho5q2NtIoQ_2o4QpuqtTHfk with resId = 2131953190 at com.yandex.metrica.push.common.utils.CoreUtils_6
-04-24 04:45:15.952 30797 30866 D TrafficStats: tagSocket(87) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:15.952 30797 30797 D GetStringResourceAspect: [main] Got string = 1:395509144389:android:97f8223c2b7ed636 with resId = 2131953191 at com.yandex.metrica.push.common.utils.CoreUtils_6
-04-24 04:45:15.952 30797 30797 D GetStringResourceAspect: [main] Got string = 395509144389 with resId = 2131953141 at com.yandex.metrica.push.common.utils.CoreUtils_6
-04-24 04:45:15.952  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:15.953  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:15.953 30797 30797 D GetStringResourceAspect: [main] Got string = api-project-395509144389 with resId = 2131954867 at com.yandex.metrica.push.common.utils.CoreUtils_6
-04-24 04:45:15.954 30797 30797 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10309; state: DISABLED
-04-24 04:45:15.973 30797 30861 I AppMetrica: Activate AppMetrica with APIKey a7d6c160-xxxx-xxxx-xxxx-xxxxxxxx0a08
-04-24 04:45:15.974 30797 30861 I AppMetrica: Activate reporter with APIKey 20799a27-xxxx-xxxx-xxxx-xxxxxxxx4180
-04-24 04:45:15.974 30797 30861 I AppMetrica: Activate reporter with APIKey 0e5e9c33-xxxx-xxxx-xxxx-xxxxxxxx3f72
-04-24 04:45:15.995  5241  5241 D Zygote  : Forked child process 30879
-04-24 04:45:16.045 30879 30879 I ex.disk:Metrica: Using CollectorTypeCC GC.
-04-24 04:45:16.057 30879 30879 E ex.disk:Metrica: Not starting debugger since process cannot load the jdwp agent.
-04-24 04:45:16.067 30879 30879 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:16.068  5216  5216 E audit   : type=1400 audit(1682304316.067:57721): avc:  denied  { read } for  pid=30879 comm="ex.disk:Metrica" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:16.068  5216  5216 E audit   : type=1300 audit(1682304316.067:57721): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7fd2cd8f88 a2=88000 a3=0 items=0 ppid=5241 pid=30879 auid=4294967295 uid=10309 gid=10309 euid=10309 suid=10309 fsuid=10309 egid=10309 sgid=10309 fsgid=10309 tty=(none) ses=4294967295 comm="ex.disk:Metrica" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c53,c257,c512,c768 key=(null)
-04-24 04:45:16.068  5216  5216 E audit   : type=1327 audit(1682304316.067:57721): proctitle="zygote64"
-04-24 04:45:16.071 30879 30893 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:16.071  5216  5216 E audit   : type=1400 audit(1682304316.067:57722): avc:  denied  { read } for  pid=30879 comm="binder:30879_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:16.071 30879 30879 D ActivityThread: setConscryptValidator
-04-24 04:45:16.072 30879 30879 D ActivityThread: setConscryptValidator - put
-04-24 04:45:16.083 30879 30894 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:16.089 30879 30879 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10309; state: ENABLED
-04-24 04:45:16.090 30797 30887 D GetStringResourceAspect: [YandexMobileAds.AdvertisingId] Got string = %1$s is having trouble with Google Play services. Please try again. with resId = 2131952213 at SourceFile
-04-24 04:45:16.108 30879 30879 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:16.108 30879 30879 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:16.109 30879 30879 W ex.disk:Metrica: Entry not found
-04-24 04:45:16.110 30879 30879 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:16.110 30879 30879 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:16.111 30879 30879 W ex.disk:Metrica: Entry not found
-04-24 04:45:16.113 30879 30879 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk. target_sdk_version=31, uses_libraries=, library_path=/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/lib/arm64:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/ru.yandex.disk
-04-24 04:45:16.117 30879 30879 W ex.disk:Metrica: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:16.117 30879 30879 W ex.disk:Metrica: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:16.127 30797 30861 I AppMetrica: Activate reporter with APIKey 67bb016b-xxxx-xxxx-xxxx-xxxxxxxx03d3
-04-24 04:45:16.135  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:16.156 30879 30879 V GraphicsEnvironment: ANGLE Developer option for 'ru.yandex.disk' set to: 'default'
-04-24 04:45:16.156 30879 30879 V GraphicsEnvironment: ANGLE GameManagerService for ru.yandex.disk: false
-04-24 04:45:16.157 30879 30879 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-04-24 04:45:16.157 30797 30797 D GetStringResourceAspect: [main] Got string = :passport with resId = 2131954547 at com.yandex.passport.internal.impl.d_23
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: java.lang.Exception: TRACE FOR OBFUSCATION CHECK
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.g5.a(Unknown Source:23)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.t0.<clinit>(Unknown Source:7)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.f4(Unknown Source:13)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.W3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.X3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.y3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.H1(Unknown Source:21)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.B2(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.Yatagan$CoreComponent.a(Unknown Source:0)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.DiskApplication.U(Unknown Source:116)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.DiskApplication.h0(Unknown Source:22)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at ru.yandex.disk.DiskApplication.onCreate(Unknown Source:155)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1266)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7614)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.os.Looper.loopOnce(Looper.java:226)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.os.Looper.loop(Looper.java:313)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at android.app.ActivityThread.main(ActivityThread.java:8757)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at java.lang.reflect.Method.invoke(Native Method)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
-04-24 04:45:16.161 30797 30797 E RuntimeConfig: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: DEBUG = false
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: java.lang.Exception: TRACE FOR OBFUSCATION CHECK
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.g5.a(Unknown Source:23)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.t0.<clinit>(Unknown Source:7)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.f4(Unknown Source:13)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.W3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.X3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.y3(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.H1(Unknown Source:21)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.B2(Unknown Source:15)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.Yatagan$CoreComponent.a(Unknown Source:0)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.DiskApplication.U(Unknown Source:116)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.DiskApplication.h0(Unknown Source:22)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at ru.yandex.disk.DiskApplication.onCreate(Unknown Source:155)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1266)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:7614)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.os.Handler.dispatchMessage(Handler.java:106)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.os.Looper.loopOnce(Looper.java:226)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.os.Looper.loop(Looper.java:313)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at android.app.ActivityThread.main(ActivityThread.java:8757)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at java.lang.reflect.Method.invoke(Native Method)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
-04-24 04:45:16.161 30797 30797 E ru.yandex.disk: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)
-04-24 04:45:16.162 30879 30879 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:16.165 30879 30879 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:16.168 30797 30897 D GetStringResourceAspect: [DefaultDispatcher-worker-1] Got string = com.yandex.passport with resId = 2131954289 at com.yandex.passport.internal.PassportInitialization_2
-04-24 04:45:16.170  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
-04-24 04:45:16.174  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:16.208 30879 30879 I ru.yandex.disk: run in process 'ru.yandex.disk:Metrica'
-04-24 04:45:16.222 30879 30879 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10309; state: DISABLED
-04-24 04:45:16.225 30879 30879 I AppMetrica: Initializing of Metrica, Release type, Version 5.2.0, API Level 105, Dated 15.09.2022.
-04-24 04:45:16.262 30879 30903 W ex.disk:Metrica: Method void com.yandex.metrica.impl.ob.xi.a(android.os.Bundle) failed lock verification and will run slower.
-04-24 04:45:16.262 30879 30903 W ex.disk:Metrica: Common causes for lock verification issues are non-optimized dex code
-04-24 04:45:16.262 30879 30903 W ex.disk:Metrica: and incorrect proguard optimizations.
-04-24 04:45:16.315 30879 30901 I AppMetrica: Activate AppMetrica with APIKey a7d6c160-xxxx-xxxx-xxxx-xxxxxxxx0a08
-04-24 04:45:16.317 30879 30901 I AppMetrica: Activate reporter with APIKey 20799a27-xxxx-xxxx-xxxx-xxxxxxxx4180
-04-24 04:45:16.512 30797 30797 I DiskApplication: [main] init Disk application process
-04-24 04:45:16.512 30797 30797 I ru.yandex.disk: init Disk application process
-04-24 04:45:16.585 28208 28208 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
-04-24 04:45:16.586 28208 28208 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
-04-24 04:45:16.589 30797 30797 I DatabaseHelper: [main] process is ru.yandex.disk
-04-24 04:45:16.589 30797 30797 I ru.yandex.disk: process is ru.yandex.disk
-04-24 04:45:16.643 30797 30797 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [ru.yandex.disk.connectivity.NetworkStateN.d(Unknown Source:20)] [ru.yandex.disk.DiskApplication.k0(Unknown Source:18)] [ru.yandex.disk.DiskApplication.h0(Unknown Source:205)] [ru.yandex.disk.DiskApplication.onCreate(Unknown Source:155)] [android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1266)] [android.app.ActivityThread.handleBindApplication(ActivityThread.java:7614)] [android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)] [android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)]
-04-24 04:45:16.646  5635  8449 D ConnectivityService: requestNetwork for uid/pid:10309/30797 activeRequest: null callbackRequest: 8806 [NetworkRequest [ REQUEST id=8807, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-04-24 04:45:16.648  5635  6162 D ConnectivityService:    accepting network in place of null
-04-24 04:45:16.666  5635  6124 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=8807, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:16.666  5635  6124 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8807, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:16.666  5635  6124 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8807, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:16.666  5635  6162 D ConnectivityService: Rematched networks [computed 0ms] [applied 2ms] [issued 16]
-04-24 04:45:16.666  5635  6162 D ConnectivityService: NetworkReassignment :
-04-24 04:45:16.666  5635  6162 D ConnectivityService:   8807 : null → 100
-04-24 04:45:16.666  5635  6124 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8807, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:16.714 30879 30894 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:16.793 30797 30864 D Volley  : [189] am0.a: Changing log tag to Yandex Mobile Ads
-04-24 04:45:16.821 30879 30942 D TrafficStats: tagSocket(105) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:16.876 30879 30942 D TrafficStats: tagSocket(108) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:16.920 30797 30945 D TrafficStats: tagSocket(108) with statsTag=0x63e782f2, statsUid=-1
-04-24 04:45:17.075 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.130 30879 30941 D TrafficStats: tagSocket(107) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:17.130 30879 30922 D CompatibilityChangeReporter: Compat change id reported: 147600208; UID 10309; state: ENABLED
-04-24 04:45:17.240 30879 30941 D TrafficStats: tagSocket(110) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:17.271 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.451 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.532 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.596 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.629  5241  5241 D Zygote  : Forked child process 30982
-04-24 04:45:17.660 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.691 30982 30982 I x.disk:passport: Using CollectorTypeCC GC.
-04-24 04:45:17.704 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.708 30982 30982 E x.disk:passport: Not starting debugger since process cannot load the jdwp agent.
-04-24 04:45:17.720 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.721 30982 30982 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:17.722  5216  5216 E audit   : type=1400 audit(1682304317.719:57725): avc:  denied  { read } for  pid=30982 comm="x.disk:passport" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:17.722  5216  5216 E audit   : type=1300 audit(1682304317.719:57725): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7fd2cd8f88 a2=88000 a3=0 items=0 ppid=5241 pid=30982 auid=4294967295 uid=10309 gid=10309 euid=10309 suid=10309 fsuid=10309 egid=10309 sgid=10309 fsgid=10309 tty=(none) ses=4294967295 comm="x.disk:passport" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c53,c257,c512,c768 key=(null)
-04-24 04:45:17.722  5216  5216 E audit   : type=1327 audit(1682304317.719:57725): proctitle="zygote64"
-04-24 04:45:17.723 30982 31001 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:17.723  5216  5216 E audit   : type=1400 audit(1682304317.719:57726): avc:  denied  { read } for  pid=30982 comm="binder:30982_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:17.724 30982 30982 D ActivityThread: setConscryptValidator
-04-24 04:45:17.725 30982 30982 D ActivityThread: setConscryptValidator - put
-04-24 04:45:17.729  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:17.731 30797 30953 D TrafficStats: tagSocket(115) with statsTag=0x1, statsUid=-1
-04-24 04:45:17.732 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.743 30982 31001 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:17.750 30982 30982 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10309; state: ENABLED
-04-24 04:45:17.794 30982 30982 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:17.795 30982 30982 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.dm': No such file or directory
-04-24 04:45:17.797 30982 30982 W x.disk:passport: Entry not found
-04-24 04:45:17.800 30982 30982 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:17.800 30982 30982 W ziparchive: Unable to open '/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.dm': No such file or directory
-04-24 04:45:17.802 30982 30982 W x.disk:passport: Entry not found
-04-24 04:45:17.807 30982 30982 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk. target_sdk_version=31, uses_libraries=, library_path=/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/lib/arm64:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/base.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~uY-XoKqdFpPy_bReH8abLA==/ru.yandex.disk-Ygr3FIFbrdQ-X-fPPF6CCQ==/split_config.xxhdpi.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/ru.yandex.disk
-04-24 04:45:17.812 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.814 30982 30982 W x.disk:passport: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:17.814 30982 30982 W x.disk:passport: JIT profile information will not be recorded: profile file does not exist.
-04-24 04:45:17.861 30982 30982 V GraphicsEnvironment: ANGLE Developer option for 'ru.yandex.disk' set to: 'default'
-04-24 04:45:17.866 30982 30982 V GraphicsEnvironment: ANGLE GameManagerService for ru.yandex.disk: false
-04-24 04:45:17.866 30982 30982 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-04-24 04:45:17.875 30797 30797 D Yandex Mobile Ads: [2] am0.a: Changing log tag to Yandex Mobile Ads
-04-24 04:45:17.885 30982 30982 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:17.891 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:17.891 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:17.891 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:17.899 30982 30982 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-24 04:45:17.901 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:17.901 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:17.901 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:17.902 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:17.907 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:17.907 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:17.956 30797 30797 I YandexAdsIntegrityCheck: Yandex Mobile Ads 5.3.2 initialized successfully
-04-24 04:45:18.024 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:18.167 30982 30982 D AmModule: hack enabled: false
-04-24 04:45:18.167 30879 30917 D TrafficStats: tagSocket(115) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:18.167  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:18.190 30982 31021 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10309; state: DISABLED
-04-24 04:45:18.197 30982 31021 I AppMetrica: Initializing of Metrica, Release type, Version 5.2.0, API Level 105, Dated 15.09.2022.
-04-24 04:45:18.282 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:18.282 30797 30953 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:18.293 30982 31022 W x.disk:passport: Method void com.yandex.metrica.impl.ob.xi.a(android.os.Bundle) failed lock verification and will run slower.
-04-24 04:45:18.293 30982 31022 W x.disk:passport: Common causes for lock verification issues are non-optimized dex code
-04-24 04:45:18.293 30982 31022 W x.disk:passport: and incorrect proguard optimizations.
-04-24 04:45:18.374 30982 31021 I AppMetrica: Activate reporter with APIKey 67bb016b-xxxx-xxxx-xxxx-xxxxxxxx03d3
-04-24 04:45:18.377 30982 31021 I AppMetrica: Activate reporter with APIKey 20799a27-xxxx-xxxx-xxxx-xxxxxxxx4180
-04-24 04:45:18.412 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:18.423 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:18.466 30982 31030 W x.disk:passport: Long monitor contention with owner binder:30982_3 (31004) at java.lang.Object gn.d.get()(SourceFile:-1) waiters=0 in java.lang.Object gn.d.get() for 107ms
-04-24 04:45:18.686 30879 30917 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:18.728 30982 31035 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10309; state: DISABLED
-04-24 04:45:18.779  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:18.781  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:18.777  5216  5216 E audit   : type=1400 audit(1682304318.775:57728): avc:  denied  { read } for  pid=30982 comm="binder:30982_2" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:18.783  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:18.784  5216  5216 E audit   : type=1300 audit(1682304318.775:57728): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=70981fb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=30982 auid=4294967295 uid=10309 gid=10309 euid=10309 suid=10309 fsuid=10309 egid=10309 sgid=10309 fsgid=10309 tty=(none) ses=4294967295 comm="binder:30982_2" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c53,c257,c512,c768 key=(null)
-04-24 04:45:18.784  5216  5216 E audit   : type=1327 audit(1682304318.775:57728): proctitle="ru.yandex.disk:passport"
-04-24 04:45:18.784 30982 31002 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.808  5635  5653 I system_server: Background young concurrent copying GC freed 451406(21MB) AllocSpace objects, 24(1064KB) LOS objects, 19% free, 90MB/112MB, paused 760us,566us total 121.492ms
-04-24 04:45:18.809 30797 30815 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.810 30879 30937 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.812  5216  5216 E audit   : type=1400 audit(1682304318.807:57729): avc:  denied  { read } for  pid=30797 comm="binder:30797_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c53,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:18.813 30416 30486 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.815 30625 30638 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.816 30311 30679 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:18.842 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:18.940  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:18.962 30879 30917 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.028  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:19.028 30982 31053 D TrafficStats: tagSocket(85) with statsTag=0x1, statsUid=-1
-04-24 04:45:19.141 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.141 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.141 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:19.141 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.142 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.142 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:19.142 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.143 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:19.234 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.353 30982 31035 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
-04-24 04:45:19.503 30879 30917 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.521 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.540 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.551 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:19.551 30982 31053 W x.disk:passport: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:19.576 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:19.747  5635  5712 I libprocessgroup: Successfully killed process cgroup uid 10124 pid 28347 in 0ms
-04-24 04:45:19.853  5635  6660 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(uid/pid:10278/27982, [NetworkRequest [ REQUEST id=8792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10278 RequestorUid: 10278 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ]], android.os.BinderProxy@b7f077f)
-04-24 04:45:19.854  5635  6162 D ConnectivityService: releasing NetworkRequest [ REQUEST id=8792, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10278 RequestorUid: 10278 RequestorPkg: com.whatsapp UnderlyingNetworks: Null] ] (release request)
-04-24 04:45:19.854  5635  6162 D ConnectivityService:  Removing from current network [100 CELLULAR], leaving 138 requests.
-04-24 04:45:19.855  5241  5241 I Zygote  : Process 27982 exited due to signal 9 (Killed)
-04-24 04:45:19.896  5241  5241 I Zygote  : Process 28347 exited due to signal 9 (Killed)
-04-24 04:45:19.903  5272  5272 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-04-24 04:45:19.904  5241  5241 I Zygote  : Process 28461 exited due to signal 9 (Killed)
-04-24 04:45:19.904  5635  5712 I libprocessgroup: Successfully killed process cgroup uid 10278 pid 27982 in 0ms
-04-24 04:45:19.905  5635  5712 I libprocessgroup: Successfully killed process cgroup uid 10124 pid 28461 in 0ms
-04-24 04:45:19.905  5635  5712 I libprocessgroup: Successfully killed process cgroup uid 10016 pid 28077 in 0ms
-04-24 04:45:19.940  5241  5241 I Zygote  : Process 28077 exited due to signal 9 (Killed)
-04-24 04:45:21.213 30879 30891 W System  : A resource failed to call close.
-04-24 04:45:21.214 30879 30891 W System  : A resource failed to call close.
-04-24 04:45:21.287  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
-04-24 04:45:21.290  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:21.696  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:21.705  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:21.707  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:21.708  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:21.712  5241  5241 D Zygote  : Forked child process 31077
-04-24 04:45:21.774 31077 31077 I ndroid.game.gos: Using CollectorTypeCC GC.
-04-24 04:45:21.782 31077 31077 E ndroid.game.gos: Not starting debugger since process cannot load the jdwp agent.
-04-24 04:45:21.796 31077 31077 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:21.797  5216  5216 E audit   : type=1400 audit(1682304321.795:57734): avc:  denied  { read } for  pid=31077 comm="ndroid.game.gos" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:21.797  5216  5216 E audit   : type=1300 audit(1682304321.795:57734): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7fd2cd8f88 a2=88000 a3=0 items=0 ppid=5241 pid=31077 auid=4294967295 uid=10217 gid=10217 euid=10217 suid=10217 fsuid=10217 egid=10217 sgid=10217 fsgid=10217 tty=(none) ses=4294967295 comm="ndroid.game.gos" exe="/system/bin/app_process64" subj=u:r:platform_app:s0:c512,c768 key=(null)
-04-24 04:45:21.797  5216  5216 E audit   : type=1327 audit(1682304321.795:57734): proctitle="zygote64"
-04-24 04:45:21.799 31077 31077 D ActivityThread: setConscryptValidator
-04-24 04:45:21.800 31077 31077 D ActivityThread: setConscryptValidator - put
-04-24 04:45:21.801  5216  5216 E audit   : type=1400 audit(1682304321.799:57735): avc:  denied  { read } for  pid=31077 comm="binder:31077_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:21.803 31077 31093 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:21.825 31077 31095 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:45:21.827 31077 31077 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10217; state: ENABLED
-04-24 04:45:21.915 30879 30951 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:21.966  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:21.967 30797 31078 D TrafficStats: tagSocket(75) with statsTag=0x1, statsUid=-1
-04-24 04:45:22.044 30797 31114 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24.register(Unknown Source:31)] [com.bumptech.glide.manager.SingletonConnectivityReceiver.maybeRegisterReceiver(Unknown Source:15)] [com.bumptech.glide.manager.SingletonConnectivityReceiver.register(Unknown Source:6)] [com.bumptech.glide.manager.DefaultConnectivityMonitor.register(Unknown Source:8)] [com.bumptech.glide.manager.DefaultConnectivityMonitor.onStart(Unknown Source:0)] [com.bumptech.glide.manager.ApplicationLifecycle.addListener(Unknown Source:0)] [com.bumptech.glide.RequestManager.<init>(SourceFile:17)] [com.bumptech.glide.RequestManager.<init>(SourceFile:3)] [com.bumptech.glide.manager.RequestManagerRetriever$1.build(Unknown Source:2)] [com.bumptech.glide.manager.RequestManagerRetriever.getApplicationManager(Unknown Source:33)] [com.bumptech.glide.manager.RequestManagerRetriever.get(SourceFile:9)] [com.bumptech.glide.Glide.with(SourceFile:1)] [ru.yandex.disk.photoslice.b.<init>(Unknown Source:64)] [ru.yandex.disk.photoslice.f1.<init>(Unknown Source:116)] [ru.yandex.disk.Yatagan$CoreComponent$UserComponentsImpl$UserCommandComponentImpl.x(Unknown Source:281)] [ru.yandex.disk.Yatagan$CoreComponent$UserComponentsImpl$UserCommandComponentImpl$ProviderImpl.get(Unknown Source:4)] [ru.yandex.disk.photoslice.m1.a(Unknown Source:15)] [ru.yandex.disk.photoslice.m1.c(Unknown Source:2)] [vw.b.c(Unknown Source:0)] [vw.b.g(Unknown Source:0)] [vw.b.f(Unknown Source:125)] [vw.b.a(Unknown Source:0)] [vw.a.run(Unknown Source:10)] [ru.yandex.disk.util.k1$b.b(Unknown Source:26)] [ru.yandex.disk.util.k1$b.a(Unknown Source:0)] [ru.yandex.disk.util.l1.run(Unknown Source:4)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [java.lang.Thread.run(Thread.java:1012)]
-04-24 04:45:22.046  5635  6728 D ConnectivityService: requestNetwork for uid/pid:10309/30797 activeRequest: null callbackRequest: 8808 [NetworkRequest [ REQUEST id=8809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-04-24 04:45:22.047  5635  6162 D ConnectivityService:    accepting network in place of null
-04-24 04:45:22.052  5635  6124 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=8809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:22.052  5635  6124 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:22.052  5635  6124 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:22.052  5635  6162 D ConnectivityService: Rematched networks [computed 0ms] [applied 1ms] [issued 5]
-04-24 04:45:22.052  5635  6162 D ConnectivityService: NetworkReassignment :
-04-24 04:45:22.052  5635  6162 D ConnectivityService:   8809 : null → 100
-04-24 04:45:22.053  5635  6124 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=8809, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10309 RequestorUid: 10309 RequestorPkg: ru.yandex.disk UnderlyingNetworks: Null] ]
-04-24 04:45:22.058 31077 31108 I GOS:DssFeature: dpi: 420, width: 1080, height: 2186
-04-24 04:45:22.076 31077 31108 I GOS:VrrFeature: updateDisplayModes(): displayModes: [{id=1, width=1080, height=2400, fps=60.000004, alternativeRefreshRates=[]}]
-04-24 04:45:22.076 31077 31108 I GOS:VrrFeature: updateDisplayModes()-{96=null, 48=null, 120=null, 90=null, 60=1}
-04-24 04:45:22.084 31077 31108 I GOS:PlatformUtil: getSemPlatformVersion(). SEM_PLATFORM_INT: 140100
-04-24 04:45:22.121 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.121 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.122 31077 31108 I GOS:Initializer: DB is already initialized
-04-24 04:45:22.122 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:22.124  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:22.124 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.124 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.124 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:22.125 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.125 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:22.127 30797 30958 D TrafficStats: tagSocket(118) with statsTag=0x1, statsUid=-1
-04-24 04:45:22.137 31077 31108 I GOS:Initializer: finished initGos()
-04-24 04:45:22.141 31077 31122 I GOS:MainIntentService: onHandleIntent(). type(ON_ALARM) from 4
-04-24 04:45:22.141 31077 31122 I GOS:MainIntentService: received UPDATE_ALARM type alarm: ON_ALARM
-04-24 04:45:22.175  5635  6264 D NetdEventListenerService: DNS Requested by : 100, 10309
-04-24 04:45:22.175 30797 31092 D TrafficStats: tagSocket(122) with statsTag=0x1, statsUid=-1
-04-24 04:45:22.183 30982 31041 W x.disk:passport: Long monitor contention with owner binder:30982_3 (31004) at com.yandex.passport.internal.b com.yandex.passport.internal.core.accounts.g.a()(SourceFile:-1) waiters=0 in com.yandex.passport.internal.b com.yandex.passport.internal.core.accounts.g.a() for 119ms
-04-24 04:45:22.229 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.236 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.236 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:22.237 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.238 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.238 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:22.242 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.243 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:22.270 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.270 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.270 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:22.271 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.276 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.276 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:22.277 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.278 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:22.296 31077 31122 I GOS:AlarmController: onUpdateAlarm(), start!, IntentType: ON_ALARM
-04-24 04:45:22.299 31077 31122 I GOS:AlarmController: onUpdateAlarm() - too early. skip full update. millisFromLastFullyUpdate: 154803940
-04-24 04:45:22.309  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
-04-24 04:45:22.313  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:22.316 31077 31122 I GOS:AlarmController: onUpdateAlarm() - Wi-Fi is not available. millisFromLastUpdate: 154803958
-04-24 04:45:22.318 31077 31122 I GOS:MainIntentService: onHandleIntent(). type(INIT_GOS) from 201
-04-24 04:45:22.322 31077 31122 I GOS:AutoControlFeature: updateControlLevels maxBrightness=255, maxFps=60
-04-24 04:45:22.323 31077 31122 I GOS:AutoControlFeature: update(): brightness=false, volume=false, fps=false
-04-24 04:45:22.329 31077 31122 I GOS:WifiQosFeature: updatePolicy(). mTid: 0
-04-24 04:45:22.336 31077 31122 I GOS:ClearBGProcessFeature: mLruNum=1
-04-24 04:45:22.338 31077 31122 I GOS:ClearBGProcessFeature: loadSurviveMap apps=com.android.vending
-04-24 04:45:22.350 31077 31122 I GOS:ClearBGProcessFeature: updateSurviveList mSurviveAppList=[com.sec.android.app.clockpackage, 10160, com.samsung.android.app.reminder, 10150, com.android.vending, 10229, com.samsung.android.voc, 10259, com.samsung.android.calendar, 10193]
-04-24 04:45:22.364 31077 31122 I GOS:SeInputManager: checkInputFeature(), ret: 257
-04-24 04:45:22.364 31077 31122 I GOS:TspFeature: isAvailableForSystemHelper(), tspVrrInputAvailable: false
-04-24 04:45:22.366 31077 31122 I GOS:TspFeature: isAvailableForSystemHelper(), vrrAvailable: false
-04-24 04:45:22.467 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.477 30797 31078 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:22.612 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.612 30797 30958 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:22.668 14067 14093 I Finsky  : [173] kre.run(17): Stats for Executor: BlockingExecutor ndx@ffce5b9[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 31]
-04-24 04:45:22.670 14067 14093 I Finsky  : [173] kre.run(17): Stats for Executor: LightweightExecutor ndx@2c25dfe[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 143]
-04-24 04:45:22.692 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:22.692 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:22.904 30797 31092 D TrafficStats: tagSocket(131) with statsTag=0x1, statsUid=-1
-04-24 04:45:23.014 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.015 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.016 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
-04-24 04:45:23.016 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.016 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.017 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
-04-24 04:45:23.018 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.018 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
-04-24 04:45:23.088 14067 14093 I Finsky  : [173] kre.run(17): Stats for Executor: bgExecutor ndx@5d9995f[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 421]
-04-24 04:45:23.118  5635  5712 I libprocessgroup: Successfully killed process cgroup uid 10276 pid 27816 in 10ms
-04-24 04:45:23.158  5241  5241 I Zygote  : Process 27816 exited due to signal 9 (Killed)
-04-24 04:45:23.296 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
-04-24 04:45:23.296 30797 31092 W ru.yandex.disk: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
-04-24 04:45:23.376  6298  6298 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156282607 mSleepTimeMs=29707147 mIdleTimeMs=8340051 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[38825, 33682, 22215, 348, 136354],mRxTimeMs=84172431}]}
-04-24 04:45:23.510 30797 31092 D RemoteRepo: [Network Scheduler #0] diskInfo = DiskInfo{trashSize=0, totalSpace=1378684502016, usedSpace=13168213126, systemFolders={odnoklassniki=disk:/Социальные сети/Одноклассники, google=disk:/Социальные сети/Google+, instagram=disk:/Социальные сети/Instagram, vkontakte=disk:/Социальные сети/ВКонтакте, attach=disk:/Почтовые вложения, mailru=disk:/Социальные сети/Мой Мир, downloads=disk:/Загрузки/, applications=disk:/Приложения, facebook=disk:/Социальные сети/Facebook, social=disk:/Социальные сети/, messenger=disk:/Файлы Мессенджера, calendar=disk:/Материалы встреч, scans=disk:/Сканы, screenshots=disk:/Скриншоты/, photostream=disk:/Фотокамера/}, paid=true, unlimAutouploadActivated=true, photoUnlimActivated=true, videoUnlimActivated=false, unlimitedVideoAutouploadReason='by_user', officeOnlineEditorName='only_office', overdraftLightDate='null', overdraftHardDate='null', overdraftBlockDate='null', overdraftStatus='null', pddOrgID='null'}
-04-24 04:45:24.690  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:26.471  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
-04-24 04:45:26.474  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:29.767 21600 21600 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-24 04:45:31.764 28208 28208 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
-04-24 04:45:33.537 30797 30817 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10309; state: ENABLED
-04-24 04:45:34.850  5635  8934 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156317402 mSleepTimeMs=29707147 mIdleTimeMs=8341943 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[38825, 33682, 22215, 348, 136354],mRxTimeMs=84182010}]}
-04-24 04:45:35.138  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
-04-24 04:45:35.156  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = off deviceID = 3 slot = 1 device_ext = 0
-04-24 04:45:35.156  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :off
-04-24 04:45:35.156  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disableSensor : true
-04-24 04:45:35.156  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
-04-24 04:45:35.174  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:45:35.175  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:45:35.175  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 17179869184 , state: false
-04-24 04:45:35.191  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
-04-24 04:45:35.191  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
-04-24 04:45:35.192  5635  5845 D SensorService: Calling activate off 33554443
-04-24 04:45:35.193  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 0
-04-24 04:45:35.195  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 0, first_grip_event : 1
-04-24 04:45:35.196  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
-04-24 04:45:35.196  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disable channel 0 : 0 , channel 1 : 0
-04-24 04:45:35.196  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disableSensor : true
-04-24 04:45:35.196  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
-04-24 04:45:35.207  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:45:35.207  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:45:35.207  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 17179869184 , state: false
-04-24 04:45:35.224  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
-04-24 04:45:35.224  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
-04-24 04:45:35.224  5635  5845 D SensorService: Calling activate off 33554450
-04-24 04:45:35.224  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 0
-04-24 04:45:35.226  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 0, first_grip_event : 1
-04-24 04:45:35.227  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
-04-24 04:45:35.227  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disable channel 0 : 0 , channel 1 : 0
-04-24 04:45:35.227  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :off
-04-24 04:45:35.228  6298  6706 I System.out: Broadcast completed: result=0
-04-24 04:45:37.784  5635  8934 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
-04-24 04:45:37.786  5635  8934 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
-04-24 04:45:37.787  5635  8934 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
-04-24 04:45:37.825  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:40.280  2483  2539 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1077) acc({sim(3)=15, sec(6)=1, sim2(4)=1, google(2)=81, com.whatsapp(14)=39, org.telegram.messenger(235)=99}) calls([logtype:100 cnt:867, logtype:200 cnt:5, logtype:300 cnt:495, logtype:1000 cnt:605, logtype:1150 cnt:161]) Iso(RS) uId(0) ]
-04-24 04:45:40.280  2483  2539 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,2 ,14 ,235]=1, [3]=15, [14]=1, [2 ,14 ,235]=32, [4]=1, [2 ,14]=4, [2 ,2]=2, [2]=33, [6 ,14]=1, [2 ,235]=6, [235]=60}) ]
-04-24 04:45:40.280  2483  2539 I ContactsProvider_EventLog: cp_s: [ cnt({acore(2483)=1}) ]
-04-24 04:45:40.280  2483  2539 I ContactsProvider_EventLog: cp_s: [PROFILE con(1) dat(1) acc({vnd.sec.contact.phone=1}) ] [SAPROFILE ]
-04-24 04:45:40.280  2483  2539 I ContactsProvider_EventLog: cp_s: [STATE R(T) ]
-04-24 04:45:42.103  5295  5295 I SurfaceFlinger: SFWD update time=123271500276983
-04-24 04:45:43.036  5216  5216 E audit   : type=1400 audit(1682304343.031:57737): avc:  denied  { getattr } for  pid=5635 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5635" dev="debugfs" ino=26363 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:45:43.036  5216  5216 E audit   : type=1300 audit(1682304343.031:57737): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=70bb368d30 a2=6f854f1680 a3=0 items=0 ppid=5241 pid=5635 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
-04-24 04:45:43.036  5216  5216 E audit   : type=1327 audit(1682304343.031:57737): proctitle="system_server"
-04-24 04:45:43.995 28208 31192 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
-04-24 04:45:46.438  7192  7240 I GmsPassiveListener_FLP: onGmsLocationChanged, provider=fused / speed=0.0 / time=1682304346400 / elapsed=156328955000000
-04-24 04:45:46.453  5635  6728 V LocationManagerService: passive provider registration 5023/com.samsung.android.networkdiagnostic/4FDF9C6D dropped delivery - too close
-04-24 04:45:46.453  5635  6728 V LocationManagerService: passive provider registration 1000/android[SensorNotificationService]/79F70BEC dropped delivery - too close
-04-24 04:45:46.455  5635  6549 D SLocation: PositionManager - PassiveonLocationChanged fused 1682304346400
-04-24 04:45:46.456  5635  6549 W SLocation: PositionManager - do not refresh last location about fused location
-04-24 04:45:46.456  5635  6549 D SLocation: ARDistanceBigData - BIGDATA ARD - receive location
-04-24 04:45:46.457  5635  6549 D SLocation: ARDistanceLibManager - request distance diff to AR Distance Library
-04-24 04:45:46.457  5635  6549 D SLocation: SLocationCoreSem - send to coreSem, packet length : 1 / [34]
-04-24 04:45:46.458  5635  6549 D SemContextLocationCoreAttribute: setAttribute() mode : 0 action : 23
-04-24 04:45:46.458  5635  6549 D SemContextService: lock : changeParameters
-04-24 04:45:46.458  5635  6549 D SemContext.CaeProvider.LocationCoreImpl: setAttribute() mode : 0 action : 23
-04-24 04:45:46.464  5635  6549 W CAE     : setCAProperty(ContextAwareService.java:513) - [setProperty 01] Mutex is locked for SLOCATION_RUNNER
-04-24 04:45:46.465  5635  6549 I CAE     : setPropertyValue(SLocationRunner.java:116) - SLocationRunner setProperty header : 34, len : 1
-04-24 04:45:46.467  5635  6549 I CAE     : sendCmdToSensorHub(SensorHubCommManager.java:156) - -63, 23, 55, 34,
-04-24 04:45:46.468  5635  5841 D SensorService: setSContextDataLocked ints length 2 , byte length 4
-04-24 04:45:46.469  5635  5841 D SensorService: setSContextDataLocked 223717c1
-04-24 04:45:46.469  5262  5262 I SensorsHub: SContextSensor::injecet_sensor_data
-04-24 04:45:46.469  5262  5262 D SensorsHub: c1 17 37 22
-04-24 04:45:46.469  5262  5262 D SensorsHub: inject_scontext_data: New ssp_data_injection_fd(28)
-04-24 04:45:46.470  5262  5262 D SensorsHub: SContext Data Injection return 4
-04-24 04:45:46.470  5262  5343 I SensorsHub: context 38 0 37 1,1,55,0,33,33,0,0,0,0,23,88,175,29,64,220,186,0,26,183,24,64,12,50,8,80,0,0,0,32,0,151,31,128,0,0,0,83, 156329025427406
-04-24 04:45:46.471  5635  5838 D SensorHubManager: onGetSensorHubDataLocked: library(38) = 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 88, -81, 29, 64, -36, -70, 0, 26, -73, 24, 64, 12, 50, 8, 80, 0, 0, 0, 32, 0, -105, 31, -128, 0, 0, 0, 83
-04-24 04:45:46.471  5635  5839 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :38], AP_WAKEUP
-04-24 04:45:46.471  5635  5839 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 38
-04-24 04:45:46.471  5635  5839 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 88, -81, 29, 64, -36, -70, 0, 26, -73, 24, 64, 12, 50, 8, 80, 0, 0, 0, 32, 0, -105, 31, -128, 0, 0, 0, 83,
-04-24 04:45:46.471  5635  5839 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
-04-24 04:45:46.472  5635  6549 W CAE     : setCAProperty(ContextAwareService.java:519) - [setProperty 02] Mutex is unlocked for SLOCATION_RUNNER
-04-24 04:45:46.472  5262  5343 I SensorsHub: context 10 0 9 1,1,55,0,5,2,34,0,0,0, 156329025512444
-04-24 04:45:46.472  5635  6549 D SemContextService: unlock : changeParameters
-04-24 04:45:46.472  5635  6549 D SemContextManager:   .changeParameters : listener = com.samsung.android.location.semcontext.a@1cb5071, service=SLocation Core
-04-24 04:45:46.473  5635  6549 D SLocation: PositionManager - receive fused location
-04-24 04:45:46.473  5635  5838 D SensorHubManager: onGetSensorHubDataLocked: library(10) = 1, 1, 55, 0, 5, 2, 34, 0, 0, 0
-04-24 04:45:46.474  5635  5839 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
-04-24 04:45:46.474  5635  5839 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 88, -81, 29, 64, -36, -70, 0, 26, -73, 24, 64, 12, 50, 8, 80, 0, 0, 0, 32, 0, -105, 31, -128, 0, 0, 0, 83]
-04-24 04:45:46.475  5635  5839 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:38
-04-24 04:45:46.475  5635  5839 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :10], AP_WAKEUP
-04-24 04:45:46.475  5635  5839 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 10
-04-24 04:45:46.475  5635  5836 D SemContextService: Service.updateContext() : service = SLocation Core
-04-24 04:45:46.476  5635  5839 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 5, 2, 34, 0, 0, 0,
-04-24 04:45:46.476  5635  5839 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
-04-24 04:45:46.476  5635  5635 D SemContextManager: onSemContextChanged() : event = SLocation Core
-04-24 04:45:46.476  5635  5635 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
-04-24 04:45:46.476  5635  5839 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
-04-24 04:45:46.477  5635  5839 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 5, 2, 34, 0, 0, 0]
-04-24 04:45:46.477  5635  5839 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:10
-04-24 04:45:46.477  5635  5836 D SemContextService: Service.updateContext() : service = SLocation Core
-04-24 04:45:46.478  5635  5635 D SemContextManager: onSemContextChanged() : event = SLocation Core
-04-24 04:45:46.478  5635  5635 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
-04-24 04:45:46.479  5635  6549 I SLocation: SemContextParser -  parse start : 3
-04-24 04:45:46.479  5635  6549 I SLocation: SemContextParser -  packet Length : 33packet total size : 38
-04-24 04:45:46.479  5635  6549 I SLocation: SemContextParser - packet : [33, 0, 0, 0, 0, 23, 88, -81, 29, 64, -36, -70, 0, 26, -73, 24, 64, 12, 50, 8, 80, 0, 0, 0, 32, 0, -105, 31, -128, 0, 0, 0, 83]
-04-24 04:45:46.480  5635  6549 I SLocation: SemContextParser -  parse start : 3
-04-24 04:45:46.480  5635  6549 I SLocation: SemContextParser -  packet Length : 5packet total size : 10
-04-24 04:45:46.480  5635  6549 I SLocation: SemContextParser - packet : [2, 34, 0, 0, 0]
-04-24 04:45:46.480  5635  6549 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 33
-04-24 04:45:46.480  5635  6549 D SLocation: ARDistanceGetARDistance - convertSensorHubTimeToElapsedTime 1682285318851982555
-04-24 04:45:46.480  5635  6549 D SLocation: ARDistanceGetARDistance - invalid location time from core pvt 1682285318851982555, do not use distance info
-04-24 04:45:46.480  5635  6549 D SLocation: CommonCoreManager - received Extra Data from core, len : 33
-04-24 04:45:46.480  5635  6549 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 5
-04-24 04:45:46.480  5635  6549 D SLocation: GeofenceCoreManager - handleCommandCallback - UNKNOWN_CALLBACK 34 SUCCESS
-04-24 04:45:46.480  5635  6549 D SLocation: ARDistanceLibManager - command callback received - CURRENT_LOCATION_REQUEST_DISTANCE ERROR CODE : ERROR_NONE
-04-24 04:45:46.480  5635  6549 D SLocation: CommonCoreManager - received Extra Data from core, len : 5
-04-24 04:45:46.496 21600 29515 I GCoreUlr: Successfully inserted 1 locations
-04-24 04:45:46.556 21600 27153 I SemanticLocation: [Inferrer] IncrementalTimelineInferrer.predict() logs:
-04-24 04:45:46.556 21600 27153 I SemanticLocation: Timeline Paths Enabled! Start Computing the timeline paths.
-04-24 04:45:46.556 21600 27153 I SemanticLocation:
-04-24 04:45:46.556 21600 27153 I SemanticLocation: [CONTEXT service_id=173 ]
-04-24 04:45:46.928 30879 31205 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:46.930 30879 31205 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:46.960 30879 30912 I AppMetrica-Attribution: Choosing distribution data: ClidsInfo(chosen=Candidate(clids=null, source=APP), candidates=[Candidate(clids=null, source=APP)])
-04-24 04:45:47.350 30879 31206 D TrafficStats: tagSocket(105) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:47.437 30879 31206 D TrafficStats: tagSocket(106) with statsTag=0xffffffff, statsUid=-1
-04-24 04:45:49.939  5272  5272 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-04-24 04:45:50.789 21331 21358 D Benchmark: timeNs[ 0:10]: 437345346 452526576 442401577 433295307 434185077 430377269 440257461 438203154 436781000 447736154
-04-24 04:45:50.789 21331 21358 D Benchmark: timeNs[10:20]: 432923307 437631615 442858346 452921461 439625885 449888808 449736538 433232230 441014576 435730577
-04-24 04:45:50.789 21331 21358 D Benchmark: timeNs[20:30]: 425271038 441874922 436475692 432464346 439739846 437113500 427252231 433424230 438147884 443024115
-04-24 04:45:50.789 21331 21358 D Benchmark: timeNs[30:40]: 434209884 442886192 444864922 440399346 425270423 439168230 444371730 426092654 441793538 440624961
-04-24 04:45:50.789 21331 21358 D Benchmark: timeNs[40:50]: 442911615 436214538 422044462 436919730 432148730 435431538 459753962 436243346 442519000 445780346
-04-24 04:45:55.002 21331 21358 W _benchmark.test: Suspending all threads took: 5.834ms
-04-24 04:45:55.005 21331 21358 D Benchmark: allocationCount[ 0:10]: 8872482 8872467 8872461 8872477 8872465
-04-24 04:45:55.005 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -8. Was -20, now -8
-04-24 04:45:55.005 21331 21358 D Benchmark: Set 21342 (Jit) to priority 9. Was -15, now 9
-04-24 04:45:55.005 21331 21358 D Benchmark: Warmup: t=13.390, iter=30, fastAvg=453529888, slowAvg=620030464
-04-24 04:45:55.005 21331 21358 I PerfettoCapture: Stopping perfetto.
-04-24 04:45:55.049 30827 30827 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-24 04:45:55.051 21331 21358 D Benchmark: kill -TERM command output -
-04-24 04:45:55.069  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=321)
-04-24 04:45:55.076  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-24 04:45:55.133  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:45:55.141  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=322)
-04-24 04:45:55.143  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=323)
-04-24 04:45:55.205 30827 30827 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-24 04:45:55.222  5413  5413 I perfetto: ng_service_impl.cc:2426 Tracing session 81 ended, total sessions:0
-04-24 04:45:55.548  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
-04-24 04:45:55.566  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = on deviceID = 3 slot = 1 device_ext = 0
-04-24 04:45:55.566  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :on
-04-24 04:45:55.566  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enableSensor
-04-24 04:45:55.569  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
-04-24 04:45:55.570  5635  6162 D ConnectivityService: reportNetworkActive, notify 0 listeners
-04-24 04:45:55.570  5635  5845 D SensorService: GripSensor: MCC Path does not exist
-04-24 04:45:55.572  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 1
-04-24 04:45:55.577  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 1, first_grip_event : 1
-04-24 04:45:55.578  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch data = RELEASE
-04-24 04:45:55.578  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch unknown NORMAL MODE
-04-24 04:45:55.579  5635  5845 D SensorManager: registerListener :: 33554443, A96T3X6 Grip sensor, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
-04-24 04:45:55.579  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enable channel 0 : 2 , channel 1 : 0
-04-24 04:45:55.580  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enableSensor
-04-24 04:45:55.581  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
-04-24 04:45:55.581  5635  5845 D SensorService: GripSensor: MCC Path does not exist
-04-24 04:45:55.583  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 1
-04-24 04:45:55.587  5262  5391 I SensorsGrip: [grip_sensor_sub] readEvents: GripSensor: grip 1ch data = RELEASE
-04-24 04:45:55.587  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 1, first_grip_event : 1
-04-24 04:45:55.588  5635  5845 D SensorManager: registerListener :: 33554450, A96T3X6_SUB Grip sensor for sub, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
-04-24 04:45:55.589  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enable channel 0 : 2 , channel 1 : 0
-04-24 04:45:55.589  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :on
-04-24 04:45:55.591  6298  6706 I System.out: Broadcast completed: result=0
-04-24 04:45:55.595  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor onSensorChanged : 5.0 , 0.0 , 0.0 , 1.0 , 0.0
-04-24 04:45:55.596  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor clearBackOff channel: 0 , index: 0
-04-24 04:45:55.596  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
-04-24 04:45:55.609  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:45:55.609  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:45:55.609  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub onSensorChanged : 5.0 , 0.0 , 0.0 , 0.0 , 0.0
-04-24 04:45:55.610  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub clearBackOff channel: 0 , index: 1
-04-24 04:45:55.610  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
-04-24 04:45:55.624  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:45:55.624  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:45:55.664 21331 21358 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=30827)] to die
-04-24 04:45:55.778 21331 21358 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueDouble_2023-04-24-02-45-55.perfetto-trace.
-04-24 04:45:56.205  5486  5670 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:45:56.212  5635  5635 D SemWifiService: onServiceStateChanged : state - 0, dataNetworkType : 13
-04-24 04:45:56.215  5635  6549 D SLocation: CellLocationManager - onServiceStateChanged 0
-04-24 04:45:56.226  6374  6652 D MobileStatusTracker(1/2): onServiceStateChanged voiceState=0 dataState=0
-04-24 04:45:56.228  5635  5635 D SemWifiApServiceImpl: onServiceStateChanged : 0dataNetworkType : 13
-04-24 04:45:56.229  5635  5635 W NSLocationMonitor: onServiceStateChanged, state=0 / channel=6300
-04-24 04:45:56.229  5635  5635 I NSLocationMonitor: networkType[13]=LTE / nrState=false
-04-24 04:45:56.230  5635  5635 W NSLocationMonitor: onServiceStateChanged, state=0 / channel=6300
-04-24 04:45:56.230  5635  5635 I NSLocationMonitor: networkType[13]=LTE / nrState=false
-04-24 04:45:56.232  7192  7240 W NetworkManager_FLP: updateServiceStateChanged, serviceState=0 / isRegistered=true / channel=6300 / networkTypeName=LTE / nr=false
-04-24 04:45:56.232  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:56.234  6721  7075 I VolteServiceModule: onServiceStateChanged({mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=6300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false})
-04-24 04:45:56.235  6721  6914 I PdnController<1>: Active Phone Id = 1 MobileConnected = true
-04-24 04:45:56.235  6721  6914 I PhoneStateTracker<1>: onServiceStateChanged: state={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=6300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}Changed=
-04-24 04:45:56.235  6721  6914 I PdnController<1>: notifyDataConnectionState
-04-24 04:45:56.235  6721  6914 I PdnController<1>: initialize PendedEPDGWeakSignal flag
-04-24 04:45:56.235  6721  6914 I PdnController<1>: setPendedEPDGWeakSignal
-04-24 04:45:56.235  6721  6914 I PdnController<1>: notifyDataConnectionState: needNotify=false networkType=13 isEpdgConnected=false dataNetType=13=>13 dataRegState=0=>0
-04-24 04:45:56.235  6721  6914 I PhoneStateTracker<1>: notifySnapshotState: snapshotState=0 old=0
-04-24 04:45:56.235  6721  6914 E GlobalSettingsRepoBase: globalgcsettings No matched key : separate_vo5g_icon
-04-24 04:45:56.236  6721  6914 I GeolocationCon: handleMessage : what = SERVICE_STATE_CHANGED
-04-24 04:45:56.236  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:45:56.236  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:45:56.236  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:45:56.236  6721  6914 I GeolocationCon: profile is null
-04-24 04:45:56.236  6721  7075 I VolteServiceModule: mIsLteEpsOnlyAttached(1):false
-04-24 04:45:56.237  7192  7240 W NetworkManager_FLP: updateServiceStateChanged, serviceState=0 / isRegistered=true / channel=6300 / networkTypeName=LTE / nr=false
-04-24 04:45:56.237  6721  6914 I GeolocationCon<1>: onNetworkCountryIsoChanged: mCountryIso = rs, iso = rs
-04-24 04:45:56.242  6374  6374 D MultiSIMController: onReceive() - action = android.intent.action.SERVICE_STATE
-04-24 04:45:56.242  6374  6374 D Tile.AirplaneModeTile: onReceive android.intent.action.SERVICE_STATE
-04-24 04:45:56.243  6374  6652 D NetworkController: ServiceState from intent slotId=1
-04-24 04:45:56.243  5635  5635 D SemWifiService: received: android.intent.action.SERVICE_STATE
-04-24 04:45:56.249  6374  6374 D KeyguardUpdateMonitor: received broadcast android.intent.action.SERVICE_STATE
-04-24 04:45:56.249  6374  6374 V KeyguardUpdateMonitor: action android.intent.action.SERVICE_STATE serviceState={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=6300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false} subId=2
-04-24 04:45:56.250  6374  6374 D MultiSIMController: MESSAGE_UPDATE_SERVICE_STATE
-04-24 04:45:56.256  6374  6652 D NetworkController: IsPowerOffServiceState is false: 0
-04-24 04:45:56.257  6374  6652 D Tile.AirplaneModeTile:  handleUpdateState: airplane mode is disabled : enter mSetting.getValue() == 0 mIsWiFiOnlyDevice false isNoSimState false !isPowerOffServiceState true
-04-24 04:45:56.257  6374  6652 D Tile.AirplaneModeTile:  handleUpdateState:  value = false, state = 1
-04-24 04:45:56.258  6673  7287 D HeadsetPhoneState: service : 1 (2)
-04-24 04:45:56.259  6374  6374 D semImsManager[0]: getImsRegistration
-04-24 04:45:56.261  6298  6298 I Telephony: TelecomAccountRegistry$AccountEntry: isRttCurrentlySupported -- regular acct,, hasVoiceAvailability: false, isRttSupported: false, alwaysAllowWhileRoaming: false, isRoaming: true, isOnWfc: false
-04-24 04:45:56.263  6298  6298 I Telephony: TelecomAccountRegistry$AccountEntry: isRttCurrentlySupported -- regular acct,, hasVoiceAvailability: true, isRttSupported: false, alwaysAllowWhileRoaming: false, isRoaming: false, isOnWfc: false
-04-24 04:45:56.265  5635  6162 D ConnectivityService: [100 CELLULAR] EVENT_NETWORK_INFO_CHANGED, going from CONNECTED to CONNECTED
-04-24 04:45:56.267  6374  6652 D MobileStatusTracker(1/2): onSignalStrengthsChanged level=2, vendorLevel=2
-04-24 04:45:56.268  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:56.269  6298  6408 I TelephonyProvider: D/TelephonyProvider: subIdString = 2 subId = 2
-04-24 04:45:56.273  6298  6298 V PhoneGlobals: handleServiceStateChanged
-04-24 04:45:56.274  6298  6298 D NotificationMgr: updateNetworkSelection, Use Samsung codes instead of AOSP codes
-04-24 04:45:56.274  6298  6298 V PhoneGlobals: subId=2, mDefaultDataSubId=-1, ss roaming=false
-04-24 04:45:56.276  6374  6652 D NetworkController: SignalStrength from intent slotId=1
-04-24 04:45:56.278  6374  6374 D semImsManager[1]: getImsRegistration
-04-24 04:45:56.280  6374  6652 D MobileStatusTracker(1/2): onDisplayInfoChanged: telephonyDisplayInfo=TelephonyDisplayInfo {network=LTE, override=LTE_CA}
-04-24 04:45:56.283  6374  6374 D MultiSIMController: getOwnNumber
-04-24 04:45:56.284  6374  6374 I CoverUpdateMonitor: received broadcast android.intent.action.SERVICE_STATE
-04-24 04:45:56.284  6374  6374 D KeyguardUpdateMonitor: handleServiceStateChange(subId=2, serviceState={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=6300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}
-04-24 04:45:56.284  6374  6374 D CarrierTextController: onRefreshCarrierInfo(), mTelephonyCapable: true
-04-24 04:45:56.285  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:56.285 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueDouble_2023-04-24-02-45-55.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueDouble_2023-04-24-02-45-55.perfetto-trace
-04-24 04:45:56.286  6374  6374 D CarrierTextController: updateCarrierText(): 2
-04-24 04:45:56.286  6374  6374 D CarrierTextController: Handling (subId=1): 5 Yettel | MegaFon
-04-24 04:45:56.286  6374  6374 D CarrierTextController: carrierTextForSimState = Yettel | MegaFon
-04-24 04:45:56.287  6374  6374 D CarrierTextController: SIM ready and in service: subId=1, ss={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=International Roaming, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=ROAMING roamingType=INTERNATIONAL accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****69 mPci=67 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=ROAMING roamingType=INTERNATIONAL accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****69 mPci=67 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 3 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=true, mIsIwlanPreferred=false}
-04-24 04:45:56.287  6374  6374 D CarrierTextController: Handling (subId=2): 5 Yettel
-04-24 04:45:56.287  6374  6374 D CarrierTextController: carrierTextForSimState = Yettel
-04-24 04:45:56.287  6374  6374 D CarrierTextController: SIM ready and in service: subId=2, ss={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=6300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****11 mPci=191 mTac=1***3 mEarfcn=6300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}
-04-24 04:45:56.289  6374  6374 D CarrierTextController: setText : Yettel | MegaFon | Yettel
-04-24 04:45:56.289  6374  6374 D FaceWidgetPagesController: onRefreshCarrierInfo()
-04-24 04:45:56.290  6374  6374 D FaceWidgetClockRoamManager: isNetworkRoamingState id=2
-04-24 04:45:56.290  6374  6374 D FaceWidgetClockRoamManager: isNetworkRoamingState false
-04-24 04:45:56.290  6374  6374 D FaceWidgetClockRoamManager: onRefreshCarrierInfo(pre, now): false, false
-04-24 04:45:56.290  6374  6374 D FaceWidgetClockPage: onRefreshCarrierInfo : isChanged false mIsRoaming false
-04-24 04:45:56.290  6374  6374 I CommonUtils: isNetworkRoaming id=2
-04-24 04:45:56.291  6374  6374 I CommonUtils: isNetworkRoaming: false
-04-24 04:45:56.292 21602 21602 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
-04-24 04:45:56.292 21602 21602 D CellBroadcastReceiver: onServiceStateChanged, ss: 0
-04-24 04:45:56.293 21602 21602 D CellBroadcastReceiver: networkOperator: 22001
-04-24 04:45:56.297 21602 21602 D CellBroadcastReceiver: update supported roaming operator as
-04-24 04:45:56.305  5635  6162 D ConnectivityService: [105 CELLULAR] EVENT_NETWORK_INFO_CHANGED, going from CONNECTED to CONNECTED
-04-24 04:45:56.306  5635  6162 D ConnectivityService: Update of LinkProperties for [100 CELLULAR]; created=171736; firstConnected=171737
-04-24 04:45:56.306  5635  6162 D ConnectivityService: Setting tx/rx TCP buffers to 4096,6291456,12582912,4096,1048576,2097152
-04-24 04:45:56.307  6298  6408 I TelephonyProvider: D/TelephonyProvider: subIdString = 2 subId = 2
-04-24 04:45:56.310  6374  6374 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
-04-24 04:45:56.311  6374  6374 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
-04-24 04:45:56.312  6374  6374 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
-04-24 04:45:56.312  6374  6374 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
-04-24 04:45:56.314  6374  6374 V QsExpandAnimator: setQsExpansionPosition 0.0
-04-24 04:45:56.319  8333 30780 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:45:56.321  5635  6162 D ConnectivityService: notifyType CALLBACK_IP_CHANGED for [100 CELLULAR]
-04-24 04:45:56.329  5635  6162 D ConnectivityService: Update of LinkProperties for [105 CELLULAR]; created=97273640; firstConnected=97273640
-04-24 04:45:56.329  5635  6162 D ConnectivityService: notifyType CALLBACK_IP_CHANGED for [105 CELLULAR]
-04-24 04:45:56.338  6721  6845 I PdnController<1>: onLinkPropertiesChanged: network 105 lp {InterfaceName: rmnet5 LinkAddresses: [ 10.158.126.166/24 ] DnsAddresses: [ /109.245.224.101,/109.245.224.102 ] PcscfAddresses: [ /10.24.20.156,/10.24.28.156 ] Domains: null MTU: 1500 TcpBufferSizes: 4096,6291456,12582912,4096,1048576,2097152 Routes: [ 0.0.0.0/0 -> 10.158.126.1 rmnet5 mtu 1500,10.158.126.0/24 -> 0.0.0.0 rmnet5 mtu 0 ]} old {InterfaceName: rmnet5 LinkAddresses: [ 10.158.126.166/24 ] DnsAddresses: [ /109.245.224.101,/109.245.224.102 ] PcscfAddresses: [ /10.24.20.156,/10.24.28.156 ] Domains: null MTU: 1500 TcpBufferSizes: 2097152,4194304,8388608,512000,2097152,4194304 Routes: [ 0.0.0.0/0 -> 10.158.126.1 rmnet5 mtu 1500,10.158.126.0/24 -> 0.0.0.0 rmnet5 mtu 0 ]}
-04-24 04:45:56.338  6721  6914 I PdnController: handleMessage: what 111
-04-24 04:45:56.338  6721  6914 I PdnController: onLinkPropertiesChanged: networkType=11, linkProperties={InterfaceName: rmnet5 LinkAddresses: [ 10.158.126.166/24 ] DnsAddresses: [ /109.245.224.101,/109.245.224.102 ] PcscfAddresses: [ /10.24.20.156,/10.24.28.156 ] Domains: null MTU: 1500 TcpBufferSizes: 4096,6291456,12582912,4096,1048576,2097152 Routes: [ 0.0.0.0/0 -> 10.158.126.1 rmnet5 mtu 1500,10.158.126.0/24 -> 0.0.0.0 rmnet5 mtu 0 ]}
-04-24 04:45:56.518  5635  6728 D SyncManager: userId - 0 auto - true
-04-24 04:45:56.522  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=1
-04-24 04:45:56.526  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=in, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:45:56.622  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:56.638 21600 29515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 156339 [CONTEXT service_id=218 ]
-04-24 04:45:56.658 21600 31204 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 64 uptime_millis: 63 exec_start_elapsed_seconds: 156339 [CONTEXT service_id=218 ]
-04-24 04:45:56.692 21600 21600 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-24 04:45:56.693 21600 21600 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.scheduler.ACTION_PROXY_SCHEDULE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
-04-24 04:45:56.844  5635  6215 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
-04-24 04:45:56.846  5635  6215 I ChimeraAggressivePolicyHandler: available memory: 956276, free memory target: 870400, quit chimera
-04-24 04:45:56.909  8333  8844 I FuseDaemon: Threshold exceeded - fadvising 67231744
-04-24 04:45:56.909  8333  8844 I FuseDaemon: Threshold now 0
-04-24 04:45:56.938 21331 21358 I Benchmark: Wolf3dBenchmark.valueDouble[Metric (timeNs) results: median 4.38175519E8, min 4.22044462E8, max 4.59753962E8, standardDeviation: 7438010.360965897, Metric (allocationCount) results: median 8872467.0, min 8872461.0, max 8872482.0, standardDeviation: 8.763560920082659]count=1
-04-24 04:45:56.941 21331 21358 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:45:56.947 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:45:56.978  5635  6740 D SyncManager: userId - 0 auto - true
-04-24 04:45:56.978  8333 31273 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-24 04:45:56.992  8333 31272 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:45:57.115  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:45:57.116  5635  6728 D SyncManager: userId - 0 auto - true
-04-24 04:45:57.122 21331 21358 I TestRunner: finished: valueDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-27 20:15:52.080 26164 26187 I TestRunner: started: valueDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-27 20:15:52.084 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 20:15:52.084 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 20:15:52.089 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 20:15:52.089 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 20:15:52.089 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueDouble --
+04-27 20:15:52.090 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 20:15:52.090 26164 26187 D PerfettoCapture: Recording perfetto trace
+04-27 20:15:52.132 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 20:15:52.204  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:52.206  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:52.223  6734 28907 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28892 [CONTEXT service_id=218 ]
+04-27 20:15:52.239  6734 30358 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 47 uptime_millis: 47 exec_start_elapsed_seconds: 28892 [CONTEXT service_id=218 ]
+04-27 20:15:52.283 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
+04-27 20:15:52.283 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 20:15:52.561 30374 30374 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 20:15:52.563  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 35, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 20:15:52.565  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=69)
+04-27 20:15:52.643  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:15:52.669  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 20:15:52.846 26164 26187 I PerfettoCapture: Perfetto output - 30374
+04-27 20:15:52.846 26164 26187 I PerfettoCapture: EXITCODE=0
+04-27 20:15:52.951 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 30374.
+04-27 20:15:52.976  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:52.977  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:53.029  6734 30347 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.stats.PlatformStatsCollectorService finished executing. cause:5 result: 1 elapsed_millis: 1118 uptime_millis: 1118 exec_start_elapsed_seconds: 28891 [CONTEXT service_id=218 ]
+04-27 20:15:53.058 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 20:15:53.211 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
+04-27 20:15:53.211 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
+04-27 20:15:53.243 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 445277(7533KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2942KB/9086KB, paused 286us,53us total 31.063ms
+04-27 20:15:53.468  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:15:53.770  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3792, isSameBssidAndFreq true
+04-27 20:15:53.775  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:15:55.395  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2725000 / mChargingTime : 2725000
+04-27 20:15:55.395  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:15:55.852 30307 30315 W android.dqagent: Suspending all threads took: 10.726ms
+04-27 20:15:56.801  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3793, isSameBssidAndFreq true
+04-27 20:15:56.804  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:15:59.844  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3794, isSameBssidAndFreq true
+04-27 20:15:59.849  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:15:59.849  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:15:59.853  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:00.011  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+04-27 20:16:00.023  5878  6453 D QSClockBellTower: onReceive(android.intent.action.TIME_TICK) mTimeZoneString:null
+04-27 20:16:00.025  5878  5878 D KeyguardUpdateMonitor: handleTimeUpdate
+04-27 20:16:00.028  5878  5878 D FaceWidgetPagesController: onTimeChanged()
+04-27 20:16:00.039  5878  5878 D QSClockBellTower: He is ready to ring the bell. (((QSClockBellSound - TimeText:20:16, TimeContentDescription:20:16, DateText:Thu, 27 April, ShortDateText:Thu, 27 Apr, Demo:false, QuickStar-Second(false|12:34:56))))
+04-27 20:16:00.040  5878  5878 D QSClockIndicatorView: Home Indicator status_bar_clock 20:16 notifyTimeChanged(QSClockBellSound - TimeText:20:16, TimeContentDescription:20:16, DateText:Thu, 27 April, ShortDateText:Thu, 27 Apr, Demo:false, QuickStar-Second(false|12:34:56)) ClockVisibleByPolicy:true, ClockVisibleByUser:true, visible?false, parent:android.widget.LinearLayout{fc169f7 V.E...... ........ 0,0-0,55 #7f0b04f0 app:id/left_clock_container}
+04-27 20:16:00.041  5878  5878 D QSClockBellTower: Everyone heard the bell. run(currentTime:1682619360036,   getTime():Thu Apr 27 20:16:00 GMT+02:00 2023,   getTimeZone():libcore.util.ZoneInfo[mDstSavings=3600000,mUseDst=true,mDelegate=[id="Europe/Belgrade",mRawOffset=3600000,mEarliestRawOffset=4920000,transitions=119]])
+04-27 20:16:00.055  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:00.055  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:00.056  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:00.056  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:00.060  5878  5878 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-27 20:16:00.069  5878  5878 V QsExpandAnimator: updateAnimators
+04-27 20:16:00.069  5878  5878 V QsExpandAnimator: clearAnimationState
+04-27 20:16:00.070  5878  5878 V QsExpandAnimator: updateViews
+04-27 20:16:00.073  5878  5878 V QsExpandAnimator: updateTileAnimator
+04-27 20:16:00.076  5878  5878 V QsExpandAnimator: updateHeaderAnimator
+04-27 20:16:00.077  5878  5878 V QsExpandAnimator: updateBarAnimator
+04-27 20:16:00.077  5878  5878 V QsExpandAnimator: setQsExpansionPosition 0.0
+04-27 20:16:00.077  5878  5878 V QsExpandAnimator: onAnimationAtStart
+04-27 20:16:00.397  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:16:00.400  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:16:00.403  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:16:00.417  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:16:00.419  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:00.421  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:00.422  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:16:00.423  5878  5878 W PowerUI : Plug reason
+04-27 20:16:00.423  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:16:00.423  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:16:00.423  5878  5878 W PowerUI : Plug reason
+04-27 20:16:00.423  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:16:00.423  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:16:00.424  5878  6757 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:16:00.425  5878  6757 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:16:00.425  5878  6757 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2725000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:00.427  5878  6757 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:16:00.427  5878  6757 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:16:00.428  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2725000 / mChargingTime : 2725000
+04-27 20:16:00.428  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:00.428  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:16:00.428  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:16:00.429  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:16:00.429  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:00.435  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:00.435  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:00.435  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:00.436  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:16:00.437  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2725000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:16:00.437  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:16:00.544  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:16:00.581  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:16:00.601 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 20:16:00.601 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 20:16:00.603 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 20:16:00.619  5429  8538 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:16:00.620  5429  8538 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:00.621  5429  8538 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:00.680 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
+04-27 20:16:00.757 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 20:16:00.763 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  113 ms
+04-27 20:16:00.763 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 20:16:00.764 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 20:16:00.767 26084 26138 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=13a0ea8d-8f99-4bbf-a4a9-4e44faa74b0d, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 20:16:00.780 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 20:16:00.814  5429  8531 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:16:00.815  5429  8531 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:00.817  5429  8531 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:02.015  5095  5095 I SurfaceFlinger: SFWD update time=21671208113190
+04-27 20:16:02.866  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3795, isSameBssidAndFreq true
+04-27 20:16:02.869  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:02.871  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:02.872  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:03.182  5429  5705 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-27 20:16:03.184  5429  5705 I ChimeraAggressivePolicyHandler: available memory: 943360, free memory target: 870400, quit chimera
+04-27 20:16:05.435  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2725000 / mChargingTime : 2725000
+04-27 20:16:05.436  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:05.892  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3796, isSameBssidAndFreq true
+04-27 20:16:05.895  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:05.897  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:05.900  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:06.101  5429  5665 D ConnectivityService: reportNetworkActive, notify 0 listeners
+04-27 20:16:08.936  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3797, isSameBssidAndFreq true
+04-27 20:16:08.941  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:10.416  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:16:10.419  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:16:10.422  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:16:10.423  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:10.425  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:16:10.428  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:10.428  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:16:10.429  5878  5878 W PowerUI : Plug reason
+04-27 20:16:10.429  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:16:10.429  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:16:10.429  5878  5878 W PowerUI : Plug reason
+04-27 20:16:10.429  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:16:10.429  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:16:10.432  5878  7399 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:16:10.432  5878  7399 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:16:10.432  5878  7399 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2725000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:10.439  5878  7399 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:16:10.440  5878  7399 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:16:10.441  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2725000 / mChargingTime : 2718000
+04-27 20:16:10.441  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:16:10.441  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2718000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:10.446  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:16:10.446  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:16:10.446  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:16:10.448  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:16:10.449  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:16:10.449  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:16:10.450  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:10.450  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:10.451  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:10.452  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:10.453  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:16:10.456  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2718000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:16:10.456  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:16:10.458  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:16:10.465  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:16:10.465  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:16:10.466  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:16:10.466  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=71,plugged=2,health=2,maxChargingWattage=-1,remaining=2718000ultraFastCharger=1}
+04-27 20:16:10.466  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:16:10.466  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:16:10.466  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:16:10.466  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:16:10.689  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:16:10.690  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:16:10.690  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:16:10.690  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:16:10.690  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:16:10.702  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:10.703  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:10.703  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:10.703  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:10.887  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:16:10.920  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:10.920  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:10.921  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:10.921  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:10.934  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:10.935  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:10.935  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:10.935  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:10.966  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:10.967  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:10.967  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:10.967  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:11.021  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:11.021  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:11.021  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:11.021  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:11.026  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:11.026  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:11.026  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:11.026  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:11.957  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3798, isSameBssidAndFreq true
+04-27 20:16:11.959  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:11.959  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:11.960  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:15.000  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3799, isSameBssidAndFreq true
+04-27 20:16:15.003  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:15.004  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:15.007  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:15.452  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2718000 / mChargingTime : 2718000
+04-27 20:16:15.452  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:18.042  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3800, isSameBssidAndFreq true
+04-27 20:16:18.045  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:18.047  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:18.049  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:20.354  4899  4899 E audit   : type=1400 audit(1682619380.347:17839): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 20:16:20.354  4899  4899 E audit   : type=1300 audit(1682619380.347:17839): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=7770391100 a2=768437b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-27 20:16:20.354  4899  4899 E audit   : type=1327 audit(1682619380.347:17839): proctitle="system_server"
+04-27 20:16:20.458  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:16:20.460  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:16:20.466  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:16:20.467  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:20.468  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:20.468  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:16:20.470  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:16:20.471  5878  5878 W PowerUI : Plug reason
+04-27 20:16:20.471  5878  7746 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:16:20.471  5878  7746 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:16:20.471  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:16:20.471  5878  7746 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2718000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:20.472  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:16:20.472  5878  5878 W PowerUI : Plug reason
+04-27 20:16:20.472  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:16:20.472  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:16:20.483  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2718000 / mChargingTime : 2718000
+04-27 20:16:20.483  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:20.484  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:16:20.484  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:16:20.484  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:16:20.484  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:20.484  5878  7746 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:16:20.485  5878  7746 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:16:20.485  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:20.485  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:20.486  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:20.487  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:16:20.489  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2718000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:16:20.489  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:16:21.057  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3801, isSameBssidAndFreq true
+04-27 20:16:21.061  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:21.918 11246 30513 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
+04-27 20:16:24.099  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3802, isSameBssidAndFreq true
+04-27 20:16:24.105  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:24.105  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:16:24.111  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:16:25.489  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2718000 / mChargingTime : 2718000
+04-27 20:16:25.489  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:27.132  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3803, isSameBssidAndFreq true
+04-27 20:16:27.135  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:27.244  5429 30536 D TrafficStats: tagSocket(831) with statsTag=0xffffffff, statsUid=-1
+04-27 20:16:27.249  5429 30536 D TrafficStats: tagSocket(854) with statsTag=0xffffffff, statsUid=-1
+04-27 20:16:27.456  5429 30536 D WifiConnectivityMonitor.DnsThread:  [|212] []
+04-27 20:16:27.457  5429  5738 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 212
+04-27 20:16:27.459  5429  5736 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-27 20:16:27.459  5429  5736 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-27 20:16:27.459  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 20:16:27.459  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 25 0
+04-27 20:16:27.459  5429  5736 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-27 20:16:27.460  5429  7167 V WifiProfileShare.Caster: update wips network, size: 0
+04-27 20:16:27.460  5429  7167 D WifiProfileShare: nearby scanning settings run
+04-27 20:16:27.460  5429  7167 D WifiProfileShare: network score provider settings enabled
+04-27 20:16:27.460  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 25 0
+04-27 20:16:27.460  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 20:16:27.460  5429  7167 I WifiProfileShare.Caster: current network type: 0, score: [26, 25, 0]
+04-27 20:16:27.461  5429  7167 V WifiProfileShare.Cache: update network score 0c:8d:db:**:**:7d
+04-27 20:16:27.462  5429  7167 D WifiProfileShare.ScanMatcher: getMcfDataList size:20
+04-27 20:16:27.462  5429  7167 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:e8:51:71, qosData:78 after:type:QOS, pBssid:e8:51:71, qosData:78
+04-27 20:16:27.464  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 20:16:27.464  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 20:16:27.464  5429  7167 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-27 20:16:27.464  5429  7167 D WifiProfileShare.MCF: success update QosData !
+04-27 20:16:27.465  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 20:16:27.465  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 20:16:27.466  5429  7167 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:20
+04-27 20:16:28.057  6865  8672 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1077) acc({sim(3)=15, sec(6)=1, sim2(4)=1, google(2)=81, org.telegram.messenger(236)=99, com.whatsapp(14)=39}) calls([logtype:100 cnt:867, logtype:200 cnt:5, logtype:300 cnt:495, logtype:1000 cnt:608, logtype:1150 cnt:161]) Iso(RS) uId(0) ]
+04-27 20:16:28.057  6865  8672 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,2 ,14 ,236]=1, [2 ,14 ,236]=32, [3]=15, [14]=1, [4]=1, [2 ,14]=4, [2 ,2]=2, [2]=33, [6 ,14]=1, [2 ,236]=6, [236]=60}) ]
+04-27 20:16:28.057  6865  8672 I ContactsProvider_EventLog: cp_s: [ cnt({acore(6865)=1}) ]
+04-27 20:16:28.057  6865  8672 I ContactsProvider_EventLog: cp_s: [PROFILE con(1) dat(1) acc({vnd.sec.contact.phone=1}) ] [SAPROFILE ]
+04-27 20:16:28.057  6865  8672 I ContactsProvider_EventLog: cp_s: [STATE R(T) ]
+04-27 20:16:28.779 26164 26187 D Benchmark: timeNs[ 0:10]: 434270807 432851538 449624038 433157730 444931346 430021077 428874308 453737962 449209499 433892807
+04-27 20:16:28.779 26164 26187 D Benchmark: timeNs[10:20]: 436752231 437328115 440580769 445887269 437405885 440617422 449416154 438541730 447293846 431240884
+04-27 20:16:28.779 26164 26187 D Benchmark: timeNs[20:30]: 435423077 444714692 446672731 443777115 432557885 427744000 445626654 437256076 447770038 437863115
+04-27 20:16:28.779 26164 26187 D Benchmark: timeNs[30:40]: 436668461 450723731 446116192 444634308 432396307 445273807 441340500 435277615 441802269 441447423
+04-27 20:16:28.779 26164 26187 D Benchmark: timeNs[40:50]: 431302076 460101769 431130038 439814346 458200230 445253692 445233307 436208769 430861077 437137154
+04-27 20:16:28.845  5429  5705 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
+04-27 20:16:28.848  5429  5705 I ChimeraAggressivePolicyHandler: available memory: 929864, free memory target: 870400, quit chimera
+04-27 20:16:29.610 26164 26187 W _benchmark.test: Suspending all threads took: 6.168ms
+04-27 20:16:30.167  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3804, isSameBssidAndFreq true
+04-27 20:16:30.172  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:30.489  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:16:30.492  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:16:30.494  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
+04-27 20:16:30.499  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:30.499  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:16:30.500  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:16:30.502  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:16:30.502  5878  5878 W PowerUI : Plug reason
+04-27 20:16:30.502  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:16:30.502  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:16:30.502  5878  5878 W PowerUI : Plug reason
+04-27 20:16:30.502  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:16:30.503  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:16:30.504  5878  7763 D SecPowerUI.Notification: dismissing low battery warning: level=71
+04-27 20:16:30.504  5878  7763 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:16:30.505  5878  7763 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2718000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:30.507  5878  7763 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:16:30.507  5878  7763 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:16:30.511  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2718000 / mChargingTime : 2711000
+04-27 20:16:30.511  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:16:30.511  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2711000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:16:30.519  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:16:30.520  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:16:30.520  5429  5835 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:16:30.521  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:16:30.521  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:16:30.522  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:16:30.522  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:30.522  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:30.522  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:30.523  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:16:30.523  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:16:30.526  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2711000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:16:30.526  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:16:30.528  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:16:30.534  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:16:30.534  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:16:30.535  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:16:30.535  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=71,plugged=2,health=2,maxChargingWattage=-1,remaining=2711000ultraFastCharger=1}
+04-27 20:16:30.535  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:16:30.535  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:16:30.536  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:16:30.536  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:16:30.740  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:16:30.740  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:16:30.742  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:16:30.744  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:16:30.745  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:16:30.763  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:30.763  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:30.764  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:30.764  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:30.943  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:16:30.987  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:30.988  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:30.988  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:30.989  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:31.002  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:31.004  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:31.004  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:31.004  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:31.037  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:31.037  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:31.037  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:31.038  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:31.088  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:16:31.088  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:16:31.088  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:16:31.088  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:16:31.091  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:16:31.091  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:16:31.091  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:31.091  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:16:31.278 26164 26187 W _benchmark.test: Suspending all threads took: 10.620ms
+04-27 20:16:32.015  5095  5095 I SurfaceFlinger: SFWD update time=21701208951668
+04-27 20:16:32.956 26164 26187 W _benchmark.test: Suspending all threads took: 5.293ms
+04-27 20:16:32.959 26164 26187 D Benchmark: allocationCount[ 0:10]: 8872465 8872477 8872471 8872459 8872463
+04-27 20:16:32.959 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
+04-27 20:16:32.960 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
+04-27 20:16:32.961 26164 26187 D Benchmark: Warmup: t=13.506, iter=30, fastAvg=456344288, slowAvg=709488640
+04-27 20:16:32.961 26164 26187 I PerfettoCapture: Stopping perfetto.
+04-27 20:16:33.002 30374 30374 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 20:16:33.006 26164 26187 D Benchmark: kill -TERM command output -
+04-27 20:16:33.027  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=137)
+04-27 20:16:33.029  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 20:16:33.087  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:16:33.094  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=138)
+04-27 20:16:33.094  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=139)
+04-27 20:16:33.204  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3805, isSameBssidAndFreq true
+04-27 20:16:33.209  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:16:33.311  5429  5749 D BrightnessHandler: inject brightness = 166.0, Brightness: 0.6491764
+04-27 20:16:33.315  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 166
+04-27 20:16:33.317  5429  5749 D BrightnessHandler: inject brightness = 166.0, Brightness: 0.6491764
+04-27 20:16:33.320  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 166
+04-27 20:16:33.325  5047  5047 I SehLight: lcd : 166+
+04-27 20:16:33.335  5047  5047 I SehLight: lcd : 166-
+04-27 20:16:33.368 30374 30374 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 20:16:33.393  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 35 ended, total sessions:0
+04-27 20:16:33.634 26164 26187 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=30374)] to die
+04-27 20:16:33.773 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueDouble_2023-04-27-18-16-32.perfetto-trace.
+04-27 20:16:34.244 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueDouble_2023-04-27-18-16-32.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueDouble_2023-04-27-18-16-32.perfetto-trace
+04-27 20:16:34.287  8350 30190 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:16:34.591  5429  5835 D SyncManager: userId - 0 auto - true
+04-27 20:16:34.987  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:16:34.988  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:16:35.012  6734 29038 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28934 [CONTEXT service_id=218 ]
+04-27 20:16:35.018  6734 28907 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 45 uptime_millis: 46 exec_start_elapsed_seconds: 28934 [CONTEXT service_id=218 ]
+04-27 20:16:35.100  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:16:35.144 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 20:16:35.145 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 20:16:35.147 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 20:16:35.206  5429  8538 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:16:35.209  5429  8538 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:35.211  5429  8538 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:35.293 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
+04-27 20:16:35.411 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 20:16:35.418 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  204 ms
+04-27 20:16:35.419 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 20:16:35.420 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 20:16:35.424 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 20:16:35.425 26084 26137 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=7f58a86e-62a3-4bf3-98c1-98f4ba7b3ef1, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 20:16:35.475  5429  8538 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:16:35.476  5429  8538 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:35.477  5429  8538 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:16:35.527  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2711000 / mChargingTime : 2711000
+04-27 20:16:35.527  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:16:36.243  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3806, isSameBssidAndFreq true
+04-27 20:16:36.247  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.414 ms / 19.333 Mbps (58 / 0.000 / 3.000)
+04-27 20:16:36.341 26164 26187 I Benchmark: Wolf3dBenchmark.valueDouble[Metric (timeNs) results: median 4.401975575E8, min 4.27744E8, max 4.60101769E8, standardDeviation: 7574697.719579655, Metric (allocationCount) results: median 8872465.0, min 8872459.0, max 8872477.0, standardDeviation: 7.0710678118654755]count=1
+04-27 20:16:36.355 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:16:36.390 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:16:36.445  8350  8651 I FuseDaemon: Threshold exceeded - fadvising 67112960
+04-27 20:16:36.446  8350  8651 I FuseDaemon: Threshold now 0
+04-27 20:16:36.461  8350 30190 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 20:16:36.464  5429  8538 D SyncManager: userId - 0 auto - true
+04-27 20:16:36.494  8350 30052 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:16:36.556  5429  8538 D SyncManager: userId - 0 auto - true
+04-27 20:16:36.566 26164 26187 I TestRunner: finished: valueDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)

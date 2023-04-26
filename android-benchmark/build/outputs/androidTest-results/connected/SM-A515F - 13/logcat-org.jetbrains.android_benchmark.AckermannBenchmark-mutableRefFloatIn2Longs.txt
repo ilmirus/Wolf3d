@@ -1,313 +1,164 @@
-04-24 04:31:03.053 21331 21358 I TestRunner: started: mutableRefFloatIn2Longs(org.jetbrains.android_benchmark.AckermannBenchmark)
-04-24 04:31:03.060 21331 21331 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-24 04:31:03.060 21331 21331 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c388c9b
-04-24 04:31:03.066 21331 21358 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-24 04:31:03.067 21331 21358 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-24 04:31:03.067 21331 21358 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableRefFloatIn2Longs --
-04-24 04:31:03.067 21331 21358 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-24 04:31:03.067 21331 21358 D PerfettoCapture: Recording perfetto trace
-04-24 04:31:03.075  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:31:03.087 21600 23676 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 155445 [CONTEXT service_id=218 ]
-04-24 04:31:03.102 21600 24852 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 38 uptime_millis: 37 exec_start_elapsed_seconds: 155445 [CONTEXT service_id=218 ]
-04-24 04:31:03.116 21331 21358 I PerfettoCapture: Cleanup perfetto before starting.
-04-24 04:31:03.301 21331 21358 I PerfettoCapture: Perfetto output file cleanup -
-04-24 04:31:03.301 21331 21358 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-24 04:31:03.452 25203 25203 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-24 04:31:03.453  5413  5413 I perfetto: ing_service_impl.cc:953 Configured tracing session 63, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-24 04:31:03.454  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=125)
-04-24 04:31:03.492 21331 21358 I PerfettoCapture: Perfetto output - 25203
-04-24 04:31:03.492 21331 21358 I PerfettoCapture: EXITCODE=0
-04-24 04:31:03.509  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:31:03.537  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-24 04:31:03.565  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:31:03.593 13505 13505 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-24 04:31:03.594 13505 13505 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-24 04:31:03.595 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-24 04:31:03.604 21331 21358 I PerfettoCapture: Perfetto tracing started successfully with pid 25203.
-04-24 04:31:03.620  5635  6978 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:31:03.621  5635  6978 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:31:03.622  5635  6978 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:31:03.695 21331 21358 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-24 04:31:03.696 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -20. Was -8, now -20
-04-24 04:31:03.696 21331 21358 D Benchmark: Set 21342 (Jit) to priority -15. Was 9, now -15
-04-24 04:31:03.721 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000007967 indexCount: 1702 sourceCount: 1702
-04-24 04:31:03.729 21331 21358 I _benchmark.test: Explicit concurrent copying GC freed 178191(3325KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2916KB/9060KB, paused 315us,97us total 31.830ms
-04-24 04:31:03.800 13505 13520 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:31:03.803  5216  5216 E audit   : type=1400 audit(1682303463.799:57567): avc:  denied  { read } for  pid=13505 comm="binder:13505_3" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:31:03.803  5216  5216 E audit   : type=1300 audit(1682303463.799:57567): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=70947112f8 a2=88000 a3=0 items=0 ppid=5241 pid=13505 auid=4294967295 uid=10380 gid=10380 euid=10380 suid=10380 fsuid=10380 egid=10380 sgid=10380 fsgid=10380 tty=(none) ses=4294967295 comm="binder:13505_3" exe="/system/bin/app_process64" subj=u:r:platform_app:s0:c512,c768 key=(null)
-04-24 04:31:03.803  5216  5216 E audit   : type=1327 audit(1682303463.799:57567): proctitle="com.samsung.android.scs"
-04-24 04:31:03.813 13505 13578 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-24 04:31:03.817 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  154 ms
-04-24 04:31:03.817 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-24 04:31:03.817 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-24 04:31:03.819 13505 13578 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-24 04:31:03.820 13505 13563 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=9b643217-5a3a-48be-814b-a71ee1dd22df, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-24 04:31:03.888  5635  5987 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:31:03.889  5635  5987 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:31:03.890  5635  5987 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:31:04.357  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.CP_CHAN_INFO flg=0x1000000 (has extras) }
-04-24 04:31:04.358  5486  5670 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:04.368  6298  7106 I System.out: Broadcast completed: result=0
-04-24 04:31:04.369  6721  6920 I ImsSecChannelCallback: receive
-04-24 04:31:04.369  6721  6920 I IpcDispatcher<1>: [Rx]: (M)IPC_IIL_CMD (S)IPC_IIL_SSAC_INFO (T)EVENT l:13
-04-24 04:31:04.370  6721  6721 I SsacManager: updateSSACInfo[1] : Voice(-1:0) Video(-1:0)
-04-24 04:31:04.371  6721  6721 I SsacManager: Voice Call updateSSACInfo[1] : f[100], t[0]
-04-24 04:31:04.371  6721  6721 I SsacManager: Video Call updateSSACInfo[1] : f[100], t[0]
-04-24 04:31:04.379  6374  6652 D MobileStatusTracker(1/2): onSignalStrengthsChanged level=3, vendorLevel=1
-04-24 04:31:04.382  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=1, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:31:04.388  6374  6652 D NetworkController: SignalStrength from intent slotId=1
-04-24 04:31:04.392  6374  6652 D MobileStatusTracker(1/2): onSignalStrengthsChanged level=3, vendorLevel=2
-04-24 04:31:04.393  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:31:04.398  6721  6920 I ImsSecChannelCallback: receive
-04-24 04:31:04.398  6721  6920 I IpcDispatcher<1>: [Rx]: (M)IPC_IIL_CMD (S)IPC_IIL_SSAC_INFO (T)EVENT l:13
-04-24 04:31:04.399  6374  6652 D NetworkController: SignalStrength from intent slotId=1
-04-24 04:31:04.399  6721  6721 I SsacManager: updateSSACInfo[1] : Voice(-1:0) Video(-1:0)
-04-24 04:31:04.399  6721  6721 I SsacManager: Voice Call updateSSACInfo[1] : f[100], t[0]
-04-24 04:31:04.400  6721  6721 I SsacManager: Video Call updateSSACInfo[1] : f[100], t[0]
-04-24 04:31:04.407  5486  5670 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:04.411  5486  5578 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:04.419  5486  5670 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:04.425  5486  5578 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:04.436  6298  6408 I TelephonyProvider: D/TelephonyProvider: subIdString = 2 subId = 2
-04-24 04:31:04.441  6721  6914 I PhoneStateTracker<1>: onCellInfoChanged: xxxxx
-04-24 04:31:04.442  6721  6914 I ImsCallSessionManager: onCellInfoChanged, phoneId: 1
-04-24 04:31:04.442  6721  6914 I RegiMgr-Handler: handleMessage: EVENT_CELL_INFO_CHANGED
-04-24 04:31:04.448  5635  6162 D ConnectivityService: notifyType CALLBACK_CAP_CHANGED for [100 CELLULAR]
-04-24 04:31:04.448  6298  6408 I TelephonyProvider: D/TelephonyProvider: subIdString = 2 subId = 2
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>: updatePani RegisterTask[1][mProfile=Telenor Serbia IMS, mRegistrationRat=13, mPdnType=11, mState=REGISTERED, mObject=UserAgent - :
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  total records=1746
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[0]: time=04-24 04:16:45.439 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[1]: time=04-24 04:16:45.440 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[2]: time=04-24 04:18:56.692 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[3]: time=04-24 04:18:56.693 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[4]: time=04-24 04:19:26.297 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[5]: time=04-24 04:19:26.298 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[6]: time=04-24 04:20:44.249 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[7]: time=04-24 04:20:44.249 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[8]: time=04-24 04:21:20.322 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[9]: time=04-24 04:21:20.323 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[10]: time=04-24 04:22:11.824 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[11]: time=04-24 04:22:11.827 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[12]: time=04-24 04:22:14.790 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[13]: time=04-24 04:22:14.793 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[14]: time=04-24 04:26:24.602 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[15]: time=04-24 04:26:24.628 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[16]: time=04-24 04:27:40.686 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[17]: time=04-24 04:27:40.688 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[18]: time=04-24 04:27:43.604 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>:  rec[19]: time=04-24 04:27:43.609 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>: curState=RegisteredState
-04-24 04:31:04.452  6721  6914 I RegiMgr<1>: , mReason=, mPcscfHostname=null, mDeregiReason=41]
-04-24 04:31:04.459  6721  6914 I PaniGenerator<1>: generate: subId=2, network=13
-04-24 04:31:04.459  6721  6914 I PaniGenerator<1>: generate: network=13, fallbackPlmn=22001
-04-24 04:31:04.459  6721  6914 I PdnController<1>: getAllCellInfo mNeedCellLocationUpdate : false
-04-24 04:31:04.459  6721  6914 I PaniGenerator: generate: change to NW PLMN(22001)
-04-24 04:31:04.460  6721  6914 I PaniGenerator: setLkcForLastPani: No Last PANI header for Telenor Serbia IMS
-04-24 04:31:04.460  6721  6914 I UserAgent<1>: updatePani: pani=3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012b73017a51f, updatePani: lastPani=
-04-24 04:31:04.460  6721  7065 I StackIF : updatePani: 6152 pani: [3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012b73017a51f]
-04-24 04:31:04.461  6721  7065 I SECIMSJ : [2363]> 140
-04-24 04:31:04.461  6721  7071 I [IMS6.0]: IMS_onResponse()
-04-24 04:31:04.462  6721  7071 I StackIF : processMessage 2
-04-24 04:31:04.462  6721  7071 I StackIF : Processing Response
-04-24 04:31:04.462  6721  6914 I RegiMgr<1>: tryRegister:
-04-24 04:31:04.462  6721  7071 I SECIMSJ : [2363]< 600
-04-24 04:31:04.462  6721  7071 I StackIF : processResponse: reqId 600
-04-24 04:31:04.462  6721  7071 I StackIF : processResponse: handle 6152 result 0 reason 0
-04-24 04:31:04.462  6721  6914 I RegiMgr<0>: RegisterTask(s): Megafon VoLTE (IDLE)
-04-24 04:31:04.462  6721  6914 I RegiMgr<1>: RegisterTask(s): Telenor Serbia IMS (REGISTERED, rat = 13, service = [mmtel-video, smsip, mmtel]), Global GC RCS (IDLE)
-04-24 04:31:04.463  6721  6914 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
-04-24 04:31:04.463  6721  6914 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
-04-24 04:31:04.463  6721  6914 I RegisterTask: isSuspended: mSuspended(false) mSuspendByIrat(false)
-04-24 04:31:04.463  6721  6914 I RegiMgr<1>: [Global GC RCS|IDLE] checkForTryRegister id: 1003
-04-24 04:31:04.463  6721  6914 I RegiMgr : isPdnConnected: false, PdnType: 0
-04-24 04:31:04.469  5635  6162 D ConnectivityService: notifyType CALLBACK_CAP_CHANGED for [105 CELLULAR]
-04-24 04:31:04.471  6721  6845 I PdnController<1>: onCapabilitiesChanged: network 105 networkCapabilities [ Transports: CELLULAR Capabilities: IMS&NOT_METERED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=15000Kbps LinkDnBandwidth>=17781Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 2]> SubscriptionIds: {2} UnderlyingNetworks: Null]
-04-24 04:31:04.473  6721  6914 I PdnController: getDefaultNetworkBearer: CELLULAR
-04-24 04:31:04.476  6721  6914 I RegiMgr-Utils<1>: findBestNetwork: LTE
-04-24 04:31:04.477  5635  5635 D SemWifiService: onServiceStateChanged : state - 0, dataNetworkType : 13
-04-24 04:31:04.477  5635  6549 D SLocation: CellLocationManager - onServiceStateChanged 0
-04-24 04:31:04.480  5635  5635 D SemWifiApServiceImpl: onServiceStateChanged : 0dataNetworkType : 13
-04-24 04:31:04.480  6721  6914 I RegiGvnBase<1>: isReadyToDualRegister : true
-04-24 04:31:04.480  5635  5635 W NSLocationMonitor: onServiceStateChanged, state=0 / channel=1300
-04-24 04:31:04.481  5635  5635 I NSLocationMonitor: networkType[13]=LTE / nrState=false
-04-24 04:31:04.481  5635  5635 W NSLocationMonitor: onServiceStateChanged, state=0 / channel=1300
-04-24 04:31:04.481  5635  5635 I NSLocationMonitor: networkType[13]=LTE / nrState=false
-04-24 04:31:04.481  7192  7240 W NetworkManager_FLP: updateServiceStateChanged, serviceState=0 / isRegistered=true / channel=1300 / networkTypeName=LTE / nr=false
-04-24 04:31:04.482  7192  7240 I NetworkManager_FLP: Success to update networkStatus, Service=0 / Network=LTE(band=3, ch=1300) / MobileData=true, roaming=false / WIFI=false, conn=false / BT=true, conn=false
-04-24 04:31:04.482  6721  7075 I VolteServiceModule: onServiceStateChanged({mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE_CA, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false})
-04-24 04:31:04.482  6721  7075 I VolteServiceModule: mIsLteEpsOnlyAttached(1):false
-04-24 04:31:04.484  7192  7240 W NetworkManager_FLP: updateServiceStateChanged, serviceState=0 / isRegistered=true / channel=1300 / networkTypeName=LTE / nr=false
-04-24 04:31:04.485  5635  5635 D SemWifiService: received: android.intent.action.SERVICE_STATE
-04-24 04:31:04.485  6374  6652 D MobileStatusTracker(1/2): onServiceStateChanged voiceState=0 dataState=0
-04-24 04:31:04.486  6374  6374 I CoverUpdateMonitor: received broadcast android.intent.action.SERVICE_STATE
-04-24 04:31:04.487  6374  6374 I CommonUtils: isNetworkRoaming id=2
-04-24 04:31:04.487  6374  6374 I CommonUtils: isNetworkRoaming: false
-04-24 04:31:04.488  6374  6374 D MultiSIMController: onReceive() - action = android.intent.action.SERVICE_STATE
-04-24 04:31:04.491  6298  6298 D ServiceStateProvider: subId=2
-04-24 04:31:04.491  6721  6914 I RegiMgr<1>: [Global GC RCS|IDLE] checkInitialRegistrationIsReady: APM ON [false], Roamimg [false]
-04-24 04:31:04.491  6721  6914 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
-04-24 04:31:04.491  6721  6914 I ImsProfile: isRttSupportByCallApp : false ttyType : 1
-04-24 04:31:04.491  6721  6914 I RegiMgr-Utils<1>: getPriorityRegiedTask : isPriority  High? true
-04-24 04:31:04.492  6721  6914 I RegiGvnBase: checkRegiStatus: getState()=IDLE mIsUpdateRegistering=false
-04-24 04:31:04.492  6721  6914 I RegiMgr<1>: getTelephonyCallStatus:
-04-24 04:31:04.494  6374  6374 D Tile.AirplaneModeTile: onReceive android.intent.action.SERVICE_STATE
-04-24 04:31:04.494  6374  6374 D KeyguardUpdateMonitor: received broadcast android.intent.action.SERVICE_STATE
-04-24 04:31:04.495 23469 23512 I Carnival-NetworkErrorManager(): onAvailable
-04-24 04:31:04.495  6673  7287 D HeadsetPhoneState: service : 1 (2)
-04-24 04:31:04.496  6374  6374 V KeyguardUpdateMonitor: action android.intent.action.SERVICE_STATE serviceState={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE_CA, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false} subId=2
-04-24 04:31:04.496  6374  6374 D MultiSIMController: MESSAGE_UPDATE_SERVICE_STATE
-04-24 04:31:04.497  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:31:04.498  6374  6652 D NetworkController: ServiceState from intent slotId=1
-04-24 04:31:04.499  6374  6652 D NetworkController: IsPowerOffServiceState is false: 0
-04-24 04:31:04.499  6374  6652 D Tile.AirplaneModeTile:  handleUpdateState: airplane mode is disabled : enter mSetting.getValue() == 0 mIsWiFiOnlyDevice false isNoSimState false !isPowerOffServiceState true
-04-24 04:31:04.499  6374  6652 D Tile.AirplaneModeTile:  handleUpdateState:  value = false, state = 1
-04-24 04:31:04.502 21602 21602 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
-04-24 04:31:04.502  6721  6914 I ConfigProvider: query uri:xxxxx
-04-24 04:31:04.502 23469 23512 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-04-24 04:31:04.503 21602 21602 D CellBroadcastReceiver: onServiceStateChanged, ss: 0
-04-24 04:31:04.503 21602 21602 D CellBroadcastReceiver: networkOperator: 22001
-04-24 04:31:04.503  5635  6549 D SLocation: CellLocationManager - onCellLocationChanged 2 / 1
-04-24 04:31:04.504 21602 21602 D CellBroadcastReceiver: update supported roaming operator as
-04-24 04:31:04.506  6298  6298 I Telephony: TelecomAccountRegistry$AccountEntry: isRttCurrentlySupported -- regular acct,, hasVoiceAvailability: false, isRttSupported: false, alwaysAllowWhileRoaming: false, isRoaming: true, isOnWfc: false
-04-24 04:31:04.507  6374  6374 D semImsManager[0]: getImsRegistration
-04-24 04:31:04.508  6298  6298 I Telephony: TelecomAccountRegistry$AccountEntry: isRttCurrentlySupported -- regular acct,, hasVoiceAvailability: true, isRttSupported: false, alwaysAllowWhileRoaming: false, isRoaming: false, isOnWfc: false
-04-24 04:31:04.508  6298  6298 V PhoneGlobals: handleServiceStateChanged
-04-24 04:31:04.508  6298  6298 D NotificationMgr: updateNetworkSelection, Use Samsung codes instead of AOSP codes
-04-24 04:31:04.508  6298  6298 V PhoneGlobals: subId=2, mDefaultDataSubId=-1, ss roaming=false
-04-24 04:31:04.512 23469 23512 I Carnival-NetworkErrorManager(): onNetworkRecovered
-04-24 04:31:04.513 23469 23512 I Carnival-SamsungAccountManager(): onNetworkRecovered
-04-24 04:31:04.515  6721  6914 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
-04-24 04:31:04.517  6374  6374 D semImsManager[1]: getImsRegistration
-04-24 04:31:04.524  6374  6374 D MultiSIMController: getOwnNumber
-04-24 04:31:04.524  6721  6914 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
-04-24 04:31:04.524  6374  6374 D KeyguardUpdateMonitor: handleServiceStateChange(subId=2, serviceState={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE_CA, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}
-04-24 04:31:04.525  6374  6374 D CarrierTextController: onRefreshCarrierInfo(), mTelephonyCapable: true
-04-24 04:31:04.525  6374  6374 D CarrierTextController: updateCarrierText(): 2
-04-24 04:31:04.525  6374  6374 D CarrierTextController: Handling (subId=1): 5 Yettel | MegaFon
-04-24 04:31:04.525  6374  6374 D CarrierTextController: carrierTextForSimState = Yettel | MegaFon
-04-24 04:31:04.525  6374  6374 D CarrierTextController: SIM ready and in service: subId=1, ss={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=International Roaming, MobileDataRat=LTE, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=ROAMING roamingType=INTERNATIONAL accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****69 mPci=67 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=ROAMING roamingType=INTERNATIONAL accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****69 mPci=67 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 3 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=true, mIsIwlanPreferred=false}
-04-24 04:31:04.526  6374  6374 D CarrierTextController: Handling (subId=2): 5 Yettel
-04-24 04:31:04.526  6374  6374 D CarrierTextController: carrierTextForSimState = Yettel
-04-24 04:31:04.526  6721  6914 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
-04-24 04:31:04.526  6374  6374 D CarrierTextController: SIM ready and in service: subId=2, ss={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE_CA, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}
-04-24 04:31:04.527  6374  6374 D CarrierTextController: setText : Yettel | MegaFon | Yettel
-04-24 04:31:04.527  6374  6374 D FaceWidgetPagesController: onRefreshCarrierInfo()
-04-24 04:31:04.528  6374  6374 D FaceWidgetClockRoamManager: isNetworkRoamingState id=2
-04-24 04:31:04.528  6374  6374 D FaceWidgetClockRoamManager: isNetworkRoamingState false
-04-24 04:31:04.528  6374  6374 D FaceWidgetClockRoamManager: onRefreshCarrierInfo(pre, now): false, false
-04-24 04:31:04.528  6374  6374 D FaceWidgetClockPage: onRefreshCarrierInfo : isChanged false mIsRoaming false
-04-24 04:31:04.530  6721  6914 I ConfigTrigger<1>: isWaitAutoConfig:
-04-24 04:31:04.530  6721  6914 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
-04-24 04:31:04.532  6721  6914 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
-04-24 04:31:04.532  6721  6914 I RegiMgr-Utils: selectPdnType: rat=13pdn=0
-04-24 04:31:04.532  6721  6914 I RegiMgr<1>: getServiceForNetwork: network 13
-04-24 04:31:04.533  6721  6914 I RegiMgr<1>: getServiceForNetwork: service {options, chatbot-communication, ft_http, im, euc, gls}
-04-24 04:31:04.541  6721  6914 I ConfigTrigger<1>: isValidAcsVersion:
-04-24 04:31:04.541  6721  6914 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
-04-24 04:31:04.544  6721  6914 I ConfigProvider: query uri:xxxxx
-04-24 04:31:04.549  6721  6914 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
-04-24 04:31:04.551  5635  6740 D SecContentProvider2: query(), uri = 18 selection = isRCSEnabled
-04-24 04:31:04.551  5635  6740 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCS
-04-24 04:31:04.552  5635  6740 E PhoneRestrictionPolicy: getEmergencyCall >>false
-04-24 04:31:04.552  5635  6740 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCSForSimSlot1
-04-24 04:31:04.552  5635  6740 E PhoneRestrictionPolicy: getEmergencyCall >>false
-04-24 04:31:04.553  6721  6914 I ConfigTrigger<1>: RCS switch: true, version: 0, isRcsAcsCompleted: true
-04-24 04:31:04.553  6721  6914 I ConfigTrigger<1>: version is improper : 0
-04-24 04:31:04.555  6721  6914 I RegiGvnBase: isVideoCallEnabled: Enable
-04-24 04:31:04.559  6721  6914 I RegiMgr<1>: getServiceForNetwork: filtered service []
-04-24 04:31:04.559  6721  6914 I RegiMgr<1>: Global GC RCS: no ims service for current rat13
-04-24 04:31:04.561  6721  6914 I PdnController: slot[1]: stopPdnConnectivity: network 0, callback is null
-04-24 04:31:04.561  6721  6914 E PdnController<1>: requestStopNetwork: callback not found
-04-24 04:31:04.562  6721  6914 E #IMSCR  : 04-24 04:31:04 0x1101000B:1,FILTERED ALL:0
-04-24 04:31:04.562  6721  6914 I PdnController<1>: Active Phone Id = 1 MobileConnected = true
-04-24 04:31:04.563  6721  6914 I PhoneStateTracker<1>: onServiceStateChanged: state={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=1300, duplexMode()=1, mCellBandwidths=[], mOperatorAlphaLong=Yettel, mOperatorAlphaShort=Yettel, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=*1, mSystemId=*1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, VoiceRegType=0, Snap=0, MobileData=IN_SERVICE, MobileDataRoamingType=home, MobileDataRat=LTE_CA, PsOnly=false, FemtocellInd=0, SprDisplayRoam=false, OptRadioTech=0, MsimSubmode=0, mIsEmergencyOnly=false, isUsingCarrierAggregation=true, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=22001 isUsingCarrierAggregation=false}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=CellIdentityLte:{ mCi=1****99 mPci=438 mTac=1***3 mEarfcn=1300 mBands=[] mBandwidth=2147483647 mMcc=220 mMnc=01 mAlphaLong=Yettel mAlphaShort=Yettel mAdditionalPlmns={} mCsgInfo=null} voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 4 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=22001 isUsingCarrierAggregation=true}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=Yettel, mOperatorAlphaShortRaw=Yettel, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false}Changed=
-04-24 04:31:04.563  6721  6914 I PdnController<1>: notifyDataConnectionState
-04-24 04:31:04.563  6721  6914 I PdnController<1>: initialize PendedEPDGWeakSignal flag
-04-24 04:31:04.563  6721  6914 I PdnController<1>: setPendedEPDGWeakSignal
-04-24 04:31:04.563  6721  6914 I PdnController<1>: notifyDataConnectionState: needNotify=false networkType=13 isEpdgConnected=false dataNetType=13=>13 dataRegState=0=>0
-04-24 04:31:04.563  6721  6914 I PhoneStateTracker<1>: notifySnapshotState: snapshotState=0 old=0
-04-24 04:31:04.563  6721  6914 E GlobalSettingsRepoBase: globalgcsettings No matched key : separate_vo5g_icon
-04-24 04:31:04.563  6721  6914 I PdnController: handleMessage: what 107
-04-24 04:31:04.564  6721  6914 I PdnController: slot[1]: requestStopNetwork: network 0, callback is null
-04-24 04:31:04.564  6721  6914 I GeolocationCon: handleMessage : what = SERVICE_STATE_CHANGED
-04-24 04:31:04.564  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:31:04.564  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:31:04.564  6721  6914 I GeolocationCon: matchTimingReqLocation ,match=0, timing=4
-04-24 04:31:04.564  6721  6914 I GeolocationCon: profile is null
-04-24 04:31:04.565  6721  6914 I GeolocationCon<1>: onNetworkCountryIsoChanged: mCountryIso = rs, iso = rs
-04-24 04:31:05.717  5486  5670 D SemNativeCarrierFeature_vendor: getInstance
-04-24 04:31:07.055  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:31:07.136   628   628 I DWBUsageDataManager: retrieveDataOnSpecificDay date : 1682303467121
-04-24 04:31:07.140   628   628 I DWBUsageDataManager: Retrieve RETRIEVE_DAILY_DATA
-04-24 04:31:07.473  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
-04-24 04:31:07.478  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:31:07.666   628 25234 I DWBUsageDataManager: updateDailyData of 1682303467149
-04-24 04:31:07.738  5635  5793 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
-04-24 04:31:07.740  5635  5793 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
-04-24 04:31:07.741  5635  5793 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
-04-24 04:31:07.798  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:31:07.849  6839 26454 I LauncherProvider: External provider call by package : android.uid.system:1000  for method : get_full_sync_state
-04-24 04:31:07.859  6839 26454 I ExternalMethodFactory: get_full_sync_state
-04-24 04:31:07.882  6839 26454 I LauncherProvider: External provider call by package : android.uid.system:1000  for method : get_full_sync_state
-04-24 04:31:07.882  6839 26454 I ExternalMethodFactory: get_full_sync_state
-04-24 04:31:07.896   628 25234 I AppWidgetManager: updateAppWidget() appWidgetIds = [25]
-04-24 04:31:07.910   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:08.229 28208 25235 I GmscoreIpa: Starting mediastore instant index [CONTEXT service_id=255 ]
-04-24 04:31:08.234   628 25234 I DWBUsageDataManager: updateDailyData of 1682217067149
-04-24 04:31:08.235   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:08.482   628 25234 I DWBUsageDataManager: updateDailyData of 1682130667149
-04-24 04:31:08.483   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:08.499  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
-04-24 04:31:08.508  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE/LTE_CA (4G+), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=true, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:31:08.531  5635  5653 I system_server: Background young concurrent copying GC freed 331376(16MB) AllocSpace objects, 18(864KB) LOS objects, 14% free, 98MB/114MB, paused 1.204ms,378us total 107.540ms
-04-24 04:31:08.541  5216  5216 E audit   : type=1400 audit(1682303468.539:57568): avc:  denied  { read } for  pid=24866 comm="binder:24866_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app:s0:c22,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:31:08.541  5216  5216 E audit   : type=1300 audit(1682303468.539:57568): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=24866 auid=4294967295 uid=10278 gid=10278 euid=10278 suid=10278 fsuid=10278 egid=10278 sgid=10278 fsgid=10278 tty=(none) ses=4294967295 comm="binder:24866_1" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c22,c257,c512,c768 key=(null)
-04-24 04:31:08.541 24866 24884 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:31:08.541  5216  5216 E audit   : type=1327 audit(1682303468.539:57568): proctitle="zygote64"
-04-24 04:31:08.550  5216  5216 E audit   : type=1400 audit(1682303468.547:57569): avc:  denied  { read } for  pid=24255 comm="binder:24255_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=17922 scontext=u:r:untrusted_app_30:s0:c12,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-24 04:31:08.550  5216  5216 E audit   : type=1300 audit(1682303468.547:57569): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=709bdfb2f8 a2=88000 a3=0 items=0 ppid=5241 pid=24255 auid=4294967295 uid=10268 gid=10268 euid=10268 suid=10268 fsuid=10268 egid=10268 sgid=10268 fsgid=10268 tty=(none) ses=4294967295 comm="binder:24255_1" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c12,c257,c512,c768 key=(null)
-04-24 04:31:08.550  5216  5216 E audit   : type=1327 audit(1682303468.547:57569): proctitle="com.kms.free"
-04-24 04:31:08.550 24255 24272 W libc    : Access denied finding property "sys.perf.boostopt"
-04-24 04:31:08.591 21331 21358 D Benchmark: timeNs[ 0:10]: 29321 30884 26091 25890 28190 28229 26496 25715 25735 26953
-04-24 04:31:08.591 21331 21358 D Benchmark: timeNs[10:20]: 25713 25731 26617 25758 25777 26953 25759 26466 25844 25789
-04-24 04:31:08.591 21331 21358 D Benchmark: timeNs[20:30]: 26471 26258 25743 28536 29326 26448 27375 25798 25780 26528
-04-24 04:31:08.591 21331 21358 D Benchmark: timeNs[30:40]: 25745 25846 26869 25781 26646 25698 25667 26834 25606 25684
-04-24 04:31:08.591 21331 21358 D Benchmark: timeNs[40:50]: 26485 27183 26353 26222 26865 26615 25844 28956 30807 29108
-04-24 04:31:08.745   628 25234 I DWBUsageDataManager: updateDailyData of 1682044267149
-04-24 04:31:08.745   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:08.958   628 25234 I DWBUsageDataManager: updateDailyData of 1681957867149
-04-24 04:31:08.958   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:09.086 21331 21358 D Benchmark: allocationCount[ 0:10]: 43 43 43 43 43
-04-24 04:31:09.086 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -8. Was -20, now -8
-04-24 04:31:09.086 21331 21358 D Benchmark: Set 21342 (Jit) to priority 9. Was -15, now 9
-04-24 04:31:09.086 21331 21358 D Benchmark: Warmup: t=0.250, iter=3975, fastAvg=29063, slowAvg=29817
-04-24 04:31:09.086 21331 21358 I PerfettoCapture: Stopping perfetto.
-04-24 04:31:09.129 25203 25203 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-24 04:31:09.130 21331 21358 D Benchmark: kill -TERM command output -
-04-24 04:31:09.142  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=249)
-04-24 04:31:09.145  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-24 04:31:09.175   628 25234 I DWBUsageDataManager: updateDailyData of 1681871467149
-04-24 04:31:09.176   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:09.208  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:31:09.214  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=250)
-04-24 04:31:09.215  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=251)
-04-24 04:31:09.224 25203 25203 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-24 04:31:09.226  5413  5413 I perfetto: ng_service_impl.cc:2426 Tracing session 63 ended, total sessions:0
-04-24 04:31:09.242 21331 21358 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-24-02-31-09.perfetto-trace.
-04-24 04:31:09.307 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-24-02-31-09.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-24-02-31-09.perfetto-trace
-04-24 04:31:09.334  8333 23664 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:31:09.374  5635  5793 D SyncManager: userId - 0 auto - true
-04-24 04:31:09.438   628 25234 I DWBUsageDataManager: updateDailyData of 1681785067149
-04-24 04:31:09.439   628 25234 I DWBUsageDataManager: RETRIEVE_ALL_DATA is Progressing
-04-24 04:31:09.446 21331 21358 I Benchmark: AckermannBenchmark.mutableRefFloatIn2Longs[Metric (timeNs) results: median 26401.146220930234, min 25606.987790697673, max 30884.760755813953, standardDeviation: 1338.1538261015348, Metric (allocationCount) results: median 43.0, min 43.0, max 43.000872093023254, standardDeviation: 4.111085937127643E-4]count=3440
-04-24 04:31:09.449  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:31:09.451 21331 21358 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:31:09.455 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:31:09.465 21600 23676 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 155451 [CONTEXT service_id=218 ]
-04-24 04:31:09.470  8333 25095 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-24 04:31:09.471  5635  6978 D SyncManager: userId - 0 auto - true
-04-24 04:31:09.476  8333 23664 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:31:09.477 21600 24852 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 47 uptime_millis: 47 exec_start_elapsed_seconds: 155451 [CONTEXT service_id=218 ]
-04-24 04:31:09.488  8333 23664 W SQLiteLog: (28) walCheckpoint: eMode(0), mxFrame(1285), /data/user/0/com.google.android.providers.media.module/databases/external.db-wal
-04-24 04:31:09.491  5635  5793 D SyncManager: userId - 0 auto - true
-04-24 04:31:09.492 21331 21358 I TestRunner: finished: mutableRefFloatIn2Longs(org.jetbrains.android_benchmark.AckermannBenchmark)
+04-27 20:12:48.007 26164 26187 I TestRunner: started: mutableRefFloatIn2Longs(org.jetbrains.android_benchmark.AckermannBenchmark)
+04-27 20:12:48.010 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 20:12:48.010 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 20:12:48.016  6734 27909 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService started execution. cause:5 exec_start_elapsed_seconds: 28707 [CONTEXT service_id=218 ]
+04-27 20:12:48.016 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 20:12:48.016 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 20:12:48.016 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableRefFloatIn2Longs --
+04-27 20:12:48.017 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 20:12:48.017 26164 26187 D PerfettoCapture: Recording perfetto trace
+04-27 20:12:48.042  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:12:48.043  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:12:48.056 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 20:12:48.059  6734 28091 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28707 [CONTEXT service_id=218 ]
+04-27 20:12:48.069  6734 27909 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 28707 [CONTEXT service_id=218 ]
+04-27 20:12:48.173  6734 28087 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.clearcut.uploader.QosUploaderService finished executing. cause:5 result: 1 elapsed_millis: 196 uptime_millis: 196 exec_start_elapsed_seconds: 28707 [CONTEXT service_id=218 ]
+04-27 20:12:48.188 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
+04-27 20:12:48.188 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 20:12:48.348 28474 28474 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 20:12:48.350  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 17, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 20:12:48.351  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=33)
+04-27 20:12:48.403 26164 26187 I PerfettoCapture: Perfetto output - 28474
+04-27 20:12:48.403 26164 26187 I PerfettoCapture: EXITCODE=0
+04-27 20:12:48.425  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:12:48.446  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 20:12:48.508  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:12:48.526 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 20:12:48.526 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 20:12:48.529 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 28474.
+04-27 20:12:48.530 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 20:12:48.546  5429  8530 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:12:48.548  5429  8530 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:12:48.549  5429  8530 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:12:48.611 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 20:12:48.613 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
+04-27 20:12:48.613 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
+04-27 20:12:48.645 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
+04-27 20:12:48.652 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 174856(3277KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2914KB/9058KB, paused 294us,97us total 39.044ms
+04-27 20:12:48.720 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 20:12:48.726 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  137 ms
+04-27 20:12:48.726 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 20:12:48.727 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 20:12:48.729 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 20:12:48.731 26084 26123 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=96a387d7-ce68-437c-bd06-331ad8e132f2, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 20:12:48.764  5429  8528 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:12:48.765  5429  8528 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:12:48.766  5429  8528 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:12:48.931  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3731, isSameBssidAndFreq true
+04-27 20:12:48.934  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:12:48.935  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:12:48.938  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:12:49.736  4899  4899 E audit   : type=1400 audit(1682619169.731:17818): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 20:12:49.737  4899  4899 E audit   : type=1300 audit(1682619169.731:17818): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=77704a3aa0 a2=768437b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-27 20:12:49.737  4899  4899 E audit   : type=1327 audit(1682619169.731:17818): proctitle="system_server"
+04-27 20:12:49.779  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:12:49.783  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=70, status=2
+04-27 20:12:49.784  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:12:49.785  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:12:49.787  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:12:49.791  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:12:49.795  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:12:49.796  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=70, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2776000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:12:49.796  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:12:49.796  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:12:49.797  5878  5878 W PowerUI : Plug reason
+04-27 20:12:49.797  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:12:49.797  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:12:49.797  5878  5878 W PowerUI : Plug reason
+04-27 20:12:49.797  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:12:49.797  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:12:49.797  5878  7825 D SecPowerUI.Notification: dismissing low battery warning: level=70
+04-27 20:12:49.797  5878  7825 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:12:49.797  5878  7825 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=70, currentBatteryMode=0, chargingTime=2783000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:12:49.798  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2783000 / mChargingTime : 2776000
+04-27 20:12:49.798  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:12:49.798  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=70, currentBatteryMode=0, chargingTime=2776000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:12:49.798  5878  7825 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:12:49.798  5878  7825 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:12:49.800  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:12:49.800  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:12:49.800  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:12:49.801  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:12:49.801  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:12:49.801  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:12:49.802  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:12:49.802  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:12:49.802  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:12:49.802  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:12:49.802  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:12:49.802  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:12:49.802  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:12:49.802  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:12:49.802  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:12:49.810  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:12:49.810  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:12:49.811  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:12:49.811  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=70,plugged=2,health=2,maxChargingWattage=-1,remaining=2776000ultraFastCharger=1}
+04-27 20:12:50.019  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:12:50.019  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:12:50.026  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:12:50.027  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:12:50.027  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:12:50.039  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:12:50.040  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:12:50.040  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:50.040  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:50.220  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:12:50.256  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:12:50.257  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:12:50.257  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:12:50.257  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:12:50.268  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:12:50.269  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:12:50.269  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:50.269  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:50.307  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:12:50.308  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:12:50.308  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:12:50.308  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:12:50.359  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:12:50.359  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:12:50.360  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:12:50.360  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:12:50.363  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:12:50.363  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:12:50.363  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:50.363  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:12:51.956  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3732, isSameBssidAndFreq true
+04-27 20:12:51.961  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:12:51.962  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:12:51.962  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:12:53.362 26164 26187 D Benchmark: timeNs[ 0:10]: 25753 26585 25801 25852 27105 25849 26867 25942 28043 28775
+04-27 20:12:53.362 26164 26187 D Benchmark: timeNs[10:20]: 26219 25903 30861 26617 25769 30175 25793 25873 26782 25823
+04-27 20:12:53.362 26164 26187 D Benchmark: timeNs[20:30]: 25846 26845 25773 26302 26633 25790 26293 26443 25819 26925
+04-27 20:12:53.362 26164 26187 D Benchmark: timeNs[30:40]: 25802 25814 29419 27317 25807 26660 27088 27781 26845 25796
+04-27 20:12:53.362 26164 26187 D Benchmark: timeNs[40:50]: 25790 26916 25753 25851 26917 25771 26118 26146 25790 26153
+04-27 20:12:53.388 26164 26187 W _benchmark.test: Suspending all threads took: 26.045ms
+04-27 20:12:53.882 26164 26187 W _benchmark.test: Suspending all threads took: 10.942ms
+04-27 20:12:53.883 26164 26187 D Benchmark: allocationCount[ 0:10]: 43 43 43 43 43
+04-27 20:12:53.883 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
+04-27 20:12:53.883 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
+04-27 20:12:53.883 26164 26187 D Benchmark: Warmup: t=0.261, iter=3807, fastAvg=29954, slowAvg=30254
+04-27 20:12:53.884 26164 26187 I PerfettoCapture: Stopping perfetto.
+04-27 20:12:53.929 28474 28474 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 20:12:53.933 26164 26187 D Benchmark: kill -TERM command output -
+04-27 20:12:53.942  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=65)
+04-27 20:12:53.945  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 20:12:54.001  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:12:54.009  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=66)
+04-27 20:12:54.009  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=67)
+04-27 20:12:54.020 28474 28474 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 20:12:54.022  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 17 ended, total sessions:0
+04-27 20:12:54.045 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-27-18-12-53.perfetto-trace.
+04-27 20:12:54.111 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-27-18-12-53.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableRefFloatIn2Longs_2023-04-27-18-12-53.perfetto-trace
+04-27 20:12:54.152  8350 27722 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:12:54.202  5429  8535 D SyncManager: userId - 0 auto - true
+04-27 20:12:54.273 26164 26187 I Benchmark: AckermannBenchmark.mutableRefFloatIn2Longs[Metric (timeNs) results: median 26149.974685440382, min 25753.30677052127, max 30861.7896944278, standardDeviation: 1140.9091729979118, Metric (allocationCount) results: median 43.0, min 43.0, max 43.0, standardDeviation: 0.0]count=3338
+04-27 20:12:54.279 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:12:54.292 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:12:54.314  8350 28255 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 20:12:54.318  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:12:54.318  5429  8535 D SyncManager: userId - 0 auto - true
+04-27 20:12:54.319  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:12:54.324  8350 27727 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:12:54.339 26164 26187 I TestRunner: finished: mutableRefFloatIn2Longs(org.jetbrains.android_benchmark.AckermannBenchmark)

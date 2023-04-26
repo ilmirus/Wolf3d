@@ -1,338 +1,269 @@
-04-24 04:49:18.179 21331 21358 I TestRunner: started: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
-04-24 04:49:18.183 21331 21331 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-24 04:49:18.183 21331 21331 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@c388c9b
-04-24 04:49:18.185  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:49:18.196 21331 21358 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-24 04:49:18.197 21331 21358 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-24 04:49:18.197 21331 21358 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueInlineDouble --
-04-24 04:49:18.197 21331 21358 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-24 04:49:18.197 21331 21358 D PerfettoCapture: Recording perfetto trace
-04-24 04:49:18.212 21600 31774 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 156540 [CONTEXT service_id=218 ]
-04-24 04:49:18.216  5635  5660 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-24 04:49:18.218  5635  5660 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-24 04:49:18.219  5635  5660 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-24 04:49:18.226 21600 31592 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 66 uptime_millis: 66 exec_start_elapsed_seconds: 156540 [CONTEXT service_id=218 ]
-04-24 04:49:18.260 21331 21358 I PerfettoCapture: Cleanup perfetto before starting.
-04-24 04:49:18.442 21331 21358 I PerfettoCapture: Perfetto output file cleanup -
-04-24 04:49:18.442 21331 21358 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-24 04:49:18.632 32218 32218 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-24 04:49:18.634  5413  5413 I perfetto: ing_service_impl.cc:953 Configured tracing session 86, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-24 04:49:18.636  5403  5403 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=171)
-04-24 04:49:18.683 21331 21358 I PerfettoCapture: Perfetto output - 32218
-04-24 04:49:18.683 21331 21358 I PerfettoCapture: EXITCODE=0
-04-24 04:49:18.721  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:49:18.751  5403  5403 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-24 04:49:18.811 21331 21358 I PerfettoCapture: Perfetto tracing started successfully with pid 32218.
-04-24 04:49:18.898 21331 21358 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-24 04:49:18.899 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -20. Was -8, now -20
-04-24 04:49:18.899 21331 21358 D Benchmark: Set 21342 (Jit) to priority -15. Was 9, now -15
-04-24 04:49:18.941 21331 21358 I _benchmark.test: Explicit concurrent copying GC freed 32663(1214KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2960KB/9104KB, paused 289us,132us total 40.364ms
-04-24 04:49:20.325  5272  5272 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-04-24 04:49:21.296  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
-04-24 04:49:21.304  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = on deviceID = 3 slot = 1 device_ext = 0
-04-24 04:49:21.306  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :on
-04-24 04:49:21.306  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enableSensor
-04-24 04:49:21.308  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
-04-24 04:49:21.311  5635  5845 D SensorService: GripSensor: MCC Path does not exist
-04-24 04:49:21.311  5635  6162 D ConnectivityService: reportNetworkActive, notify 0 listeners
-04-24 04:49:21.313  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 1
-04-24 04:49:21.317  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch data = RELEASE
-04-24 04:49:21.317  5262  5389 I SensorsGrip: [grip_sensor] readEvents: GripSensor: grip 1ch unknown NORMAL MODE
-04-24 04:49:21.318  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 1, first_grip_event : 1
-04-24 04:49:21.319  5635  5845 D SensorManager: registerListener :: 33554443, A96T3X6 Grip sensor, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
-04-24 04:49:21.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor enable channel 0 : 2 , channel 1 : 0
-04-24 04:49:21.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enableSensor
-04-24 04:49:21.322  5635  5845 D SensorService: [GripSensor] ++ setGripThdWithMCC  (65560)
-04-24 04:49:21.322  5635  5845 D SensorService: GripSensor: MCC Path does not exist
-04-24 04:49:21.323  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 1
-04-24 04:49:21.327  5262  5391 I SensorsGrip: [grip_sensor_sub] readEvents: GripSensor: grip 1ch data = RELEASE
-04-24 04:49:21.328  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 1, first_grip_event : 1
-04-24 04:49:21.329  5635  5845 D SensorManager: registerListener :: 33554450, A96T3X6_SUB Grip sensor for sub, 200000, 0, com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
-04-24 04:49:21.329  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub enable channel 0 : 2 , channel 1 : 0
-04-24 04:49:21.329  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :on
-04-24 04:49:21.330  6298  7000 I System.out: Broadcast completed: result=0
-04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor onSensorChanged : 5.0 , 0.0 , 0.0 , 1.0 , 0.0
-04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor clearBackOff channel: 0 , index: 0
-04-24 04:49:21.335  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
-04-24 04:49:21.345  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub onSensorChanged : 5.0 , 0.0 , 0.0 , 0.0 , 0.0
-04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub clearBackOff channel: 0 , index: 1
-04-24 04:49:21.346  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
-04-24 04:49:21.366  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:49:21.366  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:49:22.162  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=3
-04-24 04:49:22.165  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=inout, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:49:23.200  6374  6652 D MobileStatusTracker(1/2): onDataActivity: direction=0
-04-24 04:49:23.213  6374  6652 D MobileSignalController(1/2): notifyListener: enabled=true, connected=true, dataConnected=true, networkType=LTE (4G), emergencyOnly=false, roaming=false, isDefault=true, dataActivity=, level=2, ca=false, mmWave=false, disabledDataIcon=false, simCard=ETC
-04-24 04:49:23.438  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.439  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.440  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.440 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.440 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 340
-04-24 04:49:23.441 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 340
-04-24 04:49:23.442  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.443 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.444 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.444 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.444 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.444  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.448  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.449  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.461 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.462 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.462 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
-04-24 04:49:23.462 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
-04-24 04:49:23.467 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.467 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.468 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.468 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.468  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.471 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.471 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.472 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 340
-04-24 04:49:23.472 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 340
-04-24 04:49:23.474 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.474 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.474 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.474 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.474  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.478 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.478 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.478 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 263
-04-24 04:49:23.478 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 263
-04-24 04:49:23.480 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.480 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.480 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.480  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.480 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.482  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.483 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.483 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.484 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 263
-04-24 04:49:23.485 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 263
-04-24 04:49:23.486 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.486 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.486 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.486 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.487  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.489 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.622 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20954,/w_media_control/request_data, size=158]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":["mediametadata","playbackstate","volume"],"timeOut":"60000","watchState":"on"}}
-04-24 04:49:23.624 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(on): saved[0]
-04-24 04:49:23.640 21125 32247 I smedia  : SMediaController.onRequestDataChanged(7d27f402)
-04-24 04:49:23.644 21125 32247 I smedia  : SMediaSessionHelper.releaseActiveController(true): ''
-04-24 04:49:23.644 21125 32247 I smedia  : SMediaSessionHelper.setActiveController(true): '' -> '' [empty]
-04-24 04:49:23.644 21125 32247 I smedia  : SMediaController.onActiveControllerInfoNeeded()
-04-24 04:49:23.644 21125 32247 I smedia  : SMediaController.sendEmptyMediaInfo(1, )
-04-24 04:49:23.660 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/mediametadata): {"msgId":"mediametadata","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","mediaId":"","title":"","artist":"","album":"","duration":"0","albumArt":""}}
-04-24 04:49:23.672 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/playbackstate): {"msgId":"playbackstate","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueItemId":"-1","state":"0","position":"0","actions":"0","speed":"0.0","reserveSlotPrev":"0","reserveSlotNext":"0","customActions":[]}}
-04-24 04:49:23.673 21125 32247 I smedia  : SMediaStateValidator.updateMessageData()
-04-24 04:49:23.676 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/queue): {"msgId":"queue","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueTitle":"","queueCount":"0","queue":[]}}
-04-24 04:49:23.677 21125 32247 I smedia  : SMediaMessageManager.requestedMessage(7d27f402): false
-04-24 04:49:23.684 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.684 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.684 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
-04-24 04:49:23.684  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.684 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
-04-24 04:49:23.686 21125 32247 W Settings: Setting all_sound_off has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-04-24 04:49:23.686  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.687 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/volume): {"msgId":"volume","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","playbackType":"1","volume":"5","headsetConnected":"0","btOutput":"0","maxVolume":"15","warningVolume":"10","dndModeOn":"0","muteAllSoundsOn":"0"}}
-04-24 04:49:23.688 21125 32247 I smedia  : SMediaSessionHelper.findActiveAndSendInfo(): [false]
-04-24 04:49:23.688 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20955,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
-04-24 04:49:23.691 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[2]
-04-24 04:49:23.692 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20956,/w_media_control/request_data, size=158]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":["mediametadata","playbackstate","volume"],"timeOut":"60000","watchState":"on"}}
-04-24 04:49:23.692 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(on): saved[0]
-04-24 04:49:23.692 21125 32247 I smedia  : SMediaController.onRequestDataChanged(7d27f402)
-04-24 04:49:23.692 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/playbackstate): S(23774)
-04-24 04:49:23.693 21125 32247 I smedia  : SMediaSessionHelper.releaseActiveController(true): ''
-04-24 04:49:23.693 21125 32247 I smedia  : SMediaSessionHelper.setActiveController(true): '' -> '' [empty]
-04-24 04:49:23.693 21125 32247 I smedia  : SMediaController.onActiveControllerInfoNeeded()
-04-24 04:49:23.693 21125 32247 I smedia  : SMediaController.sendEmptyMediaInfo(1, )
-04-24 04:49:23.694 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/mediametadata): {"msgId":"mediametadata","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","mediaId":"","title":"","artist":"","album":"","duration":"0","albumArt":""}}
-04-24 04:49:23.694 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.694 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.694 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
-04-24 04:49:23.694 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
-04-24 04:49:23.695  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.695 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/playbackstate): {"msgId":"playbackstate","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueItemId":"-1","state":"0","position":"0","actions":"0","speed":"0.0","reserveSlotPrev":"0","reserveSlotNext":"0","customActions":[]}}
-04-24 04:49:23.695 21125 32247 I smedia  : SMediaStateValidator.updateMessageData()
-04-24 04:49:23.700 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/queue): {"msgId":"queue","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","queueTitle":"","queueCount":"0","queue":[]}}
-04-24 04:49:23.700 21125 32247 I smedia  : SMediaMessageManager.requestedMessage(7d27f402): false
-04-24 04:49:23.702 21125 32247 W Settings: Setting all_sound_off has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
-04-24 04:49:23.702 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(, /w_media_control/volume): {"msgId":"volume","msgOriginType":"1","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"appId":"","appTitle":"","appVersion":"","playbackType":"1","volume":"5","headsetConnected":"0","btOutput":"0","maxVolume":"15","warningVolume":"10","dndModeOn":"0","muteAllSoundsOn":"0"}}
-04-24 04:49:23.702 21125 32247 I smedia  : SMediaSessionHelper.findActiveAndSendInfo(): [false]
-04-24 04:49:23.706 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20957,/w_media_control/oneui_version, size=81]): {"msgId":"oneui_version","msgType":"0","deviceId":"7d27f402","data":{"appId":""}}
-04-24 04:49:23.709 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(7d27f402, /w_media_control/oneui_version): {"msgId":"oneui_version","msgOriginType":"0","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"oneUIVersion":""}}
-04-24 04:49:23.709 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20958,/w_media_control/oneui_version, size=81]): {"msgId":"oneui_version","msgType":"0","deviceId":"7d27f402","data":{"appId":""}}
-04-24 04:49:23.709 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/mediametadata): S(23775)
-04-24 04:49:23.710 21125 32247 I smedia  : SMediaMessageManager.preSendToNode(7d27f402, /w_media_control/oneui_version): {"msgId":"oneui_version","msgOriginType":"0","msgType":"3","result":"0","reason":"0","deviceId":"c8317ad1","data":{"oneUIVersion":""}}
-04-24 04:49:23.711 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.712 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.712 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
-04-24 04:49:23.712  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.712 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
-04-24 04:49:23.714 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.714 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.714 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
-04-24 04:49:23.714 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 393
-04-24 04:49:23.715  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.712 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/volume): S(23776)
-04-24 04:49:23.716 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/mediametadata): S(23777)
-04-24 04:49:23.717 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.717 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.717 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
-04-24 04:49:23.717  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.717 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 454
-04-24 04:49:23.717 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/playbackstate): S(23778)
-04-24 04:49:23.719  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.720 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.720 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.721 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
-04-24 04:49:23.721  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.721 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 449
-04-24 04:49:23.721 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/volume): S(23779)
-04-24 04:49:23.722  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.722 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.722  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.722 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.722 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.723 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.724 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.724 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.725 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 296
-04-24 04:49:23.725  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.725 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 296
-04-24 04:49:23.725 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/oneui_version): S(23780)
-04-24 04:49:23.728 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.728 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.729 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 297
-04-24 04:49:23.729 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 297
-04-24 04:49:23.729  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.729 21125 21125 I smedia  : SMediaMessageManager.sendMessageToNode(7d27f402, /w_media_control/oneui_version): S(23781)
-04-24 04:49:23.730  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.758  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.759 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.759 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.760 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.760 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.770  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.770 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.770 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.770 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.771 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.796  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.797 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.797 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
-04-24 04:49:23.797 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
-04-24 04:49:23.798  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.798 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.798 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.798 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.798 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.799  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.799 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.799 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.800 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.800 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.800 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.802  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.807  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.808 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.808 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.808 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.809 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.817 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20959,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
-04-24 04:49:23.817 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[2]
-04-24 04:49:23.832  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.833 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.833 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 300
-04-24 04:49:23.833 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 300
-04-24 04:49:23.833  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.834 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.835 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 4
-04-24 04:49:23.835 21600 21982 D BluetoothSocket: write: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.835 21600 21982 D BluetoothSocket: write out: android.net.LocalSocketImpl$SocketOutputStream@168ae83 length: 37
-04-24 04:49:23.835  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=14
-04-24 04:49:23.838 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.838 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.838 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.838 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.839 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.842  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.843 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.843 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.843 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.843 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.848  6673  7145 I bt_stack: [INFO:rfc_port_fsm.cc(106)] rfc_port_sm_execute: BD_ADDR=645df4_1, PORT=22, STATE=4, EVENT=4
-04-24 04:49:23.849 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 4
-04-24 04:49:23.849 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 37
-04-24 04:49:23.849 21600 21986 D BluetoothSocket: read out:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf ret: 37
-04-24 04:49:23.850 21600 21986 D BluetoothSocket: read in:  android.net.LocalSocketImpl$SocketInputStream@dfdafdf len: 4
-04-24 04:49:23.856 21125 32247 I smedia  : SMediaController.handleReceivedMessage(MessageEventParcelable[20960,/w_media_control/request_data, size=119]): {"msgId":"request_data","msgType":"4","deviceId":"7d27f402","data":{"request":[],"timeOut":"60000","watchState":"off"}}
-04-24 04:49:23.856 21125 32247 I smedia  : SMediaRequestDataValidator.handleMessage(off): saved[0]
-04-24 04:49:28.190  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[ 0:10]: 25916833 25915756 25888730 25917051 25876000 25908269 25893256 25900859 25915743 25858910
-04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[10:20]: 25849666 25855820 25851500 25872679 25883423 25868974 25842474 25868115 25848487 25884859
-04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[20:30]: 25946512 25886653 25886948 25895602 26087820 25919910 25915397 25922230 25906333 25897320
-04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[30:40]: 25899346 26038397 25905448 25904128 25907679 25888833 25914743 25911961 25902833 25891602
-04-24 04:49:30.851 21331 21358 D Benchmark: timeNs[40:50]: 25865923 25857602 25851012 25848743 25868461 25891269 25915102 25845653 25837115 25852256
-04-24 04:49:31.242 21331 21358 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
-04-24 04:49:31.243 21331 21358 D Benchmark: Set 21358 (Bench thread) to priority -8. Was -20, now -8
-04-24 04:49:31.243 21331 21358 D Benchmark: Set 21342 (Jit) to priority 9. Was -15, now 9
-04-24 04:49:31.243 21331 21358 D Benchmark: Warmup: t=8.022, iter=305, fastAvg=25899350, slowAvg=51293416
-04-24 04:49:31.243 21331 21358 I PerfettoCapture: Stopping perfetto.
-04-24 04:49:31.287 32218 32218 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-24 04:49:31.290 21331 21358 D Benchmark: kill -TERM command output -
-04-24 04:49:31.296  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=341)
-04-24 04:49:31.302  5403  5403 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-24 04:49:31.308  6298  6338 I System.out: Broadcasting: Intent { act=com.sec.intent.action.SARDEVICE_CP flg=0x10000000 (has extras) }
-04-24 04:49:31.318  5635  5845 D MotionRecognitionService: [SAR]  onReceive : SARDEVICE_CP, callAction = off deviceID = 3 slot = 1 device_ext = 0
-04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] id : 0 cmd :off
-04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disableSensor : true
-04-24 04:49:31.319  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 8589934592 , state: false
-04-24 04:49:31.331  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:49:31.331  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:49:31.331  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensorsetTunerGrip 17179869184 , state: false
-04-24 04:49:31.342  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
-04-24 04:49:31.342  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
-04-24 04:49:31.342  5635  5845 D SensorService: Calling activate off 33554443
-04-24 04:49:31.343  5262  5262 I SensorsGrip: [grip_sensor] enable: GripSensor: enable handle = 11 en = 0
-04-24 04:49:31.344  5262  5262 E SensorsGrip: [grip_sensor] enable: mEnabled : 0, first_grip_event : 1
-04-24 04:49:31.346  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@7995f8c
-04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6 Grip sensor disable channel 0 : 0 , channel 1 : 0
-04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disableSensor : true
-04-24 04:49:31.347  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 8589934592 , state: false
-04-24 04:49:31.356  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 8589934592 : false
-04-24 04:49:31.356  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 8589934592, state : false
-04-24 04:49:31.356  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for subsetTunerGrip 17179869184 , state: false
-04-24 04:49:31.366  5635  5845 D MotionRecognitionService: [SAR] set setTransmitPowerExt  value : 17179869184 : false
-04-24 04:49:31.366  5635  5845 I MotionRecognitionService: [SAR] tunerGrip is 17179869184, state : false
-04-24 04:49:31.367  5635  5845 D SensorService: Calling activate off 33554450
-04-24 04:49:31.369  5262  5262 I SensorsGrip: [grip_sensor_sub] enable: GripSensor: enable handle = 18 en = 0
-04-24 04:49:31.370  5262  5262 E SensorsGrip: [grip_sensor_sub] enable: mEnabled : 0, first_grip_event : 1
-04-24 04:49:31.370  5635  5845 D SensorManager: unregisterListener :: com.samsung.android.gesture.MotionRecognitionSAR$GripSensorWrapper$1@eb90dbb
-04-24 04:49:31.371  5635  5845 I MotionRecognitionService: [SAR] A96T3X6_SUB Grip sensor for sub disable channel 0 : 0 , channel 1 : 0
-04-24 04:49:31.371  5635  5845 I MotionRecognitionService: [SAR] id : 1 cmd :off
-04-24 04:49:31.372  6298  7000 I System.out: Broadcast completed: result=0
-04-24 04:49:31.386  5635  8927 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=156553940 mSleepTimeMs=29790536 mIdleTimeMs=8355181 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[38825, 33682, 22215, 348, 136354],mRxTimeMs=84334787}]}
-04-24 04:49:31.421  4388  4388 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-24 04:49:31.428  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=342)
-04-24 04:49:31.428  5403  5403 I perfetto:  probes_producer.cc:396 Producer stop (id=343)
-04-24 04:49:31.462 32218 32218 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-24 04:49:31.466  5413  5413 I perfetto: ng_service_impl.cc:2426 Tracing session 86 ended, total sessions:0
-04-24 04:49:31.954 21331 21358 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=32218)] to die
-04-24 04:49:32.095 21331 21358 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace.
-04-24 04:49:32.197 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueInlineDouble_2023-04-24-02-49-31.perfetto-trace
-04-24 04:49:32.250  8333 31988 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:49:32.285  5635  7327 D SyncManager: userId - 0 auto - true
-04-24 04:49:32.412 21331 21358 I Benchmark: Wolf3dBenchmark.valueInlineDouble[Metric (timeNs) results: median 2.5891435833333336E7, min 2.5837115333333332E7, max 2.6087820666666668E7, standardDeviation: 43994.457027732926, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=3
-04-24 04:49:32.421 21331 21358 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:49:32.444 21331 21358 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-24 04:49:32.469  5635  5714 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-24 04:49:32.487 21600 31774 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 156554 [CONTEXT service_id=218 ]
-04-24 04:49:32.504 21600 31592 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 50 uptime_millis: 50 exec_start_elapsed_seconds: 156554 [CONTEXT service_id=218 ]
-04-24 04:49:32.545  5635  8927 D SyncManager: userId - 0 auto - true
-04-24 04:49:32.546  8333 32289 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-24 04:49:32.563  8333 32184 W MediaProvider: isAppCloneUserPair for user 0: false
-04-24 04:49:32.602  5635  8927 D SyncManager: userId - 0 auto - true
-04-24 04:49:32.610 21331 21358 I TestRunner: finished: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-27 20:21:39.788 26164 26187 I TestRunner: started: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
+04-27 20:21:39.791 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 20:21:39.791 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 20:21:39.796 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 20:21:39.796 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 20:21:39.796 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.Wolf3dBenchmark#valueInlineDouble --
+04-27 20:21:39.797 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 20:21:39.797 26164 26187 D PerfettoCapture: Recording perfetto trace
+04-27 20:21:39.801  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:21:39.802  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:21:39.815  8350 16312 W libc    : Access denied finding property "sys.perf.boostopt"
+04-27 20:21:39.815  4899  4899 E audit   : type=1400 audit(1682619699.807:17884): avc:  denied  { read } for  pid=8350 comm="binder:8350_5" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=21617 scontext=u:r:mediaprovider_app:s0:c140,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 20:21:39.815  4899  4899 E audit   : type=1300 audit(1682619699.807:17884): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=780bc712f8 a2=88000 a3=0 items=0 ppid=4924 pid=8350 auid=4294967295 uid=10396 gid=10396 euid=10396 suid=10396 fsuid=10396 egid=10396 sgid=10396 fsgid=10396 tty=(none) ses=4294967295 comm="binder:8350_5" exe="/system/bin/app_process64" subj=u:r:mediaprovider_app:s0:c140,c257,c512,c768 key=(null)
+04-27 20:21:39.815  4899  4899 E audit   : type=1327 audit(1682619699.807:17884): proctitle="com.google.android.providers.media.module"
+04-27 20:21:39.817  6734 28907 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 29239 [CONTEXT service_id=218 ]
+04-27 20:21:39.855 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 20:21:39.885 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 20:21:39.890 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  177 ms
+04-27 20:21:39.891 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 20:21:39.892 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 20:21:39.895 26084 26123 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=d811a2a7-a4f7-47ae-a291-6ddf5f14b5e2, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 20:21:39.896 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 20:21:39.959  5429  8526 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 20:21:39.961  5429  8526 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 20:21:39.962  5429  8526 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 20:21:40.044 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
+04-27 20:21:40.044 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 20:21:40.253 32680 32680 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 20:21:40.255  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 40, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 20:21:40.256  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=79)
+04-27 20:21:40.303 26164 26187 I PerfettoCapture: Perfetto output - 32680
+04-27 20:21:40.303 26164 26187 I PerfettoCapture: EXITCODE=0
+04-27 20:21:40.440 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 32680.
+04-27 20:21:40.488  6734 32221 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 688 uptime_millis: 688 exec_start_elapsed_seconds: 29239 [CONTEXT service_id=218 ]
+04-27 20:21:40.505  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:21:40.529  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 20:21:40.564 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 20:21:41.327 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
+04-27 20:21:41.327 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
+04-27 20:21:41.383 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 7344(701KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2959KB/9103KB, paused 504us,156us total 54.525ms
+04-27 20:21:41.502  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:21:41.504  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=73, status=2
+04-27 20:21:41.506  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:21:41.508  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:21:41.517  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:21:41.517  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:21:41.518  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:21:41.519  5878  5878 W PowerUI : Plug reason
+04-27 20:21:41.519  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:21:41.519  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:21:41.520  5878  5878 W PowerUI : Plug reason
+04-27 20:21:41.520  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:21:41.520  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:21:41.521  5878  7746 D SecPowerUI.Notification: dismissing low battery warning: level=73
+04-27 20:21:41.521  5878  7746 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:21:41.521  5878  7746 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=73, currentBatteryMode=0, chargingTime=2614000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:21:41.524  5878  7746 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:21:41.524  5878  7746 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:21:41.526  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2614000 / mChargingTime : 2606000
+04-27 20:21:41.526  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:21:41.526  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=73, currentBatteryMode=0, chargingTime=2606000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:21:41.537  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:21:41.537  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:21:41.537  5429  8535 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:21:41.543  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:21:41.543  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:21:41.544  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:21:41.544  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:41.545  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:41.545  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:41.546  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:41.547  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:21:41.549  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=73, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2606000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:21:41.549  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:21:41.552  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:21:41.560  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:21:41.561  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:21:41.562  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:21:41.562  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=73,plugged=2,health=2,maxChargingWattage=-1,remaining=2606000ultraFastCharger=1}
+04-27 20:21:41.562  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:21:41.562  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:21:41.563  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:21:41.563  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:21:41.752  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:21:41.752  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:21:41.753  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:21:41.754  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:21:41.755  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:21:41.765  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:41.766  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:41.766  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:41.766  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:41.954  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:21:41.995  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:41.996  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:41.996  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:41.997  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:42.012  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:42.012  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:42.012  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:42.012  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:42.051  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:42.052  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:42.052  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:42.052  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:42.118  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:42.118  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:42.119  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:42.119  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:42.125  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:42.125  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:42.125  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:42.125  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:42.454  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3907, isSameBssidAndFreq true
+04-27 20:21:42.459  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:21:42.459  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:21:42.461  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:21:45.487  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3908, isSameBssidAndFreq true
+04-27 20:21:45.493  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:21:45.495  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:21:45.499  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:21:46.186  5429  5665 D ConnectivityService: reportNetworkActive, notify 0 listeners
+04-27 20:21:46.548  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2606000 / mChargingTime : 2606000
+04-27 20:21:46.548  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
+04-27 20:21:46.601  5429 32724 D TrafficStats: tagSocket(869) with statsTag=0xffffffff, statsUid=-1
+04-27 20:21:46.607  5429 32724 D TrafficStats: tagSocket(892) with statsTag=0xffffffff, statsUid=-1
+04-27 20:21:46.813  5429 32724 D WifiConnectivityMonitor.DnsThread:  [|212] []
+04-27 20:21:46.815  5429  5738 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 212
+04-27 20:21:46.815  5429  5736 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-27 20:21:46.815  5429  5736 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-27 20:21:46.815  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 20:21:46.815  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 25 0
+04-27 20:21:46.816  5429  5736 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-27 20:21:46.816  5429  7167 V WifiProfileShare.Caster: update wips network, size: 0
+04-27 20:21:46.816  5429  7167 D WifiProfileShare: nearby scanning settings run
+04-27 20:21:46.817  5429  7167 D WifiProfileShare: network score provider settings enabled
+04-27 20:21:46.817  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 26 25 0
+04-27 20:21:46.817  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 20:21:46.817  5429  7167 I WifiProfileShare.Caster: current network type: 0, score: [26, 25, 0]
+04-27 20:21:46.818  5429  7167 V WifiProfileShare.Cache: update network score 0c:8d:db:**:**:7d
+04-27 20:21:46.818  5429  7167 D WifiProfileShare.ScanMatcher: getMcfDataList size:20
+04-27 20:21:46.818  5429  7167 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:e8:51:71, qosData:78 after:type:QOS, pBssid:e8:51:71, qosData:78
+04-27 20:21:46.821  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 20:21:46.821  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 20:21:46.822  5429  7167 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-27 20:21:46.822  5429  7167 D WifiProfileShare.MCF: success update QosData !
+04-27 20:21:46.823  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 20:21:46.824  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 20:21:46.824  5429  7167 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:20
+04-27 20:21:48.523  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3909, isSameBssidAndFreq true
+04-27 20:21:48.530  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:21:48.532  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:21:48.535  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:21:49.795  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 20:21:51.446  4899  4899 E audit   : type=1400 audit(1682619711.439:17885): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 20:21:51.446  4899  4899 E audit   : type=1300 audit(1682619711.439:17885): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=77702bf7d0 a2=768437b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-27 20:21:51.446  4899  4899 E audit   : type=1327 audit(1682619711.439:17885): proctitle="system_server"
+04-27 20:21:51.557  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3910, isSameBssidAndFreq true
+04-27 20:21:51.563  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:21:51.563  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:21:51.565  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:21:51.622  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 20:21:51.624  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
+04-27 20:21:51.627  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=73, status=2
+04-27 20:21:51.628  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
+04-27 20:21:51.629  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:21:51.631  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
+04-27 20:21:51.631  5878  5878 W PowerUI : Plug reason
+04-27 20:21:51.631  5878  5878 W PowerUI : Skip charging animation - by plug status
+04-27 20:21:51.631  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
+04-27 20:21:51.631  5878  5878 W PowerUI : Plug reason
+04-27 20:21:51.631  5878  5878 W PowerUI : Skip charging sound - by plug status
+04-27 20:21:51.632  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
+04-27 20:21:51.633  5878  7763 D SecPowerUI.Notification: dismissing low battery warning: level=73
+04-27 20:21:51.634  5878  7763 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
+04-27 20:21:51.634  5878  7763 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=73, currentBatteryMode=0, chargingTime=2606000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:21:51.635  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
+04-27 20:21:51.636  5878  7763 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
+04-27 20:21:51.636  5878  7763 E SecPowerUI.Notification: no saved value, so we do nothing !!
+04-27 20:21:51.642  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2606000 / mChargingTime : 2603000
+04-27 20:21:51.642  5878  5878 D SecPowerUI.Notification: showChargingNotification()
+04-27 20:21:51.642  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=73, currentBatteryMode=0, chargingTime=2603000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
+04-27 20:21:51.653  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
+04-27 20:21:51.654  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+04-27 20:21:51.654  5429  8526 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
+04-27 20:21:51.655  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
+04-27 20:21:51.655  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
+04-27 20:21:51.656  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+04-27 20:21:51.657  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:51.659  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:51.660  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:51.661  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
+04-27 20:21:51.662  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
+04-27 20:21:51.664  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=73, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2603000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
+04-27 20:21:51.664  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
+04-27 20:21:51.666  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
+04-27 20:21:51.673  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
+04-27 20:21:51.673  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
+04-27 20:21:51.674  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
+04-27 20:21:51.674  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=73,plugged=2,health=2,maxChargingWattage=-1,remaining=2603000ultraFastCharger=1}
+04-27 20:21:51.675  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:21:51.675  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:21:51.675  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
+04-27 20:21:51.675  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
+04-27 20:21:51.876  5785  5785 I FreeformContainer: [SmartPopupViewService] onNotificationPosted: StatusBarNotification(pkg=com.android.systemui user=UserHandle{-1} id=2131428972 tag=charging_state key=-1|com.android.systemui|2131428972|charging_state|10054: Notification(channel=CHR shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0xa color=0xff5075a1 category=sys groupKey=CHARGING vis=PUBLIC semFlags=0x0 semPriority=0 semMissedCount=0))
+04-27 20:21:51.876  5785  5785 V FreeformContainer: [SmartPopupViewService] isSmartPopupViewTarget: com.android.systemui is not enabled
+04-27 20:21:51.877  6323  6323 I Launcher.NotificationListener: onNotificationPosted : com.android.systemui number : 0
+04-27 20:21:51.879  9209  9748 I NotificationPipeline: Processing new notification: -1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:21:51.880  9209  9748 W Notification4Heart_NB: NotificationBridgeCallback.onNotificationPosted-Ignored package : [-1] com.android.systemui
+04-27 20:21:51.894  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:51.894  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:51.894  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:51.894  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:52.080  5878  5878 D BubblesManager: onEntryUpdated : shouldBubbleUp=false ,key=-1|com.android.systemui|2131428972|charging_state|10054
+04-27 20:21:52.119  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:52.119  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:52.120  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:52.120  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:52.133  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:52.134  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:52.134  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:52.134  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:52.168  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:52.168  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:52.168  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:52.168  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:52.216  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 0, real height = 333
+04-27 20:21:52.216  5878  5878 I FaceWidgetPositionAlgorithm: getClockContainerHeight() supplier = 270, bottom margin = 63, real height = 333
+04-27 20:21:52.216  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() height = 0 container Visibility = 8, isValid = false, mIsDozing = false, fraction = 1.0, source = 0, target = 0
+04-27 20:21:52.216  5878  5878 I FaceWidgetPositionAlgorithm: getMediaContainerHeight() supplier = 0
+04-27 20:21:52.219  5878  5878 D PluginAODManager: onNotificationInfoUpdated() 0
+04-27 20:21:52.219  5878  5878 I AODNotificationManager: updateVisibleNotifications: 0
+04-27 20:21:52.219  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:52.219  5878  5878 I a       : updateStatusBarNotifications: open
+04-27 20:21:53.946 26164 26187 D Benchmark: timeNs[ 0:10]: 22830173 22755625 22753913 22753115 22798240 22723644 22736875 22733240 22796788 22722000
+04-27 20:21:53.946 26164 26187 D Benchmark: timeNs[10:20]: 22748134 22798413 22744529 22746942 22755586 22720278 22702500 22758605 22758211 22743221
+04-27 20:21:53.946 26164 26187 D Benchmark: timeNs[20:30]: 22750365 22710980 22735836 22736490 22728154 22731894 22719846 22709048 22735259 22725740
+04-27 20:21:53.946 26164 26187 D Benchmark: timeNs[30:40]: 22695663 22821634 22811788 22740730 22788000 22794355 22738269 22751019 22752327 22744971
+04-27 20:21:53.946 26164 26187 D Benchmark: timeNs[40:50]: 22747288 22744307 22756452 22693846 22760288 22754144 22754211 22753432 22725923 22717952
+04-27 20:21:54.403 26164 26187 D Benchmark: allocationCount[ 0:10]: 0 0 0 0 0
+04-27 20:21:54.403 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
+04-27 20:21:54.403 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
+04-27 20:21:54.403 26164 26187 D Benchmark: Warmup: t=8.009, iter=347, fastAvg=22741118, slowAvg=42579096
+04-27 20:21:54.404 26164 26187 I PerfettoCapture: Stopping perfetto.
+04-27 20:21:54.460 32680 32680 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 20:21:54.463 26164 26187 D Benchmark: kill -TERM command output -
+04-27 20:21:54.475  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=157)
+04-27 20:21:54.478  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 20:21:54.545  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 20:21:54.551  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=158)
+04-27 20:21:54.552  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=159)
+04-27 20:21:54.570 32680 32680 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 20:21:54.574  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 40 ended, total sessions:0
+04-27 20:21:54.576 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-27-18-21-54.perfetto-trace.
+04-27 20:21:54.587  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3911, isSameBssidAndFreq true
+04-27 20:21:54.590  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 20:21:54.591  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 20:21:54.592  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 20:21:54.659 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/Wolf3dBenchmark_valueInlineDouble_2023-04-27-18-21-54.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/Wolf3dBenchmark_valueInlineDouble_2023-04-27-18-21-54.perfetto-trace
+04-27 20:21:54.690  8350 32641 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:21:54.715  5429  8526 D SyncManager: userId - 0 auto - true
+04-27 20:21:54.785 26164 26187 I Benchmark: Wolf3dBenchmark.valueInlineDouble[Metric (timeNs) results: median 2.2745956625E7, min 2.2693846E7, max 2.2830173E7, standardDeviation: 30365.671962527293, Metric (allocationCount) results: median 0.0, min 0.0, max 0.0, standardDeviation: 0.0]count=4
+04-27 20:21:54.788 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:21:54.795 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 20:21:54.824  5429  8535 D SyncManager: userId - 0 auto - true
+04-27 20:21:54.825  8350 32638 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 20:21:54.849  8350   304 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 20:21:54.864  5429  8535 D SyncManager: userId - 0 auto - true
+04-27 20:21:54.872 26164 26187 I TestRunner: finished: valueInlineDouble(org.jetbrains.android_benchmark.Wolf3dBenchmark)
