@@ -1,3 +1,5 @@
+@file:Suppress("NOTHING_TO_INLINE")
+
 package long_pack.rendering
 
 import AbstractGraphics
@@ -20,83 +22,68 @@ import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.sin
 
-operator fun Array<IntArray>.get(location: LocationF): Int = this[location.data.shr(32).toInt()][location.data.toInt()]
+operator fun Array<IntArray>.get(location: LocationF): Int = this[location.x.toInt()][location.y.toInt()]
 
 fun canMove(point: Point2f): Boolean =
-    worldMap[Float.fromBits(point.data.shr(32).toInt()).toInt()][Float.fromBits(point.data.toInt()).toInt()] == 0
+    worldMap[point.x.toInt()][point.y.toInt()] == 0
+
+private inline fun Point2f.encodeToLong() = x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF)
+private inline fun Vector2f.encodeToLong() = x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF)
+private inline fun LocationF.encodeToLong() = x.toLong().shl(32) or y.toLong().and(0xFFFFFFFF)
+private inline fun Long.decodeToPoint() = Point2f(Float.fromBits(shr(32).toInt()), Float.fromBits(toInt()))
+private inline fun Long.decodeToVector() = Vector2f(Float.fromBits(shr(32).toInt()), Float.fromBits(toInt()))
+private inline fun Long.decodeToLocation() = LocationF(shr(32).toInt(), toInt())
 
 @JvmInline
-value class Point2f private constructor(@PublishedApi internal val data: Long) {
-    constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF))
-    operator fun plus(vector: Vector2f): Point2f =
-        Point2f(
-            Float.fromBits(data.shr(32).toInt()) + Float.fromBits(vector.data.shr(32).toInt()),
-            Float.fromBits(data.toInt()) + Float.fromBits(vector.data.toInt())
-        )
+value class Point2f(val x: Float, val y: Float) {
+    operator fun plus(vector: Vector2f): Long =
+        Point2f(x + vector.x, y + vector.y).encodeToLong()
 
-    operator fun minus(vector: Vector2f): Point2f =
-        Point2f(
-            Float.fromBits(data.shr(32).toInt()) - Float.fromBits(vector.data.shr(32).toInt()),
-            Float.fromBits(data.toInt()) - Float.fromBits(vector.data.toInt())
-        )
+    operator fun minus(vector: Vector2f): Long =
+        Point2f(x - vector.x, y - vector.y).encodeToLong()
 
-    fun toLocation(): LocationF =
-        LocationF(Float.fromBits(data.shr(32).toInt()).toInt(), Float.fromBits(data.toInt()).toInt())
+    fun toLocation(): Long =
+        LocationF(x.toInt(), y.toInt()).encodeToLong()
 
-    fun toVector(): Vector2f =
-        Vector2f(Float.fromBits(data.shr(32).toInt()), Float.fromBits(data.toInt()))
+    fun toVector(): Long =
+        Vector2f(x, y).encodeToLong()
 }
 
 @JvmInline
-value class Vector2f private constructor(@PublishedApi internal val data: Long) {
+value class Vector2f(val x: Float, val y: Float) {
+    fun rotate(angle: Float): Long =
+        Vector2f(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle)).encodeToLong()
 
-    constructor(x: Float, y: Float) : this(x.toRawBits().toLong().shl(32) or y.toRawBits().toLong().and(0xFFFFFFFF))
-    
-    fun rotate(angle: Float): Vector2f =
-        Vector2f(
-            Float.fromBits(data.shr(32).toInt()) * cos(angle) - Float.fromBits(data.toInt()) * sin(angle),
-            Float.fromBits(data.shr(32).toInt()) * sin(angle) + Float.fromBits(data.toInt()) * cos(angle))
+    operator fun times(factor: Float): Long =
+        Vector2f(x * factor, y * factor).encodeToLong()
 
-    operator fun times(factor: Float): Vector2f =
-        Vector2f(Float.fromBits(data.shr(32).toInt()) * factor, Float.fromBits(data.toInt()) * factor)
+    operator fun plus(vector: Vector2f): Long =
+        Vector2f(x + vector.x, y + vector.y).encodeToLong()
 
-    operator fun plus(vector: Vector2f): Vector2f =
-        Vector2f(
-            Float.fromBits(data.shr(32).toInt()) + Float.fromBits(vector.data.shr(32).toInt()),
-            Float.fromBits(data.toInt()) + Float.fromBits(vector.data.toInt())
-        )
+    operator fun minus(vector: Vector2f): Long =
+        Vector2f(x - vector.x, y - vector.y).encodeToLong()
 
-    operator fun minus(vector: Vector2f): Vector2f =
-        Vector2f(
-            Float.fromBits(data.shr(32).toInt()) - Float.fromBits(vector.data.shr(32).toInt()),
-            Float.fromBits(data.toInt()) - Float.fromBits(vector.data.toInt())
-        )
+    fun abs(): Long =
+        Vector2f(abs(x), abs(y)).encodeToLong()
 
-    fun abs(): Vector2f =
-        Vector2f(abs(Float.fromBits(data.shr(32).toInt())), abs(Float.fromBits(data.toInt())))
+    fun xProjection(): Long =
+        Vector2f(x, 0.0f).encodeToLong()
 
-    fun xProjection(): Vector2f =
-        Vector2f(Float.fromBits(data.shr(32).toInt()), 0.0f)
-
-    fun yProjection(): Vector2f =
-        Vector2f(0.0f, Float.fromBits(data.toInt()))
+    fun yProjection(): Long =
+        Vector2f(0.0f, y).encodeToLong()
 }
 
 @JvmInline
-value class LocationF private constructor(@PublishedApi internal val data: Long) {
-    constructor(x: Int, y: Int) : this(x.toLong().shl(32) or y.toLong().and(0xFFFFFFFF))
-    fun toVector(): Vector2f =
-        Vector2f(data.shr(32).toInt().toFloat(), data.toInt().toFloat())
+value class LocationF(val x: Int, val y: Int) {
+    fun toVector(): Long =
+        Vector2f(x.toFloat(), y.toFloat()).encodeToLong()
 
-    fun step(vector: Vector2f): LocationF =
-        LocationF(
-            Float.fromBits((toVector() + vector).data.shr(32).toInt()).toInt(),
-            Float.fromBits((toVector() + vector).data.toInt()).toInt()
-        )
+    fun step(vector: Vector2f): Long =
+        LocationF((toVector().decodeToVector() + vector).decodeToVector().x.toInt(), (toVector().decodeToVector() + vector).decodeToVector().y.toInt()).encodeToLong()
 }
 
-operator fun Float.div(vector: Vector2f): Vector2f =
-    Vector2f(this / Float.fromBits(vector.data.shr(32).toInt()), this / Float.fromBits(vector.data.toInt()))
+operator fun Float.div(vector: Vector2f): Long =
+    Vector2f(this / vector.x, this / vector.y).encodeToLong()
 
 class MyPanelF : JPanel(), KeyListener, MouseListener {
     private var startTime: Long = System.nanoTime()
@@ -158,22 +145,30 @@ class MyPanelF : JPanel(), KeyListener, MouseListener {
         val rotSpeed = frameTime * .3f //the constant value is in radians/second
         when (e.keyCode) {
             KeyEvent.VK_UP -> {
-                if(canMove(pos + (dir * moveSpeed).xProjection())) pos += (dir * moveSpeed).xProjection()
-                if(canMove(pos + (dir * moveSpeed).yProjection())) pos += (dir * moveSpeed).yProjection()
+                if(canMove((pos + (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint())) {
+                    pos = (pos + (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint()
+                }
+                if(canMove((pos + (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint())) {
+                    pos = (pos + (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint()
+                }
             }
             KeyEvent.VK_DOWN -> {
-                if(canMove(pos - (dir * moveSpeed).xProjection())) pos -= (dir * moveSpeed).xProjection()
-                if(canMove(pos - (dir * moveSpeed).yProjection())) pos -= (dir * moveSpeed).yProjection()
+                if(canMove((pos - (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint())) {
+                    pos = (pos - (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint()
+                }
+                if(canMove((pos - (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint())) {
+                    pos = (pos - (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint()
+                }
             }
             KeyEvent.VK_LEFT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(rotSpeed)
-                plane = plane.rotate(rotSpeed)
+                dir = dir.rotate(rotSpeed).decodeToVector()
+                plane = plane.rotate(rotSpeed).decodeToVector()
             }
             KeyEvent.VK_RIGHT -> {
                 //both camera direction and camera plane must be rotated
-                dir = dir.rotate(-rotSpeed)
-                plane = plane.rotate(-rotSpeed)
+                dir = dir.rotate(-rotSpeed).decodeToVector()
+                plane = plane.rotate(-rotSpeed).decodeToVector()
             }
         }
         repaint()
@@ -201,14 +196,22 @@ fun heavyActionFloat(graphics: AbstractGraphics) {
     val rotSpeed = frameTime * .3f //the constant value is in radians/second
     repeat(MicrobenchmarkRotations) {
         drawScene(pos, dir, plane, graphics)
-        if(canMove(pos + (dir * moveSpeed).xProjection())) pos += (dir * moveSpeed).xProjection()
-        if(canMove(pos + (dir * moveSpeed).yProjection())) pos += (dir * moveSpeed).yProjection()
+        if(canMove((pos + (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint())) {
+            pos = (pos + (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint()
+        }
+        if(canMove((pos + (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint())) {
+            pos = (pos + (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint()
+        }
         drawScene(pos, dir, plane, graphics)
-        if(canMove(pos - (dir * moveSpeed).xProjection())) pos -= (dir * moveSpeed).xProjection()
-        if(canMove(pos - (dir * moveSpeed).yProjection())) pos -= (dir * moveSpeed).yProjection()
+        if(canMove((pos - (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint())) {
+            pos = (pos - (dir * moveSpeed).decodeToVector().xProjection().decodeToVector()).decodeToPoint()
+        }
+        if(canMove((pos - (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint())) {
+            pos = (pos - (dir * moveSpeed).decodeToVector().yProjection().decodeToVector()).decodeToPoint()
+        }
         drawScene(pos, dir, plane, graphics)
-        dir = dir.rotate(rotSpeed)
-        plane = plane.rotate(rotSpeed)
+        dir = dir.rotate(rotSpeed).decodeToVector()
+        plane = plane.rotate(rotSpeed).decodeToVector()
         drawScene(pos, dir, plane, graphics)
     }
 }
@@ -217,9 +220,9 @@ private fun drawScene(pos: Point2f, dir: Vector2f, plane: Vector2f, g: AbstractG
     for (x in 0 until screenWidth) {
         //calculate ray position and direction
         val cameraX = 2 * x / screenHeight.toFloat() - 1 //x-coordinate in camera space
-        val rayDir = dir + plane * cameraX
+        val rayDir = (dir + (plane * cameraX).decodeToVector()).decodeToVector()
         //which box of the map we're in
-        var mapLocation = pos.toLocation()
+        var mapLocation = pos.toLocation().decodeToLocation()
 
         //length of ray from current position to next x or y-side
         var sideDist: Vector2f
@@ -235,7 +238,7 @@ private fun drawScene(pos: Point2f, dir: Vector2f, plane: Vector2f, g: AbstractG
         //stepping further below works. So the values can be computed as below.
         // Division through zero is prevented, even though technically that's not
         // needed in C++ with IEEE 754 floating point values.
-        val deltaDist = 1.0f / rayDir.abs()
+        val deltaDist = (1.0f / rayDir.abs().decodeToVector()).decodeToVector()
 
         var perpWallDist: Float
 
@@ -245,35 +248,30 @@ private fun drawScene(pos: Point2f, dir: Vector2f, plane: Vector2f, g: AbstractG
         var hit = 0 //was there a wall hit?
         var side = 0 //was a NS or a EW wall hit?
         //calculate step and initial sideDist
-        if (Float.fromBits(rayDir.data.shr(32).toInt()) < 0) {
+        if (rayDir.x < 0) {
             step = Vector2f((-1).toFloat(), 0.0f)
-            sideDist =
-                (pos.toVector() - mapLocation.toVector()).xProjection() * Float.fromBits(deltaDist.data.shr(32).toInt())
+            sideDist = ((pos.toVector().decodeToVector() - mapLocation.toVector().decodeToVector()).decodeToVector().xProjection().decodeToVector() * deltaDist.x).decodeToVector()
         } else {
             step = Vector2f(1.toFloat(), 0.0f)
-            sideDist = (mapLocation.toVector() + Vector2f(1.0f, 0.0f) - pos.toVector()).xProjection() * Float.fromBits(
-                deltaDist.data.shr(32).toInt()
-            )
+            sideDist = (((mapLocation.toVector().decodeToVector() + Vector2f(1.0f, 0.0f)).decodeToVector() - pos.toVector().decodeToVector()).decodeToVector().xProjection().decodeToVector() * deltaDist.x).decodeToVector()
         }
-        if (Float.fromBits(rayDir.data.toInt()) < 0) {
-            step += Vector2f(0.0f, (-1).toFloat())
-            sideDist += (pos.toVector() - mapLocation.toVector()).yProjection() * Float.fromBits(deltaDist.data.toInt())
+        if (rayDir.y < 0) {
+            step = (step + Vector2f(0.0f, (-1).toFloat())).decodeToVector()
+            sideDist = (sideDist + ((pos.toVector().decodeToVector() - mapLocation.toVector().decodeToVector()).decodeToVector().yProjection().decodeToVector() * deltaDist.y).decodeToVector()).decodeToVector()
         } else {
-            step += Vector2f(0.0f, 1.toFloat())
-            sideDist += (mapLocation.toVector() + Vector2f(0.0f, 1.0f) - pos.toVector()).yProjection() * Float.fromBits(
-                deltaDist.data.toInt()
-            )
+            step = (step + Vector2f(0.0f, 1.toFloat())).decodeToVector()
+            sideDist = (sideDist + (((mapLocation.toVector().decodeToVector() + Vector2f(0.0f, 1.0f)).decodeToVector() - pos.toVector().decodeToVector()).decodeToVector().yProjection().decodeToVector() * deltaDist.y).decodeToVector()).decodeToVector()
         }
         //perform DDA
         while (hit == 0) {
             //jump to next map square, either in x-direction, or in y-direction
-            if (Float.fromBits(sideDist.data.shr(32).toInt()) < Float.fromBits(sideDist.data.toInt())) {
-                sideDist += deltaDist.xProjection()
-                mapLocation = mapLocation.step(step.xProjection())
+            if (sideDist.x < sideDist.y) {
+                sideDist = (sideDist + deltaDist.xProjection().decodeToVector()).decodeToVector()
+                mapLocation = mapLocation.step(step.xProjection().decodeToVector()).decodeToLocation()
                 side = 0
             } else {
-                sideDist += deltaDist.yProjection()
-                mapLocation = mapLocation.step(step.yProjection())
+                sideDist = (sideDist + deltaDist.yProjection().decodeToVector()).decodeToVector()
+                mapLocation = mapLocation.step(step.yProjection().decodeToVector()).decodeToLocation()
                 side = 1
             }
             //Check if ray has hit a wall
@@ -285,10 +283,7 @@ private fun drawScene(pos: Point2f, dir: Vector2f, plane: Vector2f, g: AbstractG
         //for size == 1, but can be simplified to the code below thanks to how sideDist and deltaDist are computed:
         //because they were left scaled to |rayDir|. sideDist is the entire length of the ray above after the multiple
         //steps, but we subtract deltaDist once because one step more into the wall was taken above.
-        perpWallDist =
-            if (side == 0) Float.fromBits(
-                (sideDist - deltaDist).data.shr(32).toInt()
-            ) else Float.fromBits((sideDist - deltaDist).data.toInt())
+        perpWallDist = if (side == 0) (sideDist - deltaDist).decodeToVector().x else (sideDist - deltaDist).decodeToVector().y
 
         //Calculate height of line to draw on screen
         val lineHeight = (screenHeight / perpWallDist).toInt()

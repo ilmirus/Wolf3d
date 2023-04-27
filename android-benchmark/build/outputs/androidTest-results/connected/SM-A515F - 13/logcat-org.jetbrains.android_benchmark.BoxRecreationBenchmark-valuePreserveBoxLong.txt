@@ -1,140 +1,550 @@
-04-27 20:14:32.792 26164 26187 I TestRunner: started: valuePreserveBoxLong(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
-04-27 20:14:32.795 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-27 20:14:32.795 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
-04-27 20:14:32.799 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-27 20:14:32.800 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-27 20:14:32.800 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#valuePreserveBoxLong --
-04-27 20:14:32.800 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-27 20:14:32.800 26164 26187 D PerfettoCapture: Recording perfetto trace
-04-27 20:14:32.847 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
-04-27 20:14:33.051 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
-04-27 20:14:33.052 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-27 20:14:33.221 29617 29617 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-27 20:14:33.230  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 28, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-27 20:14:33.235  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=55)
-04-27 20:14:33.237  5429  5749 D BrightnessHandler: inject brightness = 173.0, Brightness: 0.6781932
-04-27 20:14:33.240  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 173
-04-27 20:14:33.242  5429  5749 D BrightnessHandler: inject brightness = 173.0, Brightness: 0.6781932
-04-27 20:14:33.244  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 173
-04-27 20:14:33.246  5047  5047 I SehLight: lcd : 173+
-04-27 20:14:33.249  5047  5047 I SehLight: lcd : 173-
-04-27 20:14:33.253  5429  5749 D BrightnessHandler: inject brightness = 171.0, Brightness: 0.6710588
-04-27 20:14:33.257  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 171
-04-27 20:14:33.258  5429  5749 D BrightnessHandler: inject brightness = 171.0, Brightness: 0.6710588
-04-27 20:14:33.259  4993  4993 I SensorsHub: LightSensor::injectSensorData: brightness 171
-04-27 20:14:33.260  5047  5047 I SehLight: lcd : 171+
-04-27 20:14:33.261  5047  5047 I SehLight: lcd : 171-
-04-27 20:14:33.271 26164 26187 I PerfettoCapture: Perfetto output - 29617
-04-27 20:14:33.271 26164 26187 I PerfettoCapture: EXITCODE=0
-04-27 20:14:33.292  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:14:33.315 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-27 20:14:33.315 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-27 20:14:33.316 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-27 20:14:33.318  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-27 20:14:33.334  5429  8532 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-27 20:14:33.336  5429  8532 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-27 20:14:33.337  5429  8532 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-27 20:14:33.349  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-27 20:14:33.397 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 29617.
-04-27 20:14:33.403 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
-04-27 20:14:33.489 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-27 20:14:33.489 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-27 20:14:33.491 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
-04-27 20:14:33.491 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
-04-27 20:14:33.497 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  129 ms
-04-27 20:14:33.497 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-27 20:14:33.498 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-27 20:14:33.502 26084 26136 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=938629da-f554-495e-8e7f-98bf413c252f, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-27 20:14:33.520 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-27 20:14:33.526 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 235641(6029KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2931KB/9075KB, paused 384us,112us total 35.145ms
-04-27 20:14:33.568  5429  8531 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-27 20:14:33.570  5429  8531 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-27 20:14:33.571  5429  8531 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-27 20:14:34.946  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3766, isSameBssidAndFreq true
-04-27 20:14:34.952  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.222 ms / 36.000 Mbps (72 / 0.000 / 2.000)
-04-27 20:14:35.119  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2747000 / mChargingTime : 2747000
-04-27 20:14:35.119  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
-04-27 20:14:37.981  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3767, isSameBssidAndFreq true
-04-27 20:14:37.986  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.222 ms / 36.000 Mbps (72 / 0.000 / 2.000)
-04-27 20:14:37.987  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-27 20:14:37.990  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-27 20:14:38.889 26164 26187 D Benchmark: timeNs[ 0:10]: 590 623 617 586 812 601 751 603 613 575
-04-27 20:14:38.889 26164 26187 D Benchmark: timeNs[10:20]: 694 583 655 768 599 793 616 620 593 673
-04-27 20:14:38.889 26164 26187 D Benchmark: timeNs[20:30]: 589 621 600 626 603 706 599 657 599 647
-04-27 20:14:38.889 26164 26187 D Benchmark: timeNs[30:40]: 631 597 600 709 615 658 594 632 656 601
-04-27 20:14:38.889 26164 26187 D Benchmark: timeNs[40:50]: 596 642 748 599 660 630 651 592 602 612
-04-27 20:14:38.955 26164 26187 W _benchmark.test: Suspending all threads took: 8.229ms
-04-27 20:14:39.040 26164 26187 D Benchmark: allocationCount[ 0:10]: 10 10 9 9 10
-04-27 20:14:39.040 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
-04-27 20:14:39.040 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
-04-27 20:14:39.040 26164 26187 D Benchmark: Warmup: t=2.570, iter=910044, fastAvg=3865, slowAvg=3977
-04-27 20:14:39.040 26164 26187 I PerfettoCapture: Stopping perfetto.
-04-27 20:14:39.082 29617 29617 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-27 20:14:39.085 26164 26187 D Benchmark: kill -TERM command output -
-04-27 20:14:39.094  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=109)
-04-27 20:14:39.096  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-27 20:14:39.152  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-27 20:14:39.159  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=110)
-04-27 20:14:39.161  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=111)
-04-27 20:14:39.331 29617 29617 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-27 20:14:39.337  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 28 ended, total sessions:0
-04-27 20:14:39.700 26164 26187 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=29617)] to die
-04-27 20:14:39.808 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-18-14-39.perfetto-trace.
-04-27 20:14:39.886 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-18-14-39.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-18-14-39.perfetto-trace
-04-27 20:14:39.937  8350 29587 W MediaProvider: isAppCloneUserPair for user 0: false
-04-27 20:14:39.980  5429  6113 D SyncManager: userId - 0 auto - true
-04-27 20:14:40.036 26164 26187 I Benchmark: BoxRecreationBenchmark.valuePreserveBoxLong[Metric (timeNs) results: median 616.857766783906, min 575.3562400958529, max 812.9487496618096, standardDeviation: 56.30710621696167, Metric (allocationCount) results: median 10.0, min 9.99996134966954, max 10.00003865033046, standardDeviation: 3.8650330459688576E-5]count=25873
-04-27 20:14:40.039 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-27 20:14:40.044 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-27 20:14:40.054  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:14:40.056  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:14:40.067  6734 29396 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28820 [CONTEXT service_id=218 ]
-04-27 20:14:40.090  5429  8531 D SyncManager: userId - 0 auto - true
-04-27 20:14:40.092  6734 29038 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 55 uptime_millis: 55 exec_start_elapsed_seconds: 28820 [CONTEXT service_id=218 ]
-04-27 20:14:40.096  8350 29678 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-27 20:14:40.112  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-04-27 20:14:40.115  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=71, status=2
-04-27 20:14:40.117  8350 29031 W MediaProvider: isAppCloneUserPair for user 0: false
-04-27 20:14:40.118  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
-04-27 20:14:40.118  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
-04-27 20:14:40.122  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
-04-27 20:14:40.124  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
-04-27 20:14:40.127  5878  5878 I PowerUI : mBootCompleted = true |  mFullyConnected = true
-04-27 20:14:40.128  5878  5878 W PowerUI : Plug reason
-04-27 20:14:40.128  5878  5878 W PowerUI : Skip charging animation - by plug status
-04-27 20:14:40.128  5878  5878 D PowerUI : priorPlugType = 2 mPlugType = 2 priorBatteryStatus = 2 mBatteryStatus = 2
-04-27 20:14:40.128  5878  5878 W PowerUI : Plug reason
-04-27 20:14:40.128  5878  5878 W PowerUI : Skip charging sound - by plug status
-04-27 20:14:40.128  5878  5878 I PowerUI : oldMisalign : false, curMisalign : false
-04-27 20:14:40.131  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2747000 / mChargingTime : 2740000
-04-27 20:14:40.131  5878  5878 D SecPowerUI.Notification: showChargingNotification()
-04-27 20:14:40.131  5878  5878 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2740000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
-04-27 20:14:40.131  5878  6757 D SecPowerUI.Notification: dismissing low battery warning: level=71
-04-27 20:14:40.131  5878  6757 D SecPowerUI.Notification: updateNotification mWarning=false mPlaySound=false
-04-27 20:14:40.131  5878  6757 D SecPowerUI.Notification: SecBatteryStatsSnapshot{batteryLevel=71, currentBatteryMode=0, chargingTime=2740000, chargingType=11, batteryHealth=2, automaticTestMode=false, isHiccupState=false}
-04-27 20:14:40.132  5878  6757 D SecPowerUI.Notification: 1. restoreScreenTimeOut - saved_value : :
-04-27 20:14:40.132  5878  6757 E SecPowerUI.Notification: no saved value, so we do nothing !!
-04-27 20:14:40.135  5429  6255 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = 0
-04-27 20:14:40.136  5429  6255 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
-04-27 20:14:40.136  5429  6255 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: converting userId from USER_ALLto 0
-04-27 20:14:40.138  5878  5878 D PowerUI : Battery swelling mode - priorBatterySwellingMode = 0 mBatterySwellingMode = 0 mBatteryStatus = 2
-04-27 20:14:40.138  5878  5878 I PowerUI : mBatteryMiscEvent = 65536
-04-27 20:14:40.138  5878  5878 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
-04-27 20:14:40.139  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
-04-27 20:14:40.139  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
-04-27 20:14:40.139  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
-04-27 20:14:40.139  5878  5878 D SamsungBatteryMeterDrawable: onBatteryLevelChanged isSomethingChanged: false
-04-27 20:14:40.139  5878  5878 D KeyguardUpdateMonitor: handleBatteryUpdate
-04-27 20:14:40.142  5878  5878 D KeyguardSecIndicationController: addIndicationTimeout() returned - unlocking
-04-27 20:14:40.142  5878  5878 D KeyguardSecIndicationController: addIndication() returned - unlocking
-04-27 20:14:40.143  5878  5878 D KeyguardSecIndicationPolicy:  remove Item pos = DEFAULT, type =           OWNER_INFO
-04-27 20:14:40.143  5878  5878 D KeyguardSecIndicationController: addBatteryAndOwnerInfoIndication() battery status = BatteryStatus{status=2,level=71,plugged=2,health=2,maxChargingWattage=-1,remaining=2740000ultraFastCharger=1}
-04-27 20:14:40.143  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
-04-27 20:14:40.144  5878  5878 I AODBatteryManager: saveBatteryData : AOD BatteryData [mBatteryLevel=71, mBatteryStatus=CHARGING, mBatteryPlugType=USB, mBatteryPlugged=true, mRemainingChargeTime=2740000, mBatteryChargingType=2, mBatteryChargerType=FAST, mBatteryOnline=NOT_DEFINED, mBatterySwellingMode=NONE, mBatteryProtectMode=false]
-04-27 20:14:40.144  5878  5878 I ChargingInfoManager: updateChargingInfo: newState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false], oldState = AOD ChargingInfo [mState=BATTERY_AND_REMAIN_TIME, mIsCharging=true, mIsFullyCharged=false, mIsBatteryProtectMode=false]
-04-27 20:14:40.145  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
-04-27 20:14:40.145  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
-04-27 20:14:40.145  5878  5878 I ChargingInfoView: handleMessage: MSG_SHOW_CHARGING_INFO
-04-27 20:14:40.145  5878  5878 I ChargingInfoView: updateContents: BATTERY_AND_REMAIN_TIME
-04-27 20:14:40.168  5429  8532 D SyncManager: userId - 0 auto - true
-04-27 20:14:40.173 26164 26187 I TestRunner: finished: valuePreserveBoxLong(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+04-27 22:20:44.243 21539 21563 I TestRunner: started: valuePreserveBoxLong(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+04-27 22:20:44.245 21539 21539 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 22:20:44.245 21539 21539 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 22:20:44.250 21539 21563 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 22:20:44.250 21539 21563 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 22:20:44.251 21539 21563 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#valuePreserveBoxLong --
+04-27 22:20:44.251 21539 21563 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 22:20:44.251 21539 21563 D PerfettoCapture: Recording perfetto trace
+04-27 22:20:44.287 21539 21563 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 22:20:44.501 21539 21563 I PerfettoCapture: Perfetto output file cleanup -
+04-27 22:20:44.502 21539 21563 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 22:20:44.670 26666 26666 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 22:20:44.672  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 118, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 22:20:44.674  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=235)
+04-27 22:20:44.727 21539 21563 I PerfettoCapture: Perfetto output - 26666
+04-27 22:20:44.727 21539 21563 I PerfettoCapture: EXITCODE=0
+04-27 22:20:44.743  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 22:20:44.751  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:44.778  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 22:20:44.779 24151 24151 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 22:20:44.779 24151 24151 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 22:20:44.786 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 22:20:44.794  5429  6683 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 22:20:44.796  5429  6683 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 22:20:44.798  5429  6683 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 22:20:44.865 21539 21563 I PerfettoCapture: Perfetto tracing started successfully with pid 26666.
+04-27 22:20:44.892 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008202 indexCount: 1705 sourceCount: 1705
+04-27 22:20:44.971 21539 21563 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 22:20:44.972 21539 21563 D Benchmark: Set 21563 (Bench thread) to priority -20. Was -8, now -20
+04-27 22:20:44.973 21539 21563 D Benchmark: Set 21548 (Jit) to priority -15. Was 9, now -15
+04-27 22:20:44.999 24151 24224 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 22:20:45.002  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6262, isSameBssidAndFreq true
+04-27 22:20:45.006 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  157 ms
+04-27 22:20:45.006 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 22:20:45.007 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 22:20:45.008  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.194 ms / 41.143 Mbps (72 / 0.000 / 1.750)
+04-27 22:20:45.010 24151 24205 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=7dbd3092-f705-4ce7-851a-a1a47ed60715, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 22:20:45.013 21539 21563 I _benchmark.test: Explicit concurrent copying GC freed 217480(5612KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2935KB/9079KB, paused 300us,124us total 40.170ms
+04-27 22:20:45.019 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 22:20:45.120  5429  6683 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 22:20:45.121  5429  6683 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 22:20:45.122  5429  6683 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 22:20:46.394  4899  4899 E audit   : type=1400 audit(1682626846.387:20077): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
+04-27 22:20:46.395  4899  4899 E audit   : type=1300 audit(1682626846.387:20077): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=77704a31d0 a2=773f43b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
+04-27 22:20:46.395  4899  4899 E audit   : type=1327 audit(1682626846.387:20077): proctitle="system_server"
+04-27 22:20:46.819  6865  8672 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1077) acc({sim(3)=15, sec(6)=1, sim2(4)=1, google(2)=81, org.telegram.messenger(236)=99, com.whatsapp(14)=39}) calls([logtype:100 cnt:867, logtype:200 cnt:5, logtype:300 cnt:495, logtype:1000 cnt:608, logtype:1150 cnt:161]) Iso(RS) uId(0) ]
+04-27 22:20:46.819  6865  8672 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,2 ,14 ,236]=1, [2 ,14 ,236]=32, [3]=15, [14]=1, [4]=1, [2 ,14]=4, [2 ,2]=2, [2]=33, [6 ,14]=1, [2 ,236]=6, [236]=60}) ]
+04-27 22:20:46.819  6865  8672 I ContactsProvider_EventLog: cp_s: [ cnt({acore(6865)=1}) ]
+04-27 22:20:46.819  6865  8672 I ContactsProvider_EventLog: cp_s: [PROFILE con(1) dat(1) acc({vnd.sec.contact.phone=1}) ] [SAPROFILE ]
+04-27 22:20:46.819  6865  8672 I ContactsProvider_EventLog: cp_s: [STATE R(T) ]
+04-27 22:20:47.096  4923  5022 W doh::connection: Connection driver returns some Err: Closed
+04-27 22:20:48.025  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6263, isSameBssidAndFreq true
+04-27 22:20:48.029  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 22:20:48.031  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 22:20:48.035  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 22:20:51.058  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6264, isSameBssidAndFreq true
+04-27 22:20:51.062  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 22:20:51.065  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 22:20:51.066  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 22:20:52.256  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
+04-27 22:20:53.047  4993  5068 I SensorsHub: context 6 0 5 1,1,55,0,1,3, 36393019960515
+04-27 22:20:53.048  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(6) = 1, 1, 55, 0, 1, 3
+04-27 22:20:53.049  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :6], AP_WAKEUP
+04-27 22:20:53.049  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 6
+04-27 22:20:53.050  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 1, 3,
+04-27 22:20:53.050  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:53.050  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:53.051  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 1, 3]
+04-27 22:20:53.051  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:6
+04-27 22:20:53.052  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:53.052  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:53.052  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:53.053  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:53.053  5429  6058 I SLocation: SemContextParser -  packet Length : 1packet total size : 6
+04-27 22:20:53.053  5429  6058 I SLocation: SemContextParser - packet : [3]
+04-27 22:20:53.053  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 1
+04-27 22:20:53.053  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 1
+04-27 22:20:53.056  5429  6058 D SLocation: PositionManager - last location time exceed threshold 322252 / 30000
+04-27 22:20:53.057  5429  6058 D SLocation: GeopointGeofenceManager - getLastLocation is abnromal!
+04-27 22:20:53.057  5429  6058 D SLocation: LocationProviderStatus - try to update provider status (GPS/NLP)
+04-27 22:20:53.058  5429  6058 D SLocation: LocationProviderStatus - set isGpsOn : true, isNlpOn : true
+04-27 22:20:53.058  5429  6058 D SLocation: LocationProviderStatus - gps & nlp status not changed
+04-27 22:20:53.058  5429  6058 D SLocation: SContentManager - IsNetworkAvailable = true
+04-27 22:20:53.058  5429  6058 D SLocation: PositionManager - requestLocationUpdates(1) : NETWORK_PROVIDER
+04-27 22:20:53.058  5429  6058 D SLocation: NLPManager - requestUpdate - NLP
+04-27 22:20:53.077  5429  6058 D LocationManagerService: network provider added registration from 1000/android[SLocationService]/A22C6A3C -> Request[@0 BALANCED, WorkSource{1000 android}]
+04-27 22:20:53.104  7025  7069 I RequestManager_FLP: request from system, change packageName from system to system(slocation)
+04-27 22:20:53.105  7025  7069 E RequestManager_FLP: [LocationManager] Location request A22C6A3C(Listener) network interval=0ms (min=0ms) from system(slocation) (1000_FINE_unknown_false_foreground)
+04-27 22:20:53.156  6734 11121 W SystemServiceRegistry: No service published for: wifirtt
+04-27 22:20:53.196  5778  5778 I wpa_supplicant: nl80211: Drv Event 33 (NL80211_CMD_TRIGGER_SCAN) received for wlan0
+04-27 22:20:53.199  5778  5778 I wpa_supplicant: wlan0: nl80211: Scan trigger
+04-27 22:20:53.225  6180  6405 I PhoneStateTracker<1>: onCellInfoChanged: xxxxx
+04-27 22:20:53.230  6180  6405 I ImsCallSessionManager: onCellInfoChanged, phoneId: 1
+04-27 22:20:53.232  6180  6405 I RegiMgr-Handler: handleMessage: EVENT_CELL_INFO_CHANGED
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>: updatePani RegisterTask[1][mProfile=Telenor Serbia IMS, mRegistrationRat=13, mPdnType=11, mState=REGISTERED, mObject=UserAgent - :
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  total records=1665
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[0]: time=04-27 21:54:23.473 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[1]: time=04-27 21:58:57.053 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[2]: time=04-27 21:58:57.073 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[3]: time=04-27 21:58:59.935 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[4]: time=04-27 21:58:59.937 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[5]: time=04-27 22:04:26.021 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[6]: time=04-27 22:04:26.035 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[7]: time=04-27 22:04:28.786 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[8]: time=04-27 22:04:28.788 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[9]: time=04-27 22:09:55.067 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[10]: time=04-27 22:09:55.083 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[11]: time=04-27 22:09:58.275 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[12]: time=04-27 22:09:58.278 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[13]: time=04-27 22:15:17.207 processed=ReadyState org=RegisteredState dest=<null> what=9(0x9)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[14]: time=04-27 22:15:17.525 processed=RegisteredState org=RegisteredState dest=<null> what=8(0x8)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[15]: time=04-27 22:15:17.987 processed=RegisteredState org=RegisteredState dest=<null> what=1000(0x3e8)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[16]: time=04-27 22:15:24.239 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[17]: time=04-27 22:15:24.241 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[18]: time=04-27 22:15:27.799 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>:  rec[19]: time=04-27 22:15:27.805 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>: curState=RegisteredState
+04-27 22:20:53.247  6180  6405 I RegiMgr<1>: , mReason=, mPcscfHostname=null, mDeregiReason=41]
+04-27 22:20:53.252  6180  6405 I PaniGenerator<1>: generate: subId=2, network=13
+04-27 22:20:53.254  6180  6405 I PaniGenerator<1>: generate: network=13, fallbackPlmn=22001
+04-27 22:20:53.256  6180  6405 I PdnController<1>: getAllCellInfo mNeedCellLocationUpdate : false
+04-27 22:20:53.258  6180  6405 I PaniGenerator: generate: change to NW PLMN(22001)
+04-27 22:20:53.259  6180  6405 I PaniGenerator: setLkcForLastPani: No Last PANI header for Telenor Serbia IMS
+04-27 22:20:53.260  6180  6405 I UserAgent<1>: updatePani: pani=3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012ba5017a703, updatePani: lastPani=
+04-27 22:20:53.260  6180  6504 I StackIF : updatePani: 5 pani: [3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012ba5017a703]
+04-27 22:20:53.262  6180  6504 I SECIMSJ : [0939]> 140
+04-27 22:20:53.266  6180  6405 I RegiMgr<1>: tryRegister:
+04-27 22:20:53.267  6180  6509 I [IMS6.0]: IMS_onResponse()
+04-27 22:20:53.268  6180  6405 I RegiMgr<0>: RegisterTask(s): Megafon VoLTE (IDLE)
+04-27 22:20:53.269  6180  6405 I RegiMgr<1>: RegisterTask(s): Telenor Serbia IMS (REGISTERED, rat = 13, service = [mmtel-video, smsip, mmtel]), Global GC RCS (IDLE)
+04-27 22:20:53.270  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:53.270  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:53.270  6180  6405 I RegisterTask: isSuspended: mSuspended(false) mSuspendByIrat(false)
+04-27 22:20:53.270  6180  6405 I RegiMgr<1>: [Global GC RCS|IDLE] checkForTryRegister id: 1003
+04-27 22:20:53.270  6180  6405 I RegiMgr : isPdnConnected: false, PdnType: 1
+04-27 22:20:53.273  6180  6509 I StackIF : processMessage 2
+04-27 22:20:53.273  6180  6509 I StackIF : Processing Response
+04-27 22:20:53.273  6180  6509 I SECIMSJ : [0939]< 600
+04-27 22:20:53.273  6180  6509 I StackIF : processResponse: reqId 600
+04-27 22:20:53.273  6180  6509 I StackIF : processResponse: handle 5 result 0 reason 0
+04-27 22:20:53.276  6180  6405 I PdnController: getDefaultNetworkBearer:  WIFI
+04-27 22:20:53.281  6180  6405 I PdnController: isWifiConnected: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: true, roaming: false]
+04-27 22:20:53.282  6180  6405 I RegiMgr-Utils<1>: findBestNetwork: WIFI needWifiNetwork = true
+04-27 22:20:53.285  6180  6405 I RegiGvnBase<1>: isReadyToDualRegister : true
+04-27 22:20:53.291  6180  6405 I RegiMgr<1>: [Global GC RCS|IDLE] checkInitialRegistrationIsReady: APM ON [false], Roamimg [false]
+04-27 22:20:53.291  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:53.291  6180  6405 I ImsProfile: isRttSupportByCallApp : false ttyType : 1
+04-27 22:20:53.291  6180  6405 I RegiMgr-Utils<1>: getPriorityRegiedTask : isPriority  High? true
+04-27 22:20:53.295  6180  6405 I RegiGvnBase: checkRegiStatus: getState()=IDLE mIsUpdateRegistering=false
+04-27 22:20:53.295  6180  6405 I RegiMgr<1>: getTelephonyCallStatus:
+04-27 22:20:53.302  6180  6405 I ConfigProvider: query uri:xxxxx
+04-27 22:20:53.309  6180  6405 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
+04-27 22:20:53.320  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:53.323  6180  6405 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
+04-27 22:20:53.332  6180  6405 I ConfigTrigger<1>: isWaitAutoConfig:
+04-27 22:20:53.332  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:53.335  6180  6405 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
+04-27 22:20:53.335  6180  6405 I RegiMgr-Utils: selectPdnType: rat=18pdn=1
+04-27 22:20:53.335  6180  6405 I RegiMgr<1>: getServiceForNetwork: network 18
+04-27 22:20:53.336  6180  6405 I RegiMgr<1>: getServiceForNetwork: service {options, chatbot-communication, ft_http, im, euc, gls}
+04-27 22:20:53.346  6180  6405 I ConfigTrigger<1>: isValidAcsVersion:
+04-27 22:20:53.346  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:53.349  6180  6405 I ConfigProvider: query uri:xxxxx
+04-27 22:20:53.355  6180  6405 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
+04-27 22:20:53.357  5429  6683 D SecContentProvider2: query(), uri = 18 selection = isRCSEnabled
+04-27 22:20:53.357  5429  6683 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCS
+04-27 22:20:53.358  5429  6683 E PhoneRestrictionPolicy: getEmergencyCall >>false
+04-27 22:20:53.358  5429  6683 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCSForSimSlot1
+04-27 22:20:53.358  5429  6683 E PhoneRestrictionPolicy: getEmergencyCall >>false
+04-27 22:20:53.360  6180  6405 I ConfigTrigger<1>: RCS switch: true, version: 0, isRcsAcsCompleted: true
+04-27 22:20:53.360  6180  6405 I ConfigTrigger<1>: version is improper : 0
+04-27 22:20:53.362  6180  6405 I RegiGvnBase: isVideoCallEnabled: Enable
+04-27 22:20:53.362  6180  6405 I RegiMgr<1>: getServiceForNetwork: filtered service []
+04-27 22:20:53.362  6180  6405 I RegiMgr<1>: Global GC RCS: no ims service for current rat18
+04-27 22:20:53.365  6180  6405 I PdnController: slot[1]: stopPdnConnectivity: network 1, callback is null
+04-27 22:20:53.365  6180  6405 E PdnController<1>: requestStopNetwork: callback not found
+04-27 22:20:53.366  6180  6405 E #IMSCR  : 04-27 22:20:53 0x1101000B:1,FILTERED ALL:1
+04-27 22:20:53.366  6180  6405 I PdnController: handleMessage: what 107
+04-27 22:20:53.366  6180  6405 I PdnController: slot[1]: requestStopNetwork: network 1, callback is null
+04-27 22:20:54.048  5429  5665 D ConnectivityService: reportNetworkActive, notify 0 listeners
+04-27 22:20:54.070  6734 26566 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.reportNetworkConnectivity(ConnectivityManager.java:3390)] [anzl.i(:com.google.android.gms@231312044@23.13.12 (190400-519946965):0)] [anyz.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):57)] [anzz.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)] [dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)] [abix.c(:com.google.android.gms@231312044@23.13.12 (190400-519946965):6)] [abix.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [abod.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):0)] [java.lang.Thread.run(Thread.java:1012)]
+04-27 22:20:54.074  6734 26566 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 37164046]
+04-27 22:20:54.078  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:54.094  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6265, isSameBssidAndFreq true
+04-27 22:20:54.097  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 22:20:54.098  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 22:20:54.100  6734 26566 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+04-27 22:20:54.104  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.139 ms / 57.600 Mbps (72 / 0.000 / 1.250)
+04-27 22:20:54.121  6734 26513 I AlarmManager: setExactAndAllowWhileIdle [name: FcmRetry type: 2 triggerAtMillis: 36514081]
+04-27 22:20:54.121  6734 25105 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+04-27 22:20:54.126  6734 25105 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 37164099]
+04-27 22:20:54.141  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:54.243  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:54.621  5429  6416 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=36394592 mSleepTimeMs=22359089 mIdleTimeMs=991471 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[94, 42, 77, 43, 72],mRxTimeMs=10723275}]}
+04-27 22:20:55.207  5429 26715 D TrafficStats: tagSocket(926) with statsTag=0xffffffff, statsUid=-1
+04-27 22:20:55.210  5429 26715 D TrafficStats: tagSocket(935) with statsTag=0xffffffff, statsUid=-1
+04-27 22:20:55.414  5429 26715 D WifiConnectivityMonitor.DnsThread:  [|207] []
+04-27 22:20:55.415  5429  5738 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 207
+04-27 22:20:55.415  5429  5736 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-27 22:20:55.415  5429  5736 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-27 22:20:55.415  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 22:20:55.415  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 25 0
+04-27 22:20:55.416  5429  5736 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-27 22:20:55.417  5429  7167 V WifiProfileShare.Caster: update wips network, size: 0
+04-27 22:20:55.417  5429  7167 D WifiProfileShare: nearby scanning settings run
+04-27 22:20:55.417  5429  7167 D WifiProfileShare: network score provider settings enabled
+04-27 22:20:55.417  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 25 0
+04-27 22:20:55.417  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 22:20:55.417  5429  7167 I WifiProfileShare.Caster: current network type: 0, score: [30, 25, 0]
+04-27 22:20:55.419  5429  7167 V WifiProfileShare.Cache: update network score 0c:8d:db:**:**:7d
+04-27 22:20:55.419  5429  7167 D WifiProfileShare.ScanMatcher: getMcfDataList size:20
+04-27 22:20:55.419  5429  7167 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:e8:51:71, qosData:78 after:type:QOS, pBssid:e8:51:71, qosData:78
+04-27 22:20:55.422  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 22:20:55.422  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 22:20:55.422  5429  7167 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-27 22:20:55.422  5429  7167 D WifiProfileShare.MCF: success update QosData !
+04-27 22:20:55.423  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 22:20:55.423  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 22:20:55.423  5429  7167 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:20
+04-27 22:20:55.717 21539 21563 D Benchmark: timeNs[ 0:10]: 830 884 833 786 1022 789 1114 842 852 863
+04-27 22:20:55.717 21539 21563 D Benchmark: timeNs[10:20]: 912 850 890 858 924 825 884 790 918 837
+04-27 22:20:55.717 21539 21563 D Benchmark: timeNs[20:30]: 1114 784 836 804 859 805 863 794 974 801
+04-27 22:20:55.717 21539 21563 D Benchmark: timeNs[30:40]: 841 808 829 811 846 822 839 815 840 830
+04-27 22:20:55.717 21539 21563 D Benchmark: timeNs[40:50]: 838 825 832 858 815 829 839 870 786 859
+04-27 22:20:55.766 21539 21563 W _benchmark.test: Suspending all threads took: 9.920ms
+04-27 22:20:55.915  5848  6422 D IpClient/wlan0: interfaceLinkStateChanged: ifindex 11 up
+04-27 22:20:55.914  5429  6416 D WifiNl80211Manager: Scan result ready event
+04-27 22:20:55.917 21539 21563 D Benchmark: allocationCount[ 0:10]: 9 10 10 10 9
+04-27 22:20:55.917 21539 21563 D Benchmark: Set 21563 (Bench thread) to priority -8. Was -20, now -8
+04-27 22:20:55.917 21539 21563 D Benchmark: Set 21548 (Jit) to priority 9. Was -15, now 9
+04-27 22:20:55.917 21539 21563 D Benchmark: Warmup: t=5.409, iter=1391637, fastAvg=3881, slowAvg=3910
+04-27 22:20:55.918 21539 21563 I PerfettoCapture: Stopping perfetto.
+04-27 22:20:55.921  5778  5778 I wpa_supplicant: nl80211: Drv Event 34 (NL80211_CMD_NEW_SCAN_RESULTS) received for wlan0
+04-27 22:20:55.921  5429  6416 D WifiNative: Scan result ready event
+04-27 22:20:55.930  5778  5778 I wpa_supplicant: wlan0: nl80211: New scan results available
+04-27 22:20:55.932  5778  5778 I wpa_supplicant: nl80211: Scan probed for SSID ''
+04-27 22:20:55.933  5778  5778 I wpa_supplicant: nl80211: Scan included frequencies: 2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472 5180 5200 5220 5240 5260 5280 5300 5320 5745 5765 5785 5805 5825
+04-27 22:20:55.961  5429  5708 D SemWifiScanPool: countryCode: RS, count: 16, totalSamples: 17, rate: 94.117645%
+04-27 22:20:55.961  5429  5708 V SemWifiScanPool: updateScanResult, full scan:20 configKeys: 11 pool_bssid:44 pool_configKeys:14
+04-27 22:20:55.961  5429  5708 D WifiConnectivityMonitor: onScanResultUpdated
+04-27 22:20:55.961  5429  5708 D WifiConnectivityMonitor: mMaxScannedCountryCode : RS
+04-27 22:20:55.969 26666 26666 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 22:20:55.970 21539 21563 D Benchmark: kill -TERM command output -
+04-27 22:20:55.981  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=469)
+04-27 22:20:55.984  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 22:20:56.035  5429  8529 V LocationManagerService: network provider registration 10234/com.google.android.as/A56E473A dropped delivery - too close
+04-27 22:20:56.036  5429  8529 V LocationManagerService: passive provider registration 5023/com.samsung.android.networkdiagnostic/4FDF9C6D dropped delivery - too close
+04-27 22:20:56.037  5429  8529 V LocationManagerService: passive provider registration 1000/android[SensorNotificationService]/CC5BC53F dropped delivery - too close
+04-27 22:20:56.038  7025  7069 I NlpMonitor_FLP: monitorNlp, package=system(slocation)/ interval=0
+04-27 22:20:56.044  5429  6058 D SLocation: PositionManager - ActiveonLocationChanged network 1682626855909
+04-27 22:20:56.045  5429  6058 D SLocation: PositionManager - onLocationChanged - filter passive location because it same active location
+04-27 22:20:56.045  5429  6058 D SLocation: ARDistanceBigData - BIGDATA ARD - receive location
+04-27 22:20:56.045  5429  6058 D SLocation: GeopointGeofenceManager - Location reported : fix method = 2 / 13.801
+04-27 22:20:56.045  5429  6058 D SLocation: NLPManager - removeUpdates - NLP
+04-27 22:20:56.046  5429  6058 D LocationManagerService: network provider removed registration from 1000/android[SLocationService]/A22C6A3C
+04-27 22:20:56.046  5429  6058 W Settings: Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-27 22:20:56.049  7025  7069 E RequestManager_FLP: [LocationManager] Location remove A22C6A3C from system
+04-27 22:20:56.049  7025  7069 I LocationRequestData_FLP: Remove in requestInfoList, A22C6A3C / ListSize[network]=1
+04-27 22:20:56.055  5429  6058 D SLocation: SLocationCoreSem - send to coreSem, packet length : 23 / [2, 26, 181, 105, 131, 12, 41, 86, 203, 0, 0, 0, 13, 2, 0, 0, 1, 135, 196, 96, 67, 229, 0]
+04-27 22:20:56.055  5429  6058 D SemContextLocationCoreAttribute: setAttribute() mode : 0 action : 23
+04-27 22:20:56.055  5429  6058 D SemContextService: lock : changeParameters
+04-27 22:20:56.056  5429  6058 D SemContext.CaeProvider.LocationCoreImpl: setAttribute() mode : 0 action : 23
+04-27 22:20:56.056  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:513) - [setProperty 01] Mutex is locked for SLOCATION_RUNNER
+04-27 22:20:56.058  5429  6058 I CAE     : setPropertyValue(SLocationRunner.java:116) - SLocationRunner setProperty header : 2, len : 23
+04-27 22:20:56.058  5429  6058 I CAE     : sendCmdToSensorHub(SensorHubCommManager.java:156) - -63, 23, 55, 2, 26, -75, 105, -125, 12, 41, 86, -53, 0, 0, 0, 13, 2, 0, 0, 1, -121, -60, 96, 67, -27, 0,
+04-27 22:20:56.059  5429  5598 D SensorService: setSContextDataLocked ints length 8 , byte length 26
+04-27 22:20:56.059  5429  5598 D SensorService: setSContextDataLocked 23717c1
+04-27 22:20:56.060  4993  4993 I SensorsHub: SContextSensor::injecet_sensor_data
+04-27 22:20:56.060  4993  4993 D SensorsHub: c1 17 37 02 1a b5 69 83 0c 29 56 cb 00 00 00 0d
+04-27 22:20:56.060  4993  4993 D SensorsHub: 02 00 00 01 87 c4 60 43 e5 00
+04-27 22:20:56.060  4993  4993 D SensorsHub: inject_scontext_data: New ssp_data_injection_fd(28)
+04-27 22:20:56.060  4993  4993 D SensorsHub: SContext Data Injection return 26
+04-27 22:20:56.060  4993  5068 I SensorsHub: context 10 0 9 1,1,55,0,5,2,2,0,0,0, 36396033463244
+04-27 22:20:56.061  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:519) - [setProperty 02] Mutex is unlocked for SLOCATION_RUNNER
+04-27 22:20:56.061  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(10) = 1, 1, 55, 0, 5, 2, 2, 0, 0, 0
+04-27 22:20:56.062  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :10], AP_WAKEUP
+04-27 22:20:56.062  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 10
+04-27 22:20:56.062  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 5, 2, 2, 0, 0, 0,
+04-27 22:20:56.063  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:56.064  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:56.065  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 5, 2, 2, 0, 0, 0]
+04-27 22:20:56.065  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:10
+04-27 22:20:56.066  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:56.067  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:56.067  5429  6058 D SemContextService: unlock : changeParameters
+04-27 22:20:56.067  5429  6058 D SemContextManager:   .changeParameters : listener = com.samsung.android.location.semcontext.a@14d0c89, service=SLocation Core
+04-27 22:20:56.067  5429  6058 D SLocation: ARDistanceLibManager - request distance diff to AR Distance Library
+04-27 22:20:56.067  5429  6058 D SLocation: SLocationCoreSem - send to coreSem, packet length : 1 / [34]
+04-27 22:20:56.068  5429  6058 D SemContextLocationCoreAttribute: setAttribute() mode : 0 action : 23
+04-27 22:20:56.068  5429  6058 D SemContextService: lock : changeParameters
+04-27 22:20:56.068  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:56.068  5429  6058 D SemContext.CaeProvider.LocationCoreImpl: setAttribute() mode : 0 action : 23
+04-27 22:20:56.069  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:513) - [setProperty 01] Mutex is locked for SLOCATION_RUNNER
+04-27 22:20:56.069  5429  6058 I CAE     : setPropertyValue(SLocationRunner.java:116) - SLocationRunner setProperty header : 34, len : 1
+04-27 22:20:56.070  5429  6058 I CAE     : sendCmdToSensorHub(SensorHubCommManager.java:156) - -63, 23, 55, 34,
+04-27 22:20:56.071  5429  5598 D SensorService: setSContextDataLocked ints length 2 , byte length 4
+04-27 22:20:56.071  5429  5598 D SensorService: setSContextDataLocked 223717c1
+04-27 22:20:56.074  4993  4993 I SensorsHub: SContextSensor::injecet_sensor_data
+04-27 22:20:56.074  4993  4993 D SensorsHub: c1 17 37 22
+04-27 22:20:56.075  4993  4993 D SensorsHub: inject_scontext_data: New ssp_data_injection_fd(28)
+04-27 22:20:56.075  4993  4993 D SensorsHub: SContext Data Injection return 4
+04-27 22:20:56.075  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 22:20:56.075  6734 11121 W SystemServiceRegistry: No service published for: wifirtt
+04-27 22:20:56.075  4993  5068 I SensorsHub: context 38 0 37 1,1,55,0,33,33,0,0,0,0,23,89,207,201,119,130,96,0,26,181,23,224,12,41,111,224,0,0,0,8,4,92,139,240,0,0,57,144, 36396048108051
+04-27 22:20:56.076  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(38) = 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 92, -117, -16, 0, 0, 57, -112
+04-27 22:20:56.076  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:519) - [setProperty 02] Mutex is unlocked for SLOCATION_RUNNER
+04-27 22:20:56.076  5429  6058 D SemContextService: unlock : changeParameters
+04-27 22:20:56.077  4993  5068 I SensorsHub: context 10 0 9 1,1,55,0,5,2,34,0,0,0, 36396048132397
+04-27 22:20:56.077  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :38], AP_WAKEUP
+04-27 22:20:56.077  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 38
+04-27 22:20:56.077  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 92, -117, -16, 0, 0, 57, -112,
+04-27 22:20:56.078  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:56.078  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(10) = 1, 1, 55, 0, 5, 2, 34, 0, 0, 0
+04-27 22:20:56.079  5429  6058 D SemContextManager:   .changeParameters : listener = com.samsung.android.location.semcontext.a@14d0c89, service=SLocation Core
+04-27 22:20:56.080  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 46.60878 padding : 0.0, accuracy : 13.801, provider : network, dir : 1
+04-27 22:20:56.080  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:56.080  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 92, -117, -16, 0, 0, 57, -112]
+04-27 22:20:56.081  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:56.081  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:56.082  5429  6058 D SLocation: GeopointReceiver - send geopoint result - 1
+04-27 22:20:56.083  5429  6058 D SLocation: ReceiverPairWithAdaptive - id : 1, dir : 1
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 3811160.5 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 87165.9 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=470)
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 3811584.0 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 4900.8823 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 1919816.0 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 8939.85 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 3811584.0 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.083  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=471)
+04-27 22:20:56.083  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 1803754.6 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.084  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 4934.773 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.084  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 4642.302 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.084  5429  6058 D SLocation: ReceiverPairWithAdaptive - id : 11, dir : 2
+04-27 22:20:56.084  5429  6058 D SLocation: ReceiverPairWithAdaptive - similar fence, do not update geopoint geofence
+04-27 22:20:56.084  5429  6058 D SLocation: LocationProcessingAlgorithm - entry condition - dist : 4454.687 padding : 0.0, accuracy : 13.801, provider : network, dir : 2
+04-27 22:20:56.085  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:56.085  5429  6058 I SLocation: SemContextParser -  packet Length : 5packet total size : 10
+04-27 22:20:56.085  5429  6058 I SLocation: SemContextParser - packet : [2, 2, 0, 0, 0]
+04-27 22:20:56.085  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.085  5429  6058 D SLocation: GeofenceCoreManager - handleCommandCallback - UNKNOWN_CALLBACK 2 SUCCESS
+04-27 22:20:56.087  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:56.087  5429  6416 V LocationManagerService: passive provider registration 5023/com.samsung.android.networkdiagnostic/4FDF9C6D dropped delivery - too close
+04-27 22:20:56.088  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.088  5429  6058 D SLocation: CommonCoreManager - handleCommandCallback - FUNC_TYPE : SET_LOCATION ERROR_CODE : ERROR_NONE
+04-27 22:20:56.088  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:56.088  5429  6058 I SLocation: SemContextParser -  packet Length : 33packet total size : 38
+04-27 22:20:56.088  5429  6416 V LocationManagerService: passive provider registration 1000/android[SensorNotificationService]/CC5BC53F dropped delivery - too close
+04-27 22:20:56.088  5429  6058 I SLocation: SemContextParser - packet : [33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 92, -117, -16, 0, 0, 57, -112]
+04-27 22:20:56.088  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 33
+04-27 22:20:56.088  5429  6058 D SLocation: ARDistanceGetARDistance - convertSensorHubTimeToElapsedTime 1682602717409539973
+04-27 22:20:56.089  5429  6058 D SLocation: ARDistanceGetARDistance - invalid location time from core pvt 1682602717409539973, do not use distance info
+04-27 22:20:56.089  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 33
+04-27 22:20:56.089  5429  6058 D SLocation: PositionManager - PassiveonLocationChanged fused 1682626855910
+04-27 22:20:56.089  5429  6058 W SLocation: PositionManager - do not refresh last location about fused location
+04-27 22:20:56.089  5429  6058 D SLocation: ARDistanceBigData - BIGDATA ARD - receive location
+04-27 22:20:56.089  5429  6058 D SLocation: ARDistanceLibManager - request distance diff to AR Distance Library
+04-27 22:20:56.090  5429  6058 D SLocation: SLocationCoreSem - send to coreSem, packet length : 1 / [34]
+04-27 22:20:56.090  5429  6058 D SemContextLocationCoreAttribute: setAttribute() mode : 0 action : 23
+04-27 22:20:56.090  5429  6058 D SemContextService: lock : changeParameters
+04-27 22:20:56.090  5429  6058 D SemContext.CaeProvider.LocationCoreImpl: setAttribute() mode : 0 action : 23
+04-27 22:20:56.090  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:513) - [setProperty 01] Mutex is locked for SLOCATION_RUNNER
+04-27 22:20:56.090  5429  6058 I CAE     : setPropertyValue(SLocationRunner.java:116) - SLocationRunner setProperty header : 34, len : 1
+04-27 22:20:56.090  5429  6058 I CAE     : sendCmdToSensorHub(SensorHubCommManager.java:156) - -63, 23, 55, 34,
+04-27 22:20:56.091  5429  5598 D SensorService: setSContextDataLocked ints length 2 , byte length 4
+04-27 22:20:56.091  5429  5598 D SensorService: setSContextDataLocked 223717c1
+04-27 22:20:56.091  4993  4993 I SensorsHub: SContextSensor::injecet_sensor_data
+04-27 22:20:56.092  4993  4993 D SensorsHub: c1 17 37 22
+04-27 22:20:56.092  4993  4993 D SensorsHub: inject_scontext_data: New ssp_data_injection_fd(28)
+04-27 22:20:56.092  4993  4993 D SensorsHub: SContext Data Injection return 4
+04-27 22:20:56.092  4993  5068 I SensorsHub: context 38 0 37 1,1,55,0,33,33,0,0,0,0,23,89,207,201,119,130,96,0,26,181,23,224,12,41,111,224,0,0,0,8,4,93,215,248,0,0,57,144, 36396065229897
+04-27 22:20:56.092  4993  5068 I SensorsHub: context 10 0 9 1,1,55,0,5,2,34,0,0,0, 36396065265474
+04-27 22:20:56.093  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(38) = 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 93, -41, -8, 0, 0, 57, -112
+04-27 22:20:56.093  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(10) = 1, 1, 55, 0, 5, 2, 34, 0, 0, 0
+04-27 22:20:56.094  7025  7069 I GmsPassiveListener_FLP: onGmsLocationChanged, provider=fused / speed=0.0 / time=1682626855910 / elapsed=36395882000000
+04-27 22:20:56.097  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:38
+04-27 22:20:56.097  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :10], AP_WAKEUP
+04-27 22:20:56.097  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 10
+04-27 22:20:56.097  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:519) - [setProperty 02] Mutex is unlocked for SLOCATION_RUNNER
+04-27 22:20:56.098  5429  6058 D SemContextService: unlock : changeParameters
+04-27 22:20:56.099  5429  6058 D SemContextManager:   .changeParameters : listener = com.samsung.android.location.semcontext.a@14d0c89, service=SLocation Core
+04-27 22:20:56.099  5778  5778 I wpa_supplicant: nl80211: Drv Event 33 (NL80211_CMD_TRIGGER_SCAN) received for wlan0
+04-27 22:20:56.099  5778  5778 I wpa_supplicant: wlan0: nl80211: Scan trigger
+04-27 22:20:56.099  5429  6058 D SLocation: PositionManager - receive fused location
+04-27 22:20:56.101  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 5, 2, 34, 0, 0, 0,
+04-27 22:20:56.101  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:56.101  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:56.103  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 5, 2, 34, 0, 0, 0]
+04-27 22:20:56.104  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:10
+04-27 22:20:56.104  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :38], AP_WAKEUP
+04-27 22:20:56.104  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 38
+04-27 22:20:56.104  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 93, -41, -8, 0, 0, 57, -112,
+04-27 22:20:56.104  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:56.104  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:56.104  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 93, -41, -8, 0, 0, 57, -112]
+04-27 22:20:56.105  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:38
+04-27 22:20:56.105  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :10], AP_WAKEUP
+04-27 22:20:56.105  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 10
+04-27 22:20:56.105  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 5, 2, 34, 0, 0, 0,
+04-27 22:20:56.105  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:20:56.105  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:20:56.105  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 5, 2, 34, 0, 0, 0]
+04-27 22:20:56.106  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:10
+04-27 22:20:56.113  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:56.113  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:56.113  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:20:56.115  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:56.116  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:56.116  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:56.116  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:56.116  5429  6058 I SLocation: SemContextParser -  packet Length : 5packet total size : 10
+04-27 22:20:56.116  5429  6058 I SLocation: SemContextParser - packet : [2, 34, 0, 0, 0]
+04-27 22:20:56.116  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.116  5429  6058 D SLocation: GeofenceCoreManager - handleCommandCallback - UNKNOWN_CALLBACK 34 SUCCESS
+04-27 22:20:56.117  5429  6058 D SLocation: ARDistanceLibManager - command callback received - CURRENT_LOCATION_REQUEST_DISTANCE ERROR CODE : ERROR_NONE
+04-27 22:20:56.117  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.118  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:56.118  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:56.118  5429  6058 I SLocation: SemContextParser -  packet Length : 33packet total size : 38
+04-27 22:20:56.118  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:20:56.118  5429  6058 I SLocation: SemContextParser - packet : [33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 93, -41, -8, 0, 0, 57, -112]
+04-27 22:20:56.118  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 33
+04-27 22:20:56.118  5429  6058 D SLocation: ARDistanceGetARDistance - convertSensorHubTimeToElapsedTime 1682602717409539973
+04-27 22:20:56.118  5429  6058 D SLocation: ARDistanceGetARDistance - invalid location time from core pvt 1682602717409539973, do not use distance info
+04-27 22:20:56.119  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 33
+04-27 22:20:56.119  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:20:56.119  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:20:56.119  5429  6058 I SLocation: SemContextParser -  packet Length : 5packet total size : 10
+04-27 22:20:56.119  5429  6058 I SLocation: SemContextParser - packet : [2, 34, 0, 0, 0]
+04-27 22:20:56.120  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.120  5429  6058 D SLocation: GeofenceCoreManager - handleCommandCallback - UNKNOWN_CALLBACK 34 SUCCESS
+04-27 22:20:56.120  5429  6058 D SLocation: ARDistanceLibManager - command callback received - CURRENT_LOCATION_REQUEST_DISTANCE ERROR CODE : ERROR_NONE
+04-27 22:20:56.120  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 5
+04-27 22:20:56.124 26666 26666 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 22:20:56.126  6180  6405 I PhoneStateTracker<1>: onCellInfoChanged: xxxxx
+04-27 22:20:56.126  6180  6405 I ImsCallSessionManager: onCellInfoChanged, phoneId: 1
+04-27 22:20:56.126  6180  6405 I RegiMgr-Handler: handleMessage: EVENT_CELL_INFO_CHANGED
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>: updatePani RegisterTask[1][mProfile=Telenor Serbia IMS, mRegistrationRat=13, mPdnType=11, mState=REGISTERED, mObject=UserAgent - :
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  total records=1667
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[0]: time=04-27 21:58:57.073 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[1]: time=04-27 21:58:59.935 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[2]: time=04-27 21:58:59.937 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[3]: time=04-27 22:04:26.021 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[4]: time=04-27 22:04:26.035 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[5]: time=04-27 22:04:28.786 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[6]: time=04-27 22:04:28.788 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[7]: time=04-27 22:09:55.067 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[8]: time=04-27 22:09:55.083 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[9]: time=04-27 22:09:58.275 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[10]: time=04-27 22:09:58.278 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[11]: time=04-27 22:15:17.207 processed=ReadyState org=RegisteredState dest=<null> what=9(0x9)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[12]: time=04-27 22:15:17.525 processed=RegisteredState org=RegisteredState dest=<null> what=8(0x8)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[13]: time=04-27 22:15:17.987 processed=RegisteredState org=RegisteredState dest=<null> what=1000(0x3e8)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[14]: time=04-27 22:15:24.239 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[15]: time=04-27 22:15:24.241 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[16]: time=04-27 22:15:27.799 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[17]: time=04-27 22:15:27.805 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[18]: time=04-27 22:20:53.263 processed=ReadyState org=RegisteredState dest=<null> what=34(0x22)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>:  rec[19]: time=04-27 22:20:53.275 processed=RegisteredState org=RegisteredState dest=<null> what=2000(0x7d0)
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>: curState=RegisteredState
+04-27 22:20:56.128  6180  6405 I RegiMgr<1>: , mReason=, mPcscfHostname=null, mDeregiReason=41]
+04-27 22:20:56.130  6180  6405 I PaniGenerator<1>: generate: subId=2, network=13
+04-27 22:20:56.130  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 118 ended, total sessions:0
+04-27 22:20:56.130  6180  6405 I PaniGenerator<1>: generate: network=13, fallbackPlmn=22001
+04-27 22:20:56.131  6180  6405 I PdnController<1>: getAllCellInfo mNeedCellLocationUpdate : false
+04-27 22:20:56.131  6180  6405 I PaniGenerator: generate: change to NW PLMN(22001)
+04-27 22:20:56.131  6180  6405 I PaniGenerator: setLkcForLastPani: No Last PANI header for Telenor Serbia IMS
+04-27 22:20:56.131  6180  6405 I UserAgent<1>: updatePani: pani=3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012ba5017a703, updatePani: lastPani=
+04-27 22:20:56.131  6180  6504 I StackIF : updatePani: 5 pani: [3GPP-E-UTRAN-FDD;utran-cell-id-3gpp=220012ba5017a703]
+04-27 22:20:56.132  6180  6504 I SECIMSJ : [0940]> 140
+04-27 22:20:56.132  6180  6405 I RegiMgr<1>: tryRegister:
+04-27 22:20:56.132  6180  6405 I RegiMgr<0>: RegisterTask(s): Megafon VoLTE (IDLE)
+04-27 22:20:56.132  6180  6509 I [IMS6.0]: IMS_onResponse()
+04-27 22:20:56.132  6180  6405 I RegiMgr<1>: RegisterTask(s): Telenor Serbia IMS (REGISTERED, rat = 13, service = [mmtel-video, smsip, mmtel]), Global GC RCS (IDLE)
+04-27 22:20:56.132  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:56.132  6180  6509 I StackIF : processMessage 2
+04-27 22:20:56.132  6180  6509 I StackIF : Processing Response
+04-27 22:20:56.133  6180  6509 I SECIMSJ : [0940]< 600
+04-27 22:20:56.133  6180  6509 I StackIF : processResponse: reqId 600
+04-27 22:20:56.133  6180  6509 I StackIF : processResponse: handle 5 result 0 reason 0
+04-27 22:20:56.133  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:56.133  6180  6405 I RegisterTask: isSuspended: mSuspended(false) mSuspendByIrat(false)
+04-27 22:20:56.133  6180  6405 I RegiMgr<1>: [Global GC RCS|IDLE] checkForTryRegister id: 1003
+04-27 22:20:56.133  6180  6405 I RegiMgr : isPdnConnected: false, PdnType: 1
+04-27 22:20:56.137  6180  6405 I PdnController: getDefaultNetworkBearer:  WIFI
+04-27 22:20:56.139  6180  6405 I PdnController: isWifiConnected: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: , failover: false, available: true, roaming: false]
+04-27 22:20:56.139  6180  6405 I RegiMgr-Utils<1>: findBestNetwork: WIFI needWifiNetwork = true
+04-27 22:20:56.140  6180  6405 I RegiGvnBase<1>: isReadyToDualRegister : true
+04-27 22:20:56.144  6180  6405 I RegiMgr<1>: [Global GC RCS|IDLE] checkInitialRegistrationIsReady: APM ON [false], Roamimg [false]
+04-27 22:20:56.144  6180  6405 I RcsPolicyMgr<1>: pendingRcsRegister: mActiveDataPhoneId = 1
+04-27 22:20:56.144  6180  6405 I ImsProfile: isRttSupportByCallApp : false ttyType : 1
+04-27 22:20:56.144  6180  6405 I RegiMgr-Utils<1>: getPriorityRegiedTask : isPriority  High? true
+04-27 22:20:56.145  6180  6405 I RegiGvnBase: checkRegiStatus: getState()=IDLE mIsUpdateRegistering=false
+04-27 22:20:56.145  6180  6405 I RegiMgr<1>: getTelephonyCallStatus:
+04-27 22:20:56.148  6180  6405 I ConfigProvider: query uri:xxxxx
+04-27 22:20:56.156  6180  6405 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
+04-27 22:20:56.172  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:56.177  6180  6405 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
+04-27 22:20:56.185  6180  6405 I ConfigTrigger<1>: isWaitAutoConfig:
+04-27 22:20:56.185  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:56.189  6180  6405 I ImsServiceSwitchEur[1]:  isRcsEnabled: true mDefaultSms true mUpsmEnabled false mEmergencyEnabled false
+04-27 22:20:56.189  6180  6405 I RegiMgr-Utils: selectPdnType: rat=18pdn=1
+04-27 22:20:56.189  6180  6405 I RegiMgr<1>: getServiceForNetwork: network 18
+04-27 22:20:56.189  6180  6405 I RegiMgr<1>: getServiceForNetwork: service {options, chatbot-communication, ft_http, im, euc, gls}
+04-27 22:20:56.204  6180  6405 I ConfigTrigger<1>: isValidAcsVersion:
+04-27 22:20:56.204  6180  6405 E GlobalSettingsRepoBase: globalgcsettings No matched key : dual_rcs_policy
+04-27 22:20:56.206  6734 26513 I SemanticLocation: [Inferrer] IncrementalTimelineInferrer.predict() logs:
+04-27 22:20:56.206  6734 26513 I SemanticLocation: Timeline Paths Enabled! Start Computing the timeline paths.
+04-27 22:20:56.206  6734 26513 I SemanticLocation:
+04-27 22:20:56.206  6734 26513 I SemanticLocation: [CONTEXT service_id=173 ]
+04-27 22:20:56.211  6180  6405 I ConfigProvider: query uri:xxxxx
+04-27 22:20:56.214  5429  5438 I system_server: Background young concurrent copying GC freed 386398(15MB) AllocSpace objects, 33(752KB) LOS objects, 13% free, 108MB/124MB, paused 651us,275us total 114.730ms
+04-27 22:20:56.217  6180  6405 I ConfigProvider: queryStorage path content://com.samsung.rcs.autoconfigurationprovider/parameter/version#simslot1
+04-27 22:20:56.219  5429  8529 D SecContentProvider2: query(), uri = 18 selection = isRCSEnabled
+04-27 22:20:56.219  5429  8529 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCS
+04-27 22:20:56.219  5429  8529 E PhoneRestrictionPolicy: getEmergencyCall >>false
+04-27 22:20:56.220  5429  8529 I PhoneRestrictionPolicy: isRCSEnabledInternal(), showMsg: false, columnName: enableRCSForSimSlot1
+04-27 22:20:56.220  5429  8529 E PhoneRestrictionPolicy: getEmergencyCall >>false
+04-27 22:20:56.222  6180  6405 I ConfigTrigger<1>: RCS switch: true, version: 0, isRcsAcsCompleted: true
+04-27 22:20:56.222  6180  6405 I ConfigTrigger<1>: version is improper : 0
+04-27 22:20:56.225  6180  6405 I RegiGvnBase: isVideoCallEnabled: Enable
+04-27 22:20:56.226  6180  6405 I RegiMgr<1>: getServiceForNetwork: filtered service []
+04-27 22:20:56.226  6180  6405 I RegiMgr<1>: Global GC RCS: no ims service for current rat18
+04-27 22:20:56.228  6180  6405 I PdnController: slot[1]: stopPdnConnectivity: network 1, callback is null
+04-27 22:20:56.228  6734 25105 I GCoreUlr: Successfully inserted 1 locations
+04-27 22:20:56.229  6180  6405 E PdnController<1>: requestStopNetwork: callback not found
+04-27 22:20:56.229  6180  6405 E #IMSCR  : 04-27 22:20:56 0x1101000B:1,FILTERED ALL:1
+04-27 22:20:56.229  6180  6405 I PdnController: handleMessage: what 107
+04-27 22:20:56.229  6180  6405 I PdnController: slot[1]: requestStopNetwork: network 1, callback is null
+04-27 22:20:56.247  5429  5440 W System  : A resource failed to call close.
+04-27 22:20:56.247  5429  5440 W System  : A resource failed to call close.
+04-27 22:20:56.248  5429  5440 W System  : A resource failed to call close.
+04-27 22:20:56.248  5429  5440 W System  : A resource failed to call close.
+04-27 22:20:56.591 21539 21563 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=26666)] to die
+04-27 22:20:56.715 21539 21563 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-20-20-55.perfetto-trace.
+04-27 22:20:56.815 21539 21563 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-20-20-55.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_valuePreserveBoxLong_2023-04-27-20-20-55.perfetto-trace
+04-27 22:20:56.849  8350 26505 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 22:20:56.896  5429  8529 D SyncManager: userId - 0 auto - true
+04-27 22:20:56.994  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:56.996  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:20:57.008  6734 26566 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 36396 [CONTEXT service_id=218 ]
+04-27 22:20:57.020  6734 26513 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 54 uptime_millis: 55 exec_start_elapsed_seconds: 36396 [CONTEXT service_id=218 ]
+04-27 22:20:57.032 21539 21563 I Benchmark: BoxRecreationBenchmark.valuePreserveBoxLong[Metric (timeNs) results: median 838.6960563598959, min 784.4851919419323, max 1114.2022280013973, standardDeviation: 70.31490872158615, Metric (allocationCount) results: median 10.0, min 9.999883553933936, max 10.000038815355355, standardDeviation: 7.051159463057541E-5]count=25763
+04-27 22:20:57.041 21539 21563 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 22:20:57.057 21539 21563 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 22:20:57.076  8350 26638 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 22:20:57.077  5429  8533 D SyncManager: userId - 0 auto - true
+04-27 22:20:57.089  8350 26741 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 22:20:57.096  5429  8529 D SyncManager: userId - 0 auto - true
+04-27 22:20:57.098 21539 21563 I TestRunner: finished: valuePreserveBoxLong(org.jetbrains.android_benchmark.BoxRecreationBenchmark)

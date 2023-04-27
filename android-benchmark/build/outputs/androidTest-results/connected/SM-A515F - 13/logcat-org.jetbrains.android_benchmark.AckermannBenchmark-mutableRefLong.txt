@@ -1,239 +1,198 @@
-04-27 20:11:14.027 26164 26187 I TestRunner: started: mutableRefLong(org.jetbrains.android_benchmark.AckermannBenchmark)
-04-27 20:11:14.030 26164 26164 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-27 20:11:14.030 26164 26164 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
-04-27 20:11:14.035 26164 26187 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-27 20:11:14.035 26164 26187 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-27 20:11:14.035 26164 26187 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableRefLong --
-04-27 20:11:14.036 26164 26187 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-27 20:11:14.036 26164 26187 D PerfettoCapture: Recording perfetto trace
-04-27 20:11:14.079 26164 26187 I PerfettoCapture: Cleanup perfetto before starting.
-04-27 20:11:14.254 26164 26187 I PerfettoCapture: Perfetto output file cleanup -
-04-27 20:11:14.254 26164 26187 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-27 20:11:14.410 27275 27275 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-27 20:11:14.412  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 6, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-27 20:11:14.413  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=11)
-04-27 20:11:14.452 26164 26187 I PerfettoCapture: Perfetto output - 27275
-04-27 20:11:14.452 26164 26187 I PerfettoCapture: EXITCODE=0
-04-27 20:11:14.470  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-27 20:11:14.485  5429  5429 D SemWifiP2pGoPowerSave: GopsReceiver : received : com.samsung.intent.action.CHECK_SIOP_LEVEL
-04-27 20:11:14.486  5429  5429 I SemWifiP2pGoPowerSave: siop_level = 0
-04-27 20:11:14.488  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-27 20:11:14.494 11589 11751 I SystemBroadcastReceiver: [#CMH#] onReceive completed :  4
-04-27 20:11:14.499 11589 11589 I PolicyManager: [#CMH#] onReceive action = EVENT_SIOP
-04-27 20:11:14.519  5878  5878 D SecPowerUI.Notification: showChargingNotice oldChargingType : 11 / currentChargingType : 11, oldChargingTime : 2804000 / mChargingTime : 2804000
-04-27 20:11:14.519  5878  5878 D SecPowerUI.Notification: There is no change about charging status, so return!
-04-27 20:11:14.555 26164 26187 I PerfettoCapture: Perfetto tracing started successfully with pid 27275.
-04-27 20:11:14.628 26164 26187 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-27 20:11:14.630 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -20. Was -8, now -20
-04-27 20:11:14.630 26164 26187 D Benchmark: Set 26172 (Jit) to priority -15. Was 9, now -15
-04-27 20:11:14.650 26164 26187 I _benchmark.test: Explicit concurrent copying GC freed 4771(605KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2897KB/9041KB, paused 331us,56us total 19.778ms
-04-27 20:11:15.034  6734 24609 W SQLiteConnectionPool: The connection pool for database '+data+user+0+com_google_android_gms+databases+phenotype_db' has been unable to grant a connection to thread 4342 (highpool[650]) with flags 0x2 for 12.004001 seconds.
-04-27 20:11:15.034  6734 24609 W SQLiteConnectionPool: Connections: 0 active, 1 idle, 2 available.
-04-27 20:11:15.122  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3700, isSameBssidAndFreq true
-04-27 20:11:15.126  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.118 ms / 68.060 Mbps (72 / 0.000 / 1.058)
-04-27 20:11:16.511 11589 11769 I PolicyManager: [#CMH#] Is foreground game app: false
-04-27 20:11:17.224  5429  5438 I system_server: Background young concurrent copying GC freed 1067683(22MB) AllocSpace objects, 8(160KB) LOS objects, 18% free, 99MB/122MB, paused 377us,374us total 100.704ms
-04-27 20:11:17.632  6734  6743 I .gms.persistent: Background concurrent copying GC freed 586248(22MB) AllocSpace objects, 0(0B) LOS objects, 47% free, 27MB/51MB, paused 170us,106us total 190.992ms
-04-27 20:11:18.084 26164 26187 D Benchmark: timeNs[ 0:10]: 50142 40051 41025 38767 39112 39077 41856 41913 39269 36099
-04-27 20:11:18.084 26164 26187 D Benchmark: timeNs[10:20]: 39231 36109 38328 37922 37505 38298 36667 37139 39590 38783
-04-27 20:11:18.084 26164 26187 D Benchmark: timeNs[20:30]: 36499 35982 36140 37709 36148 36322 37132 37141 36041 37535
-04-27 20:11:18.084 26164 26187 D Benchmark: timeNs[30:40]: 39947 40445 39765 39396 41349 45346 37677 35799 36475 39462
-04-27 20:11:18.085 26164 26187 D Benchmark: timeNs[40:50]: 40383 40489 40108 38072 36624 37219 37869 36930 37049 37928
-04-27 20:11:18.147  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 3701, isSameBssidAndFreq true
-04-27 20:11:18.150  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.117 ms / 68.571 Mbps (72 / 0.000 / 1.050)
-04-27 20:11:18.221 26164 26187 W _benchmark.test: Suspending all threads took: 7.959ms
-04-27 20:11:18.254  4899  4899 E audit   : type=1400 audit(1682619078.247:17798): avc:  denied  { read } for  pid=26954 comm="binder:26954_3" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=21617 scontext=u:r:untrusted_app_30:s0:c12,c257,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-27 20:11:18.254 26954 26970 W libc    : Access denied finding property "sys.perf.boostopt"
-04-27 20:11:18.255  4899  4899 E audit   : type=1300 audit(1682619078.247:17798): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=78049b52f8 a2=88000 a3=0 items=0 ppid=4924 pid=26954 auid=4294967295 uid=10268 gid=10268 euid=10268 suid=10268 fsuid=10268 egid=10268 sgid=10268 fsgid=10268 tty=(none) ses=4294967295 comm="binder:26954_3" exe="/system/bin/app_process64" subj=u:r:untrusted_app_30:s0:c12,c257,c512,c768 key=(null)
-04-27 20:11:18.255  4899  4899 E audit   : type=1327 audit(1682619078.247:17798): proctitle="org.telegram.messenger"
-04-27 20:11:18.412 26164 26187 D Benchmark: allocationCount[ 0:10]: 43 43 42 43 43
-04-27 20:11:18.413 26164 26187 D Benchmark: Set 26187 (Bench thread) to priority -8. Was -20, now -8
-04-27 20:11:18.413 26164 26187 D Benchmark: Set 26172 (Jit) to priority 9. Was -15, now 9
-04-27 20:11:18.413 26164 26187 D Benchmark: Warmup: t=0.303, iter=2092, fastAvg=61899, slowAvg=63735
-04-27 20:11:18.413 26164 26187 I PerfettoCapture: Stopping perfetto.
-04-27 20:11:18.453 27275 27275 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-27 20:11:18.454 26164 26187 D Benchmark: kill -TERM command output -
-04-27 20:11:18.466  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=21)
-04-27 20:11:18.470  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-27 20:11:18.521  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-27 20:11:18.527  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=22)
-04-27 20:11:18.529  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=23)
-04-27 20:11:18.624 27275 27275 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-27 20:11:18.627  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 6 ended, total sessions:0
-04-27 20:11:19.007  6734 26936 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.008  6734 26936 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.008  6734 26936 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.009  6734 26936 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.009  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.010  6734 26936 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.010  6734 26936 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.010  6734 26936 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-04-27 20:11:19.011  6734 26936 I NamespaceManager: Package com.google.android.odad name not found! Using module version.
-04-27 20:11:19.011  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.012  6734 26936 I NamespaceManager: Package 1 name not found! Using module version.
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.semanticlocation [CONTEXT service_id=204 ]
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: btrh: No package exists for config package: com.google.android.gms.semanticlocation
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):9)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at yok.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):4)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at hcl.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):3)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at hck.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):11)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
-04-27 20:11:19.014  6734 26936 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-04-27 20:11:19.056 26164 26187 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=27275)] to die
-04-27 20:11:19.147 22494 22924 W SearchServiceCore: Abort, client detached.
-04-27 20:11:19.163  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.170 26164 26187 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefLong_2023-04-27-18-11-18.perfetto-trace.
-04-27 20:11:19.174  6734 26936 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.180  6734 26936 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.182  6734 26936 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.184  6734 26936 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.186  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.187  6734 26936 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.189  6734 26936 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.190  6734 24400 E NanoAppLogging: Failed to begin contexthub communication
-04-27 20:11:19.191  6734 26936 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-04-27 20:11:19.192  6734 26936 I NamespaceManager: Package com.google.android.odad name not found! Using module version.
-04-27 20:11:19.194  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.195  6734 26936 I NamespaceManager: Package 1 name not found! Using module version.
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.location [CONTEXT service_id=204 ]
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: btrh: No package exists for config package: com.google.android.location
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):9)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at yok.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):4)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at hcl.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):3)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at hck.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):11)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
-04-27 20:11:19.196  6734 26936 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-04-27 20:11:19.213 26084 26084 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-27 20:11:19.213 26084 26084 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-27 20:11:19.216 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-27 20:11:19.233  5429  5838 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-27 20:11:19.234  6734 26936 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.234  5429  5838 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-27 20:11:19.235  6734 26936 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.235  5429  5838 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-27 20:11:19.236  6734 26936 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.237 11246 11246 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
-04-27 20:11:19.241  6734 26936 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.242  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.243  6734 26936 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.244  6734 26936 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.244  6734 26936 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-04-27 20:11:19.245  6734 26936 I NamespaceManager: Package com.google.android.odad name not found! Using module version.
-04-27 20:11:19.246  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.247  6734 26936 I NamespaceManager: Package 1 name not found! Using module version.
-04-27 20:11:19.247 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefLong_2023-04-27-18-11-18.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableRefLong_2023-04-27-18-11-18.perfetto-trace
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.wearable [CONTEXT service_id=204 ]
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: btrh: No package exists for config package: com.google.android.gms.wearable
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):9)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at yok.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):4)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at hcl.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):3)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at hck.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):11)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
-04-27 20:11:19.248  6734 26936 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-04-27 20:11:19.255  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.255  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.256  6734 27329 I PTCommittedOperation: Receive new configuration for com.google.android.location
-04-27 20:11:19.284  8350 27245 W MediaProvider: isAppCloneUserPair for user 0: false
-04-27 20:11:19.323 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008086 indexCount: 1705 sourceCount: 1705
-04-27 20:11:19.369  5429  5835 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.gms cmp = com.google.android.location.drivingmode.DrivingModeFrxActivity newState = 2 callingPackage = 10226/com.google.android.gms.persistent
-04-27 20:11:19.377  5429  5835 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.gms cmp = com.google.android.location.drivingmode.AutoLaunchService newState = 2 callingPackage = 10226/com.google.android.gms.persistent
-04-27 20:11:19.380  5429  5835 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.gms cmp = com.google.android.location.drivingmode.DrivingModeSettingsActivity newState = 2 callingPackage = 10226/com.google.android.gms.persistent
-04-27 20:11:19.385  5429  5835 D PackageManager: setEnabledSetting : userId = 0 packageName = com.google.android.gms cmp = com.google.android.location.drivingmode.DrivingModeSettingsNoSummaryActivity newState = 2 callingPackage = 10226/com.google.android.gms.persistent
-04-27 20:11:19.391  5429  8536 D SyncManager: userId - 0 auto - true
-04-27 20:11:19.394  6734 26936 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.395  6734 26936 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.397  6734 26936 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.399  6734 26936 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.400  5429  8536 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
-04-27 20:11:19.400  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.402  6734 26936 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.403  6734 26936 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.404  6734 26936 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-04-27 20:11:19.405  6734 26936 I NamespaceManager: Package com.google.android.odad name not found! Using module version.
-04-27 20:11:19.405  6734 26936 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.406  6734 26936 I NamespaceManager: Package 1 name not found! Using module version.
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.dck [CONTEXT service_id=204 ]
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: btrh: No package exists for config package: com.google.android.gms.dck
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):9)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at yok.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):4)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at hcl.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):3)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at hck.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):11)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
-04-27 20:11:19.407  6734 26936 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-04-27 20:11:19.409  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.411  6734 27341 I PTCommittedOperation: Receive new configuration for com.google.android.gms.wearable
-04-27 20:11:19.447  4899  4899 E audit   : type=1400 audit(1682619079.439:17799): avc:  denied  { getattr } for  pid=5429 comm="BinderProcsColl" path="/sys/kernel/debug/binder/proc/5429" dev="debugfs" ino=28624 scontext=u:r:system_server:s0 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-27 20:11:19.447  4899  4899 E audit   : type=1300 audit(1682619079.439:17799): arch=c00000b7 syscall=79 success=no exit=-13 a0=ffffff9c a1=77702bf9b0 a2=768437b680 a3=0 items=0 ppid=4924 pid=5429 auid=4294967295 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=4294967295 comm="BinderProcsColl" exe="/system/bin/app_process64" subj=u:r:system_server:s0 key=(null)
-04-27 20:11:19.447  4899  4899 E audit   : type=1327 audit(1682619079.439:17799): proctitle="system_server"
-04-27 20:11:19.464  6734 27328 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.464  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.464 26164 26187 I Benchmark: AckermannBenchmark.mutableRefLong[Metric (timeNs) results: median 38000.8213622291, min 35799.499690402474, max 50142.55789473684, standardDeviation: 2563.725618582578, Metric (allocationCount) results: median 43.0, min 42.99938080495356, max 43.0, standardDeviation: 2.7691244303411236E-4]count=1615
-04-27 20:11:19.468 26164 26187 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-27 20:11:19.471 26164 26187 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-27 20:11:19.471  6734 27328 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.473  6734 27328 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.475  6734 27328 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.479  6734 27328 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.479  6734 25826 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 28619 [CONTEXT service_id=218 ]
-04-27 20:11:19.480  6734 27328 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.482  6734 27328 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.483  6734 27328 I NamespaceManager: Package com.android.neuralnetworks name not found! Using module version.
-04-27 20:11:19.483  8350 26775 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-27 20:11:19.484  6734 27328 I NamespaceManager: Package com.google.android.odad name not found! Using module version.
-04-27 20:11:19.485  6734 27328 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.485  6734 27328 I NamespaceManager: Package 1 name not found! Using module version.
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: Update for unknown DeviceConfig package com.google.android.gms.pay [CONTEXT service_id=204 ]
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: btrh: No package exists for config package: com.google.android.gms.pay
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@231312044@23.13.12 (190400-519946965):7)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):9)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at yok.onHandleIntent(:com.google.android.gms@231312044@23.13.12 (190400-519946965):4)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at hcl.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):3)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at hck.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):11)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at dbpm.run(:com.google.android.gms@231312044@23.13.12 (190400-519946965):2)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
-04-27 20:11:19.486  6734 27328 W PhenotypeConfigurationU: 	at java.lang.Thread.run(Thread.java:1012)
-04-27 20:11:19.494  5429  5835 D SyncManager: userId - 0 auto - true
-04-27 20:11:19.496  6734 25826 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 45 uptime_millis: 45 exec_start_elapsed_seconds: 28619 [CONTEXT service_id=218 ]
-04-27 20:11:19.508  8350 27047 W MediaProvider: isAppCloneUserPair for user 0: false
-04-27 20:11:19.516 26084 26142 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-27 20:11:19.516  6734 27319 I NamespaceManager: Package com.android.refreshratecontrol name not found! Using module version.
-04-27 20:11:19.519  6734 27319 I NamespaceManager: Package com.google.android.apps.nexuslauncher name not found! Using module version.
-04-27 20:11:19.520 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  242 ms
-04-27 20:11:19.520 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-27 20:11:19.520  6734 27319 I NamespaceManager: Package com.google.oslo name not found! Using module version.
-04-27 20:11:19.521 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-27 20:11:19.521  6734 27319 I NamespaceManager: Package com.google.android.wifi name not found! Using module version.
-04-27 20:11:19.523 26084 26142 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-27 20:11:19.523  6734 27319 I NamespaceManager: Package com.android.media name not found! Using module version.
-04-27 20:11:19.523 26084 26123 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=6a13f848-53d0-4964-ae5e-8b66edf7ff2f, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-27 20:11:19.524  6734 27319 I NamespaceManager: Package com.android.media.swcodec name not found! Using module version.
-04-27 20:11:19.526  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.526  5067  5067 E sehhealth-service: Could not open /sys/class/power_supply/battery/lrp
-04-27 20:11:19.526  5429  5602 D MotionRecognitionService: [SAR]  onReceive : ACTION_BATTERY_CHANGED, Plugged: 2
-04-27 20:11:19.526  6734 27319 I NamespaceManager: Package com.android.appsearch name not found! Using module version.
-04-27 20:11:19.527  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-27 20:11:19.527  5429  5429 D PhoneWindowManagerExt: ACTION_BATTERY_CHANGED - Level=70, status=2
-04-27 20:11:19.528  5429  5838 D SyncManager: userId - 0 auto - true
-04-27 20:11:19.528  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
-04-27 20:11:19.528  5429  5429 D SemWifiApBroadcastReceiver: Received : android.intent.action.BATTERY_CHANGED
-04-27 20:11:19.528  5787  5787 D SemBigDataInfoController: Intent: android.intent.action.BATTERY_CHANGED
-04-27 20:11:19.530  5878  5878 I AODBatteryManager: updateBatteryData: ACTION_BATTERY_CHANGED
-04-27 20:11:19.532 26164 26187 I TestRunner: finished: mutableRefLong(org.jetbrains.android_benchmark.AckermannBenchmark)
+04-27 22:17:29.306 21539 21563 I TestRunner: started: mutableRefLong(org.jetbrains.android_benchmark.AckermannBenchmark)
+04-27 22:17:29.309 21539 21539 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+04-27 22:17:29.309 21539 21539 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
+04-27 22:17:29.316 21539 21563 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+04-27 22:17:29.316 21539 21563 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+04-27 22:17:29.316 21539 21563 D Benchmark: -- Running org.jetbrains.android_benchmark.AckermannBenchmark#mutableRefLong --
+04-27 22:17:29.317 21539 21563 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+04-27 22:17:29.317 21539 21563 D PerfettoCapture: Recording perfetto trace
+04-27 22:17:29.332  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:29.333  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:29.347  6734 24571 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 36189 [CONTEXT service_id=218 ]
+04-27 22:17:29.358 21539 21563 I PerfettoCapture: Cleanup perfetto before starting.
+04-27 22:17:29.371  6734 24138 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 52 uptime_millis: 51 exec_start_elapsed_seconds: 36189 [CONTEXT service_id=218 ]
+04-27 22:17:29.566 21539 21563 I PerfettoCapture: Perfetto output file cleanup -
+04-27 22:17:29.566 21539 21563 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+04-27 22:17:29.671  5429  6416 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
+04-27 22:17:29.673  5429  6416 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
+04-27 22:17:29.675  5429  6416 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
+04-27 22:17:29.715  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:29.741 24665 24665 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+04-27 22:17:29.742  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 96, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+04-27 22:17:29.743 31104 31177 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [androidx.work.impl.utils.NetworkApi24.registerDefaultNetworkCallbackCompat(Unknown Source:10)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.startTracking(Unknown Source:15)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:130)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.schedule(Unknown Source:300)] [androidx.work.impl.Schedulers.schedule(Unknown Source:149)] [androidx.work.impl.utils.EnqueueRunnable.run(Unknown Source:53)] [androidx.work.Worker$2.run$androidx$work$impl$utils$SerialExecutorImpl$Task(Unknown Source:4)] [androidx.work.Worker$2.run(Unknown Source:868)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [java.lang.Thread.run(Thread.java:1012)]
+04-27 22:17:29.744  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=191)
+04-27 22:17:29.747  5429  8536 D ConnectivityService: requestNetwork for uid/pid:10329/31104 activeRequest: null callbackRequest: 4764 [NetworkRequest [ REQUEST id=4765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+04-27 22:17:29.749  5429  5665 D ConnectivityService:    accepting network in place of null
+04-27 22:17:29.758  5429  5655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=4765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+04-27 22:17:29.759  5429  5655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=4765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+04-27 22:17:29.760  5429  5655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=4765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+04-27 22:17:29.760  5429  5655 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=4765, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+04-27 22:17:29.760  5429  5665 D ConnectivityService: Rematched networks [computed 1ms] [applied 3ms] [issued 8]
+04-27 22:17:29.761  5429  5665 D ConnectivityService: NetworkReassignment :
+04-27 22:17:29.761  5429  5665 D ConnectivityService:   4765 : null → 108
+04-27 22:17:29.786 31104 31104 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.unregisterNetworkCallback(ConnectivityManager.java:4863)] [androidx.work.impl.utils.NetworkApi21.unregisterNetworkCallbackCompat(Unknown Source:10)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.stopTracking(Unknown Source:15)] [androidx.work.impl.constraints.trackers.ConstraintTracker.removeListener(Unknown Source:24)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:81)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.onExecuted(Unknown Source:55)] [androidx.work.impl.Processor.onExecuted(Unknown Source:59)] [com.bugsnag.android.DeliveryDelegate$1.run(Unknown Source:212)]
+04-27 22:17:29.789  5429  5665 D ConnectivityService:  Removing from current network [108 WIFI], leaving 151 requests.
+04-27 22:17:29.818 21539 21563 I PerfettoCapture: Perfetto output - 24665
+04-27 22:17:29.818 21539 21563 I PerfettoCapture: EXITCODE=0
+04-27 22:17:29.818  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:29.819  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 22:17:29.846  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+04-27 22:17:29.847 24151 24151 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+04-27 22:17:29.848 24151 24151 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+04-27 22:17:29.851 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+04-27 22:17:29.863  5429  8533 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 22:17:29.865  5429  8533 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 22:17:29.866  5429  8533 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 22:17:30.000 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008202 indexCount: 1705 sourceCount: 1705
+04-27 22:17:30.017 21539 21563 I PerfettoCapture: Perfetto tracing started successfully with pid 24665.
+04-27 22:17:30.099 24151 24224 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+04-27 22:17:30.105 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  174 ms
+04-27 22:17:30.105 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+04-27 22:17:30.106 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+04-27 22:17:30.110 24151 24205 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=aa83ac47-c567-42e5-813a-86cc175e1f11, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+04-27 22:17:30.117 24151 24224 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+04-27 22:17:30.135 21539 21563 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+04-27 22:17:30.136 21539 21563 D Benchmark: Set 21563 (Bench thread) to priority -20. Was -8, now -20
+04-27 22:17:30.136 21539 21563 D Benchmark: Set 21548 (Jit) to priority -15. Was 9, now -15
+04-27 22:17:30.168 21539 21563 I _benchmark.test: Explicit concurrent copying GC freed 27999(957KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2901KB/9045KB, paused 235us,115us total 31.423ms
+04-27 22:17:30.210  5429  6683 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+04-27 22:17:30.211  5429  6683 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+04-27 22:17:30.213  5429  6683 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+04-27 22:17:30.259  6734  6734 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+04-27 22:17:30.894 11246 11246 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gservices.START pkg=com.google.android.gms }
+04-27 22:17:31.006  7025  7069 I GmsPassiveListener_FLP: onGmsLocationChanged, provider=fused / speed=0.88335085 / time=1682626650981 / elapsed=36190954000000
+04-27 22:17:31.012  5429  8538 V LocationManagerService: passive provider registration 5023/com.samsung.android.networkdiagnostic/4FDF9C6D dropped delivery - too close
+04-27 22:17:31.013  5429  8538 V LocationManagerService: passive provider registration 1000/android[SensorNotificationService]/CC5BC53F dropped delivery - too close
+04-27 22:17:31.015  5429  6058 D SLocation: PositionManager - PassiveonLocationChanged fused 1682626650981
+04-27 22:17:31.015  5429  6058 W SLocation: PositionManager - do not refresh last location about fused location
+04-27 22:17:31.015  5429  6058 D SLocation: ARDistanceBigData - BIGDATA ARD - receive location
+04-27 22:17:31.016  5429  6058 D SLocation: ARDistanceLibManager - request distance diff to AR Distance Library
+04-27 22:17:31.016  5429  6058 D SLocation: SLocationCoreSem - send to coreSem, packet length : 1 / [34]
+04-27 22:17:31.016  5429  6058 D SemContextLocationCoreAttribute: setAttribute() mode : 0 action : 23
+04-27 22:17:31.016  5429  6058 D SemContextService: lock : changeParameters
+04-27 22:17:31.016  5429  6058 D SemContext.CaeProvider.LocationCoreImpl: setAttribute() mode : 0 action : 23
+04-27 22:17:31.019  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:513) - [setProperty 01] Mutex is locked for SLOCATION_RUNNER
+04-27 22:17:31.019  5429  6058 I CAE     : setPropertyValue(SLocationRunner.java:116) - SLocationRunner setProperty header : 34, len : 1
+04-27 22:17:31.019  5429  6058 I CAE     : sendCmdToSensorHub(SensorHubCommManager.java:156) - -63, 23, 55, 34,
+04-27 22:17:31.019  5429  5598 D SensorService: setSContextDataLocked ints length 2 , byte length 4
+04-27 22:17:31.020  5429  5598 D SensorService: setSContextDataLocked 223717c1
+04-27 22:17:31.020  4993  4993 I SensorsHub: SContextSensor::injecet_sensor_data
+04-27 22:17:31.020  4993  4993 D SensorsHub: c1 17 37 22
+04-27 22:17:31.021  4993  4993 D SensorsHub: inject_scontext_data: New ssp_data_injection_fd(28)
+04-27 22:17:31.021  4993  4993 D SensorsHub: SContext Data Injection return 4
+04-27 22:17:31.022  5429  6058 W CAE     : setCAProperty(ContextAwareService.java:519) - [setProperty 02] Mutex is unlocked for SLOCATION_RUNNER
+04-27 22:17:31.022  5429  6058 D SemContextService: unlock : changeParameters
+04-27 22:17:31.022  5429  6058 D SemContextManager:   .changeParameters : listener = com.samsung.android.location.semcontext.a@14d0c89, service=SLocation Core
+04-27 22:17:31.022  5429  6058 D SLocation: PositionManager - receive fused location
+04-27 22:17:31.023  4993  5068 I SensorsHub: context 38 0 37 1,1,55,0,33,33,0,0,0,0,23,89,207,201,119,130,96,0,26,181,23,224,12,41,111,224,0,0,0,8,4,88,226,112,0,0,57,144, 36190994245582
+04-27 22:17:31.023  4993  5068 I SensorsHub: context 10 0 9 1,1,55,0,5,2,34,0,0,0, 36190994269082
+04-27 22:17:31.023  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(38) = 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 88, -30, 112, 0, 0, 57, -112
+04-27 22:17:31.024  5429  5595 D SensorHubManager: onGetSensorHubDataLocked: library(10) = 1, 1, 55, 0, 5, 2, 34, 0, 0, 0
+04-27 22:17:31.024  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :38], AP_WAKEUP
+04-27 22:17:31.024  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 38
+04-27 22:17:31.024  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 88, -30, 112, 0, 0, 57, -112,
+04-27 22:17:31.025  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:17:31.025  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:17:31.025  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 33, 33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 88, -30, 112, 0, 0, 57, -112]
+04-27 22:17:31.026  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:38
+04-27 22:17:31.027  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:17:31.027  5429  5596 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:89) - onGetSensorHubData Event [event buffer len :10], AP_WAKEUP
+04-27 22:17:31.027  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:17:31.028  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:17:31.028  5429  5596 I CAE     : parse(SensorHubParserProvider.java:190) - buffer size = 10
+04-27 22:17:31.028  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:17:31.028  5429  6058 I SLocation: SemContextParser -  packet Length : 33packet total size : 38
+04-27 22:17:31.028  5429  6058 I SLocation: SemContextParser - packet : [33, 0, 0, 0, 0, 23, 89, -49, -55, 119, -126, 96, 0, 26, -75, 23, -32, 12, 41, 111, -32, 0, 0, 0, 8, 4, 88, -30, 112, 0, 0, 57, -112]
+04-27 22:17:31.028  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 33
+04-27 22:17:31.029  5429  6058 D SLocation: ARDistanceGetARDistance - convertSensorHubTimeToElapsedTime 1682602717409539972
+04-27 22:17:31.029  5429  6058 D SLocation: ARDistanceGetARDistance - invalid location time from core pvt 1682602717409539972, do not use distance info
+04-27 22:17:31.029  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 33
+04-27 22:17:31.031  5429  5596 I CAE     : parse(SensorHubParserProvider.java:201) - 1, 1, 55, 0, 5, 2, 34, 0, 0, 0,
+04-27 22:17:31.032  5429  5596 I CAE     : parse(SLocationRunner.java:88) - SLocationRunner parse start : 3
+04-27 22:17:31.032  5429  5596 D CAE     : display(ContextProvider.java:375) - ================= SLOCATION_RUNNER =================
+04-27 22:17:31.032  5429  5596 I CAE     : display(ContextProvider.java:391) - ExtraDataArray=[1, 1, 55, 0, 5, 2, 34, 0, 0, 0]
+04-27 22:17:31.033  5429  5596 I CAE     : parse(SLocationRunner.java:96) - SLocationRunner parse end:10
+04-27 22:17:31.033  5429  5593 D SemContextService: Service.updateContext() : service = SLocation Core
+04-27 22:17:31.034  5429  5429 D SemContextManager: onSemContextChanged() : event = SLocation Core
+04-27 22:17:31.034  5429  5429 D SLocation: SLocationCoreSem - SemContextChanged type = 47, packet received
+04-27 22:17:31.035  5429  6058 I SLocation: SemContextParser -  parse start : 3
+04-27 22:17:31.035  5429  6058 I SLocation: SemContextParser -  packet Length : 5packet total size : 10
+04-27 22:17:31.035  5429  6058 I SLocation: SemContextParser - packet : [2, 34, 0, 0, 0]
+04-27 22:17:31.035  5429  6058 D SLocation: GeofenceCoreManager - received Extra Data from core, len : 5
+04-27 22:17:31.035  5429  6058 D SLocation: GeofenceCoreManager - handleCommandCallback - UNKNOWN_CALLBACK 34 SUCCESS
+04-27 22:17:31.035  5429  6058 D SLocation: ARDistanceLibManager - command callback received - CURRENT_LOCATION_REQUEST_DISTANCE ERROR CODE : ERROR_NONE
+04-27 22:17:31.035  5429  6058 D SLocation: CommonCoreManager - received Extra Data from core, len : 5
+04-27 22:17:31.051  6734 24557 I GCoreUlr: Successfully inserted 1 locations
+04-27 22:17:31.092  6734 24138 I SemanticLocation: [Inferrer] IncrementalTimelineInferrer.predict() logs:
+04-27 22:17:31.092  6734 24138 I SemanticLocation: Timeline Paths Enabled! Start Computing the timeline paths.
+04-27 22:17:31.092  6734 24138 I SemanticLocation:
+04-27 22:17:31.092  6734 24138 I SemanticLocation: [CONTEXT service_id=173 ]
+04-27 22:17:31.096  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6198, isSameBssidAndFreq true
+04-27 22:17:31.101  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 22:17:31.101  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 22:17:31.104  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 22:17:34.113  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 6199, isSameBssidAndFreq true
+04-27 22:17:34.116  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.111 ms / 72.000 Mbps (72 / 0.000 / 1.000)
+04-27 22:17:34.117  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
+04-27 22:17:34.119  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
+04-27 22:17:34.915  5429 24706 D TrafficStats: tagSocket(868) with statsTag=0xffffffff, statsUid=-1
+04-27 22:17:34.921  5429 24706 D TrafficStats: tagSocket(901) with statsTag=0xffffffff, statsUid=-1
+04-27 22:17:35.096 21539 21563 D Benchmark: timeNs[ 0:10]: 35421 36015 35155 36607 35272 35456 40953 35736 36287 35331
+04-27 22:17:35.096 21539 21563 D Benchmark: timeNs[10:20]: 35339 36111 35213 35302 36855 35285 36271 40383 39570 37065
+04-27 22:17:35.096 21539 21563 D Benchmark: timeNs[20:30]: 35231 35640 35922 35334 36028 35770 35264 36193 35260 35309
+04-27 22:17:35.097 21539 21563 D Benchmark: timeNs[30:40]: 36790 35292 36095 35273 35274 36628 35270 35275 37026 35337
+04-27 22:17:35.097 21539 21563 D Benchmark: timeNs[40:50]: 40060 41427 36706 36066 35296 35772 35935 35244 36204 35263
+04-27 22:17:35.125  5429 24706 D WifiConnectivityMonitor.DnsThread:  [|210] []
+04-27 22:17:35.125  5429  5738 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 210
+04-27 22:17:35.126  5429  5736 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
+04-27 22:17:35.127  5429  5736 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
+04-27 22:17:35.127  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 22:17:35.127  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 25 0
+04-27 22:17:35.128  5429  5736 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
+04-27 22:17:35.129  5429  7167 V WifiProfileShare.Caster: update wips network, size: 0
+04-27 22:17:35.130  5429  7167 D WifiProfileShare: nearby scanning settings run
+04-27 22:17:35.130  5429  7167 D WifiProfileShare: network score provider settings enabled
+04-27 22:17:35.131  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 25 0
+04-27 22:17:35.131  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
+04-27 22:17:35.131  5429  7167 I WifiProfileShare.Caster: current network type: 0, score: [30, 25, 0]
+04-27 22:17:35.133  5429  7167 V WifiProfileShare.Cache: update network score 0c:8d:db:**:**:7d
+04-27 22:17:35.133  5429  7167 D WifiProfileShare.ScanMatcher: getMcfDataList size:20
+04-27 22:17:35.134  5429  7167 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:e8:51:71, qosData:78 after:type:QOS, pBssid:e8:51:71, qosData:78
+04-27 22:17:35.136  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 22:17:35.136  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 22:17:35.136  5429  7167 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
+04-27 22:17:35.136  5429  7167 D WifiProfileShare.MCF: success update QosData !
+04-27 22:17:35.138  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
+04-27 22:17:35.138  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
+04-27 22:17:35.138  5429  7167 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:20
+04-27 22:17:35.490 21539 21563 W _benchmark.test: Suspending all threads took: 6.618ms
+04-27 22:17:35.587 21539 21563 D Benchmark: allocationCount[ 0:10]: 43 43 43 43 43
+04-27 22:17:35.587 21539 21563 D Benchmark: Set 21563 (Bench thread) to priority -8. Was -20, now -8
+04-27 22:17:35.587 21539 21563 D Benchmark: Set 21548 (Jit) to priority 9. Was -15, now 9
+04-27 22:17:35.587 21539 21563 D Benchmark: Warmup: t=0.266, iter=3628, fastAvg=38970, slowAvg=39758
+04-27 22:17:35.587 21539 21563 I PerfettoCapture: Stopping perfetto.
+04-27 22:17:35.623 24665 24665 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+04-27 22:17:35.624 21539 21563 D Benchmark: kill -TERM command output -
+04-27 22:17:35.642  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=381)
+04-27 22:17:35.648  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+04-27 22:17:35.705  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+04-27 22:17:35.712  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=382)
+04-27 22:17:35.712  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=383)
+04-27 22:17:35.748 24665 24665 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+04-27 22:17:35.751  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 96 ended, total sessions:0
+04-27 22:17:35.766 21539 21563 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefLong_2023-04-27-20-17-35.perfetto-trace.
+04-27 22:17:35.835 21539 21563 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/AckermannBenchmark_mutableRefLong_2023-04-27-20-17-35.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/AckermannBenchmark_mutableRefLong_2023-04-27-20-17-35.perfetto-trace
+04-27 22:17:35.887  8350 24273 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 22:17:35.942  5429  8533 D SyncManager: userId - 0 auto - true
+04-27 22:17:36.021 21539 21563 I Benchmark: AckermannBenchmark.mutableRefLong[Metric (timeNs) results: median 35753.53741231489, min 35155.51013250195, max 41427.27357755261, standardDeviation: 1542.955547415563, Metric (allocationCount) results: median 43.0, min 43.0, max 43.00116913484022, standardDeviation: 6.403615247526393E-4]count=2566
+04-27 22:17:36.029 21539 21563 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 22:17:36.033 21539 21563 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+04-27 22:17:36.051  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:36.054  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+04-27 22:17:36.059  5429  8533 D SyncManager: userId - 0 auto - true
+04-27 22:17:36.061  8350 24366 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+04-27 22:17:36.070  8350 24638 W MediaProvider: isAppCloneUserPair for user 0: false
+04-27 22:17:36.073  6734 24571 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 36195 [CONTEXT service_id=218 ]
+04-27 22:17:36.080  5429  6683 D SyncManager: userId - 0 auto - true
+04-27 22:17:36.082  6734 24138 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 63 uptime_millis: 64 exec_start_elapsed_seconds: 36195 [CONTEXT service_id=218 ]
+04-27 22:17:36.083 21539 21563 I TestRunner: finished: mutableRefLong(org.jetbrains.android_benchmark.AckermannBenchmark)
