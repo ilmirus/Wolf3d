@@ -44,13 +44,20 @@ open class Wolf3dBenchmark {
 
     
     @Benchmark
-    fun mutableRefFloatIn2Longs(bh: Blackhole) = mutable_ref.rendering.heavyActionFloatSeparate(makeGraphics(bh))
+    fun mutableUniversalRefFloatIn2Longs(bh: Blackhole) = mutable_ref_universal.rendering.heavyActionFloatSeparate(makeGraphics(bh))
 
     @Benchmark
-    fun mutableRefFloatIn1Long(bh: Blackhole) = mutable_ref.rendering.heavyActionFloatSame(makeGraphics(bh))
+    fun mutableUniversalRefFloatIn1Long(bh: Blackhole) = mutable_ref_universal.rendering.heavyActionFloatSame(makeGraphics(bh))
 
     @Benchmark
-    fun mutableRefDouble(bh: Blackhole) = mutable_ref.rendering.heavyActionDouble(makeGraphics(bh))
+    fun mutableUniversalRefDouble(bh: Blackhole) = mutable_ref_universal.rendering.heavyActionDouble(makeGraphics(bh))
+    
+
+    @Benchmark
+    fun mutableSpecificRefFloat(bh: Blackhole) = mutable_ref_specific.rendering.heavyActionFloat(makeGraphics(bh))
+
+    @Benchmark
+    fun mutableSpecificRefDouble(bh: Blackhole) = mutable_ref_specific.rendering.heavyActionDouble(makeGraphics(bh))
 
     
     @Benchmark

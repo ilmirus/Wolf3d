@@ -84,33 +84,54 @@ class AckermannBenchmark {
 
 
     @Test
-    fun mutableRefIntIn2Longs() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionIntSeparate(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefIntIn2Longs() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionIntSeparate(SimpleComplexNumberConsumer)
     }
 
     @Test
-    fun mutableRefFloatIn2Longs() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionFloatSeparate(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefFloatIn2Longs() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionFloatSeparate(SimpleComplexNumberConsumer)
     }
 
     @Test
-    fun mutableRefIntIn1Long() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionIntSame(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefIntIn1Long() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionIntSame(SimpleComplexNumberConsumer)
     }
 
     @Test
-    fun mutableRefFloatIn1Long() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionFloatSame(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefFloatIn1Long() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionFloatSame(SimpleComplexNumberConsumer)
     }
 
     @Test
-    fun mutableRefLong() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefLong() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
     }
 
     @Test
-    fun mutableRefDouble() = benchmarkRule.measureRepeated {
-        mutable_ref.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
+    fun mutableUniversalRefDouble() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
+    }
+    
+
+    @Test
+    fun mutableSpecificRefInt() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.ackermann.heavyActionInt(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun mutableSpecificRefFloat() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.ackermann.heavyActionFloat(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun mutableSpecificRefLong() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.ackermann.heavyActionLong(SimpleComplexNumberConsumer)
+    }
+
+    @Test
+    fun mutableSpecificRefDouble() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.ackermann.heavyActionDouble(SimpleComplexNumberConsumer)
     }
 
 

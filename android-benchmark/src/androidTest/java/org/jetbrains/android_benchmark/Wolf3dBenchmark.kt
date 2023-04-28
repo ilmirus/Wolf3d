@@ -68,18 +68,29 @@ class Wolf3dBenchmark {
 
 
     @Test
-    fun mutableRefFloatIn2Longs() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionFloatSeparate(Graphics)
+    fun mutableUniversalRefFloatIn2Longs() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.rendering.heavyActionFloatSeparate(Graphics)
     }
 
     @Test
-    fun mutableRefFloatIn1Long() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionFloatSame(Graphics)
+    fun mutableUniversalRefFloatIn1Long() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.rendering.heavyActionFloatSame(Graphics)
     }
 
     @Test
-    fun mutableRefDouble() = benchmarkRule.measureRepeated {
-        mutable_ref.rendering.heavyActionDouble(Graphics)
+    fun mutableUniversalRefDouble() = benchmarkRule.measureRepeated {
+        mutable_ref_universal.rendering.heavyActionDouble(Graphics)
+    }
+
+
+    @Test
+    fun mutableSpecificRefFloat() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.rendering.heavyActionFloat(Graphics)
+    }
+
+    @Test
+    fun mutableSpecificRefDouble() = benchmarkRule.measureRepeated {
+        mutable_ref_specific.rendering.heavyActionDouble(Graphics)
     }
 
 

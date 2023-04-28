@@ -55,22 +55,35 @@ open class AckermannBenchmark {
 
     
     @Benchmark
-    fun mutableRefIntIn2Longs(bh: Blackhole) = mutable_ref.ackermann.heavyActionIntSeparate(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefIntIn2Longs(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionIntSeparate(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun mutableRefFloatIn2Longs(bh: Blackhole) = mutable_ref.ackermann.heavyActionFloatSeparate(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefFloatIn2Longs(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionFloatSeparate(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun mutableRefIntIn1Long(bh: Blackhole) = mutable_ref.ackermann.heavyActionIntSame(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefIntIn1Long(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionIntSame(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun mutableRefFloatIn1Long(bh: Blackhole) = mutable_ref.ackermann.heavyActionFloatSame(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefFloatIn1Long(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionFloatSame(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun mutableRefLong(bh: Blackhole) = mutable_ref.ackermann.heavyActionLong(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefLong(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionLong(JmhComplexNumberConsumer(bh))
 
     @Benchmark
-    fun mutableRefDouble(bh: Blackhole) = mutable_ref.ackermann.heavyActionDouble(JmhComplexNumberConsumer(bh))
+    fun mutableUniversalRefDouble(bh: Blackhole) = mutable_ref_universal.ackermann.heavyActionDouble(JmhComplexNumberConsumer(bh))
+
+    
+    @Benchmark
+    fun mutableSpecificRefInt(bh: Blackhole) = mutable_ref_specific.ackermann.heavyActionInt(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun mutableSpecificRefFloat(bh: Blackhole) = mutable_ref_specific.ackermann.heavyActionFloat(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun mutableSpecificRefLong(bh: Blackhole) = mutable_ref_specific.ackermann.heavyActionLong(JmhComplexNumberConsumer(bh))
+
+    @Benchmark
+    fun mutableSpecificRefDouble(bh: Blackhole) = mutable_ref_specific.ackermann.heavyActionDouble(JmhComplexNumberConsumer(bh))
 
     
     @Benchmark
