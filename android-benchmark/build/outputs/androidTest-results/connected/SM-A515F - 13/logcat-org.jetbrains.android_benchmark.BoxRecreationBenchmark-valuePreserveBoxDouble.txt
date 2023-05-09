@@ -1,228 +1,151 @@
-04-30 01:19:29.521 12235 12258 I TestRunner: started: valuePreserveBoxDouble(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
-04-30 01:19:29.521  9200 15247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 37 uptime_millis: 37 exec_start_elapsed_seconds: 219909 [CONTEXT service_id=218 ]
-04-30 01:19:29.525 12235 12235 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
-04-30 01:19:29.525 12235 12235 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@60bdc39
-04-30 01:19:29.530 12235 12258 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
-04-30 01:19:29.530 12235 12258 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
-04-30 01:19:29.530 12235 12258 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#valuePreserveBoxDouble --
-04-30 01:19:29.530 12235 12258 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
-04-30 01:19:29.531 12235 12258 D PerfettoCapture: Recording perfetto trace
-04-30 01:19:29.552 12235 12258 I PerfettoCapture: Cleanup perfetto before starting.
-04-30 01:19:29.753 12235 12258 I PerfettoCapture: Perfetto output file cleanup -
-04-30 01:19:29.753 12235 12258 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
-04-30 01:19:29.905 17007 17007 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
-04-30 01:19:29.907  5131  5131 I perfetto: ing_service_impl.cc:953 Configured tracing session 278, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
-04-30 01:19:29.909  5130  5130 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=555)
-04-30 01:19:29.941 12235 12258 I PerfettoCapture: Perfetto output - 17007
-04-30 01:19:29.941 12235 12258 I PerfettoCapture: EXITCODE=0
-04-30 01:19:29.970  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-30 01:19:29.994  5130  5130 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
-04-30 01:19:30.023  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-30 01:19:30.042 12145 12145 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
-04-30 01:19:30.043 12145 12145 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
-04-30 01:19:30.044 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
-04-30 01:19:30.054  5429  5835 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-30 01:19:30.055  5429  5835 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-30 01:19:30.056  5429  5835 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-30 01:19:30.062 12235 12258 I PerfettoCapture: Perfetto tracing started successfully with pid 17007.
-04-30 01:19:30.115 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008329 indexCount: 895 sourceCount: 895
-04-30 01:19:30.158 12235 12258 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
-04-30 01:19:30.159 12235 12258 D Benchmark: Set 12258 (Bench thread) to priority -20. Was -8, now -20
-04-30 01:19:30.159 12235 12258 D Benchmark: Set 12243 (Jit) to priority -15. Was 9, now -15
-04-30 01:19:30.197 12235 12258 I _benchmark.test: Explicit concurrent copying GC freed 231927(4194KB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2946KB/9090KB, paused 330us,122us total 37.450ms
-04-30 01:19:30.200 12145 12208 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
-04-30 01:19:30.205 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  127 ms
-04-30 01:19:30.206 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
-04-30 01:19:30.207 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
-04-30 01:19:30.211 12145 12208 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
-04-30 01:19:30.211 12145 12203 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=398df45d-797d-40a9-8740-80c4636d2c57, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
-04-30 01:19:30.272  5429  6109 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
-04-30 01:19:30.273  5429  6109 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
-04-30 01:19:30.274  5429  6109 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
-04-30 01:19:30.331  4924  4924 D Zygote  : Forked child process 17024
-04-30 01:19:30.381 17024 17024 I inkedin.android: Using CollectorTypeCC GC.
-04-30 01:19:30.388 17024 17024 E inkedin.android: Not starting debugger since process cannot load the jdwp agent.
-04-30 01:19:30.395 17024 17024 W libc    : Access denied finding property "sys.perf.boostopt"
-04-30 01:19:30.396  4899  4899 E audit   : type=1400 audit(1682810370.391:84794): avc:  denied  { read } for  pid=17024 comm="inkedin.android" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=21617 scontext=u:r:untrusted_app:s0:c6,c256,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-30 01:19:30.396 17024 17036 W libc    : Access denied finding property "sys.perf.boostopt"
-04-30 01:19:30.396  4899  4899 E audit   : type=1300 audit(1682810370.391:84794): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7fcb563ba8 a2=88000 a3=0 items=0 ppid=4924 pid=17024 auid=4294967295 uid=10006 gid=10006 euid=10006 suid=10006 fsuid=10006 egid=10006 sgid=10006 fsgid=10006 tty=(none) ses=4294967295 comm="inkedin.android" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c6,c256,c512,c768 key=(null)
-04-30 01:19:30.397  4899  4899 E audit   : type=1327 audit(1682810370.391:84794): proctitle="zygote64"
-04-30 01:19:30.397  4899  4899 E audit   : type=1400 audit(1682810370.391:84795): avc:  denied  { read } for  pid=17024 comm="binder:17024_1" name="u:object_r:perf_prop:s0" dev="tmpfs" ino=21617 scontext=u:r:untrusted_app:s0:c6,c256,c512,c768 tcontext=u:object_r:perf_prop:s0 tclass=file permissive=0 SEPF_SM-A515F_13_0001 audit_filtered
-04-30 01:19:30.397  4899  4899 E audit   : type=1300 audit(1682810370.391:84795): arch=c00000b7 syscall=56 success=no exit=-13 a0=ffffff9c a1=7804bb12f8 a2=88000 a3=0 items=0 ppid=4924 pid=17024 auid=4294967295 uid=10006 gid=10006 euid=10006 suid=10006 fsuid=10006 egid=10006 sgid=10006 fsgid=10006 tty=(none) ses=4294967295 comm="binder:17024_1" exe="/system/bin/app_process64" subj=u:r:untrusted_app:s0:c6,c256,c512,c768 key=(null)
-04-30 01:19:30.398  4899  4899 E audit   : type=1327 audit(1682810370.391:84795): proctitle="com.sec.android.app.shealth"
-04-30 01:19:30.400 17024 17024 D ActivityThread: setConscryptValidator
-04-30 01:19:30.400 17024 17024 D ActivityThread: setConscryptValidator - put
-04-30 01:19:30.423 17024 17037 W libc    : Access denied finding property "sys.perf.boostopt"
-04-30 01:19:30.425 17024 17024 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10006; state: ENABLED
-04-30 01:19:30.435  5429  5429 D SemWifiP2pGoPowerSave: GopsReceiver : received : com.samsung.intent.action.CHECK_SIOP_LEVEL
-04-30 01:19:30.435  5429  5429 I SemWifiP2pGoPowerSave: siop_level = -2
-04-30 01:19:30.435   578   606 I SystemBroadcastReceiver: [#CMH#] onReceive completed :  0
-04-30 01:19:30.437   578   578 I PolicyManager: [#CMH#] onReceive action = EVENT_SIOP
-04-30 01:19:30.450 17024 17024 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/lib/arm64:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/base.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.en.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.ru.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.xxhdpi.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.linkedin.android
-04-30 01:19:30.450 17024 17024 D nativeloader: Extending system_exposed_libraries: libhumantracking.arcsoft.so:libPortraitDistortionCorrection.arcsoft.so:libPortraitDistortionCorrectionCali.arcsoft.so:libface_landmark.arcsoft.so:libFacialStickerEngine.arcsoft.so:libveengine.arcsoft.so:liblow_light_hdr.arcsoft.so:libhigh_dynamic_range.arcsoft.so:libFacialAttributeDetection.arcsoft.so:libBeauty_v4.camera.samsung.so:libexifa.camera.samsung.so:libjpega.camera.samsung.so:libOpenCv.camera.samsung.so:libImageScreener.camera.samsung.so:libMyFilter.camera.samsung.so:libtensorflowLite.myfilter.camera.samsung.so:libtensorflowlite_inference_api.myfilter.camera.samsung.so:libEventFinder.camera.samsung.so:libHIDTSnapJNI.camera.samsung.so:libSmartScan.camera.samsung.so:libRectify.camera.samsung.so:libDocRectifyWrapper.camera.samsung.so:libUltraWideDistortionCorrection.camera.samsung.so:libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so:libHprFace_GAE_api.camera.samsung.so:libFace_Landmark_API.camera.samsung.so:libHprFace_GAE_jni.camera.samsung.so:libFacialBasedSelfieCorrec
-04-30 01:19:30.472 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.arm64_v8a.dm': No such file or directory
-04-30 01:19:30.472 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.arm64_v8a.dm': No such file or directory
-04-30 01:19:30.474 17024 17024 W inkedin.android: Entry not found
-04-30 01:19:30.474 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.en.dm': No such file or directory
-04-30 01:19:30.475 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.en.dm': No such file or directory
-04-30 01:19:30.476 17024 17024 W inkedin.android: Entry not found
-04-30 01:19:30.477 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.ru.dm': No such file or directory
-04-30 01:19:30.477 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.ru.dm': No such file or directory
-04-30 01:19:30.479 17024 17024 W inkedin.android: Entry not found
-04-30 01:19:30.480 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.xxhdpi.dm': No such file or directory
-04-30 01:19:30.480 17024 17024 W ziparchive: Unable to open '/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.xxhdpi.dm': No such file or directory
-04-30 01:19:30.485 17024 17024 W inkedin.android: Entry not found
-04-30 01:19:30.486 17024 17024 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/base.apk:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.arm64_v8a.apk:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.en.apk:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.ru.apk:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.xxhdpi.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/lib/arm64:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/base.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q==/split_config.arm64_v8a.apk!/lib/arm64-v8a:/data/app/~~q6v_8AvFuG0sWdg0R09aIQ==/com.linkedin.android-8szbMDawsmujToq8gPop2Q=
-04-30 01:19:30.499 17024 17024 W inkedin.android: JIT profile information will not be recorded: profile file does not exist.
-04-30 01:19:30.499 17024 17024 W inkedin.android: JIT profile information will not be recorded: profile file does not exist.
-04-30 01:19:30.499 17024 17024 W inkedin.android: JIT profile information will not be recorded: profile file does not exist.
-04-30 01:19:30.499 17024 17024 W inkedin.android: JIT profile information will not be recorded: profile file does not exist.
-04-30 01:19:30.531 17024 17024 V GraphicsEnvironment: ANGLE Developer option for 'com.linkedin.android' set to: 'default'
-04-30 01:19:30.532 17024 17024 V GraphicsEnvironment: ANGLE GameManagerService for com.linkedin.android: false
-04-30 01:19:30.532 17024 17024 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
-04-30 01:19:30.537 17024 17024 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-30 01:19:30.542 17024 17024 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
-04-30 01:19:30.716 17024 17024 I EKGCrashLoopDetector: Last crash time: 0
-04-30 01:19:30.716 17024 17024 D EKGCrashLoopDetector: Didn't crash at startup last launch
-04-30 01:19:30.748 17024 17049 D ExceptionHandler: [EKG-BackgroundExecutor] Uploading pending java crashes
-04-30 01:19:30.751 17024 17049 D ExceptionHandler: [EKG-BackgroundExecutor] Number of crash files to process: 0
-04-30 01:19:30.756 17024 17024 D EKGNDKCrashReporter: miniDumpFilePath: /data/user/0/com.linkedin.android/files/ekg_ndk_crashes_v1/0.884.181/93e9c7d4-4f1a-49a6-13b9ad99-8b751c97.dmp
-04-30 01:19:30.756 17024 17024 D EKGNDKCrashReporter: pageKeyFilePath: /data/user/0/com.linkedin.android/files/ekg_ndk_crashes_v1/0.884.181/93e9c7d4-4f1a-49a6-13b9ad99-8b751c97.pagekey
-04-30 01:19:30.757 17024 17049 D ExceptionHandler: [EKG-BackgroundExecutor] Uploading native crashes
-04-30 01:19:30.758 17024 17049 D ExceptionHandler: [EKG-BackgroundExecutor] Number of crash files to process: 0
-04-30 01:19:30.761 17024 17024 I FlagshipApplication: [main] Granular phase APP_ATTACH completed. Interval(startNanos=1682810370665000000ns, durationNanos=94000000ns)
-04-30 01:19:30.817 17024 17024 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10006; state: ENABLED
-04-30 01:19:30.817 17024 17024 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
-04-30 01:19:30.833 17024 17024 I FirebaseInitProvider: FirebaseApp initialization successful
-04-30 01:19:30.877 17024 17024 E FlagshipApplication: [main] FlagshipApplication#onCreate() called for process id 17024
-04-30 01:19:30.890 17024 17024 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [com.linkedin.android.networking.util.NetworkMonitor.<init>(NetworkMonitor.java:58)] [com.linkedin.android.networking.util.NetworkMonitor.initialize(NetworkMonitor.java:40)] [com.linkedin.android.app.FlagshipApplication.onCreate(FlagshipApplication.java:85)] [android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1266)] [android.app.ActivityThread.handleBindApplication(ActivityThread.java:7614)] [android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)] [android.app.ActivityThread$H.handleMessage(ActivityThread.java:2400)]
-04-30 01:19:30.893  5429  6109 D ConnectivityService: requestNetwork for uid/pid:10006/17024 activeRequest: null callbackRequest: 19493 [NetworkRequest [ REQUEST id=19494, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-04-30 01:19:30.894  5429  5665 D ConnectivityService:    accepting network in place of null
-04-30 01:19:30.905  5429  5655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=19494, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:30.906  5429  5655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19494, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:30.908  5429  5655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19494, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:30.909  5429  5655 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19494, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:30.909  5429  5665 D ConnectivityService: Rematched networks [computed 1ms] [applied 2ms] [issued 13]
-04-30 01:19:30.909  5429  5665 D ConnectivityService: NetworkReassignment :
-04-30 01:19:30.909  5429  5665 D ConnectivityService:   19494 : null → 128
-04-30 01:19:30.961 17024 17024 I FlagshipApplication: [main] Granular phase APP_DEPENDENCY_INJECTION completed. Interval(startNanos=1682810370895000000ns, durationNanos=66000000ns)
-04-30 01:19:31.002  5429  6109 D PackageManager: setEnabledSetting : userId = 0 packageName = com.linkedin.android cmp = androidx.work.impl.background.systemjob.SystemJobService newState = 1 callingPackage = 10006/com.linkedin.android
-04-30 01:19:31.003  5429  5705 I ChimeraAggressivePolicyHandler: executePolicy() - triggerSource: TRIGGER_SOURCE_LMKD
-04-30 01:19:31.004  5429  5705 I ChimeraAggressivePolicyHandler: available memory: 1119756, free memory target: 870400, quit chimera
-04-30 01:19:31.005  5429  6109 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.linkedin.android userId : 0
-04-30 01:19:31.007  5429  6109 D ApplicationPolicy: getApplicationComponentState : pkg = com.linkedin.android userId : 0
-04-30 01:19:31.038 17024 17065 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [org.chromium.net.NetworkChangeNotifierAutoDetect$RegistrationPolicy.register(NetworkChangeNotifierAutoDetect.java:38)] [org.chromium.net.RegistrationPolicyAlwaysRegister.init(RegistrationPolicyAlwaysRegister.java:3)] [org.chromium.net.NetworkChangeNotifierAutoDetect.<init>(NetworkChangeNotifierAutoDetect.java:105)] [org.chromium.net.NetworkChangeNotifier.setAutoDetectConnectivityStateInternal(NetworkChangeNotifier.java:14)] [org.chromium.net.impl.CronetLibraryLoader.ensureInitializedOnInitThread(CronetLibraryLoader.java:17)] [org.chromium.net.impl.CronetLibraryLoader$1.run(CronetLibraryLoader.java:1)]
-04-30 01:19:31.040  5429  6109 D ConnectivityService: requestNetwork for uid/pid:10006/17024 activeRequest: null callbackRequest: 19495 [NetworkRequest [ REQUEST id=19496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
-04-30 01:19:31.042  5429  5665 D ConnectivityService:    accepting network in place of null
-04-30 01:19:31.046 17024 17065 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4233)] [android.net.ConnectivityManager.registerNetworkCallback(ConnectivityManager.java:4615)] [org.chromium.net.NetworkChangeNotifierAutoDetect$RegistrationPolicy.register(NetworkChangeNotifierAutoDetect.java:111)] [org.chromium.net.RegistrationPolicyAlwaysRegister.init(RegistrationPolicyAlwaysRegister.java:3)] [org.chromium.net.NetworkChangeNotifierAutoDetect.<init>(NetworkChangeNotifierAutoDetect.java:105)] [org.chromium.net.NetworkChangeNotifier.setAutoDetectConnectivityStateInternal(NetworkChangeNotifier.java:14)] [org.chromium.net.impl.CronetLibraryLoader.ensureInitializedOnInitThread(CronetLibraryLoader.java:17)] [org.chromium.net.impl.CronetLibraryLoader$1.run(CronetLibraryLoader.java:1)]
-04-30 01:19:31.050  5429  5655 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=19496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:31.051  5429  5655 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:31.051 17024 17064 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10006; state: ENABLED
-04-30 01:19:31.053  5429  5655 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:31.054  5429  5655 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=19496, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10006 RequestorUid: 10006 RequestorPkg: com.linkedin.android UnderlyingNetworks: Null] ]
-04-30 01:19:31.055  5429  5665 D ConnectivityService: Rematched networks [computed 0ms] [applied 3ms] [issued 10]
-04-30 01:19:31.055  5429  5665 D ConnectivityService: NetworkReassignment :
-04-30 01:19:31.055  5429  5665 D ConnectivityService:   19496 : null → 128
-04-30 01:19:31.069  5429  5665 D ConnectivityService: Rematched networks [computed 1ms] [applied 2ms] [issued 11]
-04-30 01:19:31.069  5429  5665 D ConnectivityService: NetworkReassignment : no changes
-04-30 01:19:31.079 17024 17063 I cr_CronetLibraryLoader: Cronet version: 102.0.5005.125, arch: aarch64
-04-30 01:19:31.146 17024 17083 I LMDBLRUCache: Entry init duration: 1ms
-04-30 01:19:31.146 17024 17024 W DaggerInfraApplicationD: [main] Cannot set the application tracking stack multiple times. Skipping assignment.
-04-30 01:19:31.146 17024 17024 D GlobalSequence: Global Sequence already initialized. Ignoring
-04-30 01:19:31.157 17024 17087 W ThreadPoolExecutor: [ConnectionMonitor-1] ConnectionStateChangedListener added to ConnectionMonitor, but ConnectionMonitor has not been started.
-04-30 01:19:31.165  5429  5751 D NetdEventListenerService: DNS Requested by : 128, 10006
-04-30 01:19:31.171 17024 17024 D LixManagerImpl: [main] Triggering sync for lix lixType 0
-04-30 01:19:31.171 17024 17024 D LixNetworkManager: [main] Batch Fetch Lix url:/lix/lixFrontendTreatmentsV2?action=batchGet
-04-30 01:19:31.294 17024 17024 D AppLaunchRateLimiter: [main] shouldLimitAppLaunchNetworkCalls: S600
-04-30 01:19:31.294 17024 17024 D LaunchManagerImpl: [main] onAppProcessStarted(): shouldLimitNetworkCalls=false
-04-30 01:19:31.301 17024 17024 D ShortcutBadger: Finding badger
-04-30 01:19:31.304 17024 17024 D ShortcutBadger: Current badger:me.leolin.shortcutbadger.impl.DefaultBadger
-04-30 01:19:31.325 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.331 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.363 17024 17109 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.370 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.420 17024 17024 D EventBus: No subscribers registered for event class com.linkedin.android.infra.events.VideoAutoPlaySettingChangedEvent
-04-30 01:19:31.420 17024 17024 D EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
-04-30 01:19:31.423 17024 17024 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10006; state: ENABLED
-04-30 01:19:31.463 17024 17024 I Choreographer: Skipped 35 frames!  The application may be doing too much work on its main thread.
-04-30 01:19:31.497 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.607 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.669 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.750 17024 17102 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=6e8773ca-e1a5-4d86-b91b-3ba4be1e8407, tags={ com.linkedin.android.litrackinglib.network.SendTrackingEventWorker, period_sync_work } ]
-04-30 01:19:31.761 17024 17099 W WM-WorkSpec: Flex duration lesser than minimum allowed value; Changed to 300000
-04-30 01:19:31.797 17024 17064 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=d4af4d43-769c-4869-8db5-3647769d67f7, tags={ com.linkedin.android.segment.ChameleonPeriodicWork } ]
-04-30 01:19:31.822  5429  5486 I libprocessgroup: Successfully killed process cgroup uid 10256 pid 14588 in 0ms
-04-30 01:19:31.849  5429 17121 D TrafficStats: tagSocket(939) with statsTag=0xffffffff, statsUid=-1
-04-30 01:19:31.858  4924  4924 I Zygote  : Process 14588 exited due to signal 9 (Killed)
-04-30 01:19:31.872  4993  4993 I SensorsHub: batch: handle=17 period=1000000 timeout=0
-04-30 01:19:31.873  5429  8509 D SensorService: Calling activate off
-04-30 01:19:32.056  5429 17121 D WifiConnectivityMonitor.DnsThread:  [|207]
-04-30 01:19:32.058  5429  5738 D WifiConnectivityMonitor.NetworkStatsAnalyzer: DNS resultType : 0, responseTime : 207
-04-30 01:19:32.059  5429  5736 D OpenNetworkQos[4.00]: updateBssidLatestDnsResultType - result: 0
-04-30 01:19:32.059  5429  5736 D OpenNetworkQos[4.00]: updateBssidNoInternet: mBssidNoInternet = false
-04-30 01:19:32.059  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
-04-30 01:19:32.059  5429  5736 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 30 30
-04-30 01:19:32.060  5429  5736 I WifiProfileShare: network QoS data was changed (internet), updateQoSData networkType: true, qosData: false
-04-30 01:19:32.060  5429  7167 V WifiProfileShare.Caster: update wips network, size: 0
-04-30 01:19:32.061  5429  7167 D WifiProfileShare: nearby scanning settings run
-04-30 01:19:32.061  5429  7167 D WifiProfileShare: network score provider settings enabled
-04-30 01:19:32.061  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosScores: 30 30 30
-04-30 01:19:32.061  5429  7167 D OpenNetworkQos[4.00]: getOpenNetworkQosNoInternetStatus: false
-04-30 01:19:32.061  5429  7167 I WifiProfileShare.Caster: current network type: 0, score: [30, 30, 30]
-04-30 01:19:32.062  5429  7167 V WifiProfileShare.Cache: update network score 00:e4:06:**:**:90
-04-30 01:19:32.062  5429  7167 D WifiProfileShare.ScanMatcher: getMcfDataList size:2
-04-30 01:19:32.063  5429  7167 I WifiProfileShare.Caster: qos data was updated , before:type:QOS, pBssid:51:2e:90, qosData:7c after:type:QOS, pBssid:51:2e:90, qosData:7c
-04-30 01:19:32.065  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
-04-30 01:19:32.065  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
-04-30 01:19:32.065  5429  7167 D WifiProfileShare.McfCast: updateQoSData ignored, same contents
-04-30 01:19:32.065  5429  7167 D WifiProfileShare.MCF: success update QosData !
-04-30 01:19:32.067  5429  7167 I [MCFSDK_android_1.2.4010]_4_b: isNetworkEnabled - type : 1 ret : true
-04-30 01:19:32.067  5429  7167 D WifiProfileShare.McfCast: -ME--- mIsNetworkEnabled :true
-04-30 01:19:32.067  5429  7167 D WifiProfileShare.McfCast: -ME--- updatePasswordDate pwdData size:2
-04-30 01:19:32.402  5429  7411 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 24907, isSameBssidAndFreq true
-04-30 01:19:32.406  5878  5878 D NetworkController.WifiSignalController: notifyListener: visible=true, connected=true, inetCondition=1, isDefault=true, wifiTestReported=true, receivedInetCondition=-1, hideDuringMobileSwitching=false
-04-30 01:19:32.407  5429  5717 I SemWifiLinkQualityMonitor: Link Qos Query: 0.086 ms / 92.857 Mbps (175 / 0.000 / 1.885)
-04-30 01:19:32.408  5878  6043 D Tile.WifiTile: handleUpdateState isTransient=false transientEnabling =false cb.isTransient=false state.state = 2 mStateBeforeClick.value =false enabled =true
-04-30 01:19:32.442   578   610 I PolicyManager: [#CMH#] Is foreground game app: false
-04-30 01:19:32.998  5429  5739 D WifiConnectivityMonitor: called startWcmPoll but already Ongoing
-04-30 01:19:32.998  5429  5739 D SemWifiRssiBasePoller: RSSI_BASE_STOP
-04-30 01:19:34.073 12235 12258 D Benchmark: timeNs[ 0:10]: 597 606 578 650 580 572 614 606 590 569
-04-30 01:19:34.074 12235 12258 D Benchmark: timeNs[10:20]: 574 627 612 635 583 581 605 608 612 582
-04-30 01:19:34.074 12235 12258 D Benchmark: timeNs[20:30]: 582 604 607 621 581 585 598 607 611 582
-04-30 01:19:34.074 12235 12258 D Benchmark: timeNs[30:40]: 790 598 613 617 578 581 618 606 620 620
-04-30 01:19:34.074 12235 12258 D Benchmark: timeNs[40:50]: 690 617 632 611 583 578 632 591 606 580
-04-30 01:19:34.229 12235 12258 D Benchmark: allocationCount[ 0:10]: 10 10 10 10 10
-04-30 01:19:34.229 12235 12258 D Benchmark: Set 12258 (Bench thread) to priority -8. Was -20, now -8
-04-30 01:19:34.229 12235 12258 D Benchmark: Set 12243 (Jit) to priority 9. Was -15, now 9
-04-30 01:19:34.229 12235 12258 D Benchmark: Warmup: t=1.718, iter=577286, fastAvg=3574, slowAvg=3524
-04-30 01:19:34.229 12235 12258 I PerfettoCapture: Stopping perfetto.
-04-30 01:19:34.270 17007 17007 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
-04-30 01:19:34.274 12235 12258 D Benchmark: kill -TERM command output -
-04-30 01:19:34.283  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=1109)
-04-30 01:19:34.286  5130  5130 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
-04-30 01:19:34.336 30292 30337 I ContactsProvider_EventLog: cp_s: [CONTACT con(156) dat(1077) acc({sim(3)=15, sec(6)=1, sim2(4)=1, google(2)=81, org.telegram.messenger(236)=99, com.whatsapp(14)=39}) calls([logtype:100 cnt:867, logtype:200 cnt:5, logtype:300 cnt:495, logtype:1000 cnt:608, logtype:1150 cnt:161]) Iso(RS) uId(0) ]
-04-30 01:19:34.336 30292 30337 I ContactsProvider_EventLog: cp_s: [ agr({[2 ,2 ,14 ,236]=1, [2 ,14 ,236]=32, [3]=15, [14]=1, [4]=1, [2 ,14]=4, [2 ,2]=2, [2]=33, [6 ,14]=1, [2 ,236]=6, [236]=60}) ]
-04-30 01:19:34.336 30292 30337 I ContactsProvider_EventLog: cp_s: [ cnt({acore(30292)=1}) ]
-04-30 01:19:34.336 30292 30337 I ContactsProvider_EventLog: cp_s: [PROFILE con(1) dat(1) acc({vnd.sec.contact.phone=1}) ] [SAPROFILE ]
-04-30 01:19:34.336 30292 30337 I ContactsProvider_EventLog: cp_s: [STATE R(T) ]
-04-30 01:19:34.341  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
-04-30 01:19:34.347  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=1110)
-04-30 01:19:34.348  5130  5130 I perfetto:  probes_producer.cc:396 Producer stop (id=1111)
-04-30 01:19:34.388 17007 17007 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
-04-30 01:19:34.392  5131  5131 I perfetto: ng_service_impl.cc:2426 Tracing session 278 ended, total sessions:0
-04-30 01:19:34.891 12235 12258 D Benchmark: Waiting 500 ms for [ProcessPid(processName=perfetto, pid=17007)] to die
-04-30 01:19:35.017 12235 12258 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-04-29-23-19-34.perfetto-trace.
-04-30 01:19:35.109 12235 12258 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-04-29-23-19-34.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-04-29-23-19-34.perfetto-trace
-04-30 01:19:35.153  8350 16975 W MediaProvider: isAppCloneUserPair for user 0: false
-04-30 01:19:35.190  5429  8526 D SyncManager: userId - 0 auto - true
-04-30 01:19:35.292 12235 12258 I Benchmark: BoxRecreationBenchmark.valuePreserveBoxDouble[Metric (timeNs) results: median 606.4925663843322, min 569.1238340302348, max 790.180408134091, standardDeviation: 34.90256951372795, Metric (allocationCount) results: median 10.0, min 10.0, max 10.000035738536864, standardDeviation: 1.5982759568909154E-5]count=27981
-04-30 01:19:35.296  5429  5488 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
-04-30 01:19:35.297 12235 12258 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-30 01:19:35.307 12235 12258 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
-04-30 01:19:35.310  9200 16976 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 219915 [CONTEXT service_id=218 ]
-04-30 01:19:35.323  9200 16818 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 50 uptime_millis: 50 exec_start_elapsed_seconds: 219915 [CONTEXT service_id=218 ]
-04-30 01:19:35.332  5429  8538 D SyncManager: userId - 0 auto - true
-04-30 01:19:35.336  8350 17160 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
-04-30 01:19:35.343  8350 16975 W MediaProvider: isAppCloneUserPair for user 0: false
-04-30 01:19:35.350  5429  6683 D SyncManager: userId - 0 auto - true
-04-30 01:19:35.356 12235 12258 I TestRunner: finished: valuePreserveBoxDouble(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+05-10 03:12:46.048 23197 23221 I TestRunner: started: valuePreserveBoxDouble(org.jetbrains.android_benchmark.BoxRecreationBenchmark)
+05-10 03:12:46.056 23197 23197 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+05-10 03:12:46.056 23197 23197 I MonitoringInstr: Finishing activity: androidx.benchmark.IsolationActivity@2611a25
+05-10 03:12:46.066 23197 23221 I GrantPermissionCallable: Permission: android.permission.WRITE_EXTERNAL_STORAGE is already granted!
+05-10 03:12:46.067 23197 23221 I GrantPermissionCallable: Permission: android.permission.READ_EXTERNAL_STORAGE is already granted!
+05-10 03:12:46.067 23197 23221 D Benchmark: -- Running org.jetbrains.android_benchmark.BoxRecreationBenchmark#valuePreserveBoxDouble --
+05-10 03:12:46.068 23197 23221 D PerfettoCapture: Supported ABIs: arm64-v8a, armeabi-v7a, armeabi
+05-10 03:12:46.068 23197 23221 D PerfettoCapture: Recording perfetto trace
+05-10 03:12:46.069 30196 25435 I AlarmManager: setExactAndAllowWhileIdle [name: FcmRetry type: 2 triggerAtMillis: 249470978]
+05-10 03:12:46.097  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.098  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.111 23197 23221 I PerfettoCapture: Cleanup perfetto before starting.
+05-10 03:12:46.121  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.124  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.130  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.134 30196 25435 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 249350 [CONTEXT service_id=218 ]
+05-10 03:12:46.149 30196 25435 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 100 uptime_millis: 100 exec_start_elapsed_seconds: 249350 [CONTEXT service_id=218 ]
+05-10 03:12:46.277 18796 18810 I BadgeProvider: query, [selection] : package=?
+05-10 03:12:46.282 18796 18796 I BadgeCountReceiver: badge intent : Intent { act=android.intent.action.BADGE_COUNT_UPDATE flg=0x1000010 cmp=com.sec.android.provider.badge/.BadgeCountReceiver (has extras) }
+05-10 03:12:46.283 18796 18796 I BadgeCountReceiver: packageName: org.telegram.messenger, className: org.telegram.messenger.NoxIcon, count: 1
+05-10 03:12:46.289  6910  6910 I BadgeCountUpdaterImpl: onChange
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: Writing exception to parcel
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: java.lang.SecurityException: Permission Denial: writing com.sec.android.provider.badge.BadgeProvider uri content://com.sec.badge/apps?notify=true from pid=24784, uid=10268 requires com.sec.android.provider.badge.permission.WRITE, or grantUriPermission()
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.content.ContentProvider.enforceWritePermissionInner(ContentProvider.java:1025)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.content.ContentProvider.semEnforceWritePermission(ContentProvider.java:951)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.content.ContentProvider$Transport.enforceWritePermission(ContentProvider.java:730)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:462)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:231)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.os.Binder.execTransactInternal(Binder.java:1321)
+05-10 03:12:46.292 18796 20150 E DatabaseUtils: 	at android.os.Binder.execTransact(Binder.java:1280)
+05-10 03:12:46.293  6910  6910 I BadgeCountUpdaterImpl: onChange
+05-10 03:12:46.295 18796 18796 I BadgeProvider: sendNotify entered. [uri] : content://com.sec.badge/apps
+05-10 03:12:46.295 18796 18796 I BadgeProvider: sendNotify, [notify] : null
+05-10 03:12:46.296 18796 18796 I BadgeProvider: update, getCallingPackage() : com.sec.android.provider.badge
+05-10 03:12:46.296 18796 18796 I BadgeProvider: update, [uri] : content://com.sec.badge/apps
+05-10 03:12:46.296 18796 18796 I BadgeProvider: update, [uri.query] : null
+05-10 03:12:46.297 18796 18796 I BadgeProvider: update, [BadgeCount] : badgecount=1
+05-10 03:12:46.298 18796 18796 I BadgeProvider: update, [UpdateCount] : 1
+05-10 03:12:46.314 23197 23221 I PerfettoCapture: Perfetto output file cleanup -
+05-10 03:12:46.314 23197 23221 I PerfettoCapture: Starting perfetto tracing with cmd: cat /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/trace_config.pb | perfetto --background -c - -o /data/misc/perfetto-traces/trace_output.pb
+05-10 03:12:46.395 18796 20150 I BadgeProvider: query, [selection] : package=?
+05-10 03:12:46.401 18796 18796 I BadgeCountReceiver: badge intent : Intent { act=android.intent.action.BADGE_COUNT_UPDATE flg=0x1000010 cmp=com.sec.android.provider.badge/.BadgeCountReceiver (has extras) }
+05-10 03:12:46.401 18796 18796 I BadgeCountReceiver: packageName: org.telegram.messenger, className: org.telegram.messenger.NoxIcon, count: 0
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: Writing exception to parcel
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: java.lang.SecurityException: Permission Denial: writing com.sec.android.provider.badge.BadgeProvider uri content://com.sec.badge/apps?notify=true from pid=24784, uid=10268 requires com.sec.android.provider.badge.permission.WRITE, or grantUriPermission()
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.content.ContentProvider.enforceWritePermissionInner(ContentProvider.java:1025)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.content.ContentProvider.semEnforceWritePermission(ContentProvider.java:951)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.content.ContentProvider$Transport.enforceWritePermission(ContentProvider.java:730)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.content.ContentProvider$Transport.update(ContentProvider.java:462)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:231)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.os.Binder.execTransactInternal(Binder.java:1321)
+05-10 03:12:46.404 18796 18810 E DatabaseUtils: 	at android.os.Binder.execTransact(Binder.java:1280)
+05-10 03:12:46.404  6910  6910 I BadgeCountUpdaterImpl: onChange
+05-10 03:12:46.410 18796 18796 I BadgeProvider: sendNotify entered. [uri] : content://com.sec.badge/apps
+05-10 03:12:46.410 18796 18796 I BadgeProvider: sendNotify, [notify] : null
+05-10 03:12:46.411  6910  6910 I BadgeCountUpdaterImpl: onChange
+05-10 03:12:46.411 18796 18796 I BadgeProvider: update, getCallingPackage() : com.sec.android.provider.badge
+05-10 03:12:46.411 18796 18796 I BadgeProvider: update, [uri] : content://com.sec.badge/apps
+05-10 03:12:46.412 18796 18796 I BadgeProvider: update, [uri.query] : null
+05-10 03:12:46.412 18796 18796 I BadgeProvider: update, [BadgeCount] : badgecount=0
+05-10 03:12:46.412 18796 18796 I BadgeProvider: update, [UpdateCount] : 1
+05-10 03:12:46.496 25608 25608 I perfetto:    perfetto_cmd.cc:1001 Connected to the Perfetto traced service, starting tracing
+05-10 03:12:46.498  5440  5440 I perfetto: ing_service_impl.cc:953 Configured tracing session 29, #sources:4, duration:0 ms, #buffers:2, total buffer size:36864 KB, total sessions:1, uid:2000 session name: ""
+05-10 03:12:46.501  5438  5438 I perfetto:  probes_producer.cc:139 Ftrace setup (target_buf=57)
+05-10 03:12:46.538 23197 23221 I PerfettoCapture: Perfetto output - 25608
+05-10 03:12:46.538 23197 23221 I PerfettoCapture: EXITCODE=0
+05-10 03:12:46.548  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.574  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+05-10 03:12:46.577 12790 12790 I SCS@AiSearch user 0: (ObserverWorker::AOSP_MP) [main] entering in startWork():
+05-10 03:12:46.577 12790 12790 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [main] entering in onChange():
+05-10 03:12:46.578 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) [AOSP_MP-0] entering in collectChanges():
+05-10 03:12:46.595  5438  5438 I perfetto:    ftrace_procfs.cc:335 enabled ftrace in /sys/kernel/tracing/
+05-10 03:12:46.601  5679  6467 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+05-10 03:12:46.602  5679  6467 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-10 03:12:46.604  5679  6467 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-10 03:12:46.612  6910  7270 I BadgeCountUpdaterImpl: reload badge without refresh
+05-10 03:12:46.623  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:46.630 18796 20150 I BadgeProvider: query, [selection] : null
+05-10 03:12:46.663  6910  7270 I BadgeCache: update cache : com.vkontakte.android user : UserHandle{0}  count : 7
+05-10 03:12:46.669 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchInternal values : maxSyncId: 1000008667 indexCount: 891 sourceCount: 891
+05-10 03:12:46.684  6910  7270 I BadgeCache: update cache : com.vkontakte.android user : UserHandle{0}  count : 1
+05-10 03:12:46.696 23197 23221 I PerfettoCapture: Perfetto tracing started successfully with pid 25608.
+05-10 03:12:46.697  6910  7270 I BadgeCache: reloadBadge size : 1
+05-10 03:12:46.712 12790 12831 I SCS@AiSearch user 0: (IndexManager) [AOSP_MP-0] entering in addIndex():
+05-10 03:12:46.717 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetch: fetching took  82 ms
+05-10 03:12:46.717 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) fetchChanges: applied 0 items
+05-10 03:12:46.718 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) Collect finished. Result: true
+05-10 03:12:46.720 12790 12827 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f7ce61b0-d1c4-491d-a06f-0d78ee1dd3b8, tags={ com.sec.android.app.myfiles, com.samsung.android.scs.ai.search.data.collector.ObserverWorker } ]
+05-10 03:12:46.725 12790 12831 I SCS@AiSearch user 0: (BaseCollector::AOSP_MP) enqueue ObserverWorker name: com.sec.android.app.myfiles, policy: APPEND_OR_REPLACE
+05-10 03:12:46.767 23197 23221 I PerfettoCapture: /sys/kernel/tracing/tracing_on = 1, polled 0 times, capture fully started
+05-10 03:12:46.769 23197 23221 D Benchmark: Set 23221 (Bench thread) to priority -20. Was -8, now -20
+05-10 03:12:46.769 23197 23221 D Benchmark: Set 23206 (Jit) to priority -15. Was 9, now -15
+05-10 03:12:46.799  5679  9349 D PackageManager: setEnabledSetting : userId = 0 packageName = com.samsung.android.scs cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10380/com.samsung.android.scs
+05-10 03:12:46.801  5679  9349 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.samsung.android.scs userId : 0
+05-10 03:12:46.802  5679  9349 D ApplicationPolicy: getApplicationComponentState : pkg = com.samsung.android.scs userId : 0
+05-10 03:12:46.811 23197 23221 I _benchmark.test: Explicit concurrent copying GC freed 801010(12MB) AllocSpace objects, 1(20KB) LOS objects, 67% free, 2955KB/9099KB, paused 290us,120us total 40.730ms
+05-10 03:12:47.368  5679  7439 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 11487, isSameBssidAndFreq true
+05-10 03:12:47.371  5679  6237 I SemWifiLinkQualityMonitor: Link Qos Query: 0.023 ms / 346.400 Mbps (433 / 0.000 / 1.250)
+05-10 03:12:48.229  5679  9349 D PackageManager: setEnabledSetting : userId = 0 packageName = com.Slack cmp = androidx.work.impl.background.systemalarm.RescheduleReceiver newState = 1 callingPackage = 10329/com.Slack
+05-10 03:12:48.230  5679  9349 D ApplicationPolicy: getApplicationStateEnabled : pkg = com.Slack userId : 0
+05-10 03:12:48.231  5679  9349 D ApplicationPolicy: getApplicationComponentState : pkg = com.Slack userId : 0
+05-10 03:12:48.258  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:48.285 22703 22785 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [androidx.work.impl.utils.NetworkApi24.registerDefaultNetworkCallbackCompat(Unknown Source:10)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.startTracking(Unknown Source:15)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:130)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.schedule(Unknown Source:302)] [androidx.work.impl.Schedulers.schedule(Unknown Source:149)] [androidx.work.impl.utils.EnqueueRunnable.run(Unknown Source:53)] [androidx.work.Worker$2.run$androidx$work$impl$utils$SerialExecutorImpl$Task(Unknown Source:4)] [androidx.work.Worker$2.run(Unknown Source:868)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)] [java.lang.Thread.run(Thread.java:1012)]
+05-10 03:12:48.289  5679  8516 D ConnectivityService: requestNetwork for uid/pid:10329/22703 activeRequest: null callbackRequest: 18758 [NetworkRequest [ REQUEST id=18759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+05-10 03:12:48.291  5679  6088 D ConnectivityService:    accepting network in place of null
+05-10 03:12:48.304  5679  6066 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=18759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+05-10 03:12:48.306  5679  6066 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=18759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+05-10 03:12:48.308  5679  6066 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=18759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+05-10 03:12:48.309  5679  6066 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=18759, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10329 RequestorUid: 10329 RequestorPkg: com.Slack UnderlyingNetworks: Null] ]
+05-10 03:12:48.314  5679  6088 D ConnectivityService: Rematched networks [computed 1ms] [applied 5ms] [issued 18]
+05-10 03:12:48.315  5679  6088 D ConnectivityService: NetworkReassignment :
+05-10 03:12:48.315  5679  6088 D ConnectivityService:   18759 : null → 112
+05-10 03:12:48.316 22703 22703 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.unregisterNetworkCallback(ConnectivityManager.java:4863)] [androidx.work.impl.utils.NetworkApi21.unregisterNetworkCallbackCompat(Unknown Source:10)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.stopTracking(Unknown Source:15)] [androidx.work.impl.constraints.trackers.ConstraintTracker.removeListener(Unknown Source:24)] [androidx.work.impl.constraints.controllers.ConstraintController.replace(Unknown Source:81)] [androidx.work.impl.constraints.WorkConstraintsTrackerImpl.replace(Unknown Source:41)] [androidx.work.impl.background.greedy.GreedyScheduler.onExecuted(Unknown Source:55)] [androidx.work.impl.Processor.onExecuted(Unknown Source:59)] [com.bugsnag.android.DeliveryDelegate$1.run(Unknown Source:212)]
+05-10 03:12:48.318  5679  6088 D ConnectivityService:  Removing from current network [112 WIFI], leaving 155 requests.
+05-10 03:12:49.114  5679  6270 D WifiConnectivityMonitor: start WCM Poll.
+05-10 03:12:50.392  5679  7439 D SemWifiUsabilityStatsMonitor: onWifiUsabilityStats - seqNum 11488, isSameBssidAndFreq true
+05-10 03:12:50.394  5679  6237 I SemWifiLinkQualityMonitor: Link Qos Query: 0.028 ms / 288.667 Mbps (433 / 0.000 / 1.500)
+05-10 03:12:51.234 23197 23221 D Benchmark: timeNs[ 0:10]: 675 617 592 626 585 621 591 594 621 601
+05-10 03:12:51.235 23197 23221 D Benchmark: timeNs[10:20]: 619 585 628 586 597 821 586 656 594 607
+05-10 03:12:51.235 23197 23221 D Benchmark: timeNs[20:30]: 618 586 830 589 598 642 585 630 652 597
+05-10 03:12:51.235 23197 23221 D Benchmark: timeNs[30:40]: 635 574 604 624 597 642 590 614 668 602
+05-10 03:12:51.235 23197 23221 D Benchmark: timeNs[40:50]: 649 585 642 620 608 669 588 623 614 610
+05-10 03:12:51.404 23197 23221 W _benchmark.test: Suspending all threads took: 11.386ms
+05-10 03:12:51.405 23197 23221 D Benchmark: allocationCount[ 0:10]: 9 10 10 10 10
+05-10 03:12:51.406 23197 23221 D Benchmark: Set 23221 (Bench thread) to priority -8. Was -20, now -8
+05-10 03:12:51.406 23197 23221 D Benchmark: Set 23206 (Jit) to priority 9. Was -15, now 9
+05-10 03:12:51.406 23197 23221 D Benchmark: Warmup: t=2.017, iter=713638, fastAvg=3478, slowAvg=3565
+05-10 03:12:51.406 23197 23221 I PerfettoCapture: Stopping perfetto.
+05-10 03:12:51.446 25608 25608 I perfetto:    perfetto_cmd.cc:1168 SIGINT/SIGTERM received: disabling tracing.
+05-10 03:12:51.449 23197 23221 D Benchmark: kill -TERM command output -
+05-10 03:12:51.464  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=113)
+05-10 03:12:51.468  5438  5438 I perfetto:    ftrace_procfs.cc:342 disabled ftrace in /sys/kernel/tracing/
+05-10 03:12:51.527  4389  4389 I hwservicemanager: getTransport: Cannot find entry android.hardware.atrace@1.0::IAtraceDevice/default in either framework or device VINTF manifest.
+05-10 03:12:51.536  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=114)
+05-10 03:12:51.538  5438  5438 I perfetto:  probes_producer.cc:396 Producer stop (id=115)
+05-10 03:12:51.584 25608 25608 I perfetto:    perfetto_cmd.cc:1124 Trace written into the output file
+05-10 03:12:51.589  5440  5440 I perfetto: ng_service_impl.cc:2426 Tracing session 29 ended, total sessions:0
+05-10 03:12:51.596 23197 23221 I PerfettoCapture: Writing to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-05-10-01-12-51.perfetto-trace.
+05-10 03:12:51.676 23197 23221 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-05-10-01-12-51.perfetto-trace to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/BoxRecreationBenchmark_valuePreserveBoxDouble_2023-05-10-01-12-51.perfetto-trace
+05-10 03:12:51.729  8330 25479 W MediaProvider: isAppCloneUserPair for user 0: false
+05-10 03:12:51.757  5679  9349 D SyncManager: userId - 0 auto - true
+05-10 03:12:51.858 23197 23221 I Benchmark: BoxRecreationBenchmark.valuePreserveBoxDouble[Metric (timeNs) results: median 612.6814213162654, min 574.8453457631836, max 830.4871991095033, standardDeviation: 48.84414579397916, Metric (allocationCount) results: median 10.0, min 9.999965214971477, max 10.000069570057047, standardDeviation: 3.81050895714399E-5]count=28748
+05-10 03:12:51.862 23197 23221 D Benchmark: writing results to /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json
+05-10 03:12:51.873 23197 23221 D Benchmark: Copying /storage/emulated/0/Android/data/org.jetbrains.android_benchmark.test/cache/org.jetbrains.android_benchmark.test-benchmarkData.json to /sdcard/Android/media/org.jetbrains.android_benchmark.test/additional_test_output/org.jetbrains.android_benchmark.test-benchmarkData.json
+05-10 03:12:51.882  5679  5748 W libprocessgroup: Failed to open /dev/blkio//cgroup.procs: No such file or directory
+05-10 03:12:51.887  8330 25634 I MediaProvider: Deleted 1 0 0 0 0 0 0 items on external_primary due to org.jetbrains.android_benchmark.test
+05-10 03:12:51.891  5679  6467 D SyncManager: userId - 0 auto - true
+05-10 03:12:51.899  8330 25334 W MediaProvider: isAppCloneUserPair for user 0: false
+05-10 03:12:51.905 30196 25583 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 249356 [CONTEXT service_id=218 ]
+05-10 03:12:51.908  5679  9349 D SyncManager: userId - 0 auto - true
+05-10 03:12:51.913 23197 23221 I TestRunner: finished: valuePreserveBoxDouble(org.jetbrains.android_benchmark.BoxRecreationBenchmark)

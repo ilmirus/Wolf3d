@@ -10,6 +10,7 @@ plugins {
     id 'com.android.library' version '7.4.1' apply false
     id 'androidx.benchmark' version '1.1.0-beta04' apply false
     id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'org.graalvm.buildtools.native' version '0.9.4'
 }
 
 apply plugin: "kotlin"
@@ -27,6 +28,9 @@ dependencies {
     jmh 'commons-io:commons-io:2.11.0'
 }
 
+def useGraal = project.properties["useGraal"]?.toBoolean() ?: false
+println(useGraal ? "Graal is used" : "Graal is not used")
+
 tasks.withType(KotlinCompile).configureEach {
     kotlinOptions {
         languageVersion = "2.0"
@@ -37,5 +41,10 @@ tasks.withType(KotlinCompile).configureEach {
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
+        vendor = useGraal ? JvmVendorSpec.GRAAL_VM : JvmVendorSpec.AMAZON
     }
+}
+
+jmh {
+    resultsFile = project.file("${project.rootDir}/results/jmh/${useGraal ? "Graal" : "Hotspot"}.txt")
 }
