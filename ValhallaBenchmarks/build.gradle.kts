@@ -27,7 +27,7 @@ java {
 }
 
 jmh {
-    resultsFile.set(project.file("${project.rootDir}/results/jmh/HotSpot-Valhalla.txt"))
+    resultsFile.set(project.file("${project.rootDir}/results/jmh/Hotspot-Valhalla.txt"))
 }
 
 tasks.withType<KotlinCompile>().configureEach {
