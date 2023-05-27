@@ -2,8 +2,8 @@
 
 package long_pack.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 private inline fun ComplexFloat.encodeToLong() = real.toRawBits().toLong().shl(32) or imaginary.toRawBits().toLong().and(0xFFFFFFFF)
 private inline fun Long.decodeToComplexFloat(): ComplexFloat = ComplexFloat(Float.fromBits(shr(32).toInt()), Float.fromBits(toInt()))

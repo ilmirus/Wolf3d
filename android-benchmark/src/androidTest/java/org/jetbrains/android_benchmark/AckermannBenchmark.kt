@@ -1,6 +1,6 @@
 package org.jetbrains.android_benchmark
 
-import ComplexNumberConsumer
+import shared.ComplexNumberConsumer
 import androidx.benchmark.junit4.BenchmarkRule
 import androidx.benchmark.junit4.measureRepeated
 import androidx.test.ext.junit.runners.AndroidJUnit4

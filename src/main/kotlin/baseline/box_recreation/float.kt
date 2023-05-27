@@ -1,7 +1,7 @@
 package baseline.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 private data class FloatClass(val x: Float, val y: Float)
 fun heavyActionFloat(consumer: ObjectConsumer) {

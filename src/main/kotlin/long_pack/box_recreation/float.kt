@@ -1,7 +1,7 @@
 package long_pack.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 @Suppress("unused")
 @JvmInline

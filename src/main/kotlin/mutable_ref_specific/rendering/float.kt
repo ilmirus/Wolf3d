@@ -2,13 +2,13 @@
 
 package mutable_ref_specific.rendering
 
-import AbstractGraphics
-import OffsetInSeconds
-import MicrobenchmarkRotations
-import asAbstract
-import screenHeight
-import screenWidth
-import worldMap
+import shared.AbstractGraphics
+import shared.OffsetInSeconds
+import shared.MicrobenchmarkRotations
+import shared.asAbstract
+import shared.screenHeight
+import shared.screenWidth
+import shared.worldMap
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.Graphics2D
@@ -28,15 +28,15 @@ inline fun canMove(point: Point2f): Boolean = worldMap[point.x.toInt()][point.y.
 
 @JvmInline
 value class Point2f(val x: Float, val y: Float) {
-    fun plus(vector: Vector2f, wrapper: Point2f.Wrapper) = wrapper.encode(x + vector.x, y + vector.y)
+    fun plus(vector: Vector2f, wrapper: Wrapper) = wrapper.encode(x + vector.x, y + vector.y)
 
-    fun minus(vector: Vector2f, wrapper: Point2f.Wrapper) = wrapper.encode(x - vector.x, y - vector.y)
+    fun minus(vector: Vector2f, wrapper: Wrapper) = wrapper.encode(x - vector.x, y - vector.y)
 
     fun toLocation(wrapper: LocationF.Wrapper) = wrapper.encode(x.toInt(), y.toInt())
 
     fun toVector(wrapper: Vector2f.Wrapper) = wrapper.encode(x, y)
 
-    class Wrapper() {
+    class Wrapper {
         @JvmField
         var x: Float = 0.0f
         @JvmField
@@ -53,22 +53,22 @@ value class Point2f(val x: Float, val y: Float) {
 
 @JvmInline
 value class Vector2f(val x: Float, val y: Float) {
-    fun rotate(angle: Float, wrapper: Vector2f.Wrapper) =
+    fun rotate(angle: Float, wrapper: Wrapper) =
         wrapper.encode(x * cos(angle) - y * sin(angle), x * sin(angle) + y * cos(angle))
 
-    fun times(factor: Float, wrapper: Vector2f.Wrapper) = wrapper.encode(x * factor, y * factor)
+    fun times(factor: Float, wrapper: Wrapper) = wrapper.encode(x * factor, y * factor)
 
-    fun plus(vector: Vector2f, wrapper: Vector2f.Wrapper) = wrapper.encode(x + vector.x, y + vector.y)
+    fun plus(vector: Vector2f, wrapper: Wrapper) = wrapper.encode(x + vector.x, y + vector.y)
 
-    fun minus(vector: Vector2f, wrapper: Vector2f.Wrapper) = wrapper.encode(x - vector.x, y - vector.y)
+    fun minus(vector: Vector2f, wrapper: Wrapper) = wrapper.encode(x - vector.x, y - vector.y)
 
-    fun abs(wrapper: Vector2f.Wrapper) = wrapper.encode(abs(x), abs(y))
+    fun abs(wrapper: Wrapper) = wrapper.encode(abs(x), abs(y))
 
-    fun xProjection(wrapper: Vector2f.Wrapper) = wrapper.encode(x, 0.0f)
+    fun xProjection(wrapper: Wrapper) = wrapper.encode(x, 0.0f)
 
-    fun yProjection(wrapper: Vector2f.Wrapper) = wrapper.encode(0.0f, y)
+    fun yProjection(wrapper: Wrapper) = wrapper.encode(0.0f, y)
 
-    class Wrapper() {
+    class Wrapper {
         @JvmField
         var x: Float = 0.0f
         @JvmField
@@ -96,7 +96,7 @@ inline fun Unit.decodeLocationF(wrapper: LocationF.Wrapper) = wrapper.decode()
 value class LocationF(val x: Int, val y: Int) {
     fun toVector(wrapper: Vector2f.Wrapper) = wrapper.encode(x.toFloat(), y.toFloat())
 
-    fun step(vector: Vector2f, wrapper: LocationF.Wrapper) {
+    fun step(vector: Vector2f, wrapper: Wrapper) {
         val vectorWrapper = Vector2f.Wrapper()
         wrapper.encode(
             (toVector(vectorWrapper).decodeVector2f(vectorWrapper).plus(vector, vectorWrapper)
@@ -106,7 +106,7 @@ value class LocationF(val x: Int, val y: Int) {
         )
     }
 
-    class Wrapper() {
+    class Wrapper {
         @JvmField
         var x: Int = 0
         @JvmField

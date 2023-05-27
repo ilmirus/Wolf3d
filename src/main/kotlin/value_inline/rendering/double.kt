@@ -2,13 +2,13 @@
 
 package value_inline.rendering
 
-import AbstractGraphics
-import OffsetInSeconds
-import MicrobenchmarkRotations
-import asAbstract
-import screenHeight
-import screenWidth
-import worldMap
+import shared.AbstractGraphics
+import shared.OffsetInSeconds
+import shared.MicrobenchmarkRotations
+import shared.asAbstract
+import shared.screenHeight
+import shared.screenWidth
+import shared.worldMap
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.Graphics2D

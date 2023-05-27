@@ -1,7 +1,7 @@
 package baseline.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 private data class IntClass(val x: Int, val y: Int)
 fun heavyActionInt(consumer: ObjectConsumer) {

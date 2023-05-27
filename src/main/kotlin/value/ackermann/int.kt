@@ -1,7 +1,7 @@
 package value.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 @JvmInline
 value class ComplexInt(val real: Int, val imaginary: Int) {

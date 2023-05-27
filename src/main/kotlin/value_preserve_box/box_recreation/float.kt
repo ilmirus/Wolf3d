@@ -1,7 +1,7 @@
 package value_preserve_box.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 @JvmInline
 private value class FloatClass(val x: Float, val y: Float)

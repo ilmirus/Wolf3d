@@ -1,7 +1,7 @@
 package baseline.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 data class ComplexDouble(val real: Double, val imaginary: Double) {
     override fun toString(): String = when {

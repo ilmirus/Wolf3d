@@ -2,8 +2,8 @@
 
 package value_preserve_box.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 @JvmInline
 value class ComplexLong(val real: Long, val imaginary: Long) {

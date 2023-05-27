@@ -2,8 +2,8 @@
 
 package value_preserve_box.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 @JvmInline
 value class ComplexFloat(val real: Float, val imaginary: Float) {

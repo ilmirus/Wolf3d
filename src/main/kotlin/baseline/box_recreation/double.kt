@@ -1,7 +1,7 @@
 package baseline.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 private data class DoubleClass(val x: Double, val y: Double)
 fun heavyActionDouble(consumer: ObjectConsumer) {

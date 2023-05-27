@@ -2,14 +2,14 @@
 
 package mutable_ref_universal.rendering
 
-import AbstractGraphics
-import OffsetInSeconds
-import MicrobenchmarkRotations
-import asAbstract
+import shared.AbstractGraphics
+import shared.OffsetInSeconds
+import shared.MicrobenchmarkRotations
+import shared.asAbstract
 import mutable_ref_universal.MutableMfvcWrapper
-import screenHeight
-import screenWidth
-import worldMap
+import shared.screenHeight
+import shared.screenWidth
+import shared.worldMap
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.Graphics2D

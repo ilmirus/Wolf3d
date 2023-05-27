@@ -2,8 +2,8 @@
 
 package long_pack.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 private inline fun ComplexInt.encodeToLong() = real.toLong().shl(32) or imaginary.toLong().and(0xFFFFFFFF)
 private inline fun Long.decodeToComplexInt(): ComplexInt = ComplexInt(shr(32).toInt(), toInt())

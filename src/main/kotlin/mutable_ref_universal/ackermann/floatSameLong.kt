@@ -1,8 +1,8 @@
 package mutable_ref_universal.ackermann
 
 import mutable_ref_universal.MutableMfvcWrapper
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 @JvmInline
 value class ComplexFloatSame(val real: Float, val imaginary: Float) {

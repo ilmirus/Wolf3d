@@ -2,7 +2,7 @@
 
 package microbenchmark
 
-import AbstractGraphics
+import shared.AbstractGraphics
 import org.openjdk.jmh.annotations.*
 import org.openjdk.jmh.infra.Blackhole
 import java.util.concurrent.TimeUnit

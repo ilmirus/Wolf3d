@@ -1,7 +1,7 @@
 package baseline.box_recreation
 
-import BoxCopies
-import ObjectConsumer
+import shared.BoxCopies
+import shared.ObjectConsumer
 
 private data class LongClass(val x: Long, val y: Long)
 fun heavyActionLong(consumer: ObjectConsumer) {

@@ -2,8 +2,8 @@
 
 package mutable_ref_specific.ackermann
 
-import ComplexNumberConsumer
-import ComplexNumberPrinter
+import shared.ComplexNumberConsumer
+import shared.ComplexNumberPrinter
 
 @JvmInline
 value class ComplexFloat(val real: Float, val imaginary: Float) {
@@ -22,23 +22,23 @@ value class ComplexFloat(val real: Float, val imaginary: Float) {
         }
     }
 
-    fun plus(other: ComplexFloat, wrapper: ComplexFloat.Wrapper) {
+    fun plus(other: ComplexFloat, wrapper: Wrapper) {
         wrapper.encode(this.real + other.real, this.imaginary + other.imaginary)
     }
 
-    fun plus(other: Float, wrapper: ComplexFloat.Wrapper) {
+    fun plus(other: Float, wrapper: Wrapper) {
         wrapper.encode(this.real + other, this.imaginary)
     }
 
-    fun minus(other: ComplexFloat, wrapper: ComplexFloat.Wrapper) {
+    fun minus(other: ComplexFloat, wrapper: Wrapper) {
         wrapper.encode(this.real - other.real, this.imaginary - other.imaginary)
     }
 
-    fun minus(other: Float, wrapper: ComplexFloat.Wrapper) {
+    fun minus(other: Float, wrapper: Wrapper) {
         wrapper.encode(this.real - other, this.imaginary)
     }
 
-    class Wrapper() {
+    class Wrapper {
         @JvmField
         var real: Float = 0.0f
         @JvmField
