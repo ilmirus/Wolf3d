@@ -1,35 +1,50 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 buildscript {
-    repositories {
-        mavenCentral()
-        mavenLocal()
-    }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20-RC"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.255-SNAPSHOT"
     }
+}
+plugins {
+    id "me.champeau.jmh" version "0.7.0"
+    id 'com.android.library' version '7.4.1' apply false
+    id 'androidx.benchmark' version '1.1.0-beta04' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'org.graalvm.buildtools.native' version '0.9.4'
 }
 
 apply plugin: "kotlin"
 
+
 group 'org.example'
 version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
 
 test {
     useJUnitPlatform()
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.20-RC"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.255-SNAPSHOT"
+    jmh 'commons-io:commons-io:2.11.0'
 }
 
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+def useGraal = project.properties["useGraal"]?.toBoolean() ?: false
+println(useGraal ? "Graal is used" : "Graal is not used")
+
+tasks.withType(KotlinCompile).configureEach {
     kotlinOptions {
-        languageVersion = "1.9"
+        languageVersion = "2.0"
         kotlinOptions.freeCompilerArgs += ["-Xvalue-classes"]
-        jvmTarget = "11"
     }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+        vendor = useGraal ? JvmVendorSpec.GRAAL_VM : JvmVendorSpec.AMAZON
+    }
+}
+
+jmh {
+    resultsFile = project.file("${project.rootDir}/results/jmh/${useGraal ? "Graal" : "Hotspot"}.txt")
 }
